@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Module file, saved 6/14/2021 3:32:08 PM by AbdallahMohamedSaadM using CourseLab 090219 -->
+<module format="2.4 090219" rev="2" slideWidth="750" slideHeight="530" template="Standard\0001" file="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\2.xml">
+<font face="Arial" style="1" size="12" color="#000000"/>
+<newids slide="SLIDE_" subslide="FRAME_" iebox="TXT_" image="IMG_" object="OBJ_" group="GROUP_"/>
+<import masterid="" left="0" top="0" width="0" height="0" commentsLeft="0" commentsTop="0" commentsWidth="0" commentsHeight="0" importComments="no" commentscolor="#000000" fiximages="yes"/>
+<runtime showsplash="yes" seqslides="no" preloadimages="yes" normalize="no"/>
+<nextidentity slide="22" subslide="0" object="0" group="0" mousepointer="0" actionbox="0"/>
+<moduleColors>
+<color>996600</color>
+<color>cc9900</color>
+<color>ffcc00</color>
+<color>ffff00</color>
+<color>ffff99</color>
+<color>ffdb9d</color>
+<color>ffcc66</color>
+<color>ff9933</color>
+<color>ff794b</color>
+<color>ff3300</color>
+<color>990000</color>
+<color>333366</color>
+<color>003399</color>
+<color>0066cc</color>
+<color>0083d7</color>
+<color>0099ff</color>
+<color>3e9ade</color>
+<color>99ccff</color>
+<color>b4e2ff</color>
+<color>deffff</color>
+<color>ffccff</color>
+<color>ccccff</color>
+<color>9999ff</color>
+<color>6666cc</color>
+<color>9999cc</color>
+<color>666699</color>
+<color>006600</color>
+<color>009900</color>
+<color>66cc33</color>
+<color>99ff66</color>
+<color>ccffcc</color>
+</moduleColors>
+<customColors>
+<color>ffffff</color>
+<color>000000</color>
+</customColors>
+<slides>
+<slide guid="b78a69dc_0ec0_4378_b881_9bc07ff4e02b" id="SLIDE_14" sid="16" splash="1">
+<subslides>
+<subslide guid="8bec6b56_d4c5_4e0e_83b1_3be242e62d64" id="FRAME_15" dur="0">
+<objects>
+<object type="image" guid="bf49033c_bdfb_445e_bb6f_14f62c6145ff" id="IMG_13" left="0" top="0" width="750" height="530" display="slide" begin="0">
+<src>images\clip20210614_2.jpg</src>
+</object>
+<object type="div" guid="6826f4b7_bcad_45df_8f6e_0f111e45e47e" id="OBJ_79" left="535" top="461" width="166" height="31" display="slide" begin="0">
+<folder>
+Splash</folder>
+<template>
+splash_button_go</template>
+<design_content><![CDATA[<img border="0" width="166" height="31" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\splash_button_go\button_start1.gif"   />]]></design_content>
+<export_content><![CDATA[<img border="0" width="166" height="31" style="cursor:hand;cursor:pointer;" src="images/splash_button_go/button_start1.gif" onclick="this.src = 'images/splash_button_go/button_wait.gif'; StartModule();return false;"   />]]></export_content>
+<params>
+<standard>yes</standard>
+<wait_img></wait_img>
+<go_img></go_img>
+</params>
+</object>
+<object type="iebox" guid="10c47a2a_bbba_49ad_bf93_a0f0c196ae2d" id="TXT_13" left="205" top="362" width="356" height="32" display="slide" begin="0">
+<content><![CDATA[<ietext><text>&lt;P align=center&gt;&lt;B&gt;&lt;SPAN style=&quot;FONT-SIZE: 28px; COLOR: #ffffff&quot;&gt;Biology&lt;/SPAN&gt;&lt;/B&gt;&lt;/P&gt;</text><hyperlinks></hyperlinks></ietext>]]></content>
+</object>
+<object type="iebox" guid="aef5ea82_732f_44b2_a61f_131a281cca85" id="TXT_14" left="620" top="22" width="119" height="80" display="slide" begin="0">
+<content><![CDATA[<ietext><text>&lt;P align=center&gt;&lt;IMG style=&quot;HEIGHT: 55px; WIDTH: 67px&quot; border=0 src=&quot;[!MODULE_IMAGES]asunews_103_img.png&quot; width=261 height=259&gt;&lt;/P&gt;</text><hyperlinks></hyperlinks></ietext>]]></content>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="63d982c3_6e5d_449c_8914_3b703a53cf02" id="SLIDE_12" sid="15" master="1">
+<subslides>
+<subslide guid="873a3585_dd11_4018_9958_30a767634a62" id="FRAME_13" dur="0">
+<objects>
+<object type="image" guid="30a08004_a14b_4322_adc4_24033e5fa66b" id="IMG_11" left="0" top="497" width="750" height="33" display="slide" begin="0">
+<src>images\clip20210614_4.gif</src>
+</object>
+<object type="image" guid="cea5e5d9_3a31_4f39_8594_26e6fb21530a" id="IMG_12" left="0" top="0" width="750" height="35" display="slide" begin="0">
+<src>images\clip20210614_5.gif</src>
+</object>
+<object type="iebox" guid="c22a3eb5_8575_4bfa_9321_9e3eedd2646f" id="TXT_11" left="68" top="3" width="628" height="25" display="slide" begin="0">
+<content><![CDATA[<ietext><text>&lt;TABLE height=&quot;100%&quot; cellSpacing=0 cellPadding=0 width=&quot;100%&quot; border=0&gt;
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD style=&quot;VERTICAL-ALIGN: middle; TEXT-ALIGN: center&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 18px; FONT-FAMILY: &apos;Tahoma&apos;; FONT-WEIGHT: bold; COLOR: #89defa&quot;&gt;&lt;SPAN style=&quot;COLOR: #c4dafb&quot;&gt;&lt;SPAN style=&quot;COLOR: #c7e9ef&quot;&gt;Biology-Immune System&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;</text><hyperlinks></hyperlinks></ietext>]]></content>
+</object>
+<object type="iebox" guid="11434f3e_85f3_4cde_ba06_d79f0e49c1f2" id="TXT_12" left="1" top="2" width="85" height="27" display="slide" begin="0">
+<content><![CDATA[<ietext><text>&lt;P align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 10px&quot;&gt;&lt;SPAN style=&quot;COLOR: #ffffff&quot;&gt;&lt;SPAN style=&quot;COLOR: #fffffe&quot;&gt;I&lt;SPAN style=&quot;FONT-FAMILY: Arial&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 10px&quot;&gt;&lt;SPAN style=&quot;COLOR: #ffffff&quot;&gt;&lt;SPAN style=&quot;COLOR: #fffffe&quot;&gt;&lt;IMG style=&quot;HEIGHT: 38px; WIDTH: 37px&quot; border=0 src=&quot;[!MODULE_IMAGES]asunews_103_img.png&quot; width=263 height=259&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/P&gt;</text><hyperlinks></hyperlinks></ietext>]]></content>
+</object>
+<object type="div" guid="d7fc2c5b_a07c_4fa7_82a9_a6fd5f44b54a" id="OBJ_66" left="218" top="508" width="270" height="20" display="slide" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_001_selector</template>
+<design_content><![CDATA[<select style="width:100%; text-align:; font-style:normal;font-weight:normal;font-family:Arial; font-size:11px; color:#000000; background-color: #FFFFFF;"  ><option value="0" style="background-color: #FFFFFF;">
+		Slidename list
+	</option></select>]]></design_content>
+<export_content><![CDATA[<select onchange="var oArgs = new Object; oArgs.pid = 'OBJ_66'; CallMethod('nav_001_selector','JumpToSlide',oArgs); return false;" id="OBJ_66_selector" name="OBJ_66_selector" style="width:100%; text-align:; font-style:normal;font-weight:normal;font-family:Arial; font-size:11px; color:#000000; background-color: #FFFFFF;"  ><option>Slides list</option></select>]]></export_content>
+<params>
+<input_bg_color>#FFFFFF</input_bg_color>
+<input_font>Arial</input_font>
+<input_font_size>11</input_font_size>
+<input_font_weight>normal</input_font_weight>
+<input_font_style>normal</input_font_style>
+<input_font_color>#000000</input_font_color>
+<hierarchy>yes</hierarchy>
+<nav_lock>no</nav_lock>
+<msg>You cannot jump to this slide until you visit previous slides</msg>
+</params>
+</object>
+<object type="div" guid="1604b424_f878_4784_9f35_b7cf04c44a87" id="OBJ_67" left="93" top="508" width="118" height="20" display="slide" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_002_position</template>
+<design_content><![CDATA[<table width="100%" height="100%" cellpadding="2" cellspacing="0" border="0"  ><tr><td align="right" valign="middle" width="50%" nowrap="nowrap"><span id="position_text" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">POSITION:</span></td><td align="left" valign="middle" width="50%" nowrap="nowrap"><span id="position_current" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">
+					1
+				</span><span id="position_div" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">/</span><span id="position_total" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">
+					1
+				</span></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" height="100%" cellpadding="2" cellspacing="0" border="0"  ><tr><td align="right" valign="middle" width="50%" nowrap="nowrap"><span style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">POSITION:</span></td><td align="left" valign="middle" width="50%" nowrap="nowrap"><span id="OBJ_67_position_current" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">
+					1
+				</span><span style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">/</span><span id="OBJ_67_position_total" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">
+					1
+				</span></td></tr></table>]]></export_content>
+<params>
+<position_text>POSITION:</position_text>
+<position_divider>/</position_divider>
+<position_font>Tahoma</position_font>
+<position_font_size>11</position_font_size>
+<position_font_weight>bold</position_font_weight>
+<position_font_style>normal</position_font_style>
+<position_font_color>#2e95a7</position_font_color>
+</params>
+</object>
+<object type="div" guid="f4744626_60d4_414c_ab32_4f5c6e16ae9d" id="OBJ_68" left="0" top="37" width="25" height="460" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_003_contents</template>
+<design_content><![CDATA[<div style="position:absolute; z-index:1; top: 0px; left: 0px; width: 25px; height: 460px; padding-top: 0px;"  ><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\nav_003_contents\turquoise\tab_contents_0.gif" /></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none;"  ><img border="0" id="OBJ_68_icon_open" src="images/nav_003_contents/turquoise/f_open.gif" /><img border="0" id="OBJ_68_icon_closed" src="images/nav_003_contents/turquoise/f_closed.gif" /><img border="0" id="OBJ_68_icon_unvisited" src="images/nav_003_contents/turquoise/icon_unvisited.gif" /><img border="0" id="OBJ_68_icon_current" src="images/nav_003_contents/turquoise/icon_current.gif" /><img border="0" id="OBJ_68_icon_visited" src="images/nav_003_contents/turquoise/icon_visited.gif" /><img border="0" id="OBJ_68_tab_0" src="images/nav_003_contents/turquoise/tab_contents_0.gif" /><img border="0" id="OBJ_68_tab_1" src="images/nav_003_contents/turquoise/tab_contents_1.gif" /><img border="0" id="OBJ_68_tab_2" src="images/nav_003_contents/turquoise/tab_contents_2.gif" /></div><div id="OBJ_68_template_simple" style="display:none; margin: 1px; width:100%; border-top: #CCCCCC dotted 1px;"  ><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td valign="top" style="background-color: #FFFFFF; padding-top:2px; padding-bottom:2px; padding-left:2px; padding-right:2px"><img border="0" src="images/nav_003_contents/turquoise/icon_unvisited.gif" /></td><td valign="top" width="100%" style="font-family: Tahoma; font-size: 11px; background-color: #FFFFFF; padding-top:2px; padding-bottom: 2px; padding-left:0px; padding-right:4px">%%var%%</td></tr></table></div><div id="OBJ_68_template_hier" style="display:none; margin: 1px; width:100%; border-top: #CCCCCC dotted 1px;"  ><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td valign="top" style="padding-top:3px; padding-bottom: 2px; padding-left:2px; padding-right:2px"><img border="0" src="images/nav_003_contents/turquoise/f_open.gif" onclick="if(document.getElementById(this.getAttribute('childdiv')).style.display=='none') { document.getElementById(this.getAttribute('childdiv')).style.display = g_isMSIE ? 'inline' : 'block'; this.src = this.getAttribute('iconopen'); } else { document.getElementById(this.getAttribute('childdiv')).style.display = 'none'; this.src = this.getAttribute('iconclosed');} return false;" /></td><td valign="top" style="background-color: #FFFFFF; padding-top:3px; padding-bottom: 2px; padding-left:2px; padding-right:2px"><img border="0" src="images/nav_003_contents/turquoise/icon_unvisited.gif" /></td><td valign="top" width="100%" style="font-family: Tahoma; font-size: 11px; background-color: #FFFFFF; padding-top:3px; padding-bottom: 2px; padding-left:0px; padding-right:4px">%%var%%</td></tr></table></div><div id="OBJ_68_maincontainer" style="position:absolute; height: 460px; overflow: visible;"  ><div style="position: absolute; top: 0px; left: 0px; width: 475px; height: 460px;background-color:#95C8DB; "><div style="position: absolute; top: 2px; left: 2px; width: 471px; height: 456px;background-color: #FFFFFF;"><div id="OBJ_68_header" style="margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 30px; overflow: hidden; font-weight:bold; text-align:center;"><P align=center><SPAN style="FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial"><B>Contents</B></SPAN></P></div><div style="&#xA;					margin-left: 10px;&#xA;					margin-right:10px;&#xA;					width: 451px;&#xA;					height: 406px;&#xA;					padding: 0px;&#xA;					overflow: auto;&#xA;					" id="OBJ_68_contents">
+				...
+			</div></div></div><img border="0" id="OBJ_68_tabimg" src="images/nav_003_contents/turquoise/tab_contents_0.gif" style="cursor:hand; cursor:pointer; position: absolute; top: 0px; left:475px;" onMouseOver="MM_swapImage('OBJ_68_tabimg','',document.getElementById('OBJ_68_tab_1').src,1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_68_tabimg','',document.getElementById('OBJ_68_tab_2').src,1);return false;" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_68'; CallMethod('nav_003_contents','MoveTab',oArgs);return false;" alt="Contents" /><img border="0" id="OBJ_68_tabimg_disabled" src="images/nav_003_contents/turquoise/tab_contents_3.gif" style="display: none; position: absolute; top: 0px; left:475px;" alt="Access is not allowed" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor_user>#000000</tabcolor_user>
+<tab_width>500</tab_width>
+<tab_height>460</tab_height>
+<tabcolor>turquoise</tabcolor>
+<tab_offset>0</tab_offset>
+<alt_enabled>Contents</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<tabheader>&lt;ietext&gt;&lt;text&gt;&amp;lt;P align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial&amp;quot;&amp;gt;&amp;lt;B&amp;gt;Contents&amp;lt;/B&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabheader>
+<icon_default>yes</icon_default>
+<i1_img></i1_img>
+<i2_img></i2_img>
+<i3_img></i3_img>
+<hierarchy>yes</hierarchy>
+<hier_default>yes</hier_default>
+<h1_img></h1_img>
+<h2_img></h2_img>
+<nav_lock>yes</nav_lock>
+<msg>You cannot jump to this slide until you visit previous slides</msg>
+</params>
+</object>
+<object type="div" guid="66201a5b_68b4_4479_8186_bdddc9f08c79" id="OBJ_69" left="0" top="37" width="25" height="460" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_004_help</template>
+<design_content><![CDATA[<div style="position:absolute; z-index:1; top: 0px; left: 0px; width: 25px; height: 460px; padding-top: 92px;"  ><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\nav_004_help\turquoise\tab_help_0.gif" /></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none;"  ><img border="0" id="OBJ_69_tab_0" src="images/nav_004_help/turquoise/tab_help_0.gif" /><img border="0" id="OBJ_69_tab_1" src="images/nav_004_help/turquoise/tab_help_1.gif" /><img border="0" id="OBJ_69_tab_2" src="images/nav_004_help/turquoise/tab_help_2.gif" /></div><div id="OBJ_69_maincontainer" style="position:absolute; height: 460px; overflow: visible;"  ><div style="position: absolute; top: 0px; left: 0px; width: 475px; height: 460px;background-color:#95C8DB; "><div style="position: absolute; top: 2px; left: 2px; width: 471px; height: 456px;background-color: #FFFFFF;"><div id="OBJ_69_header" style="position: absolute; top: 0px; left: 0px; margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 30px; overflow: hidden; font-weight: bold; text-align: center;"><P align=center><SPAN style="FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial"><B>Help</B></SPAN></P></div><div style="&#xA;					position: absolute;&#xA;					top: 30px;&#xA;					left: 0px;&#xA;					margin-left: 10px;&#xA;					margin-right:10px;&#xA;					width: 451px;&#xA;					height: 406px;&#xA;					padding: 0px;&#xA;					overflow: auto;&#xA;				" id="OBJ_69_contents"><TABLE style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" cellSpacing=0 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top align=middle width=15 bgColor=#f0f0f0><IMG height=7 src="images/contents_bullet_1.gif" width=7 vspace=4 border=0> </TD>
+<TD bgColor=#f0f0f0><B>eLearning Module Structure</B></TD></TR></TBODY></TABLE>
+<TABLE style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" cellSpacing=2 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<P>Learning Module is a fundamental building block of the Course hierarchy representing the set of author-structured Slides. During the learning process the learner is led from one Slide to another sequentially, which is default behavior. <BR>Slide (Interactive page) is the main building block of Learning Module. Slides are used by the author to place learning material, tests, and exercises. The order of Slide correlation is predefined by the author. </P></TD></TR></TBODY></TABLE>
+<TABLE style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" cellSpacing=0 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top align=middle width=15 bgColor=#f0f0f0><IMG height=7 src="images/contents_bullet_1.gif" width=7 vspace=4 border=0> </TD>
+<TD bgColor=#f0f0f0><B>Navigation</B></TD></TR></TBODY></TABLE>
+<TABLE style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" cellSpacing=2 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<P>eLearning Module navigation controls (the list may vary depending on author's design):</P>
+<UL>
+<LI>"Prev" and "Next" buttons enable to jump on previous and next slide correspondingly;&nbsp; 
+<LI>"Replay" button enable to start current slide&nbsp;once again from the beginning (it may be useful, for example, to repeat animation on slide etc.); 
+<LI>"Contents" tab or button with popup window displays the list of all slides and enables transition to any slide in the Module&nbsp;(if no&nbsp;restrictions were applied by author); 
+<LI>Navigation drop-down menu displays the list of all slides and enables transition to any slide in the Module&nbsp;(if no&nbsp;restrictions were applied by author); 
+<LI>"Sound On/Off" button&nbsp;toggles narration (if narration exists in the Module); 
+<LI>"Close Module" button closes Module window.</LI></UL>
+<P>Please note that some controls may become disabled while navigating. Usually it means that:</P>
+<UL>
+<LI>not all objects of&nbsp;current slide are displayed yet (depending on rules defined by author); 
+<LI>not all activities required from learner on current slide&nbsp;are finished (for example, navigation controls may be disabled until question is answered etc.); 
+<LI>navigation action is just impossible (for example, there's no slides previous to first one).</LI></UL>
+<P>&nbsp;</P></TD></TR></TBODY></TABLE></div></div></div><img border="0" id="OBJ_69_tabimg" src="images/nav_004_help/turquoise/tab_help_0.gif" style="cursor:hand; cursor:pointer; position: absolute; top: 92px; left:475px;" onMouseOver="MM_swapImage('OBJ_69_tabimg','',document.getElementById('OBJ_69_tab_1').src,1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_69_tabimg','',document.getElementById('OBJ_69_tab_2').src,1);return false;" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_69'; CallMethod('nav_004_help','MoveTab',oArgs);return false;" alt="Help" /><img border="0" id="OBJ_69_tabimg_disabled" src="images/nav_004_help/turquoise/tab_help_3.gif" style="display: none; position: absolute; top: 92px; left:475px;" alt="Access is not allowed" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor_user>#000000</tabcolor_user>
+<tab_width>500</tab_width>
+<tab_height>460</tab_height>
+<tabcolor>turquoise</tabcolor>
+<tab_offset>92</tab_offset>
+<alt_enabled>Help</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<tabheader>&lt;ietext&gt;&lt;text&gt;&amp;lt;P align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial&amp;quot;&amp;gt;&amp;lt;B&amp;gt;Help&amp;lt;/B&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabheader>
+<tabtext>&lt;ietext&gt;&lt;text&gt;&amp;lt;TABLE style=&amp;quot;FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif&amp;quot; cellSpacing=0 cellPadding=4 width=&amp;quot;100%&amp;quot; border=0&amp;gt;
+&amp;lt;TBODY&amp;gt;
+&amp;lt;TR&amp;gt;
+&amp;lt;TD vAlign=top align=middle width=15 bgColor=#f0f0f0&amp;gt;&amp;lt;IMG height=7 src=&amp;quot;[!MODULE_IMAGES]contents_bullet_1.gif&amp;quot; width=7 vspace=4 border=0&amp;gt; &amp;lt;/TD&amp;gt;
+&amp;lt;TD bgColor=#f0f0f0&amp;gt;&amp;lt;B&amp;gt;eLearning Module Structure&amp;lt;/B&amp;gt;&amp;lt;/TD&amp;gt;&amp;lt;/TR&amp;gt;&amp;lt;/TBODY&amp;gt;&amp;lt;/TABLE&amp;gt;
+&amp;lt;TABLE style=&amp;quot;FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif&amp;quot; cellSpacing=2 cellPadding=4 width=&amp;quot;100%&amp;quot; border=0&amp;gt;
+&amp;lt;TBODY&amp;gt;
+&amp;lt;TR&amp;gt;
+&amp;lt;TD&amp;gt;
+&amp;lt;P&amp;gt;Learning Module is a fundamental building block of the Course hierarchy representing the set of author-structured Slides. During the learning process the learner is led from one Slide to another sequentially, which is default behavior. &amp;lt;BR&amp;gt;Slide (Interactive page) is the main building block of Learning Module. Slides are used by the author to place learning material, tests, and exercises. The order of Slide correlation is predefined by the author. &amp;lt;/P&amp;gt;&amp;lt;/TD&amp;gt;&amp;lt;/TR&amp;gt;&amp;lt;/TBODY&amp;gt;&amp;lt;/TABLE&amp;gt;
+&amp;lt;TABLE style=&amp;quot;FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif&amp;quot; cellSpacing=0 cellPadding=4 width=&amp;quot;100%&amp;quot; border=0&amp;gt;
+&amp;lt;TBODY&amp;gt;
+&amp;lt;TR&amp;gt;
+&amp;lt;TD vAlign=top align=middle width=15 bgColor=#f0f0f0&amp;gt;&amp;lt;IMG height=7 src=&amp;quot;[!MODULE_IMAGES]contents_bullet_1.gif&amp;quot; width=7 vspace=4 border=0&amp;gt; &amp;lt;/TD&amp;gt;
+&amp;lt;TD bgColor=#f0f0f0&amp;gt;&amp;lt;B&amp;gt;Navigation&amp;lt;/B&amp;gt;&amp;lt;/TD&amp;gt;&amp;lt;/TR&amp;gt;&amp;lt;/TBODY&amp;gt;&amp;lt;/TABLE&amp;gt;
+&amp;lt;TABLE style=&amp;quot;FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif&amp;quot; cellSpacing=2 cellPadding=4 width=&amp;quot;100%&amp;quot; border=0&amp;gt;
+&amp;lt;TBODY&amp;gt;
+&amp;lt;TR&amp;gt;
+&amp;lt;TD&amp;gt;
+&amp;lt;P&amp;gt;eLearning Module navigation controls (the list may vary depending on author&amp;apos;s design):&amp;lt;/P&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;LI&amp;gt;&amp;quot;Prev&amp;quot; and &amp;quot;Next&amp;quot; buttons enable to jump on previous and next slide correspondingly;&amp;amp;nbsp; 
+&amp;lt;LI&amp;gt;&amp;quot;Replay&amp;quot; button enable to start current slide&amp;amp;nbsp;once again from the beginning (it may be useful, for example, to repeat animation on slide etc.); 
+&amp;lt;LI&amp;gt;&amp;quot;Contents&amp;quot; tab or button with popup window displays the list of all slides and enables transition to any slide in the Module&amp;amp;nbsp;(if no&amp;amp;nbsp;restrictions were applied by author); 
+&amp;lt;LI&amp;gt;Navigation drop-down menu displays the list of all slides and enables transition to any slide in the Module&amp;amp;nbsp;(if no&amp;amp;nbsp;restrictions were applied by author); 
+&amp;lt;LI&amp;gt;&amp;quot;Sound On/Off&amp;quot; button&amp;amp;nbsp;toggles narration (if narration exists in the Module); 
+&amp;lt;LI&amp;gt;&amp;quot;Close Module&amp;quot; button closes Module window.&amp;lt;/LI&amp;gt;&amp;lt;/UL&amp;gt;
+&amp;lt;P&amp;gt;Please note that some controls may become disabled while navigating. Usually it means that:&amp;lt;/P&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;LI&amp;gt;not all objects of&amp;amp;nbsp;current slide are displayed yet (depending on rules defined by author); 
+&amp;lt;LI&amp;gt;not all activities required from learner on current slide&amp;amp;nbsp;are finished (for example, navigation controls may be disabled until question is answered etc.); 
+&amp;lt;LI&amp;gt;navigation action is just impossible (for example, there&amp;apos;s no slides previous to first one).&amp;lt;/LI&amp;gt;&amp;lt;/UL&amp;gt;
+&amp;lt;P&amp;gt;&amp;amp;nbsp;&amp;lt;/P&amp;gt;&amp;lt;/TD&amp;gt;&amp;lt;/TR&amp;gt;&amp;lt;/TBODY&amp;gt;&amp;lt;/TABLE&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabtext>
+<nav_lock>no</nav_lock>
+</params>
+</object>
+<object type="div" guid="b671d884_67fe_4fe4_a19f_f0387b44b8e8" id="OBJ_70" left="0" top="37" width="25" height="460" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_005_calc</template>
+<design_content><![CDATA[<div style="position:absolute; z-index:1; top: 0px; left: 0px; width: 25px; height: 460px; padding-top: 184px;"  ><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\nav_005_calc\turquoise\tab_calc_0.gif" /></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none;"  ><img border="0" id="OBJ_70_tab_0" src="images/nav_005_calc/turquoise/tab_calc_0.gif" /><img border="0" id="OBJ_70_tab_1" src="images/nav_005_calc/turquoise/tab_calc_1.gif" /><img border="0" id="OBJ_70_tab_2" src="images/nav_005_calc/turquoise/tab_calc_2.gif" /></div><div id="OBJ_70_maincontainer" style="position:absolute; height: 460px; overflow: visible;"  ><div style="position: absolute; top: 0px; left: 0px; width: 475px; height: 460px;background-color:#95C8DB; "><div style="position: absolute; top: 2px; left: 2px; width: 471px; height: 456px;background-color: #FFFFFF;"><div id="OBJ_70_header" style="position: absolute; top: 0px; left: 0px; margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 30px; overflow: hidden; font-weight: bold; text-align: center;"><P align=center><SPAN style="FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial"><B>Calculator</B></SPAN></P></div><div style="&#xA;					position: absolute;&#xA;					top: 30px;&#xA;					left: 0px;&#xA;					margin-top:20px;&#xA;					margin-left: 10px;&#xA;					margin-right:10px;&#xA;					width: 451px;&#xA;					height: 406px;&#xA;					padding: 0px;&#xA;					text-align: center;&#xA;				" id="OBJ_70_CalcDiv"><table border="0" cellpadding="2" cellspacing="0" style="background-color: #AAAAAA; border:#999999 groove 8px;" align="center"><tr><td colspan="6" style="padding: 5px; border-bottom: #999999 double 3px; background-color: #CCCCCC;"><div style="width: 270px; padding-right:4px; text-align:right; font-family: arial,helvetica,geneve,sans-serif; font-size:24px; font-weight: bold; color: #FF0000; background: #000000; border-color: #999999; border: solid 2 px;" id="OBJ_70_display">
+								0
+							</div></td></tr><tr><td style="padding-left: 5px; padding-top: 5px;"><div style="width:50px; height:32px; font-family:verdana,tahoma,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #00CC33; background-color: #666666; border-color: #999999; border: solid 2 px; text-align:center;" id="OBJ_70_mem_ind" /></td><td colspan="3" align="right" style="padding-top: 5px;"><input value="Backspace" type="button" style="width:100px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:12px; font-weight: bold; color: #FFFFFF; background: #CC3333; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='Backspace'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-top: 5px;"><input value=" CE " type="button" style="width:40px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #CC3333; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='CE'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-right: 5px; padding-top: 5px;"><input value="  C  " type="button" style="width:40px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #CC3333; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='C'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td></tr><tr><td style="padding-left: 5px;"><input value=" MC " type="button" name="MC" style="width:50px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #009933; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='MC'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td><input value="  7  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='7'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  8  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='8'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  9  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='9'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  /  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='divide'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-right: 5px;"><input value=" ^ " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='power'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td></tr><tr><td style="padding-left: 5px;"><input value=" MR " type="button" style="width:50px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #009933; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='MR'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td><input value="  4  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='4'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  5  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='5'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  6  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='6'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  x " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='mult'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-right: 5px;"><input value=" % " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='percent'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td></tr><tr><td style="padding-left: 5px;"><input value=" M- " type="button" style="width:50px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #009933; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='MS'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td><input value="  1  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='1'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  2  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='2'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  3  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='3'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  -  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='minus'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-right: 5px;"><input value="1/x" type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='recip'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td></tr><tr><td style="padding-left: 5px;"><input value=" M+ " type="button" style="width:50px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #009933; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='M+'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-bottom: 5px;"><input value="  0  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='0'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td style="padding-bottom: 5px;"><input value="  .   " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='.'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td style="padding-bottom: 5px;"><input value="+/-" type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='negate'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-bottom: 5px;"><input value=" + " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='plus'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-right: 5px; padding-bottom: 5px;"><input value="  =  " type="button" style="width:40px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #0033CC; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_70'; oArgs.btn='equal'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td></tr></table></div><div id="OBJ_70_exp" style="position: absolute; top: 315px; left: 0px; margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 130px; overflow: hidden;"><SPAN style="FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000"></SPAN></div></div></div><img border="0" id="OBJ_70_tabimg" src="images/nav_005_calc/turquoise/tab_calc_0.gif" style="cursor:hand; cursor:pointer; position: absolute; top: 184px; left:475px;" onMouseOver="MM_swapImage('OBJ_70_tabimg','',document.getElementById('OBJ_70_tab_1').src,1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_70_tabimg','',document.getElementById('OBJ_70_tab_2').src,1);return false;" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_70'; CallMethod('nav_005_calc','MoveTab',oArgs);return false;" alt="Calculator" /><img border="0" id="OBJ_70_tabimg_disabled" src="images/nav_005_calc/turquoise/tab_calc_3.gif" style="display: none; position: absolute; top: 184px; left:475px;" alt="Access is not allowed" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor_user>#000000</tabcolor_user>
+<tab_width>500</tab_width>
+<tab_height>460</tab_height>
+<tabcolor>turquoise</tabcolor>
+<tab_offset>184</tab_offset>
+<alt_enabled>Calculator</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<tabheader>&lt;ietext&gt;&lt;text&gt;&amp;lt;P align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial&amp;quot;&amp;gt;&amp;lt;B&amp;gt;Calculator&amp;lt;/B&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabheader>
+<tabtext>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabtext>
+<nav_lock>no</nav_lock>
+</params>
+</object>
+<object type="div" guid="b060ec80_547c_4b4b_8662_e0b192b517b8" id="OBJ_72" left="0" top="-55" width="25" height="460" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_007_about</template>
+<design_content><![CDATA[<div style="position:absolute; z-index:1; top: 0px; left: 0px; width: 25px; height: 460px; padding-top: 368px;"  ><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\nav_007_about\turquoise\tab_about_0.gif" /></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none;"  ><img border="0" id="OBJ_72_tab_0" src="images/nav_007_about/turquoise/tab_about_0.gif" /><img border="0" id="OBJ_72_tab_1" src="images/nav_007_about/turquoise/tab_about_1.gif" /><img border="0" id="OBJ_72_tab_2" src="images/nav_007_about/turquoise/tab_about_2.gif" /></div><div id="OBJ_72_maincontainer" style="position:absolute; height: 460px; overflow: visible;"  ><div style="position: absolute; top: 0px; left: 0px; width: 475px; height: 460px;background-color:#95C8DB; "><div style="position: absolute; top: 2px; left: 2px; width: 471px; height: 456px;background-color: #FFFFFF;"><div id="OBJ_72_header" style="position: absolute; top: 0px; left: 0px; margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 30px; overflow: hidden; font-weight: bold; text-align: center;"><P align=center><SPAN style="FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial"><B>About</B></SPAN></P></div><div style="&#xA;					position: absolute;&#xA;					top: 30px;&#xA;					left: 0px;&#xA;					margin-left: 10px;&#xA;					margin-right:10px;&#xA;					width: 451px;&#xA;					height: 406px;&#xA;					padding: 0px;&#xA;					overflow: auto;&#xA;				" id="OBJ_72_contents"><TABLE cellSpacing=0 cellPadding=5 width=435 border=0>
+<TBODY>
+<TR>
+<TD style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">
+<P>This eLearning Module was developed using <A href="http://www.courselab.com/" target=_blank>CourseLab® eLearning Content Editor</A>. Depending on purpose this Module can be used in any AICC- or SCORM-compatible Learning Management System, on CD etc.</P>
+<P align=center><B>Hardware/Software requirements</B></P>
+<P>This eLearning Module can be played on any PC that meets requirements below:</P>
+<UL>
+<LI>Operating System - Microsoft® Windows 98, Me, NT, 2000, XP (limited support of Windows 95)&nbsp;or Linux; 
+<LI>Internet Browser - Microsoft® Internet Explorer 5.0 (Internet Explorer 5.5 or higher recommended), Mozilla FireFox 1.0 or higher, Netscape® 7.2 or higher; 
+<LI>JavaScript enabled; 
+<LI>XML support enabled (Microsoft® XML Parser 3.0 or higher recommended for Internet Explorer).</LI></UL>
+<P>Additional requirements may be applied depending on media types used by Module author. </P></TD></TR></TBODY></TABLE></div></div></div><img border="0" id="OBJ_72_tabimg" src="images/nav_007_about/turquoise/tab_about_0.gif" style="cursor:hand; cursor:pointer; position: absolute; top: 368px; left:475px;" onMouseOver="MM_swapImage('OBJ_72_tabimg','', document.getElementById('OBJ_72_tab_1').src,1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_72_tabimg','',document.getElementById('OBJ_72_tab_2').src,1);return false;" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_72'; CallMethod('nav_007_about','MoveTab',oArgs);return false;" alt="About" /><img border="0" id="OBJ_72_tabimg_disabled" src="images/nav_007_about/turquoise/tab_about_3.gif" style="display: none; position: absolute; top: 368px; left:475px;" alt="Access is not allowed" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor_user>#000000</tabcolor_user>
+<tab_width>500</tab_width>
+<tab_height>460</tab_height>
+<tabcolor>turquoise</tabcolor>
+<tab_offset>368</tab_offset>
+<alt_enabled>About</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<tabheader>&lt;ietext&gt;&lt;text&gt;&amp;lt;P align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial&amp;quot;&amp;gt;&amp;lt;B&amp;gt;About&amp;lt;/B&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabheader>
+<tabtext>&lt;ietext&gt;&lt;text&gt;&amp;lt;TABLE cellSpacing=0 cellPadding=5 width=435 border=0&amp;gt;
+&amp;lt;TBODY&amp;gt;
+&amp;lt;TR&amp;gt;
+&amp;lt;TD style=&amp;quot;FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif&amp;quot;&amp;gt;
+&amp;lt;P&amp;gt;This eLearning Module was developed using &amp;lt;A href=&amp;quot;http://www.courselab.com/&amp;quot; target=_blank&amp;gt;CourseLab® eLearning Content Editor&amp;lt;/A&amp;gt;. Depending on purpose this Module can be used in any AICC- or SCORM-compatible Learning Management System, on CD etc.&amp;lt;/P&amp;gt;
+&amp;lt;P align=center&amp;gt;&amp;lt;B&amp;gt;Hardware/Software requirements&amp;lt;/B&amp;gt;&amp;lt;/P&amp;gt;
+&amp;lt;P&amp;gt;This eLearning Module can be played on any PC that meets requirements below:&amp;lt;/P&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;LI&amp;gt;Operating System - Microsoft® Windows 98, Me, NT, 2000, XP (limited support of Windows 95)&amp;amp;nbsp;or Linux; 
+&amp;lt;LI&amp;gt;Internet Browser - Microsoft® Internet Explorer 5.0 (Internet Explorer 5.5 or higher recommended), Mozilla FireFox 1.0 or higher, Netscape® 7.2 or higher; 
+&amp;lt;LI&amp;gt;JavaScript enabled; 
+&amp;lt;LI&amp;gt;XML support enabled (Microsoft® XML Parser 3.0 or higher recommended for Internet Explorer).&amp;lt;/LI&amp;gt;&amp;lt;/UL&amp;gt;
+&amp;lt;P&amp;gt;Additional requirements may be applied depending on media types used by Module author. &amp;lt;/P&amp;gt;&amp;lt;/TD&amp;gt;&amp;lt;/TR&amp;gt;&amp;lt;/TBODY&amp;gt;&amp;lt;/TABLE&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabtext>
+<nav_lock>no</nav_lock>
+</params>
+</object>
+<object type="div" guid="83e35bf2_01ba_47ca_94bc_9175fd4c723c" id="OBJ_73" left="672" top="504" width="75" height="25" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_008_next</template>
+<design_content><![CDATA[<img width="75" height="25" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\nav_008_next\ws_next_0.gif"   />]]></design_content>
+<export_content><![CDATA[<div style="display:inline; z-index:10; cursor: hand; cursor: pointer;" id="OBJ_73_NextEnabled"  ><img width="75" height="25" border="0" id="OBJ_73_NextImg" alt="Next Slide" src="images/nav_008_next/ws_next_0.gif" onMouseOver="MM_swapImage('OBJ_73_NextImg','','images/nav_008_next//ws_next_1.gif',1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_73_NextImg','','images/nav_008_next//ws_next_3.gif',1);return false;" onClick="var oArgs = new Object; oArgs.pid ='OBJ_73'; CallMethod('nav_008_next', 'JumpNext', oArgs); return false;" onMouseUp="MM_swapImgRestore(); return false;" /></div><div style="display:none; z-index:11;" id="OBJ_73_NextPushed"  ><img width="75" height="25" border="0" id="OBJ_73_Next_3" src="images/nav_008_next/ws_next_3.gif" /></div><div style="display:none; z-index:11;" id="OBJ_73_NextDisabled"  ><img width="75" height="25" border="0" id="OBJ_73_Next_2" src="images/nav_008_next/ws_next_2.gif" alt="Access is not allowed" /></div><div style="display:none;" id="OBJ_73_NextHighlighted"  ><img width="75" height="25" border="0" id="OBJ_73_Next_1" src="images/nav_008_next/ws_next_1.gif" /></div><div style="display:none;" id="OBJ_73_NextNormal"  ><img width="74" height="25" border="0" id="OBJ_73_Next_0" src="images/nav_008_next/ws_next_0.gif" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<alt_enabled>Next Slide</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<nav_lock>yes</nav_lock>
+</params>
+</object>
+<object type="div" guid="0cec8096_454b_4317_a0e1_081eb7848704" id="OBJ_74" left="591" top="504" width="75" height="25" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_009_prev</template>
+<design_content><![CDATA[<img width="75" height="25" border="0" alt="Next" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\nav_009_prev\ws_prev_0.gif"   />]]></design_content>
+<export_content><![CDATA[<div style="display:inline; z-index:10; cursor: hand; cursor: pointer;" id="OBJ_74_PrevEnabled"  ><img width="75" height="25" border="0" id="OBJ_74_PrevImg" alt="Next Slide" src="images/nav_009_prev/ws_prev_0.gif" onMouseOver="MM_swapImage('OBJ_74_PrevImg','','images/nav_009_prev/ws_prev_1.gif',1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onClick="var oArgs = new Object; oArgs.pid ='OBJ_74'; CallMethod('nav_009_prev', 'JumpPrev', oArgs); return false;" onMouseDown="MM_swapImage('OBJ_74_PrevImg','','images/nav_009_prev/ws_prev_3.gif',1);return false;" onMouseUp="MM_swapImgRestore(); return false;" /></div><div id="OBJ_74_PrevPushed" style="display:none; z-index:11;"  ><img width="75" height="25" border="0" id="OBJ_74_Prev_3" src="images/nav_009_prev/ws_prev_3.gif" /></div><div id="OBJ_74_PrevDisabled" style="display:none; z-index:11;"  ><img width="75" height="25" border="0" id="OBJ_74_Prev_2" src="images/nav_009_prev/ws_prev_2.gif" alt="Access is not allowed" /></div><div style="display:none;" id="OBJ_74_PrevHighlighted"  ><img width="75" height="25" border="0" id="OBJ_74_Prev_1" src="images/nav_009_prev/ws_prev_1.gif" /></div><div style="display:none;" id="OBJ_74_PrevNormal"  ><img width="75" height="25" border="0" id="OBJ_74_Prev_0" src="images/nav_009_prev/ws_prev_0.gif" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<alt_enabled>Next Slide</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<nav_lock>yes</nav_lock>
+</params>
+</object>
+<object type="div" guid="2acde4aa_13e6_4c02_8d3c_f4dd3e7c6f2c" id="OBJ_75" left="722" top="7" width="20" height="20" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_012_close</template>
+<design_content><![CDATA[<img width="20" height="20" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\nav_012_close\ws_close_0.gif"   />]]></design_content>
+<export_content><![CDATA[<div style="display:none;" id="OBJ_75_storage"  ><img border="0" id="OBJ_75_img_0" src="images/nav_012_close/ws_close_0.gif" /><img border="0" id="OBJ_75_img_1" src="images/nav_012_close/ws_close_1.gif" /><img border="0" id="OBJ_75_img_2" src="images/nav_012_close/ws_close_2.gif" /></div><img border="0" style="display:inline; z-index:100; cursor:hand; cursor: pointer;" id="OBJ_75_CloseImg" src="images/nav_012_close/ws_close_0.gif" alt="Close module" onMouseOver="this.src=document.getElementById('OBJ_75_img_1').src;return false;" onMouseOut="this.src=document.getElementById('OBJ_75_img_0').src; return false;" onMouseDown="this.src=document.getElementById('OBJ_75_img_2').src;return false;" onMouseUp="if(confirm('Module window will be closed. Are you sure?')) { Shutdown(); window.close(); } else return false;"   />]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<alt_enabled>Close module</alt_enabled>
+<confirm>Module window will be closed. Are you sure?</confirm>
+</params>
+</object>
+<object type="div" guid="0571449b_741d_428b_90ba_f279df5ef03a" id="OBJ_76" left="502" top="506" width="27" height="24" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_011_sound</template>
+<design_content><![CDATA[<img width="27" height="24" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\nav_011_sound\turquoise\btn_sound_on_0.gif"   />]]></design_content>
+<export_content><![CDATA[<div style="display:none;" id="OBJ_76_storage"  ><img border="0" id="OBJ_76_img_on_0" src="images/nav_011_sound/turquoise/btn_sound_on_0.gif" /><img border="0" id="OBJ_76_img_on_1" src="images/nav_011_sound/turquoise/btn_sound_on_1.gif" /><img border="0" id="OBJ_76_img_off_0" src="images/nav_011_sound/turquoise/btn_sound_off_0.gif" /><img border="0" id="OBJ_76_img_off_1" src="images/nav_011_sound/turquoise/btn_sound_off_1.gif" /></div><div style="display:inline; z-index:100; cursor: hand; cursor: pointer;" id="OBJ_76_sound_on"  ><img border="0" id="OBJ_76_simg_on" alt="Sound is on. Turn sound off." src="images/nav_011_sound/turquoise/btn_sound_on_0.gif" onClick="var oArgs=new Object; oArgs.pid='OBJ_76'; CallMethod('nav_011_sound','toggleSound',oArgs); return false;" onMouseOver="this.src=document.getElementById('OBJ_76_img_on_1').src; return false;" onMouseOut="this.src=document.getElementById('OBJ_76_img_on_0').src; return false;" /></div><div style="display:none; z-index:101; cursor: hand; cursor: pointer;" id="OBJ_76_sound_off"  ><img border="0" id="OBJ_76_simg_off" alt="Sound is off. Turn sound on." src="images/nav_011_sound/turquoise/btn_sound_off_0.gif" onClick="var oArgs=new Object; oArgs.pid='OBJ_76'; CallMethod('nav_011_sound','toggleSound',oArgs); return false;" onMouseOver="this.src=document.getElementById('OBJ_76_img_off_1').src; return false;" onMouseOut="this.src=document.getElementById('OBJ_76_img_off_0').src; return false;" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor>turquoise</tabcolor>
+<alt_on>Sound is on. Turn sound off.</alt_on>
+<alt_off>Sound is off. Turn sound on.</alt_off>
+</params>
+</object>
+<object type="div" guid="f712395b_4306_46a4_9819_5fb8191fb3f2" id="OBJ_77" left="534" top="505" width="27" height="25" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_013_restart</template>
+<design_content><![CDATA[<img width="27" height="25" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\nav_013_restart\turquoise\btn_restart_0.gif"   />]]></design_content>
+<export_content><![CDATA[<div style="display:none;" id="OBJ_77_storage"  ><img border="0" id="OBJ_77_img_en_0" src="images/nav_013_restart/turquoise/btn_restart_0.gif" /><img border="0" id="OBJ_77_img_en_1" src="images/nav_013_restart/turquoise/btn_restart_1.gif" /><img border="0" id="OBJ_77_img_en_2" src="images/nav_013_restart/turquoise/btn_restart_2.gif" /></div><div style="display:inline; z-index:100; cursor: hand; cursor: pointer;" id="OBJ_77_restart_en"  ><img border="0" id="OBJ_77_rimg_en" alt="Replay current slide" src="images/nav_013_restart/turquoise/btn_restart_0.gif" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_77'; CallMethod('nav_013_restart','Restart',oArgs); return false;" onMouseDown="this.src=document.getElementById('OBJ_77_img_en_2').src; return false;" onMouseOver="this.src=document.getElementById('OBJ_77_img_en_1').src; return false;" onMouseOut="this.src=document.getElementById('OBJ_77_img_en_0').src; return false;" /></div><div style="display:none; z-index:101; cursor: hand; cursor: pointer;" id="OBJ_77_restart_dis"  ><img border="0" id="OBJ_77_rimg_dis" alt="Access is not allowed" src="images/nav_013_restart/turquoise/btn_restart_3.gif" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor>turquoise</tabcolor>
+<alt_enabled>Replay current slide</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<nav_lock>yes</nav_lock>
+</params>
+</object>
+<object type="div" guid="b88d3c93_e7ad_4911_8701_5f3cedd1b7b0" id="OBJ_78" left="27" top="37" width="721" height="28" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_010_slidename</template>
+<design_content><![CDATA[<table width="100%" cellpadding="3" cellspacing="0" border="0"  ><tr><td align="center" bgcolor="#c7e9ef"><span id="wsSlideName" style="width:100%; font-family: Arial; font-style:normal; font-weight:bold; font-size: 18px; text-align:center; color: #2e95a7;">
+				Slide Name
+			</span></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" cellpadding="3" cellspacing="0" border="0"  ><tr><td align="center" bgcolor="#c7e9ef"><span id="OBJ_78_SlideName" style="width:100%; font-family: Arial; font-style:normal; font-weight:bold; font-size: 18px; text-align:center; color: #2e95a7;" /></td></tr></table>]]></export_content>
+<params>
+<sn_backcolor>#c7e9ef</sn_backcolor>
+<sn_textcolor>#2e95a7</sn_textcolor>
+<sn_font>Arial</sn_font>
+<sn_font_size>18</sn_font_size>
+<sn_font_weight>bold</sn_font_weight>
+<sn_font_style>normal</sn_font_style>
+<sn_textalign>center</sn_textalign>
+</params>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="a48246d7_05db_4d13_83a7_f8a8678ed42a" id="SLIDE_13" sid="18" masterid="SLIDE_12" name="Immune System" indent="0" infinite="1">
+<subslides>
+<subslide guid="8002bf1a_e1c8_4027_b2eb_75bd9b3bdd23" id="FRAME_14" dur="0">
+<objects>
+<object type="div" guid="fdea1de7_eabd_4581_9c32_f7677fd0d772" id="OBJ_15" left="31" top="69" width="709" height="422" display="frame" begin="0">
+<folder>
+Textboxes</folder>
+<template>
+002_textbox</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr height="13"><td align="right" valign="bottom" width="13"><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_tl.gif" width="13" height="13" /></td><td width="100%" background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_t.gif" /><td align="left" valign="bottom" width="13"><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_tr.gif" width="13" height="13" /></td></tr><tr><td background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_l.gif" /><td bgcolor="#FFFFFF"><div style="&#xA;					height: 100%;&#xA;					padding: 5px;&#xA;					overflow-x: hidden; overflow-y: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><FONT color=#ffffff size=7><FONT color=#ffffff size=7><SPAN style="COLOR: #000000"><FONT size=1 face=Galliard-Roman><FONT size=1 face=Galliard-Roman><FONT size=1 face=Galliard-Roman><FONT size=1 face=Galliard-Roman>
+<P align=left><B><SPAN style="FONT-SIZE: 24px">The immune system in a broad sense is a mechanism that allows a living organism to discriminate between</SPAN></B><B><SPAN style="FONT-SIZE: 24px">“self” and “non-self.”</SPAN></B></P>
+<P align=left><B><SPAN style="FONT-SIZE: 24px"></SPAN></B>&nbsp;</P>
+<P align=left><B><SPAN style="FONT-SIZE: 24px">&nbsp;Examples of immune systems occur in multicellular organisms as simple and ancient as sea sponges. </SPAN></B></P>
+<P align=left><B><SPAN style="FONT-SIZE: 24px">&nbsp;</P>
+<P align=left>In fact, complex multicellular life would be impossible without the ability to exclude external life from the internal environment.</SPAN></B></FONT></FONT></FONT></FONT></FONT></FONT><FONT color=#ffffff size=7><FONT color=#ffffff size=7></SPAN></P></FONT></FONT></SPAN></div></td><td background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_r.gif" /></tr><tr height="13"><td align="right" valign="top"><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bl.gif" width="13" height="13" /></td><td background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_b.gif" /><td><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_br.gif" width="13" height="13" /></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_15_tbl"  ><tr height="13"><td align="right" valign="bottom" width="13"><img src="images/002_textbox/violet/textbox_tl.gif" width="13" height="13" /></td><td width="100%" background="images/002_textbox/violet/textbox_bg_t.gif" /><td align="left" valign="bottom" width="13"><img src="images/002_textbox/violet/textbox_tr.gif" width="13" height="13" /></td></tr><tr><td background="images/002_textbox/violet/textbox_bg_l.gif" /><td bgcolor="#FFFFFF"><div id="OBJ_15_div" style="&#xA;					cursor:default;&#xA;					height: 100%;&#xA;					width: 100%;&#xA;					padding: 5px;&#xA;					overflow-x: hidden; overflow-y: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><FONT color=#ffffff size=7><FONT color=#ffffff size=7><SPAN style="COLOR: #000000"><FONT size=1 face=Galliard-Roman><FONT size=1 face=Galliard-Roman><FONT size=1 face=Galliard-Roman><FONT size=1 face=Galliard-Roman>
+<P align=left><B><SPAN style="FONT-SIZE: 24px">The immune system in a broad sense is a mechanism that allows a living organism to discriminate between</SPAN></B><B><SPAN style="FONT-SIZE: 24px">“self” and “non-self.”</SPAN></B></P>
+<P align=left><B><SPAN style="FONT-SIZE: 24px"></SPAN></B>&nbsp;</P>
+<P align=left><B><SPAN style="FONT-SIZE: 24px">&nbsp;Examples of immune systems occur in multicellular organisms as simple and ancient as sea sponges. </SPAN></B></P>
+<P align=left><B><SPAN style="FONT-SIZE: 24px">&nbsp;</P>
+<P align=left>In fact, complex multicellular life would be impossible without the ability to exclude external life from the internal environment.</SPAN></B></FONT></FONT></FONT></FONT></FONT></FONT><FONT color=#ffffff size=7><FONT color=#ffffff size=7></SPAN></P></FONT></FONT></SPAN></div></td><td background="images/002_textbox/violet/textbox_bg_r.gif" /></tr><tr height="13"><td align="right" valign="top"><img src="images/002_textbox/violet/textbox_bl.gif" width="13" height="13" /></td><td background="images/002_textbox/violet/textbox_bg_b.gif" /><td><img src="images/002_textbox/violet/textbox_br.gif" width="13" height="13" /></td></tr></table>]]></export_content>
+<params>
+<textbox_profile>violet</textbox_profile>
+<textbox_text>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;FONT color=#ffffff size=7&amp;gt;&amp;lt;FONT color=#ffffff size=7&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #000000&amp;quot;&amp;gt;&amp;lt;FONT size=1 face=Galliard-Roman&amp;gt;&amp;lt;FONT size=1 face=Galliard-Roman&amp;gt;&amp;lt;FONT size=1 face=Galliard-Roman&amp;gt;&amp;lt;FONT size=1 face=Galliard-Roman&amp;gt;
+&amp;lt;P align=left&amp;gt;&amp;lt;B&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 24px&amp;quot;&amp;gt;The immune system in a broad sense is a mechanism that allows a living organism to discriminate between&amp;lt;/SPAN&amp;gt;&amp;lt;/B&amp;gt;&amp;lt;B&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 24px&amp;quot;&amp;gt;“self” and “non-self.”&amp;lt;/SPAN&amp;gt;&amp;lt;/B&amp;gt;&amp;lt;/P&amp;gt;
+&amp;lt;P align=left&amp;gt;&amp;lt;B&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 24px&amp;quot;&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/B&amp;gt;&amp;amp;nbsp;&amp;lt;/P&amp;gt;
+&amp;lt;P align=left&amp;gt;&amp;lt;B&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 24px&amp;quot;&amp;gt;&amp;amp;nbsp;Examples of immune systems occur in multicellular organisms as simple and ancient as sea sponges. &amp;lt;/SPAN&amp;gt;&amp;lt;/B&amp;gt;&amp;lt;/P&amp;gt;
+&amp;lt;P align=left&amp;gt;&amp;lt;B&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 24px&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/P&amp;gt;
+&amp;lt;P align=left&amp;gt;In fact, complex multicellular life would be impossible without the ability to exclude external life from the internal environment.&amp;lt;/SPAN&amp;gt;&amp;lt;/B&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;FONT color=#ffffff size=7&amp;gt;&amp;lt;FONT color=#ffffff size=7&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</textbox_text>
+<textbox_margin>5</textbox_margin>
+<overflow>auto</overflow>
+<onclick_hide>no</onclick_hide>
+<typewriter>no</typewriter>
+<typewriter_speed>50</typewriter_speed>
+</params>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="aed0681d_8b16_4048_9829_11fc7c22d6f8" id="SLIDE_4" sid="19" masterid="SLIDE_12" name="Innate and adaptive immunity" indent="0" infinite="1">
+<subslides>
+<subslide guid="df992dfa_a0e8_4faa_9323_d4f15d1f8ab0" id="FRAME_4" dur="0">
+<objects>
+<object type="div" guid="96bef879_62fe_4dd6_8949_cb32352c096e" id="OBJ_16" left="31" top="120" width="382" height="143" display="frame" begin="0">
+<folder>
+Textboxes</folder>
+<template>
+002_textbox</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr height="13"><td align="right" valign="bottom" width="13"><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_tl.gif" width="13" height="13" /></td><td width="100%" background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_t.gif" /><td align="left" valign="bottom" width="13"><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_tr.gif" width="13" height="13" /></td></tr><tr><td background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_l.gif" /><td bgcolor="#FFFFFF"><div style="&#xA;					height: 100%;&#xA;					padding: 5px;&#xA;					overflow-x: hidden; overflow-y: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">
+<P align=left></P><B><I><FONT color=#ff0503 size=6><FONT color=#ff0503 size=6>
+<P><SPAN style="FONT-SIZE: 16px"><SPAN style="FONT-SIZE: 20px">Innate immunity:</SPAN></FONT></FONT><FONT color=#000065 size=6><FONT color=#000065 size=6><SPAN style="FONT-SIZE: 20px">always present (ready to attack); many pathogenic microbes have evolved to resist innate immunity</SPAN></SPAN></P></B></I></FONT></FONT></SPAN></div></td><td background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_r.gif" /></tr><tr height="13"><td align="right" valign="top"><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bl.gif" width="13" height="13" /></td><td background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_b.gif" /><td><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_br.gif" width="13" height="13" /></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_16_tbl"  ><tr height="13"><td align="right" valign="bottom" width="13"><img src="images/002_textbox/violet/textbox_tl.gif" width="13" height="13" /></td><td width="100%" background="images/002_textbox/violet/textbox_bg_t.gif" /><td align="left" valign="bottom" width="13"><img src="images/002_textbox/violet/textbox_tr.gif" width="13" height="13" /></td></tr><tr><td background="images/002_textbox/violet/textbox_bg_l.gif" /><td bgcolor="#FFFFFF"><div id="OBJ_16_div" style="&#xA;					cursor:default;&#xA;					height: 100%;&#xA;					width: 100%;&#xA;					padding: 5px;&#xA;					overflow-x: hidden; overflow-y: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">
+<P align=left></P><B><I><FONT color=#ff0503 size=6><FONT color=#ff0503 size=6>
+<P><SPAN style="FONT-SIZE: 16px"><SPAN style="FONT-SIZE: 20px">Innate immunity:</SPAN></FONT></FONT><FONT color=#000065 size=6><FONT color=#000065 size=6><SPAN style="FONT-SIZE: 20px">always present (ready to attack); many pathogenic microbes have evolved to resist innate immunity</SPAN></SPAN></P></B></I></FONT></FONT></SPAN></div></td><td background="images/002_textbox/violet/textbox_bg_r.gif" /></tr><tr height="13"><td align="right" valign="top"><img src="images/002_textbox/violet/textbox_bl.gif" width="13" height="13" /></td><td background="images/002_textbox/violet/textbox_bg_b.gif" /><td><img src="images/002_textbox/violet/textbox_br.gif" width="13" height="13" /></td></tr></table>]]></export_content>
+<params>
+<textbox_profile>violet</textbox_profile>
+<textbox_text>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;
+&amp;lt;P align=left&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;B&amp;gt;&amp;lt;I&amp;gt;&amp;lt;FONT color=#ff0503 size=6&amp;gt;&amp;lt;FONT color=#ff0503 size=6&amp;gt;
+&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 16px&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;Innate immunity:&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;FONT color=#000065 size=6&amp;gt;&amp;lt;FONT color=#000065 size=6&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;always present (ready to attack); many pathogenic microbes have evolved to resist innate immunity&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;/B&amp;gt;&amp;lt;/I&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</textbox_text>
+<textbox_margin>5</textbox_margin>
+<overflow>auto</overflow>
+<onclick_hide>no</onclick_hide>
+<typewriter>no</typewriter>
+<typewriter_speed>8</typewriter_speed>
+</params>
+</object>
+<object type="div" guid="23605ad4_a8e3_47d9_93a6_841020263ba2" id="OBJ_17" left="27" top="330" width="374" height="108" display="frame" begin="0">
+<folder>
+Textboxes</folder>
+<template>
+002_textbox</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr height="13"><td align="right" valign="bottom" width="13"><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_tl.gif" width="13" height="13" /></td><td width="100%" background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_t.gif" /><td align="left" valign="bottom" width="13"><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_tr.gif" width="13" height="13" /></td></tr><tr><td background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_l.gif" /><td bgcolor="#FFFFFF"><div style="&#xA;					height: 100%;&#xA;					padding: 5px;&#xA;					overflow-x: hidden; overflow-y: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">
+<P align=left></P><FONT color=#ff0503 size=6><FONT color=#ff0503 size=6><SPAN style="FONT-SIZE: 16px"><SPAN style="FONT-SIZE: 24px">
+<P align=left></P><B><I><FONT color=#ff0503 size=6><FONT color=#ff0503 size=6>
+<P><SPAN style="FONT-SIZE: 20px">Adaptive immunity:</FONT></FONT><FONT color=#000065 size=6><FONT color=#000065 size=6><SPAN style="FONT-SIZE: 20px">stimulated by exposure </FONT></FONT><FONT color=#2c2c89 size=6><FONT color=#2c2c89 size=6><SPAN style="FONT-SIZE: 20px">to </FONT></FONT><FONT color=#000065 size=6><FONT color=#000065 size=6><SPAN style="FONT-SIZE: 20px">microbe; more potent</SPAN></SPAN></SPAN></SPAN></P></B></I></FONT></FONT></SPAN></FONT></FONT><FONT color=#000065 size=6><FONT color=#000065 size=6></SPAN></FONT></FONT></SPAN></div></td><td background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_r.gif" /></tr><tr height="13"><td align="right" valign="top"><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bl.gif" width="13" height="13" /></td><td background="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_bg_b.gif" /><td><img src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\002_textbox\violet\textbox_br.gif" width="13" height="13" /></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_17_tbl"  ><tr height="13"><td align="right" valign="bottom" width="13"><img src="images/002_textbox/violet/textbox_tl.gif" width="13" height="13" /></td><td width="100%" background="images/002_textbox/violet/textbox_bg_t.gif" /><td align="left" valign="bottom" width="13"><img src="images/002_textbox/violet/textbox_tr.gif" width="13" height="13" /></td></tr><tr><td background="images/002_textbox/violet/textbox_bg_l.gif" /><td bgcolor="#FFFFFF"><div id="OBJ_17_div" style="&#xA;					cursor:default;&#xA;					height: 100%;&#xA;					width: 100%;&#xA;					padding: 5px;&#xA;					overflow-x: hidden; overflow-y: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">
+<P align=left></P><FONT color=#ff0503 size=6><FONT color=#ff0503 size=6><SPAN style="FONT-SIZE: 16px"><SPAN style="FONT-SIZE: 24px">
+<P align=left></P><B><I><FONT color=#ff0503 size=6><FONT color=#ff0503 size=6>
+<P><SPAN style="FONT-SIZE: 20px">Adaptive immunity:</FONT></FONT><FONT color=#000065 size=6><FONT color=#000065 size=6><SPAN style="FONT-SIZE: 20px">stimulated by exposure </FONT></FONT><FONT color=#2c2c89 size=6><FONT color=#2c2c89 size=6><SPAN style="FONT-SIZE: 20px">to </FONT></FONT><FONT color=#000065 size=6><FONT color=#000065 size=6><SPAN style="FONT-SIZE: 20px">microbe; more potent</SPAN></SPAN></SPAN></SPAN></P></B></I></FONT></FONT></SPAN></FONT></FONT><FONT color=#000065 size=6><FONT color=#000065 size=6></SPAN></FONT></FONT></SPAN></div></td><td background="images/002_textbox/violet/textbox_bg_r.gif" /></tr><tr height="13"><td align="right" valign="top"><img src="images/002_textbox/violet/textbox_bl.gif" width="13" height="13" /></td><td background="images/002_textbox/violet/textbox_bg_b.gif" /><td><img src="images/002_textbox/violet/textbox_br.gif" width="13" height="13" /></td></tr></table>]]></export_content>
+<params>
+<textbox_profile>violet</textbox_profile>
+<textbox_text>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;
+&amp;lt;P align=left&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;FONT color=#ff0503 size=6&amp;gt;&amp;lt;FONT color=#ff0503 size=6&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 16px&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 24px&amp;quot;&amp;gt;
+&amp;lt;P align=left&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;B&amp;gt;&amp;lt;I&amp;gt;&amp;lt;FONT color=#ff0503 size=6&amp;gt;&amp;lt;FONT color=#ff0503 size=6&amp;gt;
+&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;Adaptive immunity:&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;FONT color=#000065 size=6&amp;gt;&amp;lt;FONT color=#000065 size=6&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;stimulated by exposure &amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;FONT color=#2c2c89 size=6&amp;gt;&amp;lt;FONT color=#2c2c89 size=6&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;to &amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;FONT color=#000065 size=6&amp;gt;&amp;lt;FONT color=#000065 size=6&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;microbe; more potent&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;/B&amp;gt;&amp;lt;/I&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;FONT color=#000065 size=6&amp;gt;&amp;lt;FONT color=#000065 size=6&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</textbox_text>
+<textbox_margin>5</textbox_margin>
+<overflow>auto</overflow>
+<onclick_hide>no</onclick_hide>
+<typewriter>no</typewriter>
+<typewriter_speed>8</typewriter_speed>
+</params>
+</object>
+<object type="image" guid="92f2e53b_d7bc_47ea_8dea_56e799aac52e" id="IMG_4" left="465" top="77" width="256" height="218" display="frame" begin="0">
+<src>images\St.Petersburg-1.jpg</src>
+</object>
+<object type="image" guid="ef470f3c_9da2_4f3e_8f7a_85a6d6fbf838" id="IMG_5" left="425" top="307" width="322" height="181" display="frame" begin="0">
+<src>images\St.Petersburg-Adap.jpg</src>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="7e301405_ab3e_4384_ad95_c46001c82220" id="SLIDE_6" sid="21" masterid="SLIDE_12" name="Classes of lymphocytes" indent="0" infinite="1">
+<subslides>
+<subslide guid="35ff8239_179f_45e4_8d55_28f6932885c2" id="FRAME_6" dur="0">
+<objects>
+<object type="image" guid="f0708b34_b1af_4f4e_984a_dd03fcd3637d" id="IMG_6" left="31" top="65" width="712" height="430" display="frame" begin="0">
+<src>images\clip20210614.bmp</src>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="0ba275aa_6dd0_4eb4_979b_53af6f3745f9" id="SLIDE_7" sid="22" masterid="SLIDE_12" name="Clonal Selection Antibody-Producing Cells" indent="0" infinite="1">
+<subslides>
+<subslide guid="00a79f95_ed35_49db_a47b_fbcc610c8800" id="FRAME_7" dur="0">
+<objects>
+<object type="div" guid="e842cea7_3a1e_4919_a10c_ed7ba9e6ce1e" id="OBJ_18" left="32" top="68" width="716" height="430" display="frame" begin="0">
+<folder>
+Media</folder>
+<template>
+media_003_video</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr><td bgcolor="#000000" valign="middle" align="center"><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\media_003_video\wmp_nr.gif" /><div style="font-family: Verdana, Arial, sans-serif; font-size:10px; color: #FFFFFF; padding-top:10px; text-align: center">images/Clonal Selection Antibody-Producing Cells.mp4</div></td></tr><tr><td valign="bottom" bgcolor="#000000" style="background-image: url(C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\media_003_video\wmp_mini_bg.gif); background-repeat: repeat-x; background-position: bottom;"><table width="100%" height="45" border="0" cellpadding="0" cellspacing="0"><tr><td align="left"><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\media_003_video\wmp_mini_left.gif" /></td><td align="right"><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\media_003_video\wmp_mini_right.gif" /></td></tr></table></td></tr></table>]]></design_content>
+<export_content><![CDATA[<div id="OBJ_18_activex" style="display: none;"  ><object id="OBJ_18_wmpie" name="OBJ_18_wmpie" classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" type="application/x-oleobject" standby="Loading... Please wait..." width="100%" height="100%"><param name="AllowChangeDisplaySize" value="false" /><param name="AutoSize" value="true" /><param name="DisplaySize" value="false" /><param name="ShowStatusBar" value="false" /><param name="AutoRewind" value="false" /><param name="SendPlayStateChangeEvents" value="true" /><param name="URL" value="images/Clonal Selection Antibody-Producing Cells.mp4" /><param name="ShowControls" value="true" /><param name="uiMode" value="mini" /><param name="AutoStart" value="true" /><param name="windowlessVideo" value="false" /><embed id="OBJ_18_wmpembed" name="OBJ_18_wmpembed" SendPlayStateChangeEvents="1" pluginspage="http://www.microsoft.com/Windows/Downloads/Contents/Products/MediaPlayer/" type="application/x-mplayer2" standby="Loading... Please wait..." width="100%" height="100%" ShowControls="1" ShowStatusBar="0" AutoSize="0" EnableControls="0" DisplaySize="0" Loop="0" AutoStart="1" src="images/Clonal Selection Antibody-Producing Cells.mp4" /></object></div><div id="OBJ_18_ffactivex" style="display: none;"  ><object id="OBJ_18_wmpff" name="OBJ_18_wmpff" type="application/x-ms-wmp" standby="Loading... Please wait..." width="100%" height="100%" data="images/Clonal Selection Antibody-Producing Cells.mp4"><param name="AllowChangeDisplaySize" value="true" /><param name="AutoSize" value="true" /><param name="DisplaySize" value="false" /><param name="showstatusbar" value="false" /><param name="AutoRewind" value="true" /><param name="SendPlayStateChangeEvents" value="true" /><param name="URL" value="images/Clonal Selection Antibody-Producing Cells.mp4" /><param name="ShowControls" value="true" /><param name="uiMode" value="mini" /><param name="AutoStart" value="true" /><param name="windowlessVideo" value="false" /></object></div>]]></export_content>
+<params>
+<vfile>yes</vfile>
+<vURL>no</vURL>
+<video_uri>images/Clonal Selection Antibody-Producing Cells.mp4</video_uri>
+<video_url></video_url>
+<player>auto</player>
+<video_controls>mini</video_controls>
+<video_autostart>yes</video_autostart>
+<video_windowless>no</video_windowless>
+<video_invisible>no</video_invisible>
+</params>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="a4fee0b6_377b_4bee_843d_602baab3e244" id="SLIDE_5" sid="20" masterid="SLIDE_12" name="Quiz" indent="0" infinite="1">
+<subslides>
+<subslide guid="c4138471_f268_4714_9238_d02ddb877ce0" id="FRAME_5" dur="0">
+<objects>
+<object type="div" guid="00de4fa0_7fb0_4c51_bf5e_c6f7f3c20b02" id="OBJ_19" left="38" top="101" width="400" height="400" display="frame" begin="0">
+<folder>
+Questions</folder>
+<template>
+q_001_choice</template>
+<design_content><![CDATA[<table border="0" cellpadding="0" cellspacing="0"  ><tr><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/top_left_corner.gif" /></td><td style="height: 10px; background-image:url(C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/top_line.gif); background-repeat: repeat-x; background-position: top;" /><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/top_right_corner.gif" /></td></tr><tr><td style="width: 10px; background-image:url(C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/left_line.gif); background-repeat: repeat-y;  background-position: left;" /><td width="100%"><div style="background-color:#FFFFFF;"><table width="100%" border="0" cellpadding="4" cellspacing="0" style="background-color: #FFFFFF;"><tr><td width="100%" style="width:100%; padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#8C46C2;" id="OBJ_19_q_creditcontainer">Credited question</td></tr><tr><td width="100%" style="padding:4px; border: #DFBEF7 solid 2px; background-color: #EDDCFA" id="OBJ_19_q_text"><SPAN style="FONT-SIZE: 16px"><SPAN style="FONT-SIZE: 20px">Innate immunity is</SPAN></SPAN></td></tr><tr><td width="100%" style="padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#8C46C2;" id="OBJ_19_q_objective">Select correct variant</td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;"><tr><td><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFBEF7 solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/choice_spot_1_0.gif" /></td><td width="100%" style="padding: 6px"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><SPAN style="FONT-SIZE: 20px"><FONT color=#000065><SPAN style="FONT-SIZE: 20px">stimulated by exposure <FONT color=#2c2c89 size=6><FONT color=#2c2c89 size=6><SPAN style="FONT-SIZE: 20px">to </FONT></FONT><FONT color=#000065 size=6><FONT color=#000065 size=6><SPAN style="FONT-SIZE: 20px">microbe; more potent</SPAN></SPAN></SPAN></FONT></FONT></FONT></SPAN></SPAN></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFBEF7 solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/choice_spot_1_2.gif" /></td><td width="100%" style="padding: 6px"><SPAN style="FONT-SIZE: 20px"><FONT color=#000065>always present (ready to attack); many pathogenic microbes have evolved to resist innate immunity</FONT></SPAN></td></tr></table></td></tr></table><table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 2px; border: #DFBEF7 solid 2px; background-color: #EDDCFA"><tr><td style="width:50%; text-align:left; padding: 4px; height: 33px;"><span style="display:inline;"><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/button_check_0.gif" /></span></td><td align="center" style="text-align:center; height: 33px;"><div style="display:inline;" id="OBJ_19_q_attempts_container"><table cellspacing="0" cellpadding="2" border="0"><tr><td align="right" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">Attempts:</td><td align="left" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">1</td></tr></table></div></td><td align="right" width="50%" style="width:50%; text-align:right; padding: 4px; height: 33px;" /></tr></table></div></td><td style="width:10px; background-image:url(C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/right_line.gif); background-repeat: repeat-y;  background-position: right;" /></tr><tr><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/bottom_left_corner.gif" /></td><td style="background-image:url(C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/bottom_line.gif); background-repeat: repeat-x; background-position: bottom;" /><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_001_choice\curve/violet/bottom_right_corner.gif" /></td></tr></table>]]></design_content>
+<export_content><![CDATA[<div style="display:none"  ><img border="0" id="OBJ_19_q_choicespot_0" src="images/q_001_choice/curve/violet/choice_spot_1_0.gif" /><img border="0" id="OBJ_19_q_choicespot_2" src="images/q_001_choice/curve/violet/choice_spot_1_2.gif" /><img width="150" height="25" border="0" id="OBJ_19_q_b_check_0" src="images/q_001_choice/curve/violet/button_check_0.gif" /><img width="150" height="25" border="0" id="OBJ_19_q_b_check_1" src="images/q_001_choice/curve/violet/button_check_1.gif" /><table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_19_q_choiceitem" style="margin-top: 2px; border: #DFBEF7 solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="images/q_001_choice/curve/violet/choice_spot_1_0.gif" onclick="var oArgs = new Object; oArgs.pid = 'OBJ_19'; oArgs.oid = this.getAttribute('id'); CallMethod('q_001_choice','HandleClick',oArgs); return false;" /><img border="0" style="display: none" src="images/q_001_choice/curve/violet/choice_spot_1_2.gif" /></td><td width="100%" style="padding: 6px">%%var%%</td></tr></table></div><table border="0" cellpadding="0" cellspacing="0"  ><tr><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="images/q_001_choice/curve/violet/top_left_corner.gif" /></td><td style="height: 10px; background-image:url(images/q_001_choice/curve/violet/top_line.gif); background-repeat: repeat-x; background-position: top;" /><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="images/q_001_choice/curve/violet/top_right_corner.gif" /></td></tr><tr><td style="width: 10px; background-image:url(images/q_001_choice/curve/violet/left_line.gif); background-repeat: repeat-y;  background-position: left;" /><td width="100%"><div style="background-color: #FFFFFF;" id="OBJ_19_q_container"><table width="100%" border="0" cellpadding="4" cellspacing="0" style="background-color: #FFFFFF;"><tr><td width="100%" style="width:100%; padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#8C46C2;" id="OBJ_19_q_creditcontainer">Credited question</td></tr><tr><td width="100%" style="padding:4px; border: #DFBEF7 solid 2px; background-color: #EDDCFA" id="OBJ_19_q_text"><SPAN style="FONT-SIZE: 16px"><SPAN style="FONT-SIZE: 20px">Innate immunity is</SPAN></SPAN></td></tr><tr><td width="100%" style="padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#8C46C2;" id="OBJ_19_q_objective">Select correct variant</td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;"><tr><td id="OBJ_19_q_workarea" /></tr></table><table width="100%" cellpadding="0" cellspacing="0" border="0" id="OBJ_19_q_button_area" style="margin-top: 2px; border: #DFBEF7 solid 2px; background-color: #EDDCFA"><tr><td style="width:50%; text-align:left; padding: 4px; height: 33px;"><span style="display:none;" id="OBJ_19_q_b_check_container"><img style="cursor:hand; cursor:pointer;" border="0" alt="Submit answer" id="OBJ_19_q_b_check_button" src="images/q_001_choice/curve/violet/button_check_0.gif" onmouseover="this.src = document.getElementById('OBJ_19_q_b_check_1').src; return false;" onmouseout="this.src = document.getElementById('OBJ_19_q_b_check_0').src; return false;" onclick="var oArgs=new Object; oArgs.pid='OBJ_19'; CallMethod('q_001_choice','EvalAnswer',oArgs);return false;" /></span></td><td align="center" style="text-align:center; height: 33px;"><div style="display:inline;" id="OBJ_19_q_attempts_container"><table cellspacing="0" cellpadding="2" border="0"><tr><td align="right" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">Attempts:</td><td align="left" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; " id="OBJ_19_q_attempts_count">1</td></tr></table></div></td><td align="right" width="50%" style="width:50%; text-align:right; padding: 4px; height: 33px;" /></tr></table></div></td><td style="width:10px; background-image:url(images/q_001_choice/curve/violet/right_line.gif); background-repeat: repeat-y;  background-position: right;" /></tr><tr><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="images/q_001_choice/curve/violet/bottom_left_corner.gif" /></td><td style="background-image:url(images/q_001_choice/curve/violet/bottom_line.gif); background-repeat: repeat-x; background-position: bottom;" /><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="images/q_001_choice/curve/violet/bottom_right_corner.gif" /></td></tr></table>]]></export_content>
+<params>
+<q_question>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 16px&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;Innate immunity is&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_question>
+<q_variants>
+<item>
+<q_variant>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;&amp;lt;FONT color=#000065&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;stimulated by exposure &amp;lt;FONT color=#2c2c89 size=6&amp;gt;&amp;lt;FONT color=#2c2c89 size=6&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;to &amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;FONT color=#000065 size=6&amp;gt;&amp;lt;FONT color=#000065 size=6&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;microbe; more potent&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_variant>
+<q_right>no</q_right>
+</item>
+<item>
+<q_variant>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 20px&amp;quot;&amp;gt;&amp;lt;FONT color=#000065&amp;gt;always present (ready to attack); many pathogenic microbes have evolved to resist innate immunity&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_variant>
+<q_right>yes</q_right>
+</item>
+</q_variants>
+<q_shuffle>yes</q_shuffle>
+<q_att_auto>yes</q_att_auto>
+<q_attempts>1</q_attempts>
+<q_timer_switch>no</q_timer_switch>
+<q_timer>10</q_timer>
+<q_skip>no</q_skip>
+<q_skipper1>no</q_skipper1>
+<q_skipper2>yes</q_skipper2>
+<q_secondrun>no</q_secondrun>
+<q_scored>yes</q_scored>
+<q_weight>2.5</q_weight>
+<q_pointset_fixed>yes</q_pointset_fixed>
+<q_pointset_auto>no</q_pointset_auto>
+<q_scoreboards>
+<item>
+<q_board>total</q_board>
+</item>
+</q_scoreboards>
+<q_showright>no</q_showright>
+<q_fb_switch>no</q_fb_switch>
+<q_feedbackright>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Correct&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackright>
+<q_feedbackright_preview>no</q_feedbackright_preview>
+<q_feedbackwrong>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Incorrect&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackwrong>
+<q_feedbackwrong_preview>no</q_feedbackwrong_preview>
+<q_feedbackexhausted>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;No more attempts left&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackexhausted>
+<q_feedbackexhausted_preview>no</q_feedbackexhausted_preview>
+<q_feedbacktimeout>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Time is out&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbacktimeout>
+<q_feedbacktimeout_preview>no</q_feedbacktimeout_preview>
+<q_feedbackleft>100</q_feedbackleft>
+<q_feedbacktop>50</q_feedbacktop>
+<q_fb_timerswitch>no</q_fb_timerswitch>
+<q_fb_timer>3</q_fb_timer>
+<q_realskin>curve</q_realskin>
+<q_skin>violet</q_skin>
+<q_button>var1</q_button>
+<q_custombutton>no</q_custombutton>
+<q_abtn_0></q_abtn_0>
+<q_abtn_1></q_abtn_1>
+<q_sbtn_0></q_sbtn_0>
+<q_sbtn_1></q_sbtn_1>
+<q_customspot>no</q_customspot>
+<q_spot_0></q_spot_0>
+<q_spot_1></q_spot_1>
+<q_a_tooltip>Submit answer</q_a_tooltip>
+<q_s_tooltip>Skip question</q_s_tooltip>
+<q_credit_msg>Credited question</q_credit_msg>
+<q_nocredit_msg>Not credited question</q_nocredit_msg>
+<q_attempts_msg>Attempts:</q_attempts_msg>
+<q_timer_msg>Time limit:</q_timer_msg>
+<q_goal>Select correct variant</q_goal>
+<q_goal_right>CORRECT ANSWER</q_goal_right>
+<q_goal_last>LAST QUESTION STATE</q_goal_last>
+<q_goal_skip>QUESTION IS SKIPPED</q_goal_skip>
+<q_goal_failed>QUESTION IS SKIPPED AND FAILED</q_goal_failed>
+<q_continue_alert>Continued approach. Number of attempts may be decreased.</q_continue_alert>
+<q_browse_alert>This question is already answered. Recurring approach is not allowed.</q_browse_alert>
+<q_secondrun_confirm>This question is already answered. Press OK to clear stored results and start new approach. Press Cancel otherwise. </q_secondrun_confirm>
+<q_skip_confirm>Skipped question will be evaluated as failed. Are you sure?</q_skip_confirm>
+</params>
+</object>
+<object type="div" guid="92bd13b4_feeb_4088_a679_3a6024959b05" id="OBJ_20" left="438" top="104" width="306" height="261" display="frame" begin="0">
+<folder>
+Questions</folder>
+<template>
+q_005_text</template>
+<design_content><![CDATA[<table border="0" cellpadding="0" cellspacing="0"  ><tr><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_005_text\curve/violet/top_left_corner.gif" /></td><td style="height: 10px; background-image:url(C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_005_text\curve/violet/top_line.gif); background-repeat: repeat-x; background-position: top;" /><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_005_text\curve/violet/top_right_corner.gif" /></td></tr><tr><td style="width: 10px; background-image:url(C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_005_text\curve/violet/left_line.gif); background-repeat: repeat-y;  background-position: left;" /><td width="100%"><div style="background-color:#FFFFFF;"><table width="100%" border="0" cellpadding="4" cellspacing="0" style="background-color: #FFFFFF;"><tr><td width="100%" style="width:100%; padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#8C46C2;" id="OBJ_20_q_creditcontainer">Credited question</td></tr><tr><td width="100%" style="padding:4px; border: #DFBEF7 solid 2px; background-color: #EDDCFA" id="OBJ_20_q_text"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><SPAN style="FONT-SIZE: 16px; FONT-FAMILY: hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(48,53,69); FONT-STYLE: normal; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">A macromolecule that elicits an immune response by lymphocytes.</SPAN></SPAN></td></tr><tr><td width="100%" style="padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#8C46C2;" id="OBJ_20_q_objective">Enter text string</td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;"><tr><td><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFBEF7 solid 2px; background-color: #FFFFFF;"><tr><td width="50%" valign="middle" align="right" style="padding: 6px"><P><SPAN style="FONT-SIZE: 16px; FONT-FAMILY: hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(48,53,69); FONT-STYLE: normal; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">is called</SPAN></P></td><td width="50%" valign="middle" align="left" style="padding: 6px"><input type="text" style="width: 120px; height: 22px;font-family: Arial; color: #000000; background-color: #FFFFFF; font-size:12px; border-width: 2px; border-color: #DFBEF7; border-style: solid;" /></td></tr></table></td></tr></table><table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 2px; border: #DFBEF7 solid 2px; background-color: #EDDCFA"><tr><td style="width:50%; text-align:left; padding: 4px; height: 33px;"><span style="display:inline;"><img border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_005_text\curve/violet/button_check_0.gif" /></span></td><td align="center" style="text-align:center; height: 33px;"><div style="display:inline;" id="OBJ_20_q_attempts_container"><table cellspacing="0" cellpadding="2" border="0"><tr><td align="right" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">Attempts:</td><td align="left" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">1</td></tr></table></div></td><td align="right" width="50%" style="width:50%; text-align:right; padding: 4px; height: 33px;" /></tr></table></div></td><td style="width:10px; background-image:url(C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_005_text\curve/violet/right_line.gif); background-repeat: repeat-y;  background-position: right;" /></tr><tr><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_005_text\curve/violet/bottom_left_corner.gif" /></td><td style="background-image:url(C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_005_text\curve/violet/bottom_line.gif); background-repeat: repeat-x; background-position: bottom;" /><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="C:\Users\AbdallahMohamedSaadM\Desktop\Bio\2\images\q_005_text\curve/violet/bottom_right_corner.gif" /></td></tr></table>]]></design_content>
+<export_content><![CDATA[<div style="display:none"  ><img width="150" height="25" border="0" id="OBJ_20_q_b_check_0" src="images/q_005_text/curve/violet/button_check_0.gif" /><img width="150" height="25" border="0" id="OBJ_20_q_b_check_1" src="images/q_005_text/curve/violet/button_check_1.gif" /><table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_20_q_textitem" style="margin-top: 2px; border: #DFBEF7 solid 2px; background-color: #FFFFFF;"><tr><td width="50%" valign="middle" align="right" style="padding: 6px">%%exp%%</td><td width="50%" valign="middle" align="left" style="padding: 6px"><input type="text" style="width: NaNpx; height: 22px; font-family: Arial; color: #000000; background-color: #FFFFFF; font-size:12px; border-width: 2px; border-color: #DFBEF7; border-style: solid;" onkeyup="var oArgs=new Object; oArgs.pid='OBJ_20'; oArgs.iid=this.getAttribute('id'); oArgs.returnvalue = true; CallMethod('q_005_text','IfValue',oArgs);" /></td></tr></table></div><table border="0" cellpadding="0" cellspacing="0"  ><tr><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="images/q_005_text/curve/violet/top_left_corner.gif" /></td><td style="height: 10px; background-image:url(images/q_005_text/curve/violet/top_line.gif); background-repeat: repeat-x; background-position: top;" /><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="images/q_005_text/curve/violet/top_right_corner.gif" /></td></tr><tr><td style="width: 10px; background-image:url(images/q_005_text/curve/violet/left_line.gif); background-repeat: repeat-y;  background-position: left;" /><td width="100%"><div style="background-color: #FFFFFF;" id="OBJ_20_q_container"><table width="100%" border="0" cellpadding="4" cellspacing="0" style="background-color: #FFFFFF;"><tr><td width="100%" style="width:100%; padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#8C46C2;" id="OBJ_20_q_creditcontainer">Credited question</td></tr><tr><td width="100%" style="padding:4px; border: #DFBEF7 solid 2px; background-color: #EDDCFA" id="OBJ_20_q_text"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><SPAN style="FONT-SIZE: 16px; FONT-FAMILY: hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(48,53,69); FONT-STYLE: normal; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">A macromolecule that elicits an immune response by lymphocytes.</SPAN></SPAN></td></tr><tr><td width="100%" style="padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#8C46C2;" id="OBJ_20_q_objective">Enter text string</td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;"><tr><td id="OBJ_20_q_workarea" /></tr></table><table width="100%" cellpadding="0" cellspacing="0" border="0" id="OBJ_20_q_button_area" style="margin-top: 2px; border: #DFBEF7 solid 2px; background-color: #EDDCFA"><tr><td style="width:50%; text-align:left; padding: 4px; height: 33px;"><span style="display:none;" id="OBJ_20_q_b_check_container"><img style="cursor:hand; cursor:pointer;" border="0" alt="Submit answer" id="OBJ_20_q_b_check_button" src="images/q_005_text/curve/violet/button_check_0.gif" onmouseover="this.src = document.getElementById('OBJ_20_q_b_check_1').src; return false;" onmouseout="this.src = document.getElementById('OBJ_20_q_b_check_0').src; return false;" onclick="var oArgs=new Object; oArgs.pid='OBJ_20'; CallMethod('q_005_text','EvalAnswer',oArgs);return false;" /></span></td><td align="center" style="text-align:center; height: 33px;"><div style="display:inline;" id="OBJ_20_q_attempts_container"><table cellspacing="0" cellpadding="2" border="0"><tr><td align="right" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">Attempts:</td><td align="left" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; " id="OBJ_20_q_attempts_count">1</td></tr></table></div></td><td align="right" width="50%" style="width:50%; text-align:right; padding: 4px; height: 33px;" /></tr></table></div></td><td style="width:10px; background-image:url(images/q_005_text/curve/violet/right_line.gif); background-repeat: repeat-y;  background-position: right;" /></tr><tr><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="images/q_005_text/curve/violet/bottom_left_corner.gif" /></td><td style="background-image:url(images/q_005_text/curve/violet/bottom_line.gif); background-repeat: repeat-x; background-position: bottom;" /><td style="width: 10px; height:10px"><img width="10" height="10" border="0" src="images/q_005_text/curve/violet/bottom_right_corner.gif" /></td></tr></table>]]></export_content>
+<params>
+<q_question>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 16px; FONT-FAMILY: hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(48,53,69); FONT-STYLE: normal; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial&amp;quot;&amp;gt;A macromolecule that elicits an immune response by lymphocytes.&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_question>
+<q_variants>
+<item>
+<q_explanation>&lt;ietext&gt;&lt;text&gt;&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 16px; FONT-FAMILY: hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(48,53,69); FONT-STYLE: normal; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial&amp;quot;&amp;gt;is called&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_explanation>
+<q_conditions>
+<item>
+<q_condition>cn</q_condition>
+<q_variant>antigen</q_variant>
+<q_case>no</q_case>
+</item>
+</q_conditions>
+<q_width>10</q_width>
+</item>
+</q_variants>
+<q_attempts>1</q_attempts>
+<q_timer_switch>no</q_timer_switch>
+<q_timer>10</q_timer>
+<q_skip>no</q_skip>
+<q_skipper1>no</q_skipper1>
+<q_skipper2>yes</q_skipper2>
+<q_secondrun>no</q_secondrun>
+<q_scored>yes</q_scored>
+<q_weight>2.5</q_weight>
+<q_pointset_fixed>yes</q_pointset_fixed>
+<q_pointset_auto>no</q_pointset_auto>
+<q_scoreboards>
+<item>
+<q_board>total</q_board>
+</item>
+</q_scoreboards>
+<q_showright>yes</q_showright>
+<q_fb_switch>no</q_fb_switch>
+<q_feedbackright>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Correct&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackright>
+<q_feedbackright_preview>no</q_feedbackright_preview>
+<q_feedbackwrong>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Incorrect&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackwrong>
+<q_feedbackwrong_preview>no</q_feedbackwrong_preview>
+<q_feedbackexhausted>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;No more attempts left&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackexhausted>
+<q_feedbackexhausted_preview>no</q_feedbackexhausted_preview>
+<q_feedbacktimeout>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Time is out&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbacktimeout>
+<q_feedbacktimeout_preview>no</q_feedbacktimeout_preview>
+<q_feedbackleft>100</q_feedbackleft>
+<q_feedbacktop>50</q_feedbacktop>
+<q_fb_timerswitch>no</q_fb_timerswitch>
+<q_fb_timer>3</q_fb_timer>
+<q_realskin>curve</q_realskin>
+<q_skin>violet</q_skin>
+<input_border_style>solid</input_border_style>
+<input_border_width>2</input_border_width>
+<input_bg_color>#FFFFFF</input_bg_color>
+<input_font>Arial</input_font>
+<input_font_size>12</input_font_size>
+<input_font_color>#000000</input_font_color>
+<q_custombutton>no</q_custombutton>
+<q_abtn_0></q_abtn_0>
+<q_abtn_1></q_abtn_1>
+<q_sbtn_0></q_sbtn_0>
+<q_sbtn_1></q_sbtn_1>
+<q_a_tooltip>Submit answer</q_a_tooltip>
+<q_s_tooltip>Skip question</q_s_tooltip>
+<q_credit_msg>Credited question</q_credit_msg>
+<q_nocredit_msg>Not credited question</q_nocredit_msg>
+<q_attempts_msg>Attempts:</q_attempts_msg>
+<q_timer_msg>Time limit:</q_timer_msg>
+<q_goal>Enter text string</q_goal>
+<q_goal_right>CORRECT ANSWER</q_goal_right>
+<q_goal_last>LAST QUESTION STATE</q_goal_last>
+<q_goal_skip>QUESTION IS SKIPPED</q_goal_skip>
+<q_goal_failed>QUESTION IS SKIPPED AND FAILED</q_goal_failed>
+<q_continue_alert>Continued approach. Number of attempts may be decreased.</q_continue_alert>
+<q_browse_alert>This question is already answered. Recurring approach is not allowed.</q_browse_alert>
+<q_secondrun_confirm>This question is already answered. Press OK to clear stored results and start new approach. Press Cancel otherwise. </q_secondrun_confirm>
+<q_skip_confirm>Skipped question will be evaluated as failed. Are you sure?</q_skip_confirm>
+</params>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+</slides>
+<objectives>
+<objective id="total" name="This is automatically created module objective." cs="i" ss="u" scoremax="100" scoremin="0" module="yes"/>
+</objectives>
+<runtimechecks>
+<runtimecheck id="MSMP" check="0"/>
+<runtimecheck id="MMFP" check="0"/>
+<runtimecheck id="MMSW" check="0"/>
+<runtimecheck id="APQT" check="0"/>
+</runtimechecks>
+</module>
