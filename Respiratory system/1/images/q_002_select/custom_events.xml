@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+	<event>
+		<name>onQuestionDisplay</name>
+		<label>On Display Question</label>
+	</event>
+	<event>
+		<name>onChangeChoice</name>
+		<label>On Change Choice </label>
+	</event>
+	<event>
+		<name>onAttempt</name>
+		<label>On Attempt</label>
+	</event>
+	<event>
+		<name>onSuccess</name>
+		<label>On Success</label>
+	</event>
+	<event>
+		<name>onFailure</name>
+		<label>On Failure</label>
+	</event>
+	<event>
+		<name>onTimeout</name>
+		<label>On Time Out</label>
+	</event>
+	<event>
+		<name>onAttemptsLimit</name>
+		<label>On Attempts Limit</label>
+	</event>
+	<event>
+		<name>onSkipQuestion</name>
+		<label>On Skip Question</label>
+	</event>
+	<event>
+		<name>onQuestionEnd</name>
+		<label>On Question Answered</label>
+	</event>
+</events>
