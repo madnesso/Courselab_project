@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Module file, saved 13/06/2021 11:50:58 PM by bassiouny using CourseLab 090219 -->
+<module format="2.4 090219" rev="2" slideWidth="750" slideHeight="530" template="Standard\0001" file="F:\hesham\Bio\1\1.xml">
+<font face="Arial" style="1" size="12" color="#000000"/>
+<newids slide="SLIDE_" subslide="FRAME_" iebox="TXT_" image="IMG_" object="OBJ_" group="GROUP_"/>
+<import masterid="" left="0" top="0" width="0" height="0" commentsLeft="0" commentsTop="0" commentsWidth="0" commentsHeight="0" importComments="no" commentscolor="#000000" fiximages="yes"/>
+<runtime showsplash="yes" seqslides="no" preloadimages="yes" normalize="no"/>
+<nextidentity slide="9" subslide="0" object="0" group="0" mousepointer="0" actionbox="0"/>
+<moduleColors>
+<color>996600</color>
+<color>cc9900</color>
+<color>ffcc00</color>
+<color>ffff00</color>
+<color>ffff99</color>
+<color>ffdb9d</color>
+<color>ffcc66</color>
+<color>ff9933</color>
+<color>ff794b</color>
+<color>ff3300</color>
+<color>990000</color>
+<color>333366</color>
+<color>003399</color>
+<color>0066cc</color>
+<color>0083d7</color>
+<color>0099ff</color>
+<color>3e9ade</color>
+<color>99ccff</color>
+<color>b4e2ff</color>
+<color>deffff</color>
+<color>ffccff</color>
+<color>ccccff</color>
+<color>9999ff</color>
+<color>6666cc</color>
+<color>9999cc</color>
+<color>666699</color>
+<color>006600</color>
+<color>009900</color>
+<color>66cc33</color>
+<color>99ff66</color>
+<color>ccffcc</color>
+</moduleColors>
+<customColors>
+<color>000000</color>
+</customColors>
+<slides>
+<slide guid="df6e70e2_793f_4542_98d6_fd01b4bf5ad3" id="MASTER1" sid="1" master="1">
+<subslides>
+<subslide guid="31c63ca8_bc36_43fa_a052_475ea33518e8" id="FRAME_6" dur="0">
+<objects>
+<object type="image" guid="2abb69af_ac0f_4ab6_bd43_fbd9281e7634" id="IMG_6" left="0" top="497" width="750" height="33" display="slide" begin="0">
+<src>images\ws_bg_bottom_turq.gif</src>
+</object>
+<object type="image" guid="a6675b3d_ebf1_4717_b517_5f7ee36ca143" id="IMG_7" left="0" top="0" width="750" height="35" display="slide" begin="0">
+<src>images\ws_bg_top_turq.gif</src>
+</object>
+<object type="iebox" guid="5475a976_e732_4e62_bdbe_082287e599a0" id="TXT_7" left="68" top="3" width="628" height="25" display="slide" begin="0">
+<content><![CDATA[<ietext><text>&lt;TABLE height=&quot;100%&quot; cellSpacing=0 cellPadding=0 width=&quot;100%&quot; border=0&gt;
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD style=&quot;VERTICAL-ALIGN: middle; TEXT-ALIGN: center&quot;&gt;&lt;SPAN style=&quot;FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #89defa; FONT-FAMILY: &apos;Tahoma&apos;&quot;&gt;&lt;SPAN style=&quot;COLOR: #c4dafb&quot;&gt;&lt;SPAN style=&quot;COLOR: #c7e9ef&quot;&gt;Course Name&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;</text><hyperlinks></hyperlinks></ietext>]]></content>
+</object>
+<object type="iebox" guid="dd821f21_1159_41c7_8b65_0691a67b053a" id="TXT_8" left="1" top="2" width="85" height="27" display="slide" begin="0">
+<content><![CDATA[<ietext><text>&lt;P align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 10px&quot;&gt;&lt;SPAN style=&quot;COLOR: #ffffff&quot;&gt;&lt;SPAN style=&quot;COLOR: #fffffe&quot;&gt;Insert &lt;BR&gt;logo here&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/P&gt;</text><hyperlinks></hyperlinks></ietext>]]></content>
+</object>
+<object type="div" guid="5b1065c2_52ca_44d3_8202_baf1e0cbd146" id="OBJ_28" left="218" top="508" width="270" height="20" display="slide" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_001_selector</template>
+<design_content><![CDATA[<select style="width:100%; text-align:; font-style:normal;font-weight:normal;font-family:Tahoma; font-size:11px; color:#000000; background-color: #FFFFFF;"  ><option value="0" style="background-color: #FFFFFF;">
+		Slidename list
+	</option></select>]]></design_content>
+<export_content><![CDATA[<select onchange="var oArgs = new Object; oArgs.pid = 'OBJ_28'; CallMethod('nav_001_selector','JumpToSlide',oArgs); return false;" id="OBJ_28_selector" name="OBJ_28_selector" style="width:100%; text-align:; font-style:normal;font-weight:normal;font-family:Tahoma; font-size:11px; color:#000000; background-color: #FFFFFF;"  ><option>Slides list</option></select>]]></export_content>
+<params>
+<input_bg_color>#FFFFFF</input_bg_color>
+<input_font>Tahoma</input_font>
+<input_font_size>11</input_font_size>
+<input_font_weight>normal</input_font_weight>
+<input_font_style>normal</input_font_style>
+<input_font_color>#000000</input_font_color>
+<hierarchy>yes</hierarchy>
+<nav_lock>yes</nav_lock>
+<msg>You cannot jump to this slide until you visit previous slides</msg>
+</params>
+</object>
+<object type="div" guid="59381b7a_d1b0_4fc4_b359_fdee041f2e36" id="OBJ_29" left="93" top="508" width="118" height="20" display="slide" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_002_position</template>
+<design_content><![CDATA[<table width="100%" height="100%" cellpadding="2" cellspacing="0" border="0"  ><tr><td align="right" valign="middle" width="50%" nowrap="nowrap"><span id="position_text" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">POSITION:</span></td><td align="left" valign="middle" width="50%" nowrap="nowrap"><span id="position_current" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">
+					1
+				</span><span id="position_div" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">/</span><span id="position_total" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">
+					1
+				</span></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" height="100%" cellpadding="2" cellspacing="0" border="0"  ><tr><td align="right" valign="middle" width="50%" nowrap="nowrap"><span style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">POSITION:</span></td><td align="left" valign="middle" width="50%" nowrap="nowrap"><span id="OBJ_29_position_current" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">
+					1
+				</span><span style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">/</span><span id="OBJ_29_position_total" style="font-family: Tahoma; color: #2e95a7; font-weight: bold; font-style: normal; font-size: 11px;">
+					1
+				</span></td></tr></table>]]></export_content>
+<params>
+<position_text>POSITION:</position_text>
+<position_divider>/</position_divider>
+<position_font>Tahoma</position_font>
+<position_font_size>11</position_font_size>
+<position_font_weight>bold</position_font_weight>
+<position_font_style>normal</position_font_style>
+<position_font_color>#2e95a7</position_font_color>
+</params>
+</object>
+<object type="div" guid="c0a86b53_f55b_4d90_9f3a_56eefc2dbb3c" id="OBJ_30" left="0" top="37" width="25" height="460" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_003_contents</template>
+<design_content><![CDATA[<div style="position:absolute; z-index:1; top: 0px; left: 0px; width: 25px; height: 460px; padding-top: 0px;"  ><img border="0" src="F:\hesham\Bio\1\images\nav_003_contents\turquoise\tab_contents_0.gif" /></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none;"  ><img border="0" id="OBJ_30_icon_open" src="images/nav_003_contents/turquoise/f_open.gif" /><img border="0" id="OBJ_30_icon_closed" src="images/nav_003_contents/turquoise/f_closed.gif" /><img border="0" id="OBJ_30_icon_unvisited" src="images/nav_003_contents/turquoise/icon_unvisited.gif" /><img border="0" id="OBJ_30_icon_current" src="images/nav_003_contents/turquoise/icon_current.gif" /><img border="0" id="OBJ_30_icon_visited" src="images/nav_003_contents/turquoise/icon_visited.gif" /><img border="0" id="OBJ_30_tab_0" src="images/nav_003_contents/turquoise/tab_contents_0.gif" /><img border="0" id="OBJ_30_tab_1" src="images/nav_003_contents/turquoise/tab_contents_1.gif" /><img border="0" id="OBJ_30_tab_2" src="images/nav_003_contents/turquoise/tab_contents_2.gif" /></div><div id="OBJ_30_template_simple" style="display:none; margin: 1px; width:100%; border-top: #CCCCCC dotted 1px;"  ><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td valign="top" style="background-color: #FFFFFF; padding-top:2px; padding-bottom:2px; padding-left:2px; padding-right:2px"><img border="0" src="images/nav_003_contents/turquoise/icon_unvisited.gif" /></td><td valign="top" width="100%" style="font-family: Tahoma; font-size: 11px; background-color: #FFFFFF; padding-top:2px; padding-bottom: 2px; padding-left:0px; padding-right:4px">%%var%%</td></tr></table></div><div id="OBJ_30_template_hier" style="display:none; margin: 1px; width:100%; border-top: #CCCCCC dotted 1px;"  ><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td valign="top" style="padding-top:3px; padding-bottom: 2px; padding-left:2px; padding-right:2px"><img border="0" src="images/nav_003_contents/turquoise/f_open.gif" onclick="if(document.getElementById(this.getAttribute('childdiv')).style.display=='none') { document.getElementById(this.getAttribute('childdiv')).style.display = g_isMSIE ? 'inline' : 'block'; this.src = this.getAttribute('iconopen'); } else { document.getElementById(this.getAttribute('childdiv')).style.display = 'none'; this.src = this.getAttribute('iconclosed');} return false;" /></td><td valign="top" style="background-color: #FFFFFF; padding-top:3px; padding-bottom: 2px; padding-left:2px; padding-right:2px"><img border="0" src="images/nav_003_contents/turquoise/icon_unvisited.gif" /></td><td valign="top" width="100%" style="font-family: Tahoma; font-size: 11px; background-color: #FFFFFF; padding-top:3px; padding-bottom: 2px; padding-left:0px; padding-right:4px">%%var%%</td></tr></table></div><div id="OBJ_30_maincontainer" style="position:absolute; height: 460px; overflow: visible;"  ><div style="position: absolute; top: 0px; left: 0px; width: 475px; height: 460px;background-color:#95C8DB; "><div style="position: absolute; top: 2px; left: 2px; width: 471px; height: 456px;background-color: #FFFFFF;"><div id="OBJ_30_header" style="margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 30px; overflow: hidden; font-weight:bold; text-align:center;"><P align=center><SPAN style="FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial"><B>Contents</B></SPAN></P></div><div style="&#xA;					margin-left: 10px;&#xA;					margin-right:10px;&#xA;					width: 451px;&#xA;					height: 406px;&#xA;					padding: 0px;&#xA;					overflow: auto;&#xA;					" id="OBJ_30_contents">
+				...
+			</div></div></div><img border="0" id="OBJ_30_tabimg" src="images/nav_003_contents/turquoise/tab_contents_0.gif" style="cursor:hand; cursor:pointer; position: absolute; top: 0px; left:475px;" onMouseOver="MM_swapImage('OBJ_30_tabimg','',document.getElementById('OBJ_30_tab_1').src,1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_30_tabimg','',document.getElementById('OBJ_30_tab_2').src,1);return false;" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_30'; CallMethod('nav_003_contents','MoveTab',oArgs);return false;" alt="Contents" /><img border="0" id="OBJ_30_tabimg_disabled" src="images/nav_003_contents/turquoise/tab_contents_3.gif" style="display: none; position: absolute; top: 0px; left:475px;" alt="Access is not allowed" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor_user>#000000</tabcolor_user>
+<tab_width>500</tab_width>
+<tab_height>460</tab_height>
+<tabcolor>turquoise</tabcolor>
+<tab_offset>0</tab_offset>
+<alt_enabled>Contents</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<tabheader>&lt;ietext&gt;&lt;text&gt;&amp;lt;P align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial&amp;quot;&amp;gt;&amp;lt;B&amp;gt;Contents&amp;lt;/B&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabheader>
+<icon_default>yes</icon_default>
+<i1_img></i1_img>
+<i2_img></i2_img>
+<i3_img></i3_img>
+<hierarchy>yes</hierarchy>
+<hier_default>yes</hier_default>
+<h1_img></h1_img>
+<h2_img></h2_img>
+<nav_lock>yes</nav_lock>
+<msg>You cannot jump to this slide until you visit previous slides</msg>
+</params>
+</object>
+<object type="div" guid="7d57198a_448c_4d6f_88ec_d4806a98bda0" id="OBJ_31" left="0" top="37" width="25" height="460" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_004_help</template>
+<design_content><![CDATA[<div style="position:absolute; z-index:1; top: 0px; left: 0px; width: 25px; height: 460px; padding-top: 92px;"  ><img border="0" src="F:\hesham\Bio\1\images\nav_004_help\turquoise\tab_help_0.gif" /></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none;"  ><img border="0" id="OBJ_31_tab_0" src="images/nav_004_help/turquoise/tab_help_0.gif" /><img border="0" id="OBJ_31_tab_1" src="images/nav_004_help/turquoise/tab_help_1.gif" /><img border="0" id="OBJ_31_tab_2" src="images/nav_004_help/turquoise/tab_help_2.gif" /></div><div id="OBJ_31_maincontainer" style="position:absolute; height: 460px; overflow: visible;"  ><div style="position: absolute; top: 0px; left: 0px; width: 475px; height: 460px;background-color:#95C8DB; "><div style="position: absolute; top: 2px; left: 2px; width: 471px; height: 456px;background-color: #FFFFFF;"><div id="OBJ_31_header" style="position: absolute; top: 0px; left: 0px; margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 30px; overflow: hidden; font-weight: bold; text-align: center;"><P align=center><SPAN style="FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial"><B>Help</B></SPAN></P></div><div style="&#xA;					position: absolute;&#xA;					top: 30px;&#xA;					left: 0px;&#xA;					margin-left: 10px;&#xA;					margin-right:10px;&#xA;					width: 451px;&#xA;					height: 406px;&#xA;					padding: 0px;&#xA;					overflow: auto;&#xA;				" id="OBJ_31_contents"><TABLE style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" cellSpacing=0 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top align=middle width=15 bgColor=#f0f0f0><IMG height=7 src="images/contents_bullet_1.gif" width=7 vspace=4 border=0> </TD>
+<TD bgColor=#f0f0f0><B>eLearning Module Structure</B></TD></TR></TBODY></TABLE>
+<TABLE style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" cellSpacing=2 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<P>Learning Module is a fundamental building block of the Course hierarchy representing the set of author-structured Slides. During the learning process the learner is led from one Slide to another sequentially, which is default behavior. <BR>Slide (Interactive page) is the main building block of Learning Module. Slides are used by the author to place learning material, tests, and exercises. The order of Slide correlation is predefined by the author. </P></TD></TR></TBODY></TABLE>
+<TABLE style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" cellSpacing=0 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top align=middle width=15 bgColor=#f0f0f0><IMG height=7 src="images/contents_bullet_1.gif" width=7 vspace=4 border=0> </TD>
+<TD bgColor=#f0f0f0><B>Navigation</B></TD></TR></TBODY></TABLE>
+<TABLE style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" cellSpacing=2 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<P>eLearning Module navigation controls (the list may vary depending on author's design):</P>
+<UL>
+<LI>"Prev" and "Next" buttons enable to jump on previous and next slide correspondingly;&nbsp; 
+<LI>"Replay" button enable to start current slide&nbsp;once again from the beginning (it may be useful, for example, to repeat animation on slide etc.); 
+<LI>"Contents" tab or button with popup window displays the list of all slides and enables transition to any slide in the Module&nbsp;(if no&nbsp;restrictions were applied by author); 
+<LI>Navigation drop-down menu displays the list of all slides and enables transition to any slide in the Module&nbsp;(if no&nbsp;restrictions were applied by author); 
+<LI>"Sound On/Off" button&nbsp;toggles narration (if narration exists in the Module); 
+<LI>"Close Module" button closes Module window.</LI></UL>
+<P>Please note that some controls may become disabled while navigating. Usually it means that:</P>
+<UL>
+<LI>not all objects of&nbsp;current slide are displayed yet (depending on rules defined by author); 
+<LI>not all activities required from learner on current slide&nbsp;are finished (for example, navigation controls may be disabled until question is answered etc.); 
+<LI>navigation action is just impossible (for example, there's no slides previous to first one).</LI></UL>
+<P>&nbsp;</P></TD></TR></TBODY></TABLE></div></div></div><img border="0" id="OBJ_31_tabimg" src="images/nav_004_help/turquoise/tab_help_0.gif" style="cursor:hand; cursor:pointer; position: absolute; top: 92px; left:475px;" onMouseOver="MM_swapImage('OBJ_31_tabimg','',document.getElementById('OBJ_31_tab_1').src,1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_31_tabimg','',document.getElementById('OBJ_31_tab_2').src,1);return false;" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_31'; CallMethod('nav_004_help','MoveTab',oArgs);return false;" alt="Help" /><img border="0" id="OBJ_31_tabimg_disabled" src="images/nav_004_help/turquoise/tab_help_3.gif" style="display: none; position: absolute; top: 92px; left:475px;" alt="Access is not allowed" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor_user>#000000</tabcolor_user>
+<tab_width>500</tab_width>
+<tab_height>460</tab_height>
+<tabcolor>turquoise</tabcolor>
+<tab_offset>92</tab_offset>
+<alt_enabled>Help</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<tabheader>&lt;ietext&gt;&lt;text&gt;&amp;lt;P align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial&amp;quot;&amp;gt;&amp;lt;B&amp;gt;Help&amp;lt;/B&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabheader>
+<tabtext>&lt;ietext&gt;&lt;text&gt;&amp;lt;TABLE style=&amp;quot;FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif&amp;quot; cellSpacing=0 cellPadding=4 width=&amp;quot;100%&amp;quot; border=0&amp;gt;
+&amp;lt;TBODY&amp;gt;
+&amp;lt;TR&amp;gt;
+&amp;lt;TD vAlign=top align=middle width=15 bgColor=#f0f0f0&amp;gt;&amp;lt;IMG height=7 src=&amp;quot;[!MODULE_IMAGES]contents_bullet_1.gif&amp;quot; width=7 vspace=4 border=0&amp;gt; &amp;lt;/TD&amp;gt;
+&amp;lt;TD bgColor=#f0f0f0&amp;gt;&amp;lt;B&amp;gt;eLearning Module Structure&amp;lt;/B&amp;gt;&amp;lt;/TD&amp;gt;&amp;lt;/TR&amp;gt;&amp;lt;/TBODY&amp;gt;&amp;lt;/TABLE&amp;gt;
+&amp;lt;TABLE style=&amp;quot;FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif&amp;quot; cellSpacing=2 cellPadding=4 width=&amp;quot;100%&amp;quot; border=0&amp;gt;
+&amp;lt;TBODY&amp;gt;
+&amp;lt;TR&amp;gt;
+&amp;lt;TD&amp;gt;
+&amp;lt;P&amp;gt;Learning Module is a fundamental building block of the Course hierarchy representing the set of author-structured Slides. During the learning process the learner is led from one Slide to another sequentially, which is default behavior. &amp;lt;BR&amp;gt;Slide (Interactive page) is the main building block of Learning Module. Slides are used by the author to place learning material, tests, and exercises. The order of Slide correlation is predefined by the author. &amp;lt;/P&amp;gt;&amp;lt;/TD&amp;gt;&amp;lt;/TR&amp;gt;&amp;lt;/TBODY&amp;gt;&amp;lt;/TABLE&amp;gt;
+&amp;lt;TABLE style=&amp;quot;FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif&amp;quot; cellSpacing=0 cellPadding=4 width=&amp;quot;100%&amp;quot; border=0&amp;gt;
+&amp;lt;TBODY&amp;gt;
+&amp;lt;TR&amp;gt;
+&amp;lt;TD vAlign=top align=middle width=15 bgColor=#f0f0f0&amp;gt;&amp;lt;IMG height=7 src=&amp;quot;[!MODULE_IMAGES]contents_bullet_1.gif&amp;quot; width=7 vspace=4 border=0&amp;gt; &amp;lt;/TD&amp;gt;
+&amp;lt;TD bgColor=#f0f0f0&amp;gt;&amp;lt;B&amp;gt;Navigation&amp;lt;/B&amp;gt;&amp;lt;/TD&amp;gt;&amp;lt;/TR&amp;gt;&amp;lt;/TBODY&amp;gt;&amp;lt;/TABLE&amp;gt;
+&amp;lt;TABLE style=&amp;quot;FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif&amp;quot; cellSpacing=2 cellPadding=4 width=&amp;quot;100%&amp;quot; border=0&amp;gt;
+&amp;lt;TBODY&amp;gt;
+&amp;lt;TR&amp;gt;
+&amp;lt;TD&amp;gt;
+&amp;lt;P&amp;gt;eLearning Module navigation controls (the list may vary depending on author&amp;apos;s design):&amp;lt;/P&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;LI&amp;gt;&amp;quot;Prev&amp;quot; and &amp;quot;Next&amp;quot; buttons enable to jump on previous and next slide correspondingly;&amp;amp;nbsp; 
+&amp;lt;LI&amp;gt;&amp;quot;Replay&amp;quot; button enable to start current slide&amp;amp;nbsp;once again from the beginning (it may be useful, for example, to repeat animation on slide etc.); 
+&amp;lt;LI&amp;gt;&amp;quot;Contents&amp;quot; tab or button with popup window displays the list of all slides and enables transition to any slide in the Module&amp;amp;nbsp;(if no&amp;amp;nbsp;restrictions were applied by author); 
+&amp;lt;LI&amp;gt;Navigation drop-down menu displays the list of all slides and enables transition to any slide in the Module&amp;amp;nbsp;(if no&amp;amp;nbsp;restrictions were applied by author); 
+&amp;lt;LI&amp;gt;&amp;quot;Sound On/Off&amp;quot; button&amp;amp;nbsp;toggles narration (if narration exists in the Module); 
+&amp;lt;LI&amp;gt;&amp;quot;Close Module&amp;quot; button closes Module window.&amp;lt;/LI&amp;gt;&amp;lt;/UL&amp;gt;
+&amp;lt;P&amp;gt;Please note that some controls may become disabled while navigating. Usually it means that:&amp;lt;/P&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;LI&amp;gt;not all objects of&amp;amp;nbsp;current slide are displayed yet (depending on rules defined by author); 
+&amp;lt;LI&amp;gt;not all activities required from learner on current slide&amp;amp;nbsp;are finished (for example, navigation controls may be disabled until question is answered etc.); 
+&amp;lt;LI&amp;gt;navigation action is just impossible (for example, there&amp;apos;s no slides previous to first one).&amp;lt;/LI&amp;gt;&amp;lt;/UL&amp;gt;
+&amp;lt;P&amp;gt;&amp;amp;nbsp;&amp;lt;/P&amp;gt;&amp;lt;/TD&amp;gt;&amp;lt;/TR&amp;gt;&amp;lt;/TBODY&amp;gt;&amp;lt;/TABLE&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabtext>
+<nav_lock>no</nav_lock>
+</params>
+</object>
+<object type="div" guid="1e482f4e_1c9b_4f50_9de1_9172c76ce7dd" id="OBJ_32" left="0" top="37" width="25" height="460" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_005_calc</template>
+<design_content><![CDATA[<div style="position:absolute; z-index:1; top: 0px; left: 0px; width: 25px; height: 460px; padding-top: 184px;"  ><img border="0" src="F:\hesham\Bio\1\images\nav_005_calc\turquoise\tab_calc_0.gif" /></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none;"  ><img border="0" id="OBJ_32_tab_0" src="images/nav_005_calc/turquoise/tab_calc_0.gif" /><img border="0" id="OBJ_32_tab_1" src="images/nav_005_calc/turquoise/tab_calc_1.gif" /><img border="0" id="OBJ_32_tab_2" src="images/nav_005_calc/turquoise/tab_calc_2.gif" /></div><div id="OBJ_32_maincontainer" style="position:absolute; height: 460px; overflow: visible;"  ><div style="position: absolute; top: 0px; left: 0px; width: 475px; height: 460px;background-color:#95C8DB; "><div style="position: absolute; top: 2px; left: 2px; width: 471px; height: 456px;background-color: #FFFFFF;"><div id="OBJ_32_header" style="position: absolute; top: 0px; left: 0px; margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 30px; overflow: hidden; font-weight: bold; text-align: center;"><P align=center><SPAN style="FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial"><B>Calculator</B></SPAN></P></div><div style="&#xA;					position: absolute;&#xA;					top: 30px;&#xA;					left: 0px;&#xA;					margin-top:20px;&#xA;					margin-left: 10px;&#xA;					margin-right:10px;&#xA;					width: 451px;&#xA;					height: 406px;&#xA;					padding: 0px;&#xA;					text-align: center;&#xA;				" id="OBJ_32_CalcDiv"><table border="0" cellpadding="2" cellspacing="0" style="background-color: #AAAAAA; border:#999999 groove 8px;" align="center"><tr><td colspan="6" style="padding: 5px; border-bottom: #999999 double 3px; background-color: #CCCCCC;"><div style="width: 270px; padding-right:4px; text-align:right; font-family: arial,helvetica,geneve,sans-serif; font-size:24px; font-weight: bold; color: #FF0000; background: #000000; border-color: #999999; border: solid 2 px;" id="OBJ_32_display">
+								0
+							</div></td></tr><tr><td style="padding-left: 5px; padding-top: 5px;"><div style="width:50px; height:32px; font-family:verdana,tahoma,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #00CC33; background-color: #666666; border-color: #999999; border: solid 2 px; text-align:center;" id="OBJ_32_mem_ind" /></td><td colspan="3" align="right" style="padding-top: 5px;"><input value="Backspace" type="button" style="width:100px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:12px; font-weight: bold; color: #FFFFFF; background: #CC3333; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='Backspace'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-top: 5px;"><input value=" CE " type="button" style="width:40px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #CC3333; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='CE'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-right: 5px; padding-top: 5px;"><input value="  C  " type="button" style="width:40px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #CC3333; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='C'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td></tr><tr><td style="padding-left: 5px;"><input value=" MC " type="button" name="MC" style="width:50px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #009933; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='MC'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td><input value="  7  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='7'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  8  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='8'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  9  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='9'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  /  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='divide'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-right: 5px;"><input value=" ^ " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='power'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td></tr><tr><td style="padding-left: 5px;"><input value=" MR " type="button" style="width:50px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #009933; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='MR'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td><input value="  4  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='4'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  5  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='5'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  6  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='6'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  x " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='mult'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-right: 5px;"><input value=" % " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='percent'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td></tr><tr><td style="padding-left: 5px;"><input value=" M- " type="button" style="width:50px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #009933; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='MS'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td><input value="  1  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='1'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  2  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='2'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  3  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='3'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td><input value="  -  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='minus'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-right: 5px;"><input value="1/x" type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='recip'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td></tr><tr><td style="padding-left: 5px;"><input value=" M+ " type="button" style="width:50px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #009933; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='M+'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-bottom: 5px;"><input value="  0  " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='0'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td style="padding-bottom: 5px;"><input value="  .   " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:18px; font-weight: bold; color: #000000; background: #EEEEEE; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='.'; CallMethod('nav_005_calc','calcInput',oArgs);return false;" /></td><td style="padding-bottom: 5px;"><input value="+/-" type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='negate'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-bottom: 5px;"><input value=" + " type="button" style="width:40px; height:32px; font-family:verdana,arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #666666; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='plus'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td><td style="padding-right: 5px; padding-bottom: 5px;"><input value="  =  " type="button" style="width:40px; height:32px; font-family:arial,helvetica,geneve,sans-serif; font-size:14px; font-weight: bold; color: #FFFFFF; background: #0033CC; border-color: #999999; border: solid 2 px;" onclick="var oArgs=new Object; oArgs.pid='OBJ_32'; oArgs.btn='equal'; CallMethod('nav_005_calc','actionKey',oArgs);return false;" /></td></tr></table></div><div id="OBJ_32_exp" style="position: absolute; top: 315px; left: 0px; margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 130px; overflow: hidden;"><SPAN style="FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000"></SPAN></div></div></div><img border="0" id="OBJ_32_tabimg" src="images/nav_005_calc/turquoise/tab_calc_0.gif" style="cursor:hand; cursor:pointer; position: absolute; top: 184px; left:475px;" onMouseOver="MM_swapImage('OBJ_32_tabimg','',document.getElementById('OBJ_32_tab_1').src,1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_32_tabimg','',document.getElementById('OBJ_32_tab_2').src,1);return false;" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_32'; CallMethod('nav_005_calc','MoveTab',oArgs);return false;" alt="Calculator" /><img border="0" id="OBJ_32_tabimg_disabled" src="images/nav_005_calc/turquoise/tab_calc_3.gif" style="display: none; position: absolute; top: 184px; left:475px;" alt="Access is not allowed" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor_user>#000000</tabcolor_user>
+<tab_width>500</tab_width>
+<tab_height>460</tab_height>
+<tabcolor>turquoise</tabcolor>
+<tab_offset>184</tab_offset>
+<alt_enabled>Calculator</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<tabheader>&lt;ietext&gt;&lt;text&gt;&amp;lt;P align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial&amp;quot;&amp;gt;&amp;lt;B&amp;gt;Calculator&amp;lt;/B&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabheader>
+<tabtext>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabtext>
+<nav_lock>no</nav_lock>
+</params>
+</object>
+<object type="div" guid="27a0a558_0187_40cb_a3f4_17fbbb2b6d7a" id="OBJ_33" left="0" top="37" width="25" height="460" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_006_settings</template>
+<design_content><![CDATA[<div style="position:absolute; z-index:1; top: 0px; left: 0px; width: 25px; height: 460px; padding-top: 276px;"  ><img border="0" src="F:\hesham\Bio\1\images\nav_006_settings\turquoise\tab_sett_0.gif" /></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none;"  ><img border="0" id="OBJ_33_tab_0" src="images/nav_006_settings/turquoise/tab_sett_0.gif" /><img border="0" id="OBJ_33_tab_1" src="images/nav_006_settings/turquoise/tab_sett_1.gif" /><img border="0" id="OBJ_33_tab_2" src="images/nav_006_settings/turquoise/tab_sett_2.gif" /><img border="0" id="OBJ_33_obj_u" alt="Success status: unknown" src="images/nav_006_settings/obj_unknown.gif" /><img border="0" id="OBJ_33_obj_n" alt="Completion status: not attempted" src="images/nav_006_settings/obj_unknown.gif" /><img border="0" id="OBJ_33_obj_i" alt="Completion status: incomplete" src="images/nav_006_settings/obj_incomplete.gif" /><img border="0" id="OBJ_33_obj_c" alt="Completion status: completed" src="images/nav_006_settings/obj_completed.gif" /><img border="0" id="OBJ_33_obj_f" alt="Success status: failed" src="images/nav_006_settings/obj_failed.gif" /><img border="0" id="OBJ_33_obj_p" alt="Success status: succeeded" src="images/nav_006_settings/obj_passed.gif" /></div><div id="OBJ_33_maincontainer" style="position:absolute; height: 460px; overflow: visible;"  ><div style="position: absolute; top: 0px; left: 0px; width: 475px; height: 460px;background-color:#95C8DB; "><div style="position: absolute; top: 2px; left: 2px; width: 471px; height: 456px;background-color: #FFFFFF;"><div id="OBJ_33_header" style="position: absolute; top: 0px; left: 0px; margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 30px; overflow: hidden; font-weight: bold; text-align: center;"><P align=center><SPAN style="FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial">Settings</SPAN></P></div><div style="&#xA;					position: absolute;&#xA;					top: 30px;&#xA;					left: 0px;&#xA;					margin-left: 10px;&#xA;					margin-right:10px;&#xA;					width: 451px;&#xA;					height: 406px;&#xA;					padding: 0px;&#xA;					overflow: auto;&#xA;				" id="OBJ_33_contents"><div id="OBJ_33_mainobjdiv" style="display: none; width: 421px;"><div style="padding-top: 6px; padding-bottom: 6px" id="OBJ_33_mainobjheader">Module state</div><table cellpadding="0" cellspacing="0" border="0"><tr><td id="OBJ_33_mainobjss" style="border-top: #E0E0E0 1px solid; border-bottom: #E0E0E0 1px solid; font-family: Verdana, Arial, sans-serif; font-size: 11px"><img border="0" id="OBJ_33_mainobj_ss_img" alt="Success status: unknown" src="images/nav_006_settings/obj_unknown.gif" /></td><td id="OBJ_33_mainobjcs" style="border-top: #E0E0E0 1px solid; border-bottom: #E0E0E0 1px solid; font-family: Verdana, Arial, sans-serif; font-size: 11px"><img border="0" id="OBJ_33_mainobj_cs_img" alt="Completion status: not attempted" src="images/nav_006_settings/obj_unknown.gif" /></td><td width="100%" id="OBJ_33_mainobjname" style="padding-left: 6px; padding-right: 6px; padding-top: 2px; padding-bottom: 2px; border-top: #E0E0E0 1px solid; border-bottom: #E0E0E0 1px solid; font-family: Verdana, Arial, sans-serif; font-size: 11px; font-weight: bold;">
+									.
+								</td><td nowrap="nowrap" id="OBJ_33_mainobjscore" style="padding-left: 6px; padding-right: 6px; border-top: #E0E0E0 1px solid; border-bottom: #E0E0E0 1px solid; font-family: Verdana, Arial, sans-serif; font-size: 11px">
+									.
+								</td></tr></table></div><spacer width="1" height="1" /></div></div></div><img border="0" id="OBJ_33_tabimg" src="images/nav_006_settings/turquoise/tab_sett_0.gif" style="cursor:hand; cursor:pointer; position: absolute; top: 276px; left:475px;" onMouseOver="MM_swapImage('OBJ_33_tabimg','',document.getElementById('OBJ_33_tab_1').src,1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_33_tabimg','',document.getElementById('OBJ_33_tab_2').src,1);return false;" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_33'; CallMethod('nav_006_settings','MoveTab',oArgs);return false;" alt="Settings" /><img border="0" id="OBJ_33_tabimg_disabled" src="images/nav_006_settings/turquoise/tab_sett_3.gif" style="display: none; position: absolute; top: 276px; left:475px;" alt="Access is not allowed" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor_user>#000000</tabcolor_user>
+<tab_width>500</tab_width>
+<tab_height>460</tab_height>
+<tabcolor>turquoise</tabcolor>
+<tab_offset>276</tab_offset>
+<alt_enabled>Settings</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<tabheader>&lt;ietext&gt;&lt;text&gt;&amp;lt;P align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial&amp;quot;&amp;gt;Settings&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabheader>
+<tabtext>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabtext>
+<nav_lock>no</nav_lock>
+<show_settings>yes</show_settings>
+<show_stat>yes</show_stat>
+<show_mainobj>yes</show_mainobj>
+<show_allobj>no</show_allobj>
+<show_desc>no</show_desc>
+<mainobj_text>Module state</mainobj_text>
+<allobj_text>Module objectives state</allobj_text>
+<obj_standard>yes</obj_standard>
+<on_img></on_img>
+<oi_img></oi_img>
+<oc_img></oc_img>
+<ou_img></ou_img>
+<op_img></op_img>
+<of_img></of_img>
+<score_style>scaled</score_style>
+<obj_header>Objective</obj_header>
+<obj_score>Score</obj_score>
+<obj_cs>Completion status:</obj_cs>
+<obj_ss>Success status:</obj_ss>
+<status_u>unknown</status_u>
+<status_n>not attempted</status_n>
+<status_i>incomplete</status_i>
+<status_c>completed</status_c>
+<status_p>succeeded</status_p>
+<status_f>failed</status_f>
+</params>
+</object>
+<object type="div" guid="cb44b260_74cc_4fb9_a47b_f2c437d46b31" id="OBJ_34" left="0" top="37" width="25" height="460" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_007_about</template>
+<design_content><![CDATA[<div style="position:absolute; z-index:1; top: 0px; left: 0px; width: 25px; height: 460px; padding-top: 368px;"  ><img border="0" src="F:\hesham\Bio\1\images\nav_007_about\turquoise\tab_about_0.gif" /></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none;"  ><img border="0" id="OBJ_34_tab_0" src="images/nav_007_about/turquoise/tab_about_0.gif" /><img border="0" id="OBJ_34_tab_1" src="images/nav_007_about/turquoise/tab_about_1.gif" /><img border="0" id="OBJ_34_tab_2" src="images/nav_007_about/turquoise/tab_about_2.gif" /></div><div id="OBJ_34_maincontainer" style="position:absolute; height: 460px; overflow: visible;"  ><div style="position: absolute; top: 0px; left: 0px; width: 475px; height: 460px;background-color:#95C8DB; "><div style="position: absolute; top: 2px; left: 2px; width: 471px; height: 456px;background-color: #FFFFFF;"><div id="OBJ_34_header" style="position: absolute; top: 0px; left: 0px; margin-left: 10px; margin-right:10px; margin-top:10px; width: 451px; height: 30px; overflow: hidden; font-weight: bold; text-align: center;"><P align=center><SPAN style="FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial"><B>About</B></SPAN></P></div><div style="&#xA;					position: absolute;&#xA;					top: 30px;&#xA;					left: 0px;&#xA;					margin-left: 10px;&#xA;					margin-right:10px;&#xA;					width: 451px;&#xA;					height: 406px;&#xA;					padding: 0px;&#xA;					overflow: auto;&#xA;				" id="OBJ_34_contents"><TABLE cellSpacing=0 cellPadding=5 width=435 border=0>
+<TBODY>
+<TR>
+<TD style="FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif">
+<P>This eLearning Module was developed using <A href="http://www.courselab.com/" target=_blank>CourseLab® eLearning Content Editor</A>. Depending on purpose this Module can be used in any AICC- or SCORM-compatible Learning Management System, on CD etc.</P>
+<P align=center><B>Hardware/Software requirements</B></P>
+<P>This eLearning Module can be played on any PC that meets requirements below:</P>
+<UL>
+<LI>Operating System - Microsoft® Windows 98, Me, NT, 2000, XP (limited support of Windows 95)&nbsp;or Linux; 
+<LI>Internet Browser - Microsoft® Internet Explorer 5.0 (Internet Explorer 5.5 or higher recommended), Mozilla FireFox 1.0 or higher, Netscape® 7.2 or higher; 
+<LI>JavaScript enabled; 
+<LI>XML support enabled (Microsoft® XML Parser 3.0 or higher recommended for Internet Explorer).</LI></UL>
+<P>Additional requirements may be applied depending on media types used by Module author. </P></TD></TR></TBODY></TABLE></div></div></div><img border="0" id="OBJ_34_tabimg" src="images/nav_007_about/turquoise/tab_about_0.gif" style="cursor:hand; cursor:pointer; position: absolute; top: 368px; left:475px;" onMouseOver="MM_swapImage('OBJ_34_tabimg','', document.getElementById('OBJ_34_tab_1').src,1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_34_tabimg','',document.getElementById('OBJ_34_tab_2').src,1);return false;" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_34'; CallMethod('nav_007_about','MoveTab',oArgs);return false;" alt="About" /><img border="0" id="OBJ_34_tabimg_disabled" src="images/nav_007_about/turquoise/tab_about_3.gif" style="display: none; position: absolute; top: 368px; left:475px;" alt="Access is not allowed" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor_user>#000000</tabcolor_user>
+<tab_width>500</tab_width>
+<tab_height>460</tab_height>
+<tabcolor>turquoise</tabcolor>
+<tab_offset>368</tab_offset>
+<alt_enabled>About</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<tabheader>&lt;ietext&gt;&lt;text&gt;&amp;lt;P align=center&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial&amp;quot;&amp;gt;&amp;lt;B&amp;gt;About&amp;lt;/B&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabheader>
+<tabtext>&lt;ietext&gt;&lt;text&gt;&amp;lt;TABLE cellSpacing=0 cellPadding=5 width=435 border=0&amp;gt;
+&amp;lt;TBODY&amp;gt;
+&amp;lt;TR&amp;gt;
+&amp;lt;TD style=&amp;quot;FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif&amp;quot;&amp;gt;
+&amp;lt;P&amp;gt;This eLearning Module was developed using &amp;lt;A href=&amp;quot;http://www.courselab.com/&amp;quot; target=_blank&amp;gt;CourseLab® eLearning Content Editor&amp;lt;/A&amp;gt;. Depending on purpose this Module can be used in any AICC- or SCORM-compatible Learning Management System, on CD etc.&amp;lt;/P&amp;gt;
+&amp;lt;P align=center&amp;gt;&amp;lt;B&amp;gt;Hardware/Software requirements&amp;lt;/B&amp;gt;&amp;lt;/P&amp;gt;
+&amp;lt;P&amp;gt;This eLearning Module can be played on any PC that meets requirements below:&amp;lt;/P&amp;gt;
+&amp;lt;UL&amp;gt;
+&amp;lt;LI&amp;gt;Operating System - Microsoft® Windows 98, Me, NT, 2000, XP (limited support of Windows 95)&amp;amp;nbsp;or Linux; 
+&amp;lt;LI&amp;gt;Internet Browser - Microsoft® Internet Explorer 5.0 (Internet Explorer 5.5 or higher recommended), Mozilla FireFox 1.0 or higher, Netscape® 7.2 or higher; 
+&amp;lt;LI&amp;gt;JavaScript enabled; 
+&amp;lt;LI&amp;gt;XML support enabled (Microsoft® XML Parser 3.0 or higher recommended for Internet Explorer).&amp;lt;/LI&amp;gt;&amp;lt;/UL&amp;gt;
+&amp;lt;P&amp;gt;Additional requirements may be applied depending on media types used by Module author. &amp;lt;/P&amp;gt;&amp;lt;/TD&amp;gt;&amp;lt;/TR&amp;gt;&amp;lt;/TBODY&amp;gt;&amp;lt;/TABLE&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</tabtext>
+<nav_lock>no</nav_lock>
+</params>
+</object>
+<object type="div" guid="a97c930a_baac_49cc_8103_0a65ca0baf68" id="OBJ_35" left="672" top="504" width="75" height="25" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_008_next</template>
+<design_content><![CDATA[<img width="75" height="25" border="0" src="F:\hesham\Bio\1\images\nav_008_next\ws_next_0.gif"   />]]></design_content>
+<export_content><![CDATA[<div style="display:inline; z-index:10; cursor: hand; cursor: pointer;" id="OBJ_35_NextEnabled"  ><img width="75" height="25" border="0" id="OBJ_35_NextImg" alt="Next Slide" src="images/nav_008_next/ws_next_0.gif" onMouseOver="MM_swapImage('OBJ_35_NextImg','','images/nav_008_next//ws_next_1.gif',1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onMouseDown="MM_swapImage('OBJ_35_NextImg','','images/nav_008_next//ws_next_3.gif',1);return false;" onClick="var oArgs = new Object; oArgs.pid ='OBJ_35'; CallMethod('nav_008_next', 'JumpNext', oArgs); return false;" onMouseUp="MM_swapImgRestore(); return false;" /></div><div style="display:none; z-index:11;" id="OBJ_35_NextPushed"  ><img width="75" height="25" border="0" id="OBJ_35_Next_3" src="images/nav_008_next/ws_next_3.gif" /></div><div style="display:none; z-index:11;" id="OBJ_35_NextDisabled"  ><img width="75" height="25" border="0" id="OBJ_35_Next_2" src="images/nav_008_next/ws_next_2.gif" alt="Access is not allowed" /></div><div style="display:none;" id="OBJ_35_NextHighlighted"  ><img width="75" height="25" border="0" id="OBJ_35_Next_1" src="images/nav_008_next/ws_next_1.gif" /></div><div style="display:none;" id="OBJ_35_NextNormal"  ><img width="74" height="25" border="0" id="OBJ_35_Next_0" src="images/nav_008_next/ws_next_0.gif" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<alt_enabled>Next Slide</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<nav_lock>yes</nav_lock>
+</params>
+</object>
+<object type="div" guid="b10d2df1_9c88_45c7_b6ed_e452636efa4e" id="OBJ_36" left="591" top="504" width="75" height="25" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_009_prev</template>
+<design_content><![CDATA[<img width="75" height="25" border="0" alt="Next" src="F:\hesham\Bio\1\images\nav_009_prev\ws_prev_0.gif"   />]]></design_content>
+<export_content><![CDATA[<div style="display:inline; z-index:10; cursor: hand; cursor: pointer;" id="OBJ_36_PrevEnabled"  ><img width="75" height="25" border="0" id="OBJ_36_PrevImg" alt="Next Slide" src="images/nav_009_prev/ws_prev_0.gif" onMouseOver="MM_swapImage('OBJ_36_PrevImg','','images/nav_009_prev/ws_prev_1.gif',1);return false;" onMouseOut="MM_swapImgRestore(); return false;" onClick="var oArgs = new Object; oArgs.pid ='OBJ_36'; CallMethod('nav_009_prev', 'JumpPrev', oArgs); return false;" onMouseDown="MM_swapImage('OBJ_36_PrevImg','','images/nav_009_prev/ws_prev_3.gif',1);return false;" onMouseUp="MM_swapImgRestore(); return false;" /></div><div id="OBJ_36_PrevPushed" style="display:none; z-index:11;"  ><img width="75" height="25" border="0" id="OBJ_36_Prev_3" src="images/nav_009_prev/ws_prev_3.gif" /></div><div id="OBJ_36_PrevDisabled" style="display:none; z-index:11;"  ><img width="75" height="25" border="0" id="OBJ_36_Prev_2" src="images/nav_009_prev/ws_prev_2.gif" alt="Access is not allowed" /></div><div style="display:none;" id="OBJ_36_PrevHighlighted"  ><img width="75" height="25" border="0" id="OBJ_36_Prev_1" src="images/nav_009_prev/ws_prev_1.gif" /></div><div style="display:none;" id="OBJ_36_PrevNormal"  ><img width="75" height="25" border="0" id="OBJ_36_Prev_0" src="images/nav_009_prev/ws_prev_0.gif" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<alt_enabled>Next Slide</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<nav_lock>yes</nav_lock>
+</params>
+</object>
+<object type="div" guid="61e8fcd1_e00c_44a2_ae3e_e170267851e0" id="OBJ_37" left="722" top="7" width="20" height="20" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_012_close</template>
+<design_content><![CDATA[<img width="20" height="20" border="0" src="F:\hesham\Bio\1\images\nav_012_close\ws_close_0.gif"   />]]></design_content>
+<export_content><![CDATA[<div style="display:none;" id="OBJ_37_storage"  ><img border="0" id="OBJ_37_img_0" src="images/nav_012_close/ws_close_0.gif" /><img border="0" id="OBJ_37_img_1" src="images/nav_012_close/ws_close_1.gif" /><img border="0" id="OBJ_37_img_2" src="images/nav_012_close/ws_close_2.gif" /></div><img border="0" style="display:inline; z-index:100; cursor:hand; cursor: pointer;" id="OBJ_37_CloseImg" src="images/nav_012_close/ws_close_0.gif" alt="Close module" onMouseOver="this.src=document.getElementById('OBJ_37_img_1').src;return false;" onMouseOut="this.src=document.getElementById('OBJ_37_img_0').src; return false;" onMouseDown="this.src=document.getElementById('OBJ_37_img_2').src;return false;" onMouseUp="if(confirm('Module window will be closed. Are you sure?')) { Shutdown(); window.close(); } else return false;"   />]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<alt_enabled>Close module</alt_enabled>
+<confirm>Module window will be closed. Are you sure?</confirm>
+</params>
+</object>
+<object type="div" guid="329f5eaa_fe08_47db_b7c4_70cec33f484c" id="OBJ_38" left="502" top="506" width="27" height="24" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_011_sound</template>
+<design_content><![CDATA[<img width="27" height="24" border="0" src="F:\hesham\Bio\1\images\nav_011_sound\turquoise\btn_sound_on_0.gif"   />]]></design_content>
+<export_content><![CDATA[<div style="display:none;" id="OBJ_38_storage"  ><img border="0" id="OBJ_38_img_on_0" src="images/nav_011_sound/turquoise/btn_sound_on_0.gif" /><img border="0" id="OBJ_38_img_on_1" src="images/nav_011_sound/turquoise/btn_sound_on_1.gif" /><img border="0" id="OBJ_38_img_off_0" src="images/nav_011_sound/turquoise/btn_sound_off_0.gif" /><img border="0" id="OBJ_38_img_off_1" src="images/nav_011_sound/turquoise/btn_sound_off_1.gif" /></div><div style="display:inline; z-index:100; cursor: hand; cursor: pointer;" id="OBJ_38_sound_on"  ><img border="0" id="OBJ_38_simg_on" alt="Sound is on. Turn sound off." src="images/nav_011_sound/turquoise/btn_sound_on_0.gif" onClick="var oArgs=new Object; oArgs.pid='OBJ_38'; CallMethod('nav_011_sound','toggleSound',oArgs); return false;" onMouseOver="this.src=document.getElementById('OBJ_38_img_on_1').src; return false;" onMouseOut="this.src=document.getElementById('OBJ_38_img_on_0').src; return false;" /></div><div style="display:none; z-index:101; cursor: hand; cursor: pointer;" id="OBJ_38_sound_off"  ><img border="0" id="OBJ_38_simg_off" alt="Sound is off. Turn sound on." src="images/nav_011_sound/turquoise/btn_sound_off_0.gif" onClick="var oArgs=new Object; oArgs.pid='OBJ_38'; CallMethod('nav_011_sound','toggleSound',oArgs); return false;" onMouseOver="this.src=document.getElementById('OBJ_38_img_off_1').src; return false;" onMouseOut="this.src=document.getElementById('OBJ_38_img_off_0').src; return false;" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor>turquoise</tabcolor>
+<alt_on>Sound is on. Turn sound off.</alt_on>
+<alt_off>Sound is off. Turn sound on.</alt_off>
+</params>
+</object>
+<object type="div" guid="f0112722_82ca_4632_8abd_ddc081ff7024" id="OBJ_39" left="534" top="505" width="27" height="25" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_013_restart</template>
+<design_content><![CDATA[<img width="27" height="25" border="0" src="F:\hesham\Bio\1\images\nav_013_restart\turquoise\btn_restart_0.gif"   />]]></design_content>
+<export_content><![CDATA[<div style="display:none;" id="OBJ_39_storage"  ><img border="0" id="OBJ_39_img_en_0" src="images/nav_013_restart/turquoise/btn_restart_0.gif" /><img border="0" id="OBJ_39_img_en_1" src="images/nav_013_restart/turquoise/btn_restart_1.gif" /><img border="0" id="OBJ_39_img_en_2" src="images/nav_013_restart/turquoise/btn_restart_2.gif" /></div><div style="display:inline; z-index:100; cursor: hand; cursor: pointer;" id="OBJ_39_restart_en"  ><img border="0" id="OBJ_39_rimg_en" alt="Replay current slide" src="images/nav_013_restart/turquoise/btn_restart_0.gif" onMouseUp="var oArgs=new Object; oArgs.pid='OBJ_39'; CallMethod('nav_013_restart','Restart',oArgs); return false;" onMouseDown="this.src=document.getElementById('OBJ_39_img_en_2').src; return false;" onMouseOver="this.src=document.getElementById('OBJ_39_img_en_1').src; return false;" onMouseOut="this.src=document.getElementById('OBJ_39_img_en_0').src; return false;" /></div><div style="display:none; z-index:101; cursor: hand; cursor: pointer;" id="OBJ_39_restart_dis"  ><img border="0" id="OBJ_39_rimg_dis" alt="Access is not allowed" src="images/nav_013_restart/turquoise/btn_restart_3.gif" /></div>]]></export_content>
+<params>
+<standard>yes</standard>
+<n1_img></n1_img>
+<n2_img></n2_img>
+<n3_img></n3_img>
+<n4_img></n4_img>
+<tabcolor>turquoise</tabcolor>
+<alt_enabled>Replay current slide</alt_enabled>
+<alt_disabled>Access is not allowed</alt_disabled>
+<nav_lock>yes</nav_lock>
+</params>
+</object>
+<object type="div" guid="a10c5297_ede6_47ce_8125_703bcf308c51" id="OBJ_40" left="27" top="37" width="721" height="28" display="frame" begin="0">
+<folder>
+Navigation</folder>
+<template>
+nav_010_slidename</template>
+<design_content><![CDATA[<table width="100%" cellpadding="3" cellspacing="0" border="0"  ><tr><td align="center" bgcolor="#bbcdfb"><span id="wsSlideName" style="width:100%; font-family: Arial; font-style:normal; font-weight:bold; font-size: 18px; text-align:center; color: #2e95a7;">
+				Slide Name
+			</span></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" cellpadding="3" cellspacing="0" border="0"  ><tr><td align="center" bgcolor="#bbcdfb"><span id="OBJ_40_SlideName" style="width:100%; font-family: Arial; font-style:normal; font-weight:bold; font-size: 18px; text-align:center; color: #2e95a7;" /></td></tr></table>]]></export_content>
+<params>
+<sn_backcolor>#bbcdfb</sn_backcolor>
+<sn_textcolor>#2e95a7</sn_textcolor>
+<sn_font>Arial</sn_font>
+<sn_font_size>18</sn_font_size>
+<sn_font_weight>bold</sn_font_weight>
+<sn_font_style>normal</sn_font_style>
+<sn_textalign>center</sn_textalign>
+</params>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="762d66cb_ea94_4bed_8dcf_c422bba2e746" id="SLIDE_4" sid="2" splash="1">
+<subslides>
+<subslide guid="79f6d1b2_e54e_4781_bd8b_41af17553f73" id="FRAME_3" dur="0">
+<objects>
+<object type="image" guid="a8f6b447_acb0_48ea_b9da_c9edee2366dc" id="IMG_3" left="0" top="0" width="750" height="530" display="slide" begin="0">
+<src>images\back.jpg</src>
+</object>
+<object type="div" guid="a7511110_d986_4008_95a4_da4a2279fc4c" id="OBJ_11" left="535" top="461" width="166" height="31" display="slide" begin="0">
+<folder>
+Splash</folder>
+<template>
+splash_button_go</template>
+<design_content><![CDATA[<img border="0" width="166" height="31" src="F:\hesham\Bio\1\images\splash_button_go\button_start1.gif"   />]]></design_content>
+<export_content><![CDATA[<img border="0" width="166" height="31" style="cursor:hand;cursor:pointer;" src="images/splash_button_go/button_start1.gif" onclick="this.src = 'images/splash_button_go/button_wait.gif'; StartModule();return false;"   />]]></export_content>
+<params>
+<standard>yes</standard>
+<wait_img></wait_img>
+<go_img></go_img>
+</params>
+</object>
+<object type="iebox" guid="de77546b_2d75_4ffd_9a22_6f1931ab8321" id="TXT_3" left="205" top="369" width="356" height="25" display="slide" begin="0">
+<content><![CDATA[<ietext><text>&lt;P&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 12px&quot;&gt;&lt;B&gt;&lt;SPAN style=&quot;COLOR: #fffffe&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 18px&quot;&gt;Insert Course and/or Module Name&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/B&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/P&gt;</text><hyperlinks></hyperlinks></ietext>]]></content>
+</object>
+<object type="iebox" guid="e1d168b0_52aa_4bb0_9222_d8e2f0616bdb" id="TXT_4" left="496" top="35" width="221" height="23" display="slide" begin="0">
+<content><![CDATA[<ietext><text>&lt;P align=center&gt;&lt;SPAN style=&quot;FONT-FAMILY: Arial&quot;&gt;&lt;SPAN style=&quot;FONT-SIZE: 12px&quot;&gt;Insert Logo&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/P&gt;</text><hyperlinks></hyperlinks></ietext>]]></content>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="0c164ff5_b892_4cdb_b0d7_1a7ac12aef4e" id="SLIDE_1" sid="3" masterid="MASTER1" name="The Respiratory System" indent="0" infinite="1">
+<subslides>
+<subslide guid="bb2331c7_0313_467d_8cda_7286fa68b978" id="FRAME_5" dur="0">
+<objects>
+<object type="image" guid="11fa5538_f7f8_4518_8b2e_e05c577aca8e" id="IMG_4" left="380" top="67" width="358" height="213" display="frame" begin="0">
+<src>images\maxresdefault.jpg</src>
+</object>
+<object type="div" guid="0f697149_1b7c_4c8f_a9e2_ef11be174e0b" id="OBJ_15" left="663" top="75" width="84" height="62" display="frame" begin="0">
+<folder>
+Textboxes</folder>
+<template>
+001_textbox</template>
+<design_content><![CDATA[<div style="position:absolute; width:90%;&#xA;		&#xA;				background-color: #FEFFFF; layer-background-color: #FEFFFF; border-width: 3px; border-style: double; border-color: #CCCCCC; left: 15px; top: 15px; &#xA;			&#xA;			filter:alpha(opacity=40); -moz-opacity: 0.40; opacity: 0.40;&#xA;		"  ><table width="100%" cellspacing="0" border="0" cellpadding="20"><tr><td valign="top"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">Fig 1</SPAN></P>
+<P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"></SPAN>&nbsp;</P></td></tr></table></div><div style="position:absolute; width:90%; background-color: #FEFFFF; layer-background-color: #FEFFFF; border-width: 3px; border-style: double; border-color: #CCCCCC; left: 10px; top: 10px; &#xA;		"  ><table width="100%" cellspacing="0" border="0" cellpadding="20"><tr><td valign="top"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">Fig 1</SPAN></P>
+<P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"></SPAN>&nbsp;</P></td></tr></table></div>]]></design_content>
+<export_content><![CDATA[<div id="OBJ_15_L0" style="position:absolute; width:90%;&#xA;		&#xA;				background-color: #FEFFFF; layer-background-color: #FEFFFF; border-width: 3px; border-style: double; border-color: #CCCCCC; left: 15px; top: 15px; &#xA;			&#xA;			filter:alpha(opacity=40); -moz-opacity: 0.40; opacity: 0.40;&#xA;		"  ><table width="100%" cellspacing="0" border="0" id="OBJ_15_L0_table" cellpadding="20"><tr><td valign="top" id="OBJ_15_sText"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">Fig 1</SPAN></P>
+<P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"></SPAN>&nbsp;</P></td></tr></table></div><div id="OBJ_15_L1" style="position:absolute; width:90%; background-color: #FEFFFF; layer-background-color: #FEFFFF; border-width: 3px; border-style: double; border-color: #CCCCCC; left: 10px; top: 10px; &#xA;		"  ><table width="100%" cellspacing="0" border="0" id="OBJ_15_L1_table" cellpadding="20"><tr><td valign="top" id="OBJ_15_rText"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">Fig 1</SPAN></P>
+<P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"></SPAN>&nbsp;</P></td></tr></table></div>]]></export_content>
+<params>
+<box_text>&lt;ietext&gt;&lt;text&gt;&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;Fig 1&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;
+&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;amp;nbsp;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</box_text>
+<box_margin>20</box_margin>
+<box_backcolor>#FEFFFF</box_backcolor>
+<box_borderstyle>double</box_borderstyle>
+<box_bordercolor>#CCCCCC</box_bordercolor>
+<box_borderwidth>3</box_borderwidth>
+<box_opacity>100</box_opacity>
+<box_shadow>yes</box_shadow>
+<box_shadow_x>5</box_shadow_x>
+<box_shadow_y>5</box_shadow_y>
+<box_shadow_opacity>40</box_shadow_opacity>
+<box_shadow_copy>yes</box_shadow_copy>
+<box_shadow_backcolor>#CCCCCC</box_shadow_backcolor>
+<box_shadow_borderstyle>solid</box_shadow_borderstyle>
+<box_shadow_bordercolor>#CCCCCC</box_shadow_bordercolor>
+<box_shadow_borderwidth>3</box_shadow_borderwidth>
+<typewriter>no</typewriter>
+<typewriter_speed>8</typewriter_speed>
+</params>
+</object>
+<object type="div" guid="fd2f9b56_6ee1_464c_be6b_b9a065e4663c" id="OBJ_16" left="41" top="73" width="366" height="109" display="frame" begin="0">
+<folder>
+Textboxes</folder>
+<template>
+003_textbox</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr><td style="padding: 5px; background-color: #ffff00;&#xA;				border-color: #ff0080; border-width: 5px; border-style: solid;"><div style="height: 100%;&#xA;					overflow-x: hidden; overflow-y: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><FONT size=3 face="Times New Roman"><SPAN style="COLOR: #003399">The <B>respiratory system</B> (also <B>respiratory apparatus</B>, <B>ventilatory system</B>) is a biological system </FONT><FONT size=3 face="Times New Roman">consisting of specific&nbsp;organs (shown in fig 1)</FONT><FONT size=3 face="Times New Roman">&nbsp;and structures used for&nbsp;gas exchanges</FONT><FONT size=3 face="Times New Roman">.</SPAN></FONT></SPAN></div></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_16_tbl"  ><tr><td width="100%" id="OBJ_16_td" style="padding: 5px; background-color: #ffff00;&#xA;				 border-color: #ff0080; border-width: 5px; border-style: solid;"><div id="OBJ_16_div" style="cursor:default; width: 100%;&#xA;					overflow: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><FONT size=3 face="Times New Roman"><SPAN style="COLOR: #003399">The <B>respiratory system</B> (also <B>respiratory apparatus</B>, <B>ventilatory system</B>) is a biological system </FONT><FONT size=3 face="Times New Roman">consisting of specific&nbsp;organs (shown in fig 1)</FONT><FONT size=3 face="Times New Roman">&nbsp;and structures used for&nbsp;gas exchanges</FONT><FONT size=3 face="Times New Roman">.</SPAN></FONT></SPAN></div></td></tr></table>]]></export_content>
+<params>
+<textbox_text>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt;The &amp;lt;B&amp;gt;respiratory system&amp;lt;/B&amp;gt; (also &amp;lt;B&amp;gt;respiratory apparatus&amp;lt;/B&amp;gt;, &amp;lt;B&amp;gt;ventilatory system&amp;lt;/B&amp;gt;) is a biological system &amp;lt;/FONT&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;consisting of specific&amp;amp;nbsp;organs (shown in fig 1)&amp;lt;/FONT&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;&amp;amp;nbsp;and structures used for&amp;amp;nbsp;gas exchanges&amp;lt;/FONT&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;.&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</textbox_text>
+<bgcolor>#ffff00</bgcolor>
+<bordercolor>#ff0080</bordercolor>
+<borderwidth>5</borderwidth>
+<borderstyle>solid</borderstyle>
+<margin>5</margin>
+<overflow>auto</overflow>
+<onclick_hide>no</onclick_hide>
+<typewriter>no</typewriter>
+<typewriter_speed>8</typewriter_speed>
+</params>
+</object>
+<object type="div" guid="423c9595_2ef7_4bd5_bcfa_02d700071e89" id="OBJ_17" left="58" top="238" width="320" height="240" display="frame" begin="0">
+<folder>
+Media</folder>
+<template>
+media_003_video</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr><td bgcolor="#000000" valign="middle" align="center"><img border="0" src="F:\hesham\Bio\1\images\media_003_video\wmp_nr.gif" /><div style="font-family: Verdana, Arial, sans-serif; font-size:10px; color: #FFFFFF; padding-top:10px; text-align: center">images/Introduction to the Respiratory System - Animated Tutorial Complete Anatomy (online-video-cutter.com).mp4</div></td></tr></table>]]></design_content>
+<export_content><![CDATA[<div id="OBJ_17_activex" style="display: none;"  ><object id="OBJ_17_wmpie" name="OBJ_17_wmpie" classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" type="application/x-oleobject" standby="Loading... Please wait..." width="100%" height="100%"><param name="AllowChangeDisplaySize" value="false" /><param name="AutoSize" value="true" /><param name="DisplaySize" value="false" /><param name="ShowStatusBar" value="false" /><param name="AutoRewind" value="false" /><param name="SendPlayStateChangeEvents" value="true" /><param name="URL" value="images/Introduction to the Respiratory System - Animated Tutorial Complete Anatomy (online-video-cutter.com).mp4" /><param name="ShowControls" value="false" /><param name="uiMode" value="none" /><param name="AutoStart" value="false" /><param name="windowlessVideo" value="false" /><embed id="OBJ_17_wmpembed" name="OBJ_17_wmpembed" SendPlayStateChangeEvents="1" pluginspage="http://www.microsoft.com/Windows/Downloads/Contents/Products/MediaPlayer/" type="application/x-mplayer2" standby="Loading... Please wait..." width="100%" height="100%" ShowControls="0" ShowStatusBar="0" AutoSize="0" EnableControls="0" DisplaySize="0" Loop="0" AutoStart="1" src="images/Introduction to the Respiratory System - Animated Tutorial Complete Anatomy (online-video-cutter.com).mp4" /></object></div><div id="OBJ_17_ffactivex" style="display: none;"  ><object id="OBJ_17_wmpff" name="OBJ_17_wmpff" type="application/x-ms-wmp" standby="Loading... Please wait..." width="100%" height="100%" data="images/Introduction to the Respiratory System - Animated Tutorial Complete Anatomy (online-video-cutter.com).mp4"><param name="AllowChangeDisplaySize" value="true" /><param name="AutoSize" value="true" /><param name="DisplaySize" value="false" /><param name="showstatusbar" value="false" /><param name="AutoRewind" value="true" /><param name="SendPlayStateChangeEvents" value="true" /><param name="URL" value="images/Introduction to the Respiratory System - Animated Tutorial Complete Anatomy (online-video-cutter.com).mp4" /><param name="ShowControls" value="false" /><param name="uiMode" value="none" /><param name="AutoStart" value="false" /><param name="windowlessVideo" value="false" /></object></div>]]></export_content>
+<params>
+<vfile>yes</vfile>
+<vURL>no</vURL>
+<video_uri>images/Introduction to the Respiratory System - Animated Tutorial Complete Anatomy (online-video-cutter.com).mp4</video_uri>
+<video_url></video_url>
+<player>auto</player>
+<video_controls>no</video_controls>
+<video_autostart>no</video_autostart>
+<video_windowless>no</video_windowless>
+<video_invisible>no</video_invisible>
+</params>
+</object>
+<object type="div" guid="3078be35_a5c0_405e_b13d_9e26f5d22a21" id="OBJ_18" left="400" top="330" width="320" height="133" display="frame" begin="0">
+<folder>
+Textboxes</folder>
+<template>
+003_textbox</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr><td style="padding: 5px; background-color: #ffff00;&#xA;				border-color: #ff0080; border-width: 5px; border-style: solid;"><div style="height: 100%;&#xA;					overflow-x: hidden; overflow-y: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><FONT color=#003399 size=3 face="Times New Roman">The upper tract includes the nose, nasal cavities, sinuses, pharynx and the part of the larynx above the vocal folds. The lower tract includes the lower part of the larynx, the trachea, bronchi, bronchioles and the alveoli.</FONT></SPAN></div></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_18_tbl"  ><tr><td width="100%" id="OBJ_18_td" style="padding: 5px; background-color: #ffff00;&#xA;				 border-color: #ff0080; border-width: 5px; border-style: solid;"><div id="OBJ_18_div" style="cursor:default; width: 100%;&#xA;					overflow: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><FONT color=#003399 size=3 face="Times New Roman">The upper tract includes the nose, nasal cavities, sinuses, pharynx and the part of the larynx above the vocal folds. The lower tract includes the lower part of the larynx, the trachea, bronchi, bronchioles and the alveoli.</FONT></SPAN></div></td></tr></table>]]></export_content>
+<params>
+<textbox_text>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;FONT color=#003399 size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;The upper tract includes the nose, nasal cavities, sinuses, pharynx and the part of the larynx above the vocal folds. The lower tract includes the lower part of the larynx, the trachea, bronchi, bronchioles and the alveoli.&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</textbox_text>
+<bgcolor>#ffff00</bgcolor>
+<bordercolor>#ff0080</bordercolor>
+<borderwidth>5</borderwidth>
+<borderstyle>solid</borderstyle>
+<margin>5</margin>
+<overflow>auto</overflow>
+<onclick_hide>no</onclick_hide>
+<typewriter>no</typewriter>
+<typewriter_speed>8</typewriter_speed>
+</params>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="85316210_f1b6_49f0_b6b9_7804c5f117db" id="SLIDE_5" sid="5" masterid="MASTER1" name="Air flow" indent="0" infinite="1">
+<subslides>
+<subslide guid="e2add3f8_e5e3_4119_8e2c_794292dce9f4" id="FRAME_4" dur="0">
+<objects>
+<object type="div" guid="93e283ec_b977_4097_8a85_6382dd4a914f" id="OBJ_19" left="25" top="63" width="723" height="435" display="frame" begin="0">
+<folder>
+Media</folder>
+<template>
+media_003_video</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr><td bgcolor="#000000" valign="middle" align="center"><img border="0" src="F:\hesham\Bio\1\images\media_003_video\wmp_nr.gif" /><div style="font-family: Verdana, Arial, sans-serif; font-size:10px; color: #FFFFFF; padding-top:10px; text-align: center">images/9convert.com - Respiration 3D Medical Animationwmv (online-video-cutter.com).mp4</div></td></tr></table>]]></design_content>
+<export_content><![CDATA[<div id="OBJ_19_activex" style="display: none;"  ><object id="OBJ_19_wmpie" name="OBJ_19_wmpie" classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" type="application/x-oleobject" standby="Loading... Please wait..." width="100%" height="100%"><param name="AllowChangeDisplaySize" value="false" /><param name="AutoSize" value="true" /><param name="DisplaySize" value="false" /><param name="ShowStatusBar" value="false" /><param name="AutoRewind" value="false" /><param name="SendPlayStateChangeEvents" value="true" /><param name="URL" value="images/9convert.com - Respiration 3D Medical Animationwmv (online-video-cutter.com).mp4" /><param name="ShowControls" value="false" /><param name="uiMode" value="none" /><param name="AutoStart" value="true" /><param name="windowlessVideo" value="false" /><embed id="OBJ_19_wmpembed" name="OBJ_19_wmpembed" SendPlayStateChangeEvents="1" pluginspage="http://www.microsoft.com/Windows/Downloads/Contents/Products/MediaPlayer/" type="application/x-mplayer2" standby="Loading... Please wait..." width="100%" height="100%" ShowControls="0" ShowStatusBar="0" AutoSize="0" EnableControls="0" DisplaySize="0" Loop="0" AutoStart="1" src="images/9convert.com - Respiration 3D Medical Animationwmv (online-video-cutter.com).mp4" /></object></div><div id="OBJ_19_ffactivex" style="display: none;"  ><object id="OBJ_19_wmpff" name="OBJ_19_wmpff" type="application/x-ms-wmp" standby="Loading... Please wait..." width="100%" height="100%" data="images/9convert.com - Respiration 3D Medical Animationwmv (online-video-cutter.com).mp4"><param name="AllowChangeDisplaySize" value="true" /><param name="AutoSize" value="true" /><param name="DisplaySize" value="false" /><param name="showstatusbar" value="false" /><param name="AutoRewind" value="true" /><param name="SendPlayStateChangeEvents" value="true" /><param name="URL" value="images/9convert.com - Respiration 3D Medical Animationwmv (online-video-cutter.com).mp4" /><param name="ShowControls" value="false" /><param name="uiMode" value="none" /><param name="AutoStart" value="true" /><param name="windowlessVideo" value="false" /></object></div>]]></export_content>
+<params>
+<vfile>yes</vfile>
+<vURL>no</vURL>
+<video_uri>images/9convert.com - Respiration 3D Medical Animationwmv (online-video-cutter.com).mp4</video_uri>
+<video_url></video_url>
+<player>auto</player>
+<video_controls>no</video_controls>
+<video_autostart>yes</video_autostart>
+<video_windowless>no</video_windowless>
+<video_invisible>no</video_invisible>
+</params>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="29cfdda9_9516_40eb_850c_8812a479a208" id="SLIDE_6" sid="6" masterid="MASTER1" name="Lungs and Blood Vessels" indent="0" infinite="1">
+<subslides>
+<subslide guid="580a4e78_be7f_4c7d_80ec_593693bca82b" id="FRAME_7" dur="0">
+<objects>
+<object type="div" guid="8966bda4_369b_4260_998d_2e401c6e7423" id="OBJ_20" left="25" top="63" width="403" height="438" display="frame" begin="0">
+<folder>
+Textboxes</folder>
+<template>
+003_textbox</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr><td style="padding: 5px; background-color: #ffff00;&#xA;				border-color: #800040; border-width: 5px; border-style: solid;"><div style="height: 100%;&#xA;					overflow-x: hidden; overflow-y: auto;"><UL>
+<LI style="MARGIN-LEFT: 20px"><SPAN style="COLOR: #003399">Your right lung is divided into three <STRONG>LOBES</STRONG>, or sections. Each lobe is like a balloon filled with sponge-like tissue. Air moves in and out through one opening—a branch of the bronchial tube. 
+<LI style="MARGIN-LEFT: 20px">Your left lung is divided into two <STRONG>LOBES</STRONG>. 
+<LI style="MARGIN-LEFT: 20px">The <STRONG>PLEURA</STRONG> are the two membranes, actually, one continuous one folded on itself, that surround each lobe of the lungs and separate your lungs from your chest wall. 
+<LI style="MARGIN-LEFT: 20px">The smallest branches of the bronchial tubes are called <STRONG>BRONCHIOLES</STRONG>, at the end of which are the air sacs or alveoli. 
+<LI style="MARGIN-LEFT: 20px"><STRONG>ALVEOLI</STRONG> are the very small air sacs where the exchange of oxygen and carbon dioxide takes place. 
+<LI style="MARGIN-LEFT: 20px"><STRONG>CAPILLARIES</STRONG> are blood vessels in the walls of the alveoli. Blood passes through the capillaries, entering through your <STRONG>PULMONARY ARTERY</STRONG> and leaving via your <STRONG>PULMONARY VEIN</STRONG>. While in the capillaries, blood gives off carbon dioxide through the capillary wall into the alveoli and takes up oxygen from air in the alveoli.</SPAN></LI></UL></div></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_20_tbl"  ><tr><td width="100%" id="OBJ_20_td" style="padding: 5px; background-color: #ffff00;&#xA;				 border-color: #800040; border-width: 5px; border-style: solid;"><div id="OBJ_20_div" style="cursor:default; width: 100%;&#xA;					overflow: auto;"><UL>
+<LI style="MARGIN-LEFT: 20px"><SPAN style="COLOR: #003399">Your right lung is divided into three <STRONG>LOBES</STRONG>, or sections. Each lobe is like a balloon filled with sponge-like tissue. Air moves in and out through one opening—a branch of the bronchial tube. 
+<LI style="MARGIN-LEFT: 20px">Your left lung is divided into two <STRONG>LOBES</STRONG>. 
+<LI style="MARGIN-LEFT: 20px">The <STRONG>PLEURA</STRONG> are the two membranes, actually, one continuous one folded on itself, that surround each lobe of the lungs and separate your lungs from your chest wall. 
+<LI style="MARGIN-LEFT: 20px">The smallest branches of the bronchial tubes are called <STRONG>BRONCHIOLES</STRONG>, at the end of which are the air sacs or alveoli. 
+<LI style="MARGIN-LEFT: 20px"><STRONG>ALVEOLI</STRONG> are the very small air sacs where the exchange of oxygen and carbon dioxide takes place. 
+<LI style="MARGIN-LEFT: 20px"><STRONG>CAPILLARIES</STRONG> are blood vessels in the walls of the alveoli. Blood passes through the capillaries, entering through your <STRONG>PULMONARY ARTERY</STRONG> and leaving via your <STRONG>PULMONARY VEIN</STRONG>. While in the capillaries, blood gives off carbon dioxide through the capillary wall into the alveoli and takes up oxygen from air in the alveoli.</SPAN></LI></UL></div></td></tr></table>]]></export_content>
+<params>
+<textbox_text>&lt;ietext&gt;&lt;text&gt;&amp;lt;UL&amp;gt;
+&amp;lt;LI style=&amp;quot;MARGIN-LEFT: 20px&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt;Your right lung is divided into three &amp;lt;STRONG&amp;gt;LOBES&amp;lt;/STRONG&amp;gt;, or sections. Each lobe is like a balloon filled with sponge-like tissue. Air moves in and out through one opening—a branch of the bronchial tube. 
+&amp;lt;LI style=&amp;quot;MARGIN-LEFT: 20px&amp;quot;&amp;gt;Your left lung is divided into two &amp;lt;STRONG&amp;gt;LOBES&amp;lt;/STRONG&amp;gt;. 
+&amp;lt;LI style=&amp;quot;MARGIN-LEFT: 20px&amp;quot;&amp;gt;The &amp;lt;STRONG&amp;gt;PLEURA&amp;lt;/STRONG&amp;gt; are the two membranes, actually, one continuous one folded on itself, that surround each lobe of the lungs and separate your lungs from your chest wall. 
+&amp;lt;LI style=&amp;quot;MARGIN-LEFT: 20px&amp;quot;&amp;gt;The smallest branches of the bronchial tubes are called &amp;lt;STRONG&amp;gt;BRONCHIOLES&amp;lt;/STRONG&amp;gt;, at the end of which are the air sacs or alveoli. 
+&amp;lt;LI style=&amp;quot;MARGIN-LEFT: 20px&amp;quot;&amp;gt;&amp;lt;STRONG&amp;gt;ALVEOLI&amp;lt;/STRONG&amp;gt; are the very small air sacs where the exchange of oxygen and carbon dioxide takes place. 
+&amp;lt;LI style=&amp;quot;MARGIN-LEFT: 20px&amp;quot;&amp;gt;&amp;lt;STRONG&amp;gt;CAPILLARIES&amp;lt;/STRONG&amp;gt; are blood vessels in the walls of the alveoli. Blood passes through the capillaries, entering through your &amp;lt;STRONG&amp;gt;PULMONARY ARTERY&amp;lt;/STRONG&amp;gt; and leaving via your &amp;lt;STRONG&amp;gt;PULMONARY VEIN&amp;lt;/STRONG&amp;gt;. While in the capillaries, blood gives off carbon dioxide through the capillary wall into the alveoli and takes up oxygen from air in the alveoli.&amp;lt;/SPAN&amp;gt;&amp;lt;/LI&amp;gt;&amp;lt;/UL&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</textbox_text>
+<bgcolor>#ffff00</bgcolor>
+<bordercolor>#800040</bordercolor>
+<borderwidth>5</borderwidth>
+<borderstyle>solid</borderstyle>
+<margin>5</margin>
+<overflow>auto</overflow>
+<onclick_hide>no</onclick_hide>
+<typewriter>no</typewriter>
+<typewriter_speed>8</typewriter_speed>
+</params>
+</object>
+<object type="image" guid="6b7ff898_f22a_48c1_9417_07d7a22b1dc6" id="IMG_5" left="432" top="70" width="318" height="423" display="frame" begin="0">
+<src>images\2312_Gross_Anatomy_of_the_Lungs.jpg</src>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="81090450_4184_46b1_a308_fef49c8e8af1" id="SLIDE_7" sid="7" masterid="MASTER1" name="Alveoli And Smoking" indent="0" infinite="1">
+<subslides>
+<subslide guid="b5e4aa82_c78d_46e7_92cc_57c1103934aa" id="FRAME_8" dur="0">
+<objects>
+<object type="div" guid="95fdc2e1_5ffb_4c89_85bf_95a3f51e8ff8" id="OBJ_21" left="38" top="310" width="392" height="180" display="frame" begin="0">
+<folder>
+Textboxes</folder>
+<template>
+003_textbox</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr><td style="padding: 5px; background-color: #ffff00;&#xA;				border-color: #ff0080; border-width: 5px; border-style: solid;"><div style="height: 100%;&#xA;					overflow-x: hidden; overflow-y: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$1.$1.0"><FONT size=3 face="Times New Roman"><SPAN style="COLOR: #003399"><SPAN class=ILfuVd><SPAN class=hgKElc><FONT color=#000000><B><SPAN style="COLOR: #003399">Smoking</B> destroys the <B>alveoli</B>, in the lungs that allow oxygen exchange. When you <B>smoke</B>, you are damaging some of those air sacs. <B>Alveoli</B> don't grow back, so when you destroy them, you have permanently destroyed part of your lungs. When enough <B>alveoli</B> are destroyed, the disease emphysema develops. <FONT color=#000000><SPAN style="COLOR: #003399">Emphysema causes severe shortness of breath and can lead to death.</SPAN></FONT></SPAN></FONT></SPAN></SPAN></SPAN></FONT></SPAN></SPAN></div></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_21_tbl"  ><tr><td width="100%" id="OBJ_21_td" style="padding: 5px; background-color: #ffff00;&#xA;				 border-color: #ff0080; border-width: 5px; border-style: solid;"><div id="OBJ_21_div" style="cursor:default; width: 100%;&#xA;					overflow: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$1.$1.0"><FONT size=3 face="Times New Roman"><SPAN style="COLOR: #003399"><SPAN class=ILfuVd><SPAN class=hgKElc><FONT color=#000000><B><SPAN style="COLOR: #003399">Smoking</B> destroys the <B>alveoli</B>, in the lungs that allow oxygen exchange. When you <B>smoke</B>, you are damaging some of those air sacs. <B>Alveoli</B> don't grow back, so when you destroy them, you have permanently destroyed part of your lungs. When enough <B>alveoli</B> are destroyed, the disease emphysema develops. <FONT color=#000000><SPAN style="COLOR: #003399">Emphysema causes severe shortness of breath and can lead to death.</SPAN></FONT></SPAN></FONT></SPAN></SPAN></SPAN></FONT></SPAN></SPAN></div></td></tr></table>]]></export_content>
+<params>
+<textbox_text>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;SPAN data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$1.$1.0&amp;quot;&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt;&amp;lt;SPAN class=ILfuVd&amp;gt;&amp;lt;SPAN class=hgKElc&amp;gt;&amp;lt;FONT color=#000000&amp;gt;&amp;lt;B&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt;Smoking&amp;lt;/B&amp;gt; destroys the &amp;lt;B&amp;gt;alveoli&amp;lt;/B&amp;gt;, in the lungs that allow oxygen exchange. When you &amp;lt;B&amp;gt;smoke&amp;lt;/B&amp;gt;, you are damaging some of those air sacs. &amp;lt;B&amp;gt;Alveoli&amp;lt;/B&amp;gt; don&amp;apos;t grow back, so when you destroy them, you have permanently destroyed part of your lungs. When enough &amp;lt;B&amp;gt;alveoli&amp;lt;/B&amp;gt; are destroyed, the disease emphysema develops. &amp;lt;FONT color=#000000&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt;Emphysema causes severe shortness of breath and can lead to death.&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</textbox_text>
+<bgcolor>#ffff00</bgcolor>
+<bordercolor>#ff0080</bordercolor>
+<borderwidth>5</borderwidth>
+<borderstyle>solid</borderstyle>
+<margin>5</margin>
+<overflow>auto</overflow>
+<onclick_hide>no</onclick_hide>
+<typewriter>no</typewriter>
+<typewriter_speed>8</typewriter_speed>
+</params>
+</object>
+<object type="div" guid="c3e17ddb_27f0_48f8_a4e5_9276920f6cf0" id="OBJ_22" left="38" top="65" width="387" height="240" display="frame" begin="0">
+<folder>
+Media</folder>
+<template>
+media_003_video</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr><td bgcolor="#000000" valign="middle" align="center"><img border="0" src="F:\hesham\Bio\1\images\media_003_video\wmp_nr.gif" /><div style="font-family: Verdana, Arial, sans-serif; font-size:10px; color: #FFFFFF; padding-top:10px; text-align: center">images/9convert.com - Gas exchange.mp4</div></td></tr></table>]]></design_content>
+<export_content><![CDATA[<div id="OBJ_22_activex" style="display: none;"  ><object id="OBJ_22_wmpie" name="OBJ_22_wmpie" classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" type="application/x-oleobject" standby="Loading... Please wait..." width="100%" height="100%"><param name="AllowChangeDisplaySize" value="false" /><param name="AutoSize" value="true" /><param name="DisplaySize" value="false" /><param name="ShowStatusBar" value="false" /><param name="AutoRewind" value="false" /><param name="SendPlayStateChangeEvents" value="true" /><param name="URL" value="images/9convert.com - Gas exchange.mp4" /><param name="ShowControls" value="false" /><param name="uiMode" value="none" /><param name="AutoStart" value="true" /><param name="windowlessVideo" value="false" /><embed id="OBJ_22_wmpembed" name="OBJ_22_wmpembed" SendPlayStateChangeEvents="1" pluginspage="http://www.microsoft.com/Windows/Downloads/Contents/Products/MediaPlayer/" type="application/x-mplayer2" standby="Loading... Please wait..." width="100%" height="100%" ShowControls="0" ShowStatusBar="0" AutoSize="0" EnableControls="0" DisplaySize="0" Loop="0" AutoStart="1" src="images/9convert.com - Gas exchange.mp4" /></object></div><div id="OBJ_22_ffactivex" style="display: none;"  ><object id="OBJ_22_wmpff" name="OBJ_22_wmpff" type="application/x-ms-wmp" standby="Loading... Please wait..." width="100%" height="100%" data="images/9convert.com - Gas exchange.mp4"><param name="AllowChangeDisplaySize" value="true" /><param name="AutoSize" value="true" /><param name="DisplaySize" value="false" /><param name="showstatusbar" value="false" /><param name="AutoRewind" value="true" /><param name="SendPlayStateChangeEvents" value="true" /><param name="URL" value="images/9convert.com - Gas exchange.mp4" /><param name="ShowControls" value="false" /><param name="uiMode" value="none" /><param name="AutoStart" value="true" /><param name="windowlessVideo" value="false" /></object></div>]]></export_content>
+<params>
+<vfile>yes</vfile>
+<vURL>no</vURL>
+<video_uri>images/9convert.com - Gas exchange.mp4</video_uri>
+<video_url></video_url>
+<player>auto</player>
+<video_controls>no</video_controls>
+<video_autostart>yes</video_autostart>
+<video_windowless>no</video_windowless>
+<video_invisible>no</video_invisible>
+</params>
+</object>
+<object type="image" guid="ba353db1_f1c8_4202_bea8_030a4eb64a85" id="IMG_8" left="451" top="307" width="282" height="174" display="frame" begin="0">
+<src>images\emphysema.jpg</src>
+</object>
+<object type="div" guid="16401f08_24e4_4483_82b2_a327f8a83e15" id="OBJ_23" left="448" top="70" width="285" height="232" display="frame" begin="0">
+<folder>
+Textboxes</folder>
+<template>
+003_textbox</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr><td style="padding: 5px; background-color: #ffff00;&#xA;				border-color: #ff0080; border-width: 5px; border-style: solid;"><div style="height: 100%;&#xA;					overflow-x: hidden; overflow-y: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">
+<H3 data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$0"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$0.0"><SPAN style="COLOR: #003399">Alveoli have:</H3>
+<LI data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0"><STRONG data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0.$0"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0.$0.0">Large surface area</SPAN></STRONG><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0.1"> - many alveoli are present in the lungs with a shape that further increases surface area.</SPAN> 
+<LI data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1"><STRONG data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1.$0"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1.$0.0">Thin walls</SPAN></STRONG><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1.1"> - alveolar walls are one cell thick providing gases with a short diffusion distance.</SPAN> 
+<LI data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2"><STRONG data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2.$0"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2.$0.0">Moist walls</SPAN></STRONG><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2.1"> - gases dissolve in the moisture helping them to pass across the gas exchange surface.</SPAN> 
+<LI data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3"><STRONG data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3.$0"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3.$0.0">Permeable walls</SPAN></STRONG><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3.1"> - allow gases to pass through.</SPAN></SPAN></SPAN></SPAN></LI></div></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_23_tbl"  ><tr><td width="100%" id="OBJ_23_td" style="padding: 5px; background-color: #ffff00;&#xA;				 border-color: #ff0080; border-width: 5px; border-style: solid;"><div id="OBJ_23_div" style="cursor:default; width: 100%;&#xA;					overflow: auto;"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">
+<H3 data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$0"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$0.0"><SPAN style="COLOR: #003399">Alveoli have:</H3>
+<LI data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0"><STRONG data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0.$0"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0.$0.0">Large surface area</SPAN></STRONG><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0.1"> - many alveoli are present in the lungs with a shape that further increases surface area.</SPAN> 
+<LI data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1"><STRONG data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1.$0"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1.$0.0">Thin walls</SPAN></STRONG><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1.1"> - alveolar walls are one cell thick providing gases with a short diffusion distance.</SPAN> 
+<LI data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2"><STRONG data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2.$0"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2.$0.0">Moist walls</SPAN></STRONG><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2.1"> - gases dissolve in the moisture helping them to pass across the gas exchange surface.</SPAN> 
+<LI data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3"><STRONG data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3.$0"><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3.$0.0">Permeable walls</SPAN></STRONG><SPAN data-reactid=".26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3.1"> - allow gases to pass through.</SPAN></SPAN></SPAN></SPAN></LI></div></td></tr></table>]]></export_content>
+<params>
+<textbox_text>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;
+&amp;lt;H3 data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$0&amp;quot;&amp;gt;&amp;lt;SPAN data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$0.0&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt;Alveoli have:&amp;lt;/H3&amp;gt;
+&amp;lt;LI data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0&amp;quot;&amp;gt;&amp;lt;STRONG data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0.$0&amp;quot;&amp;gt;&amp;lt;SPAN data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0.$0.0&amp;quot;&amp;gt;Large surface area&amp;lt;/SPAN&amp;gt;&amp;lt;/STRONG&amp;gt;&amp;lt;SPAN data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$0.1&amp;quot;&amp;gt; - many alveoli are present in the lungs with a shape that further increases surface area.&amp;lt;/SPAN&amp;gt; 
+&amp;lt;LI data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1&amp;quot;&amp;gt;&amp;lt;STRONG data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1.$0&amp;quot;&amp;gt;&amp;lt;SPAN data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1.$0.0&amp;quot;&amp;gt;Thin walls&amp;lt;/SPAN&amp;gt;&amp;lt;/STRONG&amp;gt;&amp;lt;SPAN data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$1.1&amp;quot;&amp;gt; - alveolar walls are one cell thick providing gases with a short diffusion distance.&amp;lt;/SPAN&amp;gt; 
+&amp;lt;LI data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2&amp;quot;&amp;gt;&amp;lt;STRONG data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2.$0&amp;quot;&amp;gt;&amp;lt;SPAN data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2.$0.0&amp;quot;&amp;gt;Moist walls&amp;lt;/SPAN&amp;gt;&amp;lt;/STRONG&amp;gt;&amp;lt;SPAN data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$2.1&amp;quot;&amp;gt; - gases dissolve in the moisture helping them to pass across the gas exchange surface.&amp;lt;/SPAN&amp;gt; 
+&amp;lt;LI data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3&amp;quot;&amp;gt;&amp;lt;STRONG data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3.$0&amp;quot;&amp;gt;&amp;lt;SPAN data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3.$0.0&amp;quot;&amp;gt;Permeable walls&amp;lt;/SPAN&amp;gt;&amp;lt;/STRONG&amp;gt;&amp;lt;SPAN data-reactid=&amp;quot;.26r35svo5le.0.0.0.1:0.1.0.$0.$2.$1.$3.1&amp;quot;&amp;gt; - allow gases to pass through.&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/LI&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</textbox_text>
+<bgcolor>#ffff00</bgcolor>
+<bordercolor>#ff0080</bordercolor>
+<borderwidth>5</borderwidth>
+<borderstyle>solid</borderstyle>
+<margin>5</margin>
+<overflow>auto</overflow>
+<onclick_hide>no</onclick_hide>
+<typewriter>no</typewriter>
+<typewriter_speed>8</typewriter_speed>
+</params>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="9c12cda6_ef7e_4c19_a140_cef4f4dbe2a2" id="SLIDE_8" sid="8" masterid="MASTER1" name="alveolus" indent="0" infinite="1">
+<subslides>
+<subslide guid="2f656602_3e35_4bfd_8950_2d9d0d9afcf5" id="FRAME_9" dur="0">
+<objects>
+<object type="image" guid="806cc576_d6a1_40a9_ab4a_958f6b9c7f8e" id="IMG_9" left="312" top="72" width="435" height="349" display="frame" begin="0">
+<src>images\440px-An_annotated_diagram_of_an_alveolus.svg.png</src>
+</object>
+<object type="div" guid="8c7a6882_db0c_4c9b_a0c0_3db0442959f0" id="OBJ_24" left="29" top="66" width="302" height="433" display="frame" begin="0">
+<folder>
+Textboxes</folder>
+<template>
+003_textbox</template>
+<design_content><![CDATA[<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  ><tr><td style="padding: 5px; background-color: #ffff00;&#xA;				border-color: #ff0080; border-width: 5px; border-style: solid;"><div style="height: 100%;&#xA;					overflow-x: hidden; overflow-y: auto;"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #003399">There are two types of cells in an alveolus. <FONT size=3 face="Times New Roman">Type I cells have long cytoplasmic extensions that cover more than 95% of the alveolar surface.The cytoplasmcontains </FONT><FONT size=3 face="Times New Roman">pinocytotic vesicles</FONT><FONT size=3 face="Times New Roman"> whichmay play a role in the removal of small particulate contaminants from the outer surface. In addition to </FONT><FONT size=3 face="Times New Roman">desmosomes</FONT><FONT size=3 face="Times New Roman"> (is a cell structure specialized for cell-to-cell adhesion), all type I alveolar cells have occluding junctions that prevent the leakage of tissue fluid into the alveolar air space.<SPAN style="COLOR: #003399"> <FONT color=#000000><SPAN style="COLOR: #003399">Type II cells in the alveolar wall contain secretory </FONT>organelles<FONT color=#000000><SPAN style="COLOR: #003399"> known as </FONT>lamellar bodies<FONT color=#000000><SPAN style="COLOR: #003399"> that fuse with the cell membranes and secrete </SPAN></FONT>pulmonary surfactant<FONT color=#000000>. <SPAN style="COLOR: #003399">This surfactant is a film of fatty substances, a group of </SPAN></FONT>phospholipids<FONT color=#000000><SPAN style="COLOR: #003399"> that reduce alveolar </SPAN></FONT>surface tension<FONT color=#000000>. <SPAN style="COLOR: #003399">The phospholipids are stored in the lamellar bodies. Without this coating, the alveoli would collapse.</SPAN></SPAN></SPAN></SPAN></FONT></FONT></SPAN></P></div></td></tr></table>]]></design_content>
+<export_content><![CDATA[<table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_24_tbl"  ><tr><td width="100%" id="OBJ_24_td" style="padding: 5px; background-color: #ffff00;&#xA;				 border-color: #ff0080; border-width: 5px; border-style: solid;"><div id="OBJ_24_div" style="cursor:default; width: 100%;&#xA;					overflow: auto;"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #003399">There are two types of cells in an alveolus. <FONT size=3 face="Times New Roman">Type I cells have long cytoplasmic extensions that cover more than 95% of the alveolar surface.The cytoplasmcontains </FONT><FONT size=3 face="Times New Roman">pinocytotic vesicles</FONT><FONT size=3 face="Times New Roman"> whichmay play a role in the removal of small particulate contaminants from the outer surface. In addition to </FONT><FONT size=3 face="Times New Roman">desmosomes</FONT><FONT size=3 face="Times New Roman"> (is a cell structure specialized for cell-to-cell adhesion), all type I alveolar cells have occluding junctions that prevent the leakage of tissue fluid into the alveolar air space.<SPAN style="COLOR: #003399"> <FONT color=#000000><SPAN style="COLOR: #003399">Type II cells in the alveolar wall contain secretory </FONT>organelles<FONT color=#000000><SPAN style="COLOR: #003399"> known as </FONT>lamellar bodies<FONT color=#000000><SPAN style="COLOR: #003399"> that fuse with the cell membranes and secrete </SPAN></FONT>pulmonary surfactant<FONT color=#000000>. <SPAN style="COLOR: #003399">This surfactant is a film of fatty substances, a group of </SPAN></FONT>phospholipids<FONT color=#000000><SPAN style="COLOR: #003399"> that reduce alveolar </SPAN></FONT>surface tension<FONT color=#000000>. <SPAN style="COLOR: #003399">The phospholipids are stored in the lamellar bodies. Without this coating, the alveoli would collapse.</SPAN></SPAN></SPAN></SPAN></FONT></FONT></SPAN></P></div></td></tr></table>]]></export_content>
+<params>
+<textbox_text>&lt;ietext&gt;&lt;text&gt;&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #003399&amp;quot;&amp;gt;There are two types of cells in an alveolus. &amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;Type I cells have long cytoplasmic extensions that cover more than 95% of the alveolar surface.The cytoplasmcontains &amp;lt;/FONT&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;pinocytotic vesicles&amp;lt;/FONT&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt; whichmay play a role in the removal of small particulate contaminants from the outer surface. In addition to &amp;lt;/FONT&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;desmosomes&amp;lt;/FONT&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt; (is a cell structure specialized for cell-to-cell adhesion), all type I alveolar cells have occluding junctions that prevent the leakage of tissue fluid into the alveolar air space.&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt; &amp;lt;FONT color=#000000&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt;Type II cells in the alveolar wall contain secretory &amp;lt;/FONT&amp;gt;organelles&amp;lt;FONT color=#000000&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt; known as &amp;lt;/FONT&amp;gt;lamellar bodies&amp;lt;FONT color=#000000&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt; that fuse with the cell membranes and secrete &amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;pulmonary surfactant&amp;lt;FONT color=#000000&amp;gt;. &amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt;This surfactant is a film of fatty substances, a group of &amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;phospholipids&amp;lt;FONT color=#000000&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt; that reduce alveolar &amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;surface tension&amp;lt;FONT color=#000000&amp;gt;. &amp;lt;SPAN style=&amp;quot;COLOR: #003399&amp;quot;&amp;gt;The phospholipids are stored in the lamellar bodies. Without this coating, the alveoli would collapse.&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</textbox_text>
+<bgcolor>#ffff00</bgcolor>
+<bordercolor>#ff0080</bordercolor>
+<borderwidth>5</borderwidth>
+<borderstyle>solid</borderstyle>
+<margin>5</margin>
+<overflow>auto</overflow>
+<onclick_hide>no</onclick_hide>
+<typewriter>no</typewriter>
+<typewriter_speed>8</typewriter_speed>
+</params>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+<slide guid="7a4b814c_58f6_48d9_8aa1_f88e24c2ee89" id="SLIDE_9" sid="9" masterid="MASTER1" name="Pop Quiz" indent="0" infinite="1">
+<subslides>
+<subslide guid="e1c19e22_8aaa_4572_a1f4_79d2161baa73" id="FRAME_10" dur="0">
+<objects>
+<object type="div" guid="d76783df_d0d2_4744_8e11_9310179bafc1" id="OBJ_25" left="33" top="67" width="329" height="361" display="frame" begin="0">
+<folder>
+Questions</folder>
+<template>
+q_002_select</template>
+<design_content><![CDATA[<div style="background-color:#FFFFFF;"  ><table width="100%" border="0" cellpadding="4" cellspacing="0" style="background-color: #FFFFFF;"><tr><td width="100%" style="width:100%; padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#336699;" id="OBJ_25_q_creditcontainer">Credited question</td></tr><tr><td width="100%" style="padding:4px; border: #DFEFFF solid 2px; background-color: #EFF8FF" id="OBJ_25_q_text"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">Emphysema:</SPAN></P></td></tr><tr><td width="100%" style="padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#336699;" id="OBJ_25_q_objective">Select all correct variants</td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;"><tr><td><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="F:\hesham\Bio\1\images\q_002_select\basic/lightblue/select_spot_1_2.gif" /></td><td width="100%" style="padding: 6px"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">Causes sever shortness of breath and can lead to death.</SPAN></P>
+<P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"></SPAN>&nbsp;</P></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="F:\hesham\Bio\1\images\q_002_select\basic/lightblue/select_spot_1_0.gif" /></td><td width="100%" style="padding: 6px"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">Is a disease caused by the destruction of blood vessels that grows back with medication and time.</SPAN></P></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="F:\hesham\Bio\1\images\q_002_select\basic/lightblue/select_spot_1_0.gif" /></td><td width="100%" style="padding: 6px"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">Is a diseases caused by the destruction of alveoli which can grow back with medication and time.</SPAN></P></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="F:\hesham\Bio\1\images\q_002_select\basic/lightblue/select_spot_1_2.gif" /></td><td width="100%" style="padding: 6px"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">Is a disease that is caused by the destruction of alveoli that dosen't grow back.</SPAN></P></td></tr></table></td></tr></table><table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #EFF8FF"><tr><td style="width:50%; text-align:left; padding: 4px; height: 33px;"><span style="display:inline;"><img border="0" src="F:\hesham\Bio\1\images\q_002_select\basic/lightblue/button_check_0.gif" /></span></td><td align="center" style="text-align:center; height: 33px;"><div style="display:inline;" id="OBJ_25_q_attempts_container"><table cellspacing="0" cellpadding="2" border="0"><tr><td align="right" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">Attempts:</td><td align="left" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">1</td></tr></table></div></td><td align="right" width="50%" style="width:50%; text-align:right; padding: 4px; height: 33px;" /></tr></table></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none"  ><img border="0" id="OBJ_25_q_selectspot_0" src="images/q_002_select/basic/lightblue/select_spot_1_0.gif" /><img border="0" id="OBJ_25_q_selectspot_2" src="images/q_002_select/basic/lightblue/select_spot_1_2.gif" /><img width="150" height="25" border="0" id="OBJ_25_q_b_check_0" src="images/q_002_select/basic/lightblue/button_check_0.gif" /><img width="150" height="25" border="0" id="OBJ_25_q_b_check_1" src="images/q_002_select/basic/lightblue/button_check_1.gif" /><table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_25_q_selectitem" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="images/q_002_select/basic/lightblue/select_spot_1_0.gif" onclick="var oArgs = new Object; oArgs.pid = 'OBJ_25'; oArgs.oid = this.getAttribute('spotid'); CallMethod('q_002_select','HandleClick',oArgs); return false;" /><img border="0" style="display: none" src="images/q_002_select/basic/lightblue/select_spot_1_2.gif" onclick="var oArgs = new Object; oArgs.pid = 'OBJ_25'; oArgs.oid = this.getAttribute('spotid'); CallMethod('q_002_select','HandleClick',oArgs); return false;" /></td><td width="100%" style="padding: 6px">%%var%%</td></tr></table></div><div style="background-color: #FFFFFF;" id="OBJ_25_q_container"  ><table width="100%" border="0" cellpadding="4" cellspacing="0" style="background-color: #FFFFFF;"><tr><td width="100%" style="width:100%; padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#336699;" id="OBJ_25_q_creditcontainer">Credited question</td></tr><tr><td width="100%" style="padding:4px; border: #DFEFFF solid 2px; background-color: #EFF8FF" id="OBJ_25_q_text"><P><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000">Emphysema:</SPAN></P></td></tr><tr><td width="100%" style="padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#336699;" id="OBJ_25_q_objective">Select all correct variants</td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;"><tr><td id="OBJ_25_q_workarea" /></tr></table><table width="100%" cellpadding="0" cellspacing="0" border="0" id="OBJ_25_q_button_area" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #EFF8FF"><tr><td style="width:50%; text-align:left; padding: 4px; height: 33px;"><span style="display:none;" id="OBJ_25_q_b_check_container"><img style="cursor:hand; cursor:pointer;" border="0" alt="Submit answer" id="OBJ_25_q_b_check_button" src="images/q_002_select/basic/lightblue/button_check_0.gif" onmouseover="this.src = document.getElementById('OBJ_25_q_b_check_1').src; return false;" onmouseout="this.src = document.getElementById('OBJ_25_q_b_check_0').src; return false;" onclick="var oArgs=new Object; oArgs.pid='OBJ_25'; CallMethod('q_002_select','EvalAnswer',oArgs); return false;" /></span></td><td align="center" style="text-align:center; height: 33px;"><div style="display:inline;" id="OBJ_25_q_attempts_container"><table cellspacing="0" cellpadding="2" border="0"><tr><td align="right" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">Attempts:</td><td align="left" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; " id="OBJ_25_q_attempts_count">1</td></tr></table></div></td><td align="right" width="50%" style="width:50%; text-align:right; padding: 4px; height: 33px;" /></tr></table></div>]]></export_content>
+<params>
+<q_question>&lt;ietext&gt;&lt;text&gt;&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;Emphysema:&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_question>
+<q_variants>
+<item>
+<q_variant>&lt;ietext&gt;&lt;text&gt;&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;Causes sever shortness of breath and can lead to death.&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;
+&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;/SPAN&amp;gt;&amp;amp;nbsp;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_variant>
+<q_right>yes</q_right>
+</item>
+<item>
+<q_variant>&lt;ietext&gt;&lt;text&gt;&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;Is a disease caused by the destruction of blood vessels that grows back with medication and time.&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_variant>
+<q_right>no</q_right>
+</item>
+<item>
+<q_variant>&lt;ietext&gt;&lt;text&gt;&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;Is a diseases caused by the destruction of alveoli which can grow back with medication and time.&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_variant>
+<q_right>no</q_right>
+</item>
+<item>
+<q_variant>&lt;ietext&gt;&lt;text&gt;&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;Is a disease that is caused by the destruction of alveoli that dosen&amp;apos;t grow back.&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_variant>
+<q_right>yes</q_right>
+</item>
+</q_variants>
+<q_shuffle>yes</q_shuffle>
+<q_att_auto>no</q_att_auto>
+<q_attempts>1</q_attempts>
+<q_timer_switch>no</q_timer_switch>
+<q_timer>10</q_timer>
+<q_skip>no</q_skip>
+<q_skipper1>no</q_skipper1>
+<q_skipper2>yes</q_skipper2>
+<q_secondrun>no</q_secondrun>
+<q_scored>yes</q_scored>
+<q_weight>1</q_weight>
+<q_pointset_fixed>yes</q_pointset_fixed>
+<q_pointset_auto>no</q_pointset_auto>
+<q_scoreboards>
+<item>
+<q_board>total</q_board>
+</item>
+</q_scoreboards>
+<q_showright>yes</q_showright>
+<q_fb_switch>no</q_fb_switch>
+<q_feedbackright>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Correct&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackright>
+<q_feedbackright_preview>no</q_feedbackright_preview>
+<q_feedbackwrong>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Incorrect&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackwrong>
+<q_feedbackwrong_preview>no</q_feedbackwrong_preview>
+<q_feedbackexhausted>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;No more attempts left&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackexhausted>
+<q_feedbackexhausted_preview>no</q_feedbackexhausted_preview>
+<q_feedbacktimeout>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Time is out&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbacktimeout>
+<q_feedbacktimeout_preview>no</q_feedbacktimeout_preview>
+<q_feedbackleft>100</q_feedbackleft>
+<q_feedbacktop>50</q_feedbacktop>
+<q_fb_timerswitch>no</q_fb_timerswitch>
+<q_fb_timer>3</q_fb_timer>
+<q_realskin>basic</q_realskin>
+<q_skin>lightblue</q_skin>
+<q_button>var1</q_button>
+<q_custombutton>no</q_custombutton>
+<q_abtn_0></q_abtn_0>
+<q_abtn_1></q_abtn_1>
+<q_sbtn_0></q_sbtn_0>
+<q_sbtn_1></q_sbtn_1>
+<q_customspot>no</q_customspot>
+<q_spot_0></q_spot_0>
+<q_spot_1></q_spot_1>
+<q_a_tooltip>Submit answer</q_a_tooltip>
+<q_s_tooltip>Skip question</q_s_tooltip>
+<q_credit_msg>Credited question</q_credit_msg>
+<q_nocredit_msg>Not credited question</q_nocredit_msg>
+<q_attempts_msg>Attempts:</q_attempts_msg>
+<q_timer_msg>Time limit:</q_timer_msg>
+<q_goal>Select all correct variants</q_goal>
+<q_goal_right>CORRECT ANSWER</q_goal_right>
+<q_goal_last>LAST QUESTION STATE</q_goal_last>
+<q_goal_skip>QUESTION IS SKIPPED</q_goal_skip>
+<q_goal_failed>QUESTION IS SKIPPED AND FAILED</q_goal_failed>
+<q_continue_alert>Continued approach. Number of attempts may be decreased.</q_continue_alert>
+<q_browse_alert>This question is already answered. Recurring approach is not allowed.</q_browse_alert>
+<q_secondrun_confirm>This question is already answered. Press OK to clear stored results and start new approach. Press Cancel otherwise.</q_secondrun_confirm>
+<q_skip_confirm>Skipped question will be evaluated as failed. Are you sure?</q_skip_confirm>
+</params>
+</object>
+<object type="div" guid="1f2177ee_525c_4ae1_990b_e821c1ee5bef" id="OBJ_26" left="368" top="69" width="382" height="400" display="frame" begin="0">
+<folder>
+Questions</folder>
+<template>
+q_002_select</template>
+<design_content><![CDATA[<div style="background-color:#FFFFFF;"  ><table width="100%" border="0" cellpadding="4" cellspacing="0" style="background-color: #FFFFFF;"><tr><td width="100%" style="width:100%; padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#336699;" id="OBJ_26_q_creditcontainer">Credited question</td></tr><tr><td width="100%" style="padding:4px; border: #DFEFFF solid 2px; background-color: #EFF8FF" id="OBJ_26_q_text"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #003399"><FONT size=3 face="Times New Roman"><SPAN style="COLOR: #000000">Type II cells in the alveolar wall:</SPAN></FONT></SPAN></td></tr><tr><td width="100%" style="padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#336699;" id="OBJ_26_q_objective">Select all correct variants</td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;"><tr><td><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="F:\hesham\Bio\1\images\q_002_select\basic/lightblue/select_spot_1_2.gif" /></td><td width="100%" style="padding: 6px"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><FONT size=3><FONT face="Times New Roman"><FONT color=#003399><SPAN style="FONT-SIZE: 12px; COLOR: #000000">Contain secretory organelles</FONT><FONT color=#000000> known as </FONT>lamellar bodies<FONT color=#000000> that fuse with the cell membranes and secrete </FONT>pulmonary surfactant<FONT color=#000000>.</SPAN></FONT></FONT></FONT></SPAN></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="F:\hesham\Bio\1\images\q_002_select\basic/lightblue/select_spot_1_0.gif" /></td><td width="100%" style="padding: 6px"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><FONT color=#003399 size=3 face="Times New Roman"><SPAN style="FONT-SIZE: 12px; COLOR: #000000">have long cytoplasmic extensions that cover more than 95% of the alveolar surface.</SPAN></FONT></SPAN></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="F:\hesham\Bio\1\images\q_002_select\basic/lightblue/select_spot_1_0.gif" /></td><td width="100%" style="padding: 6px"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><FONT color=#003399 size=3 face="Times New Roman"><SPAN style="FONT-SIZE: 12px; COLOR: #000000">Play a role in the removal of small particulate contaminants from the outer surface.</SPAN></FONT></SPAN></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="F:\hesham\Bio\1\images\q_002_select\basic/lightblue/select_spot_1_2.gif" /></td><td width="100%" style="padding: 6px"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000"><FONT color=#003399 size=3 face="Times New Roman"><SPAN style="FONT-SIZE: 12px; COLOR: #000000">Reduce alveolar surface tension</FONT><FONT color=#000000><FONT size=3 face="Times New Roman">.</FONT> </SPAN></FONT></SPAN></td></tr></table></td></tr></table><table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #EFF8FF"><tr><td style="width:50%; text-align:left; padding: 4px; height: 33px;"><span style="display:inline;"><img border="0" src="F:\hesham\Bio\1\images\q_002_select\basic/lightblue/button_check_0.gif" /></span></td><td align="center" style="text-align:center; height: 33px;"><div style="display:inline;" id="OBJ_26_q_attempts_container"><table cellspacing="0" cellpadding="2" border="0"><tr><td align="right" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">Attempts:</td><td align="left" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">1</td></tr></table></div></td><td align="right" width="50%" style="width:50%; text-align:right; padding: 4px; height: 33px;" /></tr></table></div>]]></design_content>
+<export_content><![CDATA[<div style="display:none"  ><img border="0" id="OBJ_26_q_selectspot_0" src="images/q_002_select/basic/lightblue/select_spot_1_0.gif" /><img border="0" id="OBJ_26_q_selectspot_2" src="images/q_002_select/basic/lightblue/select_spot_1_2.gif" /><img width="150" height="25" border="0" id="OBJ_26_q_b_check_0" src="images/q_002_select/basic/lightblue/button_check_0.gif" /><img width="150" height="25" border="0" id="OBJ_26_q_b_check_1" src="images/q_002_select/basic/lightblue/button_check_1.gif" /><table width="100%" border="0" cellpadding="0" cellspacing="0" id="OBJ_26_q_selectitem" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #FFFFFF;"><tr><td valign="top" style="padding: 6px"><img border="0" src="images/q_002_select/basic/lightblue/select_spot_1_0.gif" onclick="var oArgs = new Object; oArgs.pid = 'OBJ_26'; oArgs.oid = this.getAttribute('spotid'); CallMethod('q_002_select','HandleClick',oArgs); return false;" /><img border="0" style="display: none" src="images/q_002_select/basic/lightblue/select_spot_1_2.gif" onclick="var oArgs = new Object; oArgs.pid = 'OBJ_26'; oArgs.oid = this.getAttribute('spotid'); CallMethod('q_002_select','HandleClick',oArgs); return false;" /></td><td width="100%" style="padding: 6px">%%var%%</td></tr></table></div><div style="background-color: #FFFFFF;" id="OBJ_26_q_container"  ><table width="100%" border="0" cellpadding="4" cellspacing="0" style="background-color: #FFFFFF;"><tr><td width="100%" style="width:100%; padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#336699;" id="OBJ_26_q_creditcontainer">Credited question</td></tr><tr><td width="100%" style="padding:4px; border: #DFEFFF solid 2px; background-color: #EFF8FF" id="OBJ_26_q_text"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #003399"><FONT size=3 face="Times New Roman"><SPAN style="COLOR: #000000">Type II cells in the alveolar wall:</SPAN></FONT></SPAN></td></tr><tr><td width="100%" style="padding:6px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#336699;" id="OBJ_26_q_objective">Select all correct variants</td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFFFFF;"><tr><td id="OBJ_26_q_workarea" /></tr></table><table width="100%" cellpadding="0" cellspacing="0" border="0" id="OBJ_26_q_button_area" style="margin-top: 2px; border: #DFEFFF solid 2px; background-color: #EFF8FF"><tr><td style="width:50%; text-align:left; padding: 4px; height: 33px;"><span style="display:none;" id="OBJ_26_q_b_check_container"><img style="cursor:hand; cursor:pointer;" border="0" alt="Submit answer" id="OBJ_26_q_b_check_button" src="images/q_002_select/basic/lightblue/button_check_0.gif" onmouseover="this.src = document.getElementById('OBJ_26_q_b_check_1').src; return false;" onmouseout="this.src = document.getElementById('OBJ_26_q_b_check_0').src; return false;" onclick="var oArgs=new Object; oArgs.pid='OBJ_26'; CallMethod('q_002_select','EvalAnswer',oArgs); return false;" /></span></td><td align="center" style="text-align:center; height: 33px;"><div style="display:inline;" id="OBJ_26_q_attempts_container"><table cellspacing="0" cellpadding="2" border="0"><tr><td align="right" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">Attempts:</td><td align="left" nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; " id="OBJ_26_q_attempts_count">1</td></tr></table></div></td><td align="right" width="50%" style="width:50%; text-align:right; padding: 4px; height: 33px;" /></tr></table></div>]]></export_content>
+<params>
+<q_question>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #003399&amp;quot;&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;COLOR: #000000&amp;quot;&amp;gt;Type II cells in the alveolar wall:&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_question>
+<q_variants>
+<item>
+<q_variant>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;FONT size=3&amp;gt;&amp;lt;FONT face=&amp;quot;Times New Roman&amp;quot;&amp;gt;&amp;lt;FONT color=#003399&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000&amp;quot;&amp;gt;Contain secretory organelles&amp;lt;/FONT&amp;gt;&amp;lt;FONT color=#000000&amp;gt; known as &amp;lt;/FONT&amp;gt;lamellar bodies&amp;lt;FONT color=#000000&amp;gt; that fuse with the cell membranes and secrete &amp;lt;/FONT&amp;gt;pulmonary surfactant&amp;lt;FONT color=#000000&amp;gt;.&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_variant>
+<q_right>yes</q_right>
+</item>
+<item>
+<q_variant>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;FONT color=#003399 size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000&amp;quot;&amp;gt;have long cytoplasmic extensions that cover more than 95% of the alveolar surface.&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_variant>
+<q_right>no</q_right>
+</item>
+<item>
+<q_variant>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;FONT color=#003399 size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000&amp;quot;&amp;gt;Play a role in the removal of small particulate contaminants from the outer surface.&amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_variant>
+<q_right>no</q_right>
+</item>
+<item>
+<q_variant>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;&amp;lt;FONT color=#003399 size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; COLOR: #000000&amp;quot;&amp;gt;Reduce alveolar surface tension&amp;lt;/FONT&amp;gt;&amp;lt;FONT color=#000000&amp;gt;&amp;lt;FONT size=3 face=&amp;quot;Times New Roman&amp;quot;&amp;gt;.&amp;lt;/FONT&amp;gt; &amp;lt;/SPAN&amp;gt;&amp;lt;/FONT&amp;gt;&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_variant>
+<q_right>yes</q_right>
+</item>
+</q_variants>
+<q_shuffle>yes</q_shuffle>
+<q_att_auto>no</q_att_auto>
+<q_attempts>1</q_attempts>
+<q_timer_switch>no</q_timer_switch>
+<q_timer>10</q_timer>
+<q_skip>no</q_skip>
+<q_skipper1>no</q_skipper1>
+<q_skipper2>yes</q_skipper2>
+<q_secondrun>no</q_secondrun>
+<q_scored>yes</q_scored>
+<q_weight>1</q_weight>
+<q_pointset_fixed>yes</q_pointset_fixed>
+<q_pointset_auto>no</q_pointset_auto>
+<q_scoreboards>
+<item>
+<q_board>total</q_board>
+</item>
+</q_scoreboards>
+<q_showright>yes</q_showright>
+<q_fb_switch>no</q_fb_switch>
+<q_feedbackright>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Correct&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackright>
+<q_feedbackright_preview>no</q_feedbackright_preview>
+<q_feedbackwrong>&lt;ietext&gt;&lt;text&gt;&amp;lt;P&amp;gt;&amp;lt;SPAN style=&amp;quot;FONT-SIZE: 12px; FONT-FAMILY: Arial; COLOR: #000000&amp;quot;&amp;gt;That is a property for type 1 cells.&amp;lt;/SPAN&amp;gt;&amp;lt;/P&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackwrong>
+<q_feedbackwrong_preview>no</q_feedbackwrong_preview>
+<q_feedbackexhausted>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;No more attempts left&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbackexhausted>
+<q_feedbackexhausted_preview>no</q_feedbackexhausted_preview>
+<q_feedbacktimeout>&lt;ietext&gt;&lt;text&gt;&amp;lt;SPAN style=&amp;quot;FONT-FAMILY: Arial;FONT-SIZE: 12px;COLOR: #000000&amp;quot;&amp;gt;Time is out&amp;lt;/SPAN&amp;gt;&lt;/text&gt;&lt;hyperlinks&gt;&lt;/hyperlinks&gt;&lt;/ietext&gt;</q_feedbacktimeout>
+<q_feedbacktimeout_preview>no</q_feedbacktimeout_preview>
+<q_feedbackleft>100</q_feedbackleft>
+<q_feedbacktop>50</q_feedbacktop>
+<q_fb_timerswitch>no</q_fb_timerswitch>
+<q_fb_timer>3</q_fb_timer>
+<q_realskin>basic</q_realskin>
+<q_skin>lightblue</q_skin>
+<q_button>var1</q_button>
+<q_custombutton>no</q_custombutton>
+<q_abtn_0></q_abtn_0>
+<q_abtn_1></q_abtn_1>
+<q_sbtn_0></q_sbtn_0>
+<q_sbtn_1></q_sbtn_1>
+<q_customspot>no</q_customspot>
+<q_spot_0></q_spot_0>
+<q_spot_1></q_spot_1>
+<q_a_tooltip>Submit answer</q_a_tooltip>
+<q_s_tooltip>Skip question</q_s_tooltip>
+<q_credit_msg>Credited question</q_credit_msg>
+<q_nocredit_msg>Not credited question</q_nocredit_msg>
+<q_attempts_msg>Attempts:</q_attempts_msg>
+<q_timer_msg>Time limit:</q_timer_msg>
+<q_goal>Select all correct variants</q_goal>
+<q_goal_right>CORRECT ANSWER</q_goal_right>
+<q_goal_last>LAST QUESTION STATE</q_goal_last>
+<q_goal_skip>QUESTION IS SKIPPED</q_goal_skip>
+<q_goal_failed>QUESTION IS SKIPPED AND FAILED</q_goal_failed>
+<q_continue_alert>Continued approach. Number of attempts may be decreased.</q_continue_alert>
+<q_browse_alert>This question is already answered. Recurring approach is not allowed.</q_browse_alert>
+<q_secondrun_confirm>This question is already answered. Press OK to clear stored results and start new approach. Press Cancel otherwise.</q_secondrun_confirm>
+<q_skip_confirm>Skipped question will be evaluated as failed. Are you sure?</q_skip_confirm>
+</params>
+</object>
+</objects>
+</subslide>
+</subslides>
+</slide>
+</slides>
+<objectives>
+<objective id="total" name="This is automatically created module objective." cs="i" ss="u" scoremax="100" scoremin="0" module="yes"/>
+</objectives>
+<runtimechecks>
+<runtimecheck id="MSMP" check="0"/>
+<runtimecheck id="MMFP" check="0"/>
+<runtimecheck id="MMSW" check="0"/>
+<runtimecheck id="APQT" check="0"/>
+</runtimechecks>
+</module>

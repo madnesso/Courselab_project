@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Course file, saved 14/06/2021 1:32:51 PM by bassiouny using CourseLab 090219 -->
+<course2>
+<aicc_code></aicc_code>
+<aicc_name>Biology</aicc_name>
+<aicc_description></aicc_description>
+<modules>
+<module>
+<name>1</name>
+<folder_id>0</folder_id>
+<file>1\1.xml</file>
+<aicc_code></aicc_code>
+<aicc_name>respiratory system</aicc_name>
+<aicc_description></aicc_description>
+<aicc_maxmark></aicc_maxmark>
+<aicc_reqmark></aicc_reqmark>
+</module>
+</modules>
+<windows>
+<window>
+<module>1</module>
+<zoom>100</zoom>
+<active>true</active>
+<slide>SLIDE_9</slide>
+</window>
+</windows>
+</course2>
