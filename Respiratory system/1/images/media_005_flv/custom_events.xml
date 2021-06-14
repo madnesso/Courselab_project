@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+	<event>
+		<name>onPlayTick</name>
+		<label>Play Tick</label>
+	</event>
+	<event>
+		<name>onChangePlayState</name>
+		<label>Change Play State</label>
+	</event>
+	<event>
+		<name>onPlayStop</name>
+		<label>Play Stopped</label>
+	</event>
+	<event>
+		<name>onPlayStart</name>
+		<label>Play Started</label>
+	</event>
+	<event>
+		<name>onMediaEnded</name>
+		<label>End Of Media</label>
+	</event>
+	<event>
+		<name>onPositionChange</name>
+		<label>Position Changed</label>
+	</event>
+</events>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+	<event>
+		<name>onCloseObject</name>
+		<label>Object Closed</label>
+	</event>
+	<event>
+		<name>onRefresh</name>
+		<label>Text Refreshed</label>
+	</event>
+	<event>
+		<name>onAddText</name>
+		<label>Text Added</label>
+	</event>
+	<event>
+		<name>onTypeWriterEnd</name>
+		<label>Typewriter End</label>
+	</event>
+</events>
