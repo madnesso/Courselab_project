@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+'*	nav_012_close.xml
+'*	Copyright (c) Websoft, 2007.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>Close Module Button</label>
+		<width>20</width>
+		<height>20</height>
+		<description>Close Module Button</description>
+	</object>
+	<page name=" Parameters " w="260" h="80">
+		<param type="line" x="8" y="12" w="244" h="64"/>
+		<param type="label" text=" " x="11" y="6" w="6" h="13"/>
+		<param type="check" id="standard" text="Use default button set" def="yes" x="15" y="6" w="85" h="13">
+			<events>
+				<event name="check" target="lab_n1_img" action="disable" />
+				<event name="check" target="lab_n2_img" action="disable" />
+				<event name="check" target="lab_n3_img" action="disable" />
+				<event name="check" target="n1_img" action="disable" />
+				<event name="check" target="n2_img" action="disable" />
+				<event name="check" target="n3_img" action="disable" />
+				<event name="uncheck" target="lab_n1_img" action="enable" />
+				<event name="uncheck" target="lab_n2_img" action="enable" />
+				<event name="uncheck" target="lab_n3_img" action="enable" />
+				<event name="uncheck" target="n1_img" action="enable" />
+				<event name="uncheck" target="n2_img" action="enable" />
+				<event name="uncheck" target="n3_img" action="enable" />
+			</events>
+		</param>
+		<param type="label" id="lab_n1_img" text="Enabled button:" x="15" y="25" w="110" h="13"/>
+		<param type="file" id="n1_img" text="" def="" x="125" y="24" w="100" h="13"/>
+		<param type="label" id="lab_n2_img" text="OnMouseOver button:" x="15" y="41" w="110" h="13"/>
+		<param type="file" id="n2_img" text="" def="" x="125" y="40" w="100" h="13"/>
+		<param type="label" id="lab_n3_img" text="OnClick button:" x="15" y="56" w="110" h="13"/>
+		<param type="file" id="n3_img" text="" def="" x="125" y="55" w="100" h="13"/>
+		<param type="label" text="Button tooltip:" x="10" y="82" w="110" h="13"/>
+		<param type="edit" id="alt_enabled" text="no" def="Close module" x="125" y="81" w="125" h="13"/>
+		<param type="label" text="Confirmation text:" x="10" y="98" w="110" h="13"/>
+		<param type="edit" id="confirm" text="no" def="Module window will be closed. Are you sure?" x="125" y="97" w="125" h="13"/>
+    </page>
+</params>

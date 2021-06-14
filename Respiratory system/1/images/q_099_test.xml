@@ -1,0 +1,3206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+'*	q_099_test.xml
+'*	Copyright (c) Websoft, 2007.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>Test</label>
+		<width>700</width>
+		<height>400</height>
+		<description>Multiple Question Test</description>
+	</object>
+    <page name=" Questions " w="280" h="188">
+
+		<param type="label" text="Questions:" x="10" y="9" w="70" h="13"/>
+			<param type="list" id="q_questions" text="yes" def="no" x="10" y="9" w="260" h="170">
+			    <page name=" Question " w="240" h="185">
+					<param type="label" text="Question type:" x="10" y="9" w="90" h="13"/>
+				    <param type="select" id="q_type" text="Question type" def="choice" x="100" y="9" w="130" h="13">
+    	    			<items>
+					        <item id="choice" label="Single choice">
+								<events>
+									<event name="selendok" target="q_question_l_1" action="show"/>
+									<event name="selendok" target="q_question" action="show"/>
+									<event name="selendok" target="q_variants_l_1" action="show"/>
+									<event name="selendok" target="q_choice_variants" action="show"/>
+									<event name="selendok" target="q_shuffle" action="show"/>
+									<event name="selend" target="q_question_l_1" action="hide"/>
+									<event name="selend" target="q_question" action="hide"/>
+									<event name="selend" target="q_variants_l_1" action="hide"/>
+									<event name="selend" target="q_choice_variants" action="hide"/>
+									<event name="selend" target="q_shuffle" action="hide"/>
+								</events>
+							</item>
+							<item id="select" label="Multiple select">
+								<events>
+									<event name="selendok" target="q_question_l_1" action="show"/>
+									<event name="selendok" target="q_question" action="show"/>
+									<event name="selendok" target="q_variants_l_1" action="show"/>
+									<event name="selendok" target="q_select_variants" action="show"/>
+									<event name="selendok" target="q_shuffle" action="show"/>
+									<event name="selend" target="q_question_l_1" action="hide"/>
+									<event name="selend" target="q_question" action="hide"/>
+									<event name="selend" target="q_variants_l_1" action="hide"/>
+									<event name="selend" target="q_select_variants" action="hide"/>
+									<event name="selend" target="q_shuffle" action="hide"/>
+								</events>
+							</item>
+						    <item id="range" label="Ordering">
+								<events>
+									<event name="selendok" target="q_question_l_1" action="show"/>
+									<event name="selendok" target="q_question" action="show"/>
+									<event name="selendok" target="q_variants_l_1" action="show"/>
+									<event name="selendok" target="q_range_variants" action="show"/>
+									<event name="selend" target="q_question_l_1" action="hide"/>
+									<event name="selend" target="q_question" action="hide"/>
+									<event name="selend" target="q_variants_l_1" action="hide"/>
+									<event name="selend" target="q_range_variants" action="hide"/>
+								</events>
+							</item>
+					  		<item id="numeric" label="Numeric fill-in-blank">
+								<events>
+									<event name="selendok" target="q_question_l_1" action="show"/>
+									<event name="selendok" target="q_question" action="show"/>
+									<event name="selendok" target="q_variants_l_1" action="show"/>
+									<event name="selendok" target="q_numeric_variants" action="show"/>
+									<event name="selend" target="q_question_l_1" action="hide"/>
+									<event name="selend" target="q_question" action="hide"/>
+									<event name="selend" target="q_variants_l_1" action="hide"/>
+									<event name="selend" target="q_numeric_variants" action="hide"/>
+								</events>
+							</item>
+					      	<item id="text" label="Text fill-in-blank">
+								<events>
+									<event name="selendok" target="q_question_l_1" action="show"/>
+									<event name="selendok" target="q_question" action="show"/>
+									<event name="selendok" target="q_variants_l_1" action="show"/>
+									<event name="selendok" target="q_text_variants" action="show"/>
+									<event name="selend" target="q_question_l_1" action="hide"/>
+									<event name="selend" target="q_question" action="hide"/>
+									<event name="selend" target="q_variants_l_1" action="hide"/>
+									<event name="selend" target="q_text_variants" action="hide"/>
+								</events>
+							</item>
+	       					<item id="oto" label="Pair match">
+								<events>
+									<event name="selendok" target="q_showq" action="show"/>
+									<event name="selendok" target="q_question_l_1" action="show"/>
+									<event name="selendok" target="q_question" action="show"/>
+									<event name="selendok" target="q_oto_variants_l" action="show"/>
+									<event name="selendok" target="q_oto_variants" action="show"/>
+									<event name="selendok" target="q_image_label" action="hide"/>
+									<event name="selendok" target="q_image" action="hide"/>
+									<event name="selend" target="q_showq" action="hide"/>
+									<event name="selend" target="q_question_l_1" action="hide"/>
+									<event name="selend" target="q_question" action="hide"/>
+									<event name="selend" target="q_oto_variants_l" action="hide"/>
+									<event name="selend" target="q_oto_variants" action="hide"/>
+									<event name="selend" target="q_image_label" action="show"/>
+									<event name="selend" target="q_image" action="show"/>
+								</events>
+							</item>
+		   				</items>
+			        </param>
+
+					<param type="label" id="q_question_l_1" text="Question text:" x="10" y="25" w="90" h="13"/>
+					<param type="textedit" id="q_question" text="Question" def="Question text goes here" x="100" y="25" w="113" h="13"/>
+
+					<param type="label" id="q_variants_l_1" text="Variants:" x="10" y="58" w="70" h="13"/>
+
+					<param type="list" id="q_choice_variants" text="Variant" def="no" x="10" y="58" w="220" h="86">
+						<params w="240" h="70">
+							<param type="label" text="Variant" x="10" y="10" w="70" h="13"/>
+							<param type="textedit" id="q_variant" text="Variant text goes here" def="Variant text goes here" x="80" y="9" w="133" h="13"/>
+							<param type="check" id="q_right" text="Correct answer" def="no" x="80" y="25" w="110" h="13"/>
+							<param type="line" x="10" y="44" w="220" h="2"/>
+							<param type="button" id="OK" text="OK" x="125" y="50" w="50" h="14"/>
+							<param type="button" id="CANCEL" text="Cancel" x="180" y="50" w="50" h="14"/>
+						</params>
+					</param>
+
+					<param type="list" id="q_select_variants" text="Variant" def="no" x="10" y="58" w="220" h="86">
+						<params w="240" h="70">
+							<param type="label" text="Variant" x="10" y="10" w="70" h="13"/>
+							<param type="textedit" id="q_variant" text="Variant text goes here" def="Variant text goes here" x="80" y="9" w="133" h="13"/>
+							<param type="check" id="q_right" text="Correct answer" def="no" x="80" y="25" w="110" h="13"/>
+							<param type="line" x="10" y="44" w="220" h="2"/>
+							<param type="button" id="OK" text="OK" x="125" y="50" w="50" h="14"/>
+							<param type="button" id="CANCEL" text="Cancel" x="180" y="50" w="50" h="14"/>
+						</params>
+					</param>
+
+			    	<param type="check" id="q_shuffle" listcolumn="0" text="Shuffle variants on display" def="no" x="10" y="147" w="180" h="13"/>
+
+					<param type="list" id="q_range_variants" text="Variant" def="no" x="10" y="58" w="220" h="98">
+						<params w="240" h="70">
+							<param type="label" text="Variant" x="10" y="10" w="70" h="13"/>
+							<param type="textedit" id="q_variant" text="Variant text goes here" def="Variant text goes here" x="80" y="9" w="133" h="13"/>
+							<param type="line" x="10" y="44" w="220" h="2"/>
+							<param type="button" id="OK" text="OK" x="125" y="50" w="50" h="14"/>
+							<param type="button" id="CANCEL" text="Cancel" x="180" y="50" w="50" h="14"/>
+						</params>
+					</param>
+
+					<param type="list" id="q_numeric_variants" text="" def="no" x="10" y="58" w="220" h="98">
+						<params w="240" h="150">
+							<param type="label" text="Field explanation:" x="10" y="10" w="90" h="13"/>
+							<param type="textedit" id="q_explanation" text="Explanation text goes here" def="" x="100" y="9" w="113" h="13"/>
+							<param type="label" text="Correct answer" x="10" y="28" w="70" h="13"/>
+							<param type="list" id="q_conditions" text="no" def="no" x="10" y="26" w="220" h="80">
+								<params w="170" h="74">
+									<param type="label" text="Condition:" x="10" y="10" w="60" h="13"/>
+									<param type="select" id="q_condition" text="Condition" def="eq" x="70" y="9" w="80" h="13">
+										<items>
+											<item id="eq" label="Exactly equal"/>
+											<item id="ne" label="Not equal"/>
+											<item id="gt" label="Greater than"/>
+											<item id="gte" label="Greater than or equal"/>
+											<item id="lt" label="Less than"/>
+											<item id="lte" label="Less than or equal"/>
+										</items>
+									</param>
+									<param type="label" text="Value:" x="10" y="26" w="60" h="13"/>
+									<param type="edit" id="q_variant" text="Value" def="" x="70" y="25" w="45" h="13"/>
+									<param type="line" x="8" y="44" w="154" h="2"/>
+									<param type="button" id="OK" text="OK" x="55" y="50" w="50" h="14"/>
+									<param type="button" id="CANCEL" text="Cancel" x="110" y="50" w="50" h="14"/>
+								</params>
+							</param>
+							<param type="label" text="Maximal value length:" x="10" y="110" w="90" h="13"/>
+							<param type="edit" id="q_width" text="" def="10" x="100" y="108" w="18" h="13"/>
+							<param type="label" text="chars" x="123" y="110" w="90" h="13"/>
+							<param type="line" x="8" y="128" w="224" h="1"/>
+							<param type="button" id="OK" text="OK" x="125" y="132" w="50" h="14"/>
+							<param type="button" id="CANCEL" text="Cancel" x="180" y="132" w="50" h="14"/>
+						</params>
+					</param>
+
+					<param type="list" id="q_text_variants" text="" def="no" x="10" y="58" w="220" h="80">
+						<params w="240" h="150">
+							<param type="label" text="Field explanation:" x="10" y="10" w="90" h="13"/>
+							<param type="textedit" id="q_explanation" text="Explanation text goes here" def="" x="100" y="9" w="113" h="13"/>
+							<param type="label" text="Correct answer" x="10" y="28" w="70" h="13"/>
+							<param type="list" id="q_conditions" text="no" def="no" x="10" y="26" w="220" h="80">
+								<params w="170" h="90">
+									<param type="label" text="Condition:" x="10" y="10" w="60" h="13"/>
+									<param type="select" id="q_condition" text="Condition" def="eq" x="70" y="9" w="80" h="13">
+										<items>
+											<item id="eq" label="Exactly equal"/>
+											<item id="bw" label="Begins with"/>
+											<item id="ew" label="Ends with"/>
+											<item id="cn" label="Contains"/>
+										</items>
+									</param>
+									<param type="label" text="Value:" x="10" y="26" w="60" h="13"/>
+									<param type="edit" id="q_variant" text="Value" def="" x="70" y="25" w="45" h="13"/>
+									<param type="check" id="q_case" text="Case sensitive" def="no" x="10" y="41" w="105" h="13"/>
+									<param type="line" x="8" y="60" w="154" h="2"/>
+									<param type="button" id="OK" text="OK" x="55" y="66" w="50" h="14"/>
+									<param type="button" id="CANCEL" text="Cancel" x="110" y="66" w="50" h="14"/>
+								</params>
+							</param>
+							<param type="label" text="Maximal value length:" x="10" y="110" w="90" h="13"/>
+							<param type="edit" id="q_width" text="" def="10" x="100" y="108" w="18" h="13"/>
+							<param type="label" text="chars" x="123" y="110" w="90" h="13"/>
+							<param type="line" x="8" y="128" w="224" h="1"/>
+							<param type="button" id="OK" text="OK" x="125" y="132" w="50" h="14"/>
+							<param type="button" id="CANCEL" text="Cancel" x="180" y="132" w="50" h="14"/>
+						</params>
+					</param>
+
+					<param type="check" id="q_showq" listcolumn="0" text="Display question text" def="yes" x="100" y="42" w="120" h="13">
+						<events>
+							<event name="check" target="q_question_l" action="enable" />
+							<event name="check" target="q_question" action="enable" />
+							<event name="uncheck" target="q_question_l" action="disable" />
+							<event name="uncheck" target="q_question" action="disable" />
+						</events>
+					</param>
+					<param type="label" id="q_oto_variants_l" text="Pairs:" x="10" y="60" w="70" h="13"/>
+					<param type="list" id="q_oto_variants" text="Pairs" def="no" x="10" y="58" w="220" h="98">
+						<params w="240" h="70">
+							<param type="label" text="Pair base" x="10" y="10" w="70" h="13"/>
+							<param type="textedit" id="q_target" text="Base text goes here" def="Base text goes here" x="80" y="9" w="133" h="13"/>
+							<param type="label" text="Pair match" x="10" y="26" w="70" h="13"/>
+							<param type="textedit" id="q_bullet" text="Match text goes here" def="Match text goes here" x="80" y="25" w="133" h="13"/>
+							<param type="line" x="10" y="44" w="220" h="2"/>
+							<param type="button" id="OK" text="OK" x="125" y="50" w="50" h="14"/>
+							<param type="button" id="CANCEL" text="Cancel" x="180" y="50" w="50" h="14"/>
+						</params>
+					</param>
+
+                    <param type="label" id="q_image_label" text="Question image:" x="10" y="165" w="90" h="13"/>
+                    <param type="file" listcolumn="0" id="q_image" text="" def="" x="110" y="164" w="103" h="13"/>
+
+			    </page>
+				<page name=" Limitations " w="240" h="165">
+					<param type="line" x="8" y="12" w="224" h="28"/>
+					<param type="label" text=" " x="11" y="6" w="6" h="13"/>
+					<param type="check" listcolumn="0" id="q_att_auto" text="Calculate number of attempts automatically" def="no" x="15" y="6" w="182" h="13">
+						<events>
+							<event name="check" target="lab_q_attempts" action="disable" />
+							<event name="check" target="q_attempts" action="disable" />
+							<event name="uncheck" target="lab_q_attempts" action="enable" />
+							<event name="uncheck" target="q_attempts" action="enable" />
+						</events>
+					</param>
+					<param type="label" id="lab_q_attempts" text="Number of attempts:" x="15" y="23" w="95" h="13"/>
+					<param type="edit" id="q_attempts" listcolumn="0" text="1" def="1" x="110" y="21" w="45" h="13"/>
+					<param type="line" x="8" y="47" w="224" h="28"/>
+					<param type="label" text=" " x="11" y="41" w="6" h="13"/>
+					<param type="check" listcolumn="0" id="q_timer_switch" text="Time limit for the answer" def="no" x="15" y="41" w="105" h="13">
+						<events>
+							<event name="check" target="lab_q_timer" action="enable" />
+							<event name="check" target="q_timer" action="enable" />
+							<event name="uncheck" target="lab_q_timer" action="disable" />
+							<event name="uncheck" target="q_timer" action="disable" />
+						</events>
+					</param>
+					<param type="label" id="lab_q_timer" text="Time limit (sec):" x="15" y="57" w="95" h="13"/>
+					<param type="edit" id="q_timer" listcolumn="0" text="1" def="10" x="110" y="56" w="45" h="13"/>
+					<param type="line" x="8" y="82" w="224" h="38"/>
+					<param type="label" text=" " x="11" y="76" w="6" h="13"/>
+					<param type="check" listcolumn="0" id="q_skip" text="Allow skip question" def="no" x="15" y="76" w="115" h="13">
+						<events>
+							<event name="check" target="lab_q_skipper" action="enable" />
+							<event name="check" target="q_skipper1" action="enable" />
+							<event name="check" target="q_skipper2" action="enable" />
+							<event name="uncheck" target="lab_q_skiper" action="disable" />
+							<event name="uncheck" target="q_skipper1" action="disable" />
+							<event name="uncheck" target="q_skipper2" action="disable" />
+						</events>
+					</param>
+					<param type="label" id="lab_q_skipper" text="Skipped question is:" x="15" y="93" w="95" h="13"/>
+					<param type="radio" listcolumn="0" id="q_skipper1" text="just skipped" def="no" x="110" y="91" w="80" h="13"/>
+					<param type="radio" listcolumn="0" id="q_skipper2" text="failed" def="yes" x="110" y="102" w="90" h="13"/>
+				</page>
+				<page name= " Scoring " w="240" h="165">
+					<param type="label" id="lab_q_weight" text="Base weight of a question/attempt:" x="10" y="10" w="110" h="13"/>
+					<param type="edit" id="q_weight" listcolumn="0" text="1" def="1" x="110" y="9" w="45" h="13"/>
+					<param type="label" id="lab_q_pointset" text="Crediting method:" x="10" y="26" w="110" h="13"/>
+					<param type="radio" listcolumn="0" id="q_pointset_fixed" text="fixed score" def="yes" x="120" y="25" w="80" h="13"/>
+					<param type="radio" listcolumn="0" id="q_pointset_auto" text="regressive" def="no" x="120" y="35" w="90" h="13"/>
+					<param type="label" id="lab_q_scoreboards" text="Objectives:" x="10" y="53" w="70" h="13"/>
+					<param type="list" listcolumn="0" id="q_scoreboards" text="yes" def="yes" x="10" y="51" w="220" h="60">
+						<params w="240" h="70">
+							<param type="label" text="Objective:" x="10" y="10" w="70" h="13"/>
+							<param type="objectiveid" id="q_board" text="Objective" def="total" x="80" y="9" w="116" h="13"/>
+							<param type="line" x="10" y="44" w="220" h="2"/>
+							<param type="button" id="OK" text="OK" x="125" y="50" w="50" h="14"/>
+							<param type="button" id="CANCEL" text="Cancel" x="180" y="50" w="50" h="14"/>
+						</params>
+					</param>
+				</page>
+				<page name=" Feedback " w="240" h="160">
+					<param type="line" x="8" y="16" w="224" h="110"/>
+					<param type="label" text=" " x="11" y="10" w="6" h="13"/>
+					<param type="check" id="q_fb_switch" listcolumn="0" text="Use test default messages" def="yes" x="15" y="10" w="170" h="13">
+						<events>
+							<event name="uncheck" target="lab_q_feedbackright" action="enable" />
+							<event name="uncheck" target="q_feedbackright" action="enable" />
+							<event name="uncheck" target="lab_q_feedbackwrong" action="enable" />
+							<event name="uncheck" target="q_feedbackwrong" action="enable" />
+							<event name="uncheck" target="lab_q_feedbackexhausted" action="enable" />
+							<event name="uncheck" target="q_feedbackexhausted" action="enable" />
+							<event name="uncheck" target="lab_q_feedbacktimeout" action="enable" />
+							<event name="uncheck" target="q_feedbacktimeout" action="enable" />
+							<event name="uncheck" target="lab_q_feedbackleft" action="enable" />
+							<event name="uncheck" target="q_feedbackleft" action="enable" />
+							<event name="uncheck" target="lab_q_feedbackleft2" action="enable" />
+							<event name="uncheck" target="lab_q_feedbacktop" action="enable" />
+							<event name="uncheck" target="q_feedbacktop" action="enable" />
+							<event name="uncheck" target="lab_q_feedbacktop2" action="enable" />
+							<event name="check" target="lab_q_feedbackright" action="disable" />
+							<event name="check" target="q_feedbackright" action="disable" />
+							<event name="check" target="lab_q_feedbackwrong" action="disable" />
+							<event name="check" target="q_feedbackwrong" action="disable" />
+							<event name="check" target="lab_q_feedbackexhausted" action="disable" />
+							<event name="check" target="q_feedbackexhausted" action="disable" />
+							<event name="check" target="lab_q_feedbacktimeout" action="disable" />
+							<event name="check" target="q_feedbacktimeout" action="disable" />
+							<event name="check" target="lab_q_feedbackleft" action="disable" />
+							<event name="check" target="q_feedbackleft" action="disable" />
+							<event name="check" target="lab_q_feedbackleft2" action="disable" />
+							<event name="check" target="lab_q_feedbacktop" action="disable" />
+							<event name="check" target="q_feedbacktop" action="disable" />
+							<event name="check" target="lab_q_feedbacktop2" action="disable" />
+						</events>
+					</param>
+					<param type="label" id="lab_q_feedbackright" text="Correct answer:" x="15" y="26" w="90" h="13"/>
+					<param type="textedit" id="q_feedbackright" listcolumn="0" text="" def="Correct" x="105" y="25" w="103" h="13"/>
+					<param type="label" id="lab_q_feedbackwrong" text="Incorrect answer:" x="15" y="42" w="90" h="13"/>
+					<param type="textedit" id="q_feedbackwrong" listcolumn="0" text="" def="Incorrect" x="105" y="41" w="103" h="13"/>
+					<param type="label" id="lab_q_feedbackexhausted" text="No more attempts:" x="15" y="58" w="90" h="13"/>
+					<param type="textedit" id="q_feedbackexhausted" listcolumn="0" text="" def="Incorrect. No more attempts." x="105" y="57" w="103" h="13"/>
+					<param type="label" id="lab_q_feedbacktimeout" text="Timeout:" x="15" y="74" w="90" h="13"/>
+					<param type="textedit" id="q_feedbacktimeout" listcolumn="0" text="" def="Time is out." x="105" y="73" w="103" h="13"/>
+					<param type="label" id="lab_q_feedbackleft" text="Offset horizontal:" x="15" y="90" w="90" h="13"/>
+					<param type="edit" id="q_feedbackleft" listcolumn="0" text="100" def="100" x="105" y="89" w="25" h="13"/>
+					<param type="label" id="lab_q_feedbackleft2" text="pixels" x="135" y="90" w="50" h="13"/>
+					<param type="label" id="lab_q_feedbacktop" text="Offset vertical:" x="15" y="106" w="90" h="13"/>
+					<param type="edit" id="q_feedbacktop" text="50" listcolumn="0" def="50" x="105" y="105" w="25" h="13"/>
+					<param type="label" id="lab_q_feedbacktop2" text="pixels" x="135" y="106" w="50" h="13"/>
+				</page>
+		</param>
+    </page>
+	<page name=" Limitations and scoring " w="280" h="188">
+		<param type="check" id="test_scored" text="Scored test" def="yes" x="15" y="9" w="80" h="13"/>
+       	<param type="check" id="test_q_timer_switch" text="Enable time limitation for test" def="no" x="15" y="22" w="200" h="13"/>
+		<param type="line" x="8" y="41" w="264" h="28"/>
+		<param type="label" text=" " x="11" y="35" w="6" h="13"/>
+		<param type="check" id="test_timer_switch" text="Limit test duration" def="no" x="15" y="35" w="99" h="13">
+			<events>
+				<event name="check" target="lab_q_timer" action="enable" />
+				<event name="check" target="lab_q_timer2" action="enable" />
+				<event name="check" target="lab_q_timer3" action="enable" />
+				<event name="check" target="test_timer" action="enable" />
+				<event name="check" target="test_timer_s" action="enable" />
+				<event name="uncheck" target="lab_q_timer" action="disable" />
+				<event name="uncheck" target="lab_q_timer2" action="disable" />
+				<event name="uncheck" target="lab_q_timer3" action="disable" />
+				<event name="uncheck" target="test_timer" action="disable" />
+				<event name="uncheck" target="test_timer_s" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_q_timer" text="Test time limit:" x="15" y="52" w="95" h="13"/>
+		<param type="edit" id="test_timer" text="1" def="" x="110" y="50" w="25" h="13"/>
+		<param type="label" id="lab_q_timer2" text="min" x="139" y="52" w="18" h="13"/>
+		<param type="edit" id="test_timer_s" text="1" def="" x="160" y="50" w="25" h="13"/>
+		<param type="label" id="lab_q_timer3" text="sec" x="189" y="52" w="18" h="13"/>
+    	<param type="check" id="repeat_test" text="Allow recurring approaches" def="no" x="15" y="72" w="120" h="13"/>
+ 		<param type="check" id="qtiimages" text="Display question images" def="no" x="15" y="85" w="180" h="13"/>
+	</page>
+	<page name=" Feedback " w="280" h="188">
+		<param type="check" id="test_showright" text="Display right answer" def="no" x="15" y="9" w="136" h="13"/>
+		<param type="line" x="8" y="28" w="264" h="142"/>
+		<param type="label" text=" " x="11" y="22" w="6" h="13"/>
+		<param type="check" id="test_fb_switch" text="Display feedback messages" def="no" x="15" y="22" w="155" h="13">
+			<events>
+				<event name="check" target="lab_test_feedbackright" action="enable" />
+				<event name="check" target="test_feedbackright" action="enable" />
+				<event name="check" target="lab_test_feedbackwrong" action="enable" />
+				<event name="check" target="test_feedbackwrong" action="enable" />
+				<event name="check" target="lab_test_feedbackexhausted" action="enable" />
+				<event name="check" target="test_feedbackexhausted" action="enable" />
+				<event name="check" target="lab_test_feedbacktimeout" action="enable" />
+				<event name="check" target="test_feedbacktimeout" action="enable" />
+				<event name="check" target="lab_test_feedbackleft" action="enable" />
+				<event name="check" target="test_feedbackleft" action="enable" />
+				<event name="check" target="lab_test_feedbackleft2" action="enable" />
+				<event name="check" target="lab_test_feedbacktop" action="enable" />
+				<event name="check" target="test_feedbacktop" action="enable" />
+				<event name="check" target="lab_test_feedbacktop2" action="enable" />
+				<event name="check" target="test_feedbackright_preview" action="enable" />
+				<event name="check" target="test_feedbackwrong_preview" action="enable" />
+				<event name="check" target="test_feedbackexhausted_preview" action="enable" />
+				<event name="check" target="test_feedbacktimeout_preview" action="enable" />
+				<event name="uncheck" target="lab_test_feedbackright" action="disable" />
+				<event name="uncheck" target="test_feedbackright" action="disable" />
+				<event name="uncheck" target="lab_test_feedbackwrong" action="disable" />
+				<event name="uncheck" target="test_feedbackwrong" action="disable" />
+				<event name="uncheck" target="lab_test_feedbackexhausted" action="disable" />
+				<event name="uncheck" target="test_feedbackexhausted" action="disable" />
+				<event name="uncheck" target="lab_test_feedbacktimeout" action="disable" />
+				<event name="uncheck" target="test_feedbacktimeout" action="disable" />
+				<event name="uncheck" target="lab_test_feedbackleft" action="disable" />
+				<event name="uncheck" target="test_feedbackleft" action="disable" />
+				<event name="uncheck" target="lab_test_feedbackleft2" action="disable" />
+				<event name="uncheck" target="lab_test_feedbacktop" action="disable" />
+				<event name="uncheck" target="test_feedbacktop" action="disable" />
+				<event name="uncheck" target="lab_test_feedbacktop2" action="disable" />
+				<event name="uncheck" target="test_feedbackright_preview" action="disable" />
+				<event name="uncheck" target="test_feedbackwrong_preview" action="disable" />
+				<event name="uncheck" target="test_feedbackexhausted_preview" action="disable" />
+				<event name="uncheck" target="test_feedbacktimeout_preview" action="disable" />
+				<event name="check" target="test_fb_timerswitch" action="enable" />
+				<event name="check" target="lab_test_fbtimer" action="enable" />
+				<event name="check" target="test_fb_timer" action="enable" />
+				<event name="check" target="lab_test_fbtimer2" action="enable" />
+				<event name="uncheck" target="lab_test_fbtimer" action="disable" />
+				<event name="uncheck" target="test_fb_timer" action="disable" />
+				<event name="uncheck" target="lab_test_fbtimer2" action="disable" />
+				<event name="uncheck" target="test_fb_timerswitch" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_test_feedbackright" text="Correct answer:" x="15" y="38" w="90" h="13"/>
+		<param type="textedit" id="test_feedbackright" text="" def="Correct" x="105" y="37" w="143" h="13"/>
+		<param type="label" id="lab_test_feedbackwrong" text="Incorrect answer:" x="15" y="54" w="90" h="13"/>
+		<param type="textedit" id="test_feedbackwrong" text="" def="Incorrect" x="105" y="53" w="143" h="13"/>
+		<param type="label" id="lab_test_feedbackexhausted" text="No more attempts:" x="15" y="70" w="90" h="13"/>
+		<param type="textedit" id="test_feedbackexhausted" text="" def="Incorrect. No more attempts." x="105" y="69" w="143" h="13"/>
+		<param type="label" id="lab_test_feedbacktimeout" text="Timeout:" x="15" y="86" w="90" h="13"/>
+		<param type="textedit" id="test_feedbacktimeout" text="" def="Time is out." x="105" y="85" w="143" h="13"/>
+		<param type="label" id="lab_test_feedbackleft" text="Offset horizontal:" x="15" y="102" w="90" h="13"/>
+		<param type="edit" id="test_feedbackleft" text="100" def="100" x="105" y="101" w="25" h="13"/>
+		<param type="label" id="lab_test_feedbackleft2" text="pixels" x="135" y="102" w="50" h="13"/>
+		<param type="label" id="lab_test_feedbacktop" text="Offset vertical:" x="15" y="118" w="90" h="13"/>
+		<param type="edit" id="test_feedbacktop" text="50" def="50" x="105" y="117" w="25" h="13"/>
+		<param type="label" id="lab_test_feedbacktop2" text="pixels" x="135" y="118" w="50" h="13"/>
+		<param type="line" x="14" y="140" w="252" h="24"/>
+		<param type="label" text=" " x="16" y="134" w="6" h="13"/>
+		<param type="check" id="test_fb_timerswitch" text="Hide messages automatically" def="no" x="20" y="134" w="135" h="13">
+			<events>
+				<event name="check" target="lab_test_fbtimer" action="enable" />
+				<event name="check" target="test_fb_timer" action="enable" />
+				<event name="check" target="lab_test_fbtimer2" action="enable" />
+				<event name="uncheck" target="lab_test_fbtimer" action="disable" />
+				<event name="uncheck" target="test_fb_timer" action="disable" />
+				<event name="uncheck" target="lab_test_fbtimer2" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_test_fbtimer" text="after" x="75" y="148" w="90" h="13"/>
+		<param type="edit" id="test_fb_timer" text="" def="3" x="105" y="147" w="25" h="13"/>
+		<param type="label" id="lab_test_fbtimer2" text="sec" x="138" y="148" w="50" h="13"/>
+  	</page>
+	<page name=" Display " w="280" h="188">
+		<param type="label" text="Skin:" x="10" y="10" w="90" h="13"/>
+		<param type="select" id="q_realskin" text="" def="basic" x="100" y="9" w="170" h="13">
+			<items>
+				<item id="basic" label="Basic"/>
+				<item id="curve" label="Rounded"/>
+			</items>
+		</param>
+		<param type="label" text="Basic color:" x="10" y="26" w="90" h="13"/>
+		<param type="select" id="q_skin" text="lightblue" def="lightblue" x="100" y="25" w="170" h="13">
+			<items>
+				<item id="lightblue" label="Lightblue"/>
+				<item id="blue" label="Blue"/>
+				<item id="red" label="Red"/>
+				<item id="deeppink" label="Crimson"/>
+				<item id="pink" label="Pink"/>
+				<item id="brown" label="Brown"/>
+				<item id="green" label="Green"/>
+				<item id="olive" label="Olive"/>
+				<item id="turq" label="Turquoise"/>
+				<item id="blue_green" label="Teal"/>
+				<item id="steel_blue" label="Steel Blue"/>
+				<item id="violet" label="Violet"/>
+				<item id="yellow" label="Yellow"/>
+				<item id="orange" label="Orange"/>
+				<item id="grey" label="Grey"/>
+			</items>
+		</param>
+		<param type="line" x="8" y="46" w="264" h="1"/>
+		<param type="label" text="  Numeric/text input field parameters " x="40" y="42" w="148" h="13"/>
+		<param type="label" text="Border style:" x="10" y="56" w="90" h="13"/>
+		<param type="select" id="input_border_style" text="solid" def="solid" x="100" y="55" w="130" h="13">
+			<items>
+				<item id="none" label="No border"/>
+				<item id="solid" label="Solid"/>
+				<item id="double" label="Double"/>
+				<item id="inset" label="Outset"/>
+				<item id="outset" label="Inset"/>
+				<item id="dashed" label="Dashed"/>
+				<item id="dotted" label="Dotted"/>
+			</items>
+		</param>
+		<param type="label" text="Border width:" x="10" y="72" w="90" h="13"/>
+		<param type="edit" id="input_border_width" text="2" def="2" x="100" y="71" w="18" h="13"/>
+		<param type="label" text="pixels" x="122" y="72" w="50" h="13"/>
+		<param type="label" text="Background color:" x="10" y="88" w="90" h="13"/>
+		<param type="color" id="input_bg_color" text="#FFFFFF" def="#FFFFFF" x="100" y="87" w="45" h="13"/>
+		<param type="label" text="Font:" x="10" y="104" w="90" h="13"/>
+		<param type="select" id="input_font" text="Arial" def="Arial" x="100" y="103" w="80" h="13">
+			<items>
+				<item id="Arial" label="Arial"/>
+				<item id="Tahoma" label="Tahoma"/>
+				<item id="Times" label="Times"/>
+				<item id="Verdana" label="Verdana"/>
+				<item id="Courier" label="Courier"/>
+			</items>
+		</param>
+		<param type="label" text="Font size:" x="10" y="120" w="90" h="13"/>
+		<param type="edit" id="input_font_size" text="12" def="12" x="100" y="119" w="18" h="13"/>
+		<param type="label" text="pixels" x="122" y="120" w="50" h="13"/>
+		<param type="label" text="Font color:" x="10" y="136" w="90" h="13"/>
+		<param type="color" id="input_font_color" text="#000000" def="#000000" x="100" y="135" w="45" h="13"/>
+		<param type="line" x="8" y="157" w="264" h="1"/>
+		<param type="label" text="  Matching pairs parameters" x="50" y="153" w="144" h="13"/>
+		<param type="label" text="Base width:" x="10" y="167" w="90" h="13"/>
+		<param type="edit" id="q_targetwidth" text="250" def="250" x="100" y="166" w="25" h="13"/>
+		<param type="label" text="pixels" x="130" y="167" w="50" h="13"/>
+		<param type="label" text="Match width:" x="10" y="183" w="90" h="13"/>
+		<param type="edit" id="q_bulletwidth" text="350" def="350" x="100" y="182" w="25" h="13"/>
+		<param type="label" text="pixels" x="130" y="183" w="50" h="13"/>
+	</page>
+	<page name=" Messages " w="280" h="200">
+		<param type="line" x="8" y="13" w="264" h="1"/>
+		<param type="label" text="  Information messages" x="90" y="9" w="90" h="13"/>
+		<param type="label" text="Correct answer:" x="10" y="23" w="90" h="13"/>
+		<param type="edit" id="q_goal_right" text="" def="CORRECT ANSWER" x="100" y="22" w="170" h="13"/>
+		<param type="label" text="Last question state:" x="10" y="39" w="90" h="13"/>
+		<param type="edit" id="q_goal_last" text="" def="LAST QUESTION STATE" x="100" y="38" w="170" h="13"/>
+		<param type="label" text="Skipped:" x="10" y="55" w="90" h="13"/>
+		<param type="edit" id="q_goal_skip" text="" def="QUESTION IS SKIPPED" x="100" y="54" w="170" h="13"/>
+		<param type="label" text="Skipped and failed:" x="10" y="71" w="90" h="13"/>
+		<param type="edit" id="q_goal_failed" text="" def="QUESTION IS SKIPPED AND FAILED" x="100" y="70" w="170" h="13"/>
+		<param type="line" x="8" y="90" w="264" h="1"/>
+		<param type="label" text="   Warning messages" x="90" y="86" w="70" h="13"/>
+		<param type="label" text="Continued:" x="10" y="100" w="90" h="13"/>
+		<param type="edit" id="t_continue_alert" text="" def="Continued approach. Starting from first unanswered question." x="100" y="99" w="170" h="13"/>
+		<param type="label" text="Already answered:" x="10" y="116" w="90" h="13"/>
+		<param type="edit" id="t_browse_alert" text="" def="Test is already answered. Recurring approach is not allowed." x="100" y="115" w="170" h="13"/>
+		<param type="label" text="Recurring approach:" x="10" y="132" w="90" h="13"/>
+		<param type="edit" id="t_secondrun_confirm" text="" def="This test is already answered. Press OK to clear stored results and start new approach. Press Cancel otherwise." x="100" y="131" w="170" h="13"/>
+		<param type="label" text="Skip and fail confirmation:" x="10" y="148" w="90" h="13"/>
+		<param type="edit" id="q_skip_confirm" text="" def="Skipped question will be evaluated as failed. Are you sure?" x="100" y="147" w="170" h="13"/>
+		<param type="label" text="Still unanswered:" x="10" y="164" w="90" h="13"/>
+		<param type="edit" id="q_replay_confirm" text="" def="There are unanswered questions. Continue?" x="100" y="163" w="170" h="13"/>
+		<param type="label" text="Numeric only:" x="10" y="180" w="90" h="13"/>
+		<param type="edit" id="q_input_alert" text="" def="Please enter only numbers and signs" x="100" y="179" w="170" h="13"/>
+	</page>
+	<page name=" Texts " w="280" h="270">
+		<param type="label" text="Single choice:" x="10" y="10" w="90" h="13"/>
+		<param type="edit" id="q_goal_choice" text="" def="Select correct variant" x="100" y="9" w="170" h="13"/>
+		<param type="label" text="Multiple select:" x="10" y="26" w="90" h="13"/>
+		<param type="edit" id="q_goal_select" text="" def="Select all correct variants" x="100" y="25" w="170" h="13"/>
+		<param type="label" text="Ordering:" x="10" y="42" w="90" h="13"/>
+		<param type="edit" id="q_goal_range" text="" def="Place variants in correct order" x="100" y="41" w="170" h="13"/>
+		<param type="label" text="Numeric fill-in-blank:" x="10" y="58" w="90" h="13"/>
+		<param type="edit" id="q_goal_numeric" text="" def="Enter numeric value" x="100" y="57" w="170" h="13"/>
+		<param type="label" text="Text fill-in-blank:" x="10" y="74" w="90" h="13"/>
+		<param type="edit" id="q_goal_text" text="" def="Enter text string" x="100" y="73" w="170" h="13"/>
+		<param type="label" text="Pair match:" x="10" y="90" w="90" h="13"/>
+		<param type="edit" id="q_goal_oto" text="" def="Connect pairs to match correctly" x="100" y="89" w="170" h="13"/>
+		<param type="label" text="Attempts text:" x="10" y="106" w="90" h="13"/>
+		<param type="edit" id="q_attempts_msg" text="" def="Attempts:" x="100" y="105" w="170" h="13"/>
+		<param type="label" text="Scored test text:" x="10" y="122" w="90" h="13"/>
+		<param type="edit" id="q_scored_msg" text="" def="Credited:" x="100" y="121" w="170" h="13"/>
+		<param type="label" text="Not scored test text:" x="10" y="138" w="90" h="13"/>
+		<param type="edit" id="q_notscored_msg" text="" def="Not credited:" x="100" y="137" w="170" h="13"/>
+		<param type="label" text="Question number text:" x="10" y="154" w="90" h="13"/>
+		<param type="edit" id="q_question_msg" text="" def="question" x="100" y="153" w="170" h="13"/>
+		<param type="label" text="From text:" x="10" y="170" w="90" h="13"/>
+		<param type="edit" id="q_from_msg" text="" def="from" x="100" y="169" w="170" h="13"/>
+		<param type="label" text="Question timer text:" x="10" y="186" w="90" h="13"/>
+		<param type="edit" id="q_timer_msg" text="" def="Question time limit:" x="100" y="185" w="170" h="13"/>
+		<param type="label" text="Test timer text:" x="10" y="202" w="90" h="13"/>
+		<param type="edit" id="t_timer_msg" text="" def="Test time limit:" x="100" y="201" w="170" h="13"/>
+		<param type="label" text="Stopped test text:" x="10" y="218" w="90" h="13"/>
+		<param type="edit" id="t_stop_msg" text="" def="Test is stopped" x="100" y="217" w="170" h="13"/>
+		<param type="label" text="All Answered text:" x="10" y="234" w="90" h="13"/>
+		<param type="edit" id="t_allanswered_msg" text="" def="All questions are answered" x="100" y="233" w="170" h="13"/>
+		<param type="label" text="No More Answered text:" x="10" y="250" w="90" h="13"/>
+		<param type="edit" id="t_nomoreanswered_msg" text="" def="No more answered questions" x="100" y="249" w="170" h="13"/>
+	</page>
+	<page name=" Buttons " w="280" h="200">
+		<param type="line" x="8" y="13" w="264" h="110"/>
+		<param type="label" text=" " x="10" y="6" w="5" h="13"/>
+		<param type="check" id="q_defaultbutton" text=" Use default buttons " def="yes" x="15" y="6" w="80" h="13">
+			<events>
+				<event name="check" target="lab_q_abtn_0" action="disable" />
+				<event name="check" target="q_abtn_0" action="disable" />
+				<event name="check" target="lab_q_abtn_1" action="disable" />
+				<event name="check" target="q_abtn_1" action="disable" />
+				<event name="check" target="lab_q_sbtn_0" action="disable" />
+				<event name="check" target="q_sbtn_0" action="disable" />
+				<event name="check" target="lab_q_sbtn_1" action="disable" />
+				<event name="check" target="q_sbtn_1" action="disable" />
+				<event name="check" target="lab_q_nbtn_0" action="disable" />
+				<event name="check" target="q_nbtn_0" action="disable" />
+				<event name="check" target="lab_nbtn_1" action="disable" />
+				<event name="check" target="q_nbtn_1" action="disable" />
+				<event name="uncheck" target="lab_q_abtn_0" action="enable" />
+				<event name="uncheck" target="q_abtn_0" action="enable" />
+				<event name="uncheck" target="lab_q_abtn_1" action="enable" />
+				<event name="uncheck" target="q_abtn_1" action="enable" />
+				<event name="uncheck" target="lab_q_sbtn_0" action="enable" />
+				<event name="uncheck" target="q_sbtn_0" action="enable" />
+				<event name="uncheck" target="lab_q_sbtn_1" action="enable" />
+				<event name="uncheck" target="q_sbtn_1" action="enable" />
+				<event name="uncheck" target="lab_q_nbtn_0" action="enable" />
+				<event name="uncheck" target="q_nbtn_0" action="enable" />
+				<event name="uncheck" target="lab_q_nbtn_1" action="enable" />
+				<event name="uncheck" target="q_nbtn_1" action="enable" />
+			</events>
+		</param>
+		<param type="label" id="lab_q_abtn_0" text="Submit answer:" x="15" y="24" w="105" h="13"/>
+		<param type="file" id="q_abtn_0" text="" def="" x="120" y="23" w="120" h="13"/>
+		<param type="label" id="lab_q_abtn_1" text="Submit answer over:" x="15" y="40" w="105" h="13"/>
+		<param type="file" id="q_abtn_1" text="" def="" x="120" y="39" w="120" h="13"/>
+		<param type="label" id="lab_q_sbtn_0" text="Skip question:" x="15" y="56" w="105" h="13"/>
+		<param type="file" id="q_sbtn_0" text="" def="" x="120" y="55" w="120" h="13"/>
+		<param type="label" id="lab_q_sbtn_1" text="Skip question over:" x="15" y="72" w="105" h="13"/>
+		<param type="file" id="q_sbtn_1" text="" def="" x="120" y="71" w="120" h="13"/>
+		<param type="label" id="lab_q_nbtn_0" text="Next question:" x="15" y="88" w="105" h="13"/>
+		<param type="file" id="q_nbtn_0" text="" def="" x="120" y="87" w="120" h="13"/>
+		<param type="label" id="lab_q_nbtn_1" text="Next question over:" x="15" y="104" w="105" h="13"/>
+		<param type="file" id="q_nbtn_1" text="" def="" x="120" y="103" w="120" h="13"/>
+		<param type="label" text="Submit button tooltip:" x="10" y="136" w="110" h="13"/>
+		<param type="edit" id="q_abtn_tooltip" text="" def="Submit answer" x="120" y="135" w="150" h="13"/>
+		<param type="label" text="Skip button tooltip:" x="10" y="152" w="90" h="13"/>
+		<param type="edit" id="q_sbtn_tooltip" text="" def="Skip question" x="120" y="151" w="150" h="13"/>
+		<param type="label" text="Next question button tooltip:" x="10" y="168" w="90" h="13"/>
+		<param type="edit" id="q_nbtn_tooltip" text="" def="Next question" x="120" y="167" w="150" h="13"/>
+	</page>
+	<page name=" Spots " w="280" h="200">
+		<param type="line" x="8" y="13" w="264" h="142"/>
+		<param type="label" text=" " x="10" y="6" w="5" h="13"/>
+		<param type="check" id="q_defaultspot" text=" Use default active spots " def="yes" x="15" y="6" w="100" h="13">
+			<events>
+				<event name="check" target="lab_q_choicespot_0" action="disable" />
+				<event name="check" target="q_choicespot_0" action="disable" />
+				<event name="check" target="lab_q_choicespot_1" action="disable" />
+				<event name="check" target="q_choicespot_1" action="disable" />
+				<event name="check" target="lab_q_selectspot_0" action="disable" />
+				<event name="check" target="q_selectspot_0" action="disable" />
+				<event name="check" target="lab_q_selectspot_1" action="disable" />
+				<event name="check" target="q_selectspot_1" action="disable" />
+				<event name="check" target="lab_q_rangespot_up_0" action="disable" />
+				<event name="check" target="q_rangespot_up_0" action="disable" />
+				<event name="check" target="lab_q_rangespot_up_1" action="disable" />
+				<event name="check" target="q_rangespot_up_1" action="disable" />
+				<event name="check" target="lab_q_rangespot_down_0" action="disable" />
+				<event name="check" target="q_rangespot_down_0" action="disable" />
+				<event name="check" target="lab_q_rangespot_down_1" action="disable" />
+				<event name="check" target="q_rangespot_down_1" action="disable" />
+				<event name="uncheck" target="lab_q_choicespot_0" action="enable" />
+				<event name="uncheck" target="q_choicespot_0" action="enable" />
+				<event name="uncheck" target="lab_q_choicespot_1" action="enable" />
+				<event name="uncheck" target="q_choicespot_1" action="enable" />
+				<event name="uncheck" target="lab_q_selectspot_0" action="enable" />
+				<event name="uncheck" target="q_selectspot_0" action="enable" />
+				<event name="uncheck" target="lab_q_selectspot_1" action="enable" />
+				<event name="uncheck" target="q_selectspot_1" action="enable" />
+				<event name="uncheck" target="lab_q_rangespot_up_0" action="enable" />
+				<event name="uncheck" target="q_rangespot_up_0" action="enable" />
+				<event name="uncheck" target="lab_q_rangespot_up_1" action="enable" />
+				<event name="uncheck" target="q_rangespot_up_1" action="enable" />
+				<event name="uncheck" target="lab_q_rangespot_down_0" action="enable" />
+				<event name="uncheck" target="q_rangespot_down_0" action="enable" />
+				<event name="uncheck" target="lab_q_rangespot_down_1" action="enable" />
+				<event name="uncheck" target="q_rangespot_down_1" action="enable" />
+			</events>
+		</param>
+		<param type="label" id="lab_q_choicespot_0" text="Single choice unchecked:" x="15" y="24" w="105" h="13"/>
+		<param type="file" id="q_choicespot_0" text="" def="" x="120" y="23" w="120" h="13"/>
+		<param type="label" id="lab_q_choicespot_1" text="Single choice checked:" x="15" y="40" w="105" h="13"/>
+		<param type="file" id="q_choicespot_1" text="" def="" x="120" y="39" w="120" h="13"/>
+		<param type="label" id="lab_q_selectspot_0" text="Multiple select unchecked:" x="15" y="56" w="105" h="13"/>
+		<param type="file" id="q_selectspot_0" text="" def="" x="120" y="55" w="120" h="13"/>
+		<param type="label" id="lab_q_selectspot_1" text="Multiple select checked:" x="15" y="72" w="105" h="13"/>
+		<param type="file" id="q_selectspot_1" text="" def="" x="120" y="71" w="120" h="13"/>
+		<param type="label" id="lab_q_rangespot_up_0" text="Ordering up active:" x="15" y="88" w="105" h="13"/>
+		<param type="file" id="q_rangespot_up_0" text="" def="" x="120" y="87" w="120" h="13"/>
+		<param type="label" id="lab_q_rangespot_up_1" text="Ordering up inactive:" x="15" y="104" w="105" h="13"/>
+		<param type="file" id="q_rangespot_up_1" text="" def="" x="120" y="103" w="120" h="13"/>
+		<param type="label" id="lab_q_rangespot_down_0" text="Ordering down active:" x="15" y="120" w="105" h="13"/>
+		<param type="file" id="q_rangespot_down_0" text="" def="" x="120" y="119" w="120" h="13"/>
+		<param type="label" id="lab_q_rangespot_down_1" text="Ordering down inactive:" x="15" y="136" w="105" h="13"/>
+		<param type="file" id="q_rangespot_down_1" text="" def="" x="120" y="135" w="120" h="13"/>
+	</page>
+	<methods>
+		<method name="Constructor" label="Constructor" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function Constructor(argobj)
+                {
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var aQuestions = oParams.selectNodes("q_questions/item");
+					if(aQuestions.length==0) return false;
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+					oArgs.action = "init";
+					CallMethod("q_099_test", "Dispatcher", oArgs);
+					return true;
+				}
+                ]]>
+            </body>
+        </method>
+		<method name="DisplayQuestion" label="DisplayQuestion" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisplayQuestion(argobj)
+				{
+					if(argobj.pid==null || argobj.qid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var aQuestions = oParams.selectNodes("q_questions/item");
+					var oQuestion = aQuestions[argobj.qid];
+					var sType = oQuestion.selectSingleNode("q_type").text;
+					var sTestMode = oCurObj.getAttribute("mode");
+					var sID = argobj.pid + "_" + argobj.qid;
+					document.getElementById(argobj.pid+"_q_workarea").style.visibility = "visible";
+					document.getElementById(argobj.pid+"_q_otoworkarea").style.visibility = "visible";
+
+					switch(sType) {
+						case "choice":
+						case "select":		var sIType = "multiple_choice"; break;
+						case "range":		var sIType = "sequencing"; 		break;
+						case "numeric":		var sIType = "numeric"; 		break;
+						case "text":		var sIType = "fill_in"; 		break;
+						case "oto":			var sIType = "matching"; 		break;
+						default:			var sIType = "other"; 			break;
+					}
+
+					var bShuffle = false;
+					var bQTimerEnabled = oParams.selectSingleNode("test_q_timer_switch").text=="yes" ? true : false;
+					var bTimer = oQuestion.selectSingleNode("q_timer_switch").text=="yes" ? true : false;
+					if(!bQTimerEnabled) bTimer = false;
+					var bSkip = oQuestion.selectSingleNode("q_skip").text=="yes" ? true : false;
+					var bSkipFail = oQuestion.selectSingleNode("q_skipper2").text=="yes" ? true : false;
+					if(sType=="range" || sType=="oto") bShuffle = true;
+					if(sType=="choice" || sType=="select") 	bShuffle = oQuestion.selectSingleNode("q_shuffle").text=="yes" ? true : false;
+					var aoVars = oQuestion.selectNodes("q_"+sType+"_variants/item");
+					oCurObj.setAttribute("qitems", aoVars.length);
+
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+					oArgs.qid = argobj.qid;
+					var dDate = new Date();
+					var iDate = dDate.valueOf();
+					var sDate = iDate.toString();
+
+					var sMode = "init";
+					var oInteraction = GetInteraction(sID);
+
+					if(oInteraction!=null) {
+						var sIntLatency = GetInteractionParam(sID, "latency");
+						var sIntTimestamp = GetInteractionParam(sID, "timestamp");
+						if(sIntTimestamp!=null && sIntLatency==null) sMode = "continue";
+						if(sIntTimestamp!=null && sIntLatency!=null) sMode = "browse";
+						var sStorage = GetInteractionParam(sID, "description");
+						var aParts = sStorage.split("[,]");
+						var aAtts = aParts[0].split("/");
+						var iAttLeft = parseInt(aAtts[0],10);
+						var sAttLeft = iAttLeft.toString();
+						var iAttempts = parseInt(aAtts[1],10);
+						var sAttempts = iAttempts.toString();
+					} else {
+						var bAutoAttempts = oQuestion.selectSingleNode("q_att_auto").text=="yes" ? true : false;
+						var sAttempts = oQuestion.selectSingleNode("q_attempts").text;
+						var iAttempts = parseInt(sAttempts,10);
+						if(isNaN(iAttempts)) iAttempts = 1;
+						if(bAutoAttempts) {
+							if(aoVars.length>1) {
+								iAttempts = aoVars.length - 1;
+							} else {
+								iAttempts = 1;
+							}
+							sAttempts = iAttempts.toString();
+						}
+						var sAttLeft = sAttempts;
+					}
+					if(sTestMode=="review") sMode = "browse";
+					if(sMode=="init") {
+						oCurObj.setAttribute("q_start", sDate);
+						if(bMulti) {
+							var sTmpID;
+							oInteraction = ReturnInteraction(sID,true);
+							SetInteractionParam(sID, "type", "other");
+							for(var i=0;i<aoVars.length;i++) {
+								sTmpID = sID+"_"+i.toString();
+								oInteraction = ReturnInteraction(sTmpID,true);
+								SetInteractionParam(sTmpID, "type", sIType);
+							}
+						} else {
+							oInteraction = ReturnInteraction(sID,true);
+							SetInteractionParam(sID, "type", sIType);
+						}
+					} else {
+						oCurObj.setAttribute("q_start", ConvertDateFromISO8601(sIntTimestamp));
+					}
+
+					oCurObj.setAttribute("q_maxattempts", sAttempts);
+					oCurObj.setAttribute("q_attemptslast", sAttLeft);
+					document.getElementById(argobj.pid+"_q_attempts_count").innerHTML = sAttLeft;
+
+					var bQuest = true;
+					if(oQuestion.selectSingleNode("q_showq")!=null) bQuest = oQuestion.selectSingleNode("q_showq").text=="no" ? false : true;
+
+
+				// Pictures, if any
+					if(oParams.selectSingleNode("qtiimages").text=="yes") {
+						var oImgContainer = document.getElementById(argobj.pid+"_q_imgcontainer");
+
+						var aImgs = oImgContainer.getElementsByTagName("img");
+						if(aImgs.length>0) {
+							var oImg;
+							for(var i=0;i<aImgs.length;i++) {
+								oImg = oImgContainer.removeChild(aImgs[i]);
+								oImg = null;
+							}
+							oImgContainer.style.width = "1px";
+							if(oParams.selectSingleNode("q_realskin").text=="basic"){
+								document.getElementById(argobj.pid+"_q_workarea").style.width = parseInt(oCurObj.style.width,10);
+								document.getElementById(argobj.pid+"_q_qcontainer").style.width = parseInt(oCurObj.style.width,10);
+							} else {
+								document.getElementById(argobj.pid+"_q_workarea").style.width = parseInt(oCurObj.style.width,10) - 26;
+								document.getElementById(argobj.pid+"_q_qcontainer").style.width = parseInt(oCurObj.style.width,10) - 20;
+								document.getElementById(argobj.pid+"_test_container").style.width = parseInt(oCurObj.style.width,10) - 20;
+
+							}
+						}
+
+						if(oQuestion.selectSingleNode("q_image").firstChild!=null) {
+							if(oQuestion.selectSingleNode("q_image").text!="") {
+								var oImg = document.createElement("img");
+								oImg.src = oQuestion.selectSingleNode("q_image").text;
+								oImgContainer.appendChild(oImg);
+								if(oParams.selectSingleNode("q_realskin").text=="basic"){
+									document.getElementById(argobj.pid+"_q_workarea").style.width = parseInt(oCurObj.style.width,10) - parseInt(oImg.offsetWidth,10);
+									document.getElementById(argobj.pid+"_q_qcontainer").style.width = parseInt(oCurObj.style.width,10);
+								} else {
+									document.getElementById(argobj.pid+"_q_workarea").style.width = parseInt(oCurObj.style.width,10) - parseInt(oImg.offsetWidth,10) - 26;
+									document.getElementById(argobj.pid+"_q_qcontainer").style.width = parseInt(oCurObj.style.width,10) - parseInt(oImg.offsetWidth,10) - 20;
+									document.getElementById(argobj.pid+"_test_container").style.width = parseInt(oCurObj.style.width,10) - 20;
+								}
+							}
+						}
+
+					}
+
+				// Question basics
+					var oCurQ = document.getElementById(argobj.pid+"_test_currentq");
+					var iQID = parseInt(argobj.qid,10) + 1;
+					oCurQ.innerHTML = iQID.toString();
+					oCurObj.setAttribute("currentquestion", iQID);
+					var oTotalQ = document.getElementById(argobj.pid+"_test_totalq");
+					oTotalQ.innerHTML = aQuestions.length;
+					oCurObj.setAttribute("totalquestion", aQuestions.length);
+
+					var sQText = oQuestion.selectSingleNode("q_question").text;
+					var oQText = document.getElementById(argobj.pid+"_q_text");
+					if(bQuest) oQText.innerHTML = sQText;
+
+					oArgs.msg = sTestMode=="review" ? "last" : sType;
+					CallMethod("q_099_test", "DisplayMessage", oArgs);
+
+					if(sMode=="init" && bSkip) {
+						oArgs.btn = "skip";
+						CallMethod("q_099_test", "DisplayButton", oArgs);
+					}
+
+					// Set basic params
+
+					var bMulti = (aoVars.length>1 && (sType=="numeric" || sType=="text"));
+					oCurObj.setAttribute("multi", bMulti ? "1" : "0");
+
+				// Drawing items
+					if(bShuffle) {
+						if(sMode=="init") {
+							var aShuffled = new Array();
+							for(var i=0;i<aoVars.length;i++) aShuffled[i] = ThrowDice(aoVars.length, false, aShuffled, 100);
+						}
+					}
+
+					var aOrder = new Array();
+					var aCorrects = new Array();
+					oCurObj.setAttribute("qtype", sType);
+					switch(sType) {
+						case "oto":
+							var oHolder = document.getElementById(argobj.pid+"_q_holder");
+							var oMain = document.getElementById(argobj.pid+"_q_workarea");
+								oMain.style.display = "none";
+								oMain = document.getElementById(argobj.pid+"_q_otoworkarea");
+								oMain.innerHTML = "";
+								oMain.style.display = g_isMSIE ? "inline" : "block";
+								oMain.style.height = 45*aoVars.length+15+"px";
+								oMain.style.width = oHolder.offsetWidth+"px";
+
+							oArgs.enabled = sMode=="browse" ? false : true;
+							oArgs.state = "";
+							if(sMode!="init") {
+								var sResponse = GetInteractionParam(sID, "learner_response");
+								if(sResponse!=null) {
+									var aResponse = sResponse.split("[,]");
+									var aStored = new Array();
+									var aTmp = new Array();
+									for(var i=0;i<aResponse.length;i++) {
+										aTmp = aResponse[i].split("[.]");
+										aOrder[parseInt(aTmp[0],10)] = aTmp[1];
+									}
+									oArgs.state = "connected";
+								} else {
+									var aDesc = sStorage.split("[,]");
+									var sTmp = aDesc[1];
+									var aOrder = sTmp.split("~");
+								}
+							}
+							for(var i=0;i<aoVars.length;i++) {
+								oArgs.targetid = i;
+								if(sMode=="init") {
+									oArgs.matchid = aShuffled[i];
+									aOrder.push(oArgs.matchid);
+									aCorrects.push(i.toString()+"[.]"+i.toString());
+								} else {
+									oArgs.matchid = aOrder[i];
+								}
+								CallMethod("q_099_test", "AppendItem", oArgs);
+							}
+
+							if(sMode=="init") if(aCorrects.length>0) SetInteractionArrayItem(sID, "correct_responses", aCorrects.join("[,]"));
+							oCurObj.setAttribute("q_varlength", aoVars.length.toString());
+							oCurObj.setAttribute("order", aOrder.join("~"));
+							oCurObj.setAttribute("qid", argobj.qid);
+							break;
+						case "choice":
+						case "select":
+							var oMain = document.getElementById(argobj.pid+"_q_otoworkarea");
+								oMain.style.display = "none";
+								oMain = document.getElementById(argobj.pid+"_q_workarea");
+								oMain.innerHTML = "";
+								oMain.style.display = g_isMSIE ? "inline" : "block";
+
+							if(sMode!="init") {
+								var aChecked = new Array();
+								var sResponse = GetInteractionParam(sID, "learner_response");
+								if(sResponse!=null) aChecked = sResponse.split("[,]");
+								var aDesc = sStorage.split("[,]");
+								var sTmp = aDesc[1];
+								var aOrder = sTmp.split("~");
+							} else {
+								for(var i=0;i<aoVars.length;i++) {
+									oNode = aoVars[i].selectSingleNode("q_right");
+									if(oNode.text=="yes") aCorrects.push(i.toString());
+								}
+								if(aCorrects.length>0) SetInteractionArrayItem(argobj.pid+"_"+argobj.qid, "correct_responses", aCorrects.join("[,]"));
+							}
+
+							oArgs.checked = false;
+							oArgs.enabled = sMode=="browse" ? false : true;
+							for(var i=0;i<aoVars.length;i++) {
+								if(sMode=="init") {
+									oArgs.inum = bShuffle ? aShuffled[i] : i;
+									aOrder.push(oArgs.inum);
+								} else {
+									oArgs.inum = parseInt(aOrder[i],10);
+									oArgs.checked = false;
+									if(aChecked.length!=null) {
+										for(var j=0;j<aChecked.length;j++) {
+											if(parseInt(aChecked[j],10)==oArgs.inum) {
+												oArgs.checked = true;
+												break;
+											}
+										}
+									}
+								}
+								CallMethod("q_099_test", "AppendItem", oArgs);
+							}
+
+							oCurObj.setAttribute("q_varlength", aoVars.length.toString());
+							oCurObj.setAttribute("order", aOrder.join("~"));
+							oCurObj.setAttribute("qid", argobj.qid);
+							break;
+						case "range":
+							var oMain = document.getElementById(argobj.pid+"_q_workarea");
+							oMain.innerHTML = "";
+							oMain.style.display = g_isMSIE ? "inline" : "block";
+							oMain = document.getElementById(argobj.pid+"_q_otoworkarea");
+							oMain.style.display = "none";
+							if(sMode!="init") {
+								var sState = GetInteractionParam(sID, "learner_response");
+								if(sState==null) {
+									var aStored = aShuffled;
+								} else {
+									var aStored = sState.split("[,]");
+								}
+							}
+							for(var i=0;i<aoVars.length;i++) {
+								oArgs.inum = sMode=="init" ? aShuffled[i] : aStored[i];
+								aOrder.push(oArgs.inum);
+								aCorrects.push(i.toString());
+								oArgs.vnum = i;
+								oArgs.hide = "";
+								if(i==0) oArgs.hide = "u";
+								if(i==aoVars.length-1) oArgs.hide = "d";
+								CallMethod("q_099_test", "AppendItem", oArgs);
+							}
+							oCurObj.setAttribute("q_varlength", aoVars.length.toString());
+							oCurObj.setAttribute("order", aOrder.join("~"));
+							oCurObj.setAttribute("qid", argobj.qid);
+							if(sMode=="init") if(aCorrects.length>0) SetInteractionArrayItem(argobj.pid+"_"+argobj.qid, "correct_responses", aCorrects.join("[,]"));
+							break;
+						case "numeric":
+						case "text":
+							var oMain = document.getElementById(argobj.pid+"_q_workarea");
+							oMain.innerHTML = "";
+							oMain.style.display = g_isMSIE ? "inline" : "block";
+							oMain = document.getElementById(argobj.pid+"_q_otoworkarea");
+							oMain.style.display = "none";
+							oArgs.enabled = sMode=="browse" ? false : true;
+							for(var i=0;i<aoVars.length;i++) {
+								oArgs.inum = i;
+								if(sMode!="init") {
+									oArgs.value = GetInteractionParam(bMulti ? sID+"_"+i.toString() : sID, "learner_response");
+								} else {
+									oArgs.value = "";
+								}
+								aOrder.push(oArgs.inum);
+								CallMethod("q_099_test", "AppendItem", oArgs);
+							}
+							oCurObj.setAttribute("q_varlength", aoVars.length.toString());
+							oCurObj.setAttribute("order", aOrder.join("~"));
+							oCurObj.setAttribute("qid", argobj.qid);
+							if(sMode=="init") CallMethod("q_099_test", "RecordCorrectAnswers", oArgs);
+							break;
+						default: return false;
+					}
+					if(sMode=="browse") CallMethod("q_099_test", "DisableItems", oArgs);
+
+
+					// Set timer
+					var oQTimerTable = document.getElementById(argobj.pid+"_q_timer_area");
+					if(!bTimer) {
+						oQTimerTable.style.display = "none";
+						SetInteractionParam(sID, "description", sAttLeft+"/"+sAttempts+"[,]"+aOrder.join("~"));
+						if(bMulti) for(var i=0;i<aoVars.length;i++) SetInteractionParam(sID+"_"+i.toString(), "description", sAttLeft+"/"+sAttempts+"[,]"+aOrder.join("~"));
+					}
+					if(bTimer) {
+						var sTimerValue = oQuestion.selectSingleNode("q_timer").text;
+						if(sTimerValue==null || isNaN(parseInt(sTimerValue,10))) {
+							bTimer = false;
+						} else {
+							oQTimerTable.style.display = g_isMSIE ? "inline" : "block";
+							var oQTimerValue = document.getElementById(argobj.pid+"_q_timer_value");
+							if(sMode!="init") {
+								var aTimer = aParts[2].split("/");
+								var sTimerRestore = aTimer[0];
+							}
+							if(sTestMode=="review") {
+								if(sTimerRestore==null) sTimerRestore = sTimerValue;
+								oCurObj.setAttribute("q_timer_active", "1");
+								oCurObj.setAttribute("q_timer", sTimerRestore);
+								oCurObj.setAttribute("q_timer_total", sTimerValue);
+								oArgs.restore = "1";
+								CallMethod("q_099_test", "TickTimer", oArgs);
+								oArgs.restore = null;
+								if(sMode!="browse") {
+									if(sTimerRestore!="0")	CreateTimeActionMethod("q_099_test", "TickTimer", null, 1000, oArgs);
+								}
+							} else {
+								oQTimerValue.innerHTML = sTimerValue + " sec";
+								oCurObj.setAttribute("q_timer", sMode=="init" ? sTimerValue : sTimerRestore);
+								oCurObj.setAttribute("q_timer_total", sTimerValue);
+								oCurObj.setAttribute("q_timer_active", "1");
+								CreateTimeActionMethod("q_099_test", "TickTimer", null, 1000, oArgs);
+								SetInteractionParam(sID, "description", sAttLeft+"/"+sAttempts+"[,]"+aOrder.join("~")+"[,]"+sTimerValue+"/"+sTimerValue);
+								if(bMulti) for(var i=0;i<aoVars.length;i++) SetInteractionParam(sID+"_"+i.toString(), "description", sAttLeft+"/"+sAttempts+"[,]"+aOrder.join("~")+"[,]"+sTimerValue+"/"+sTimerValue);
+							}
+						}
+					}
+					if(sMode=="browse") {
+						var iIdx = parseInt(argobj.qid,10)+1;
+						if(aQuestions[iIdx]!=null) {
+							if(GetInteractionParam(argobj.pid+"_"+iIdx.toString(), "timestamp")!=null) {
+								oArgs.action = "next";
+								CallMethod("q_099_test", "Dispatcher", oArgs);
+							} else {
+								document.getElementById(argobj.pid+"_q_nomore").style.display = g_isMSIE ? "inline" :  "block";
+							}
+						}
+					}
+					FireEvent(argobj.pid,"onDisplayQuestion");
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="Dispatcher" label="Dispatcher" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function Dispatcher(argobj)
+                {
+					if(argobj.pid==null || argobj.action==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var bCurTestTimer = oParams.selectSingleNode("test_timer_switch").text=="yes" ? true : false;
+					var bCredit = oParams.selectSingleNode("test_scored").text=="yes" ? true : false;
+					var aQuestions = oParams.selectNodes("q_questions/item");
+					oCurObj.setAttribute("qtotal", aQuestions.length);
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+					var dDate = new Date();
+					var iDate = dDate.valueOf();
+					var sDate = iDate.toString();
+
+					switch(argobj.action) {
+						case "init":
+							var sMode = "init";
+							var sTestAtt = "1";
+							var bRecur = oParams.selectSingleNode("repeat_test").text=="yes" ? true : false;
+							var sTestAllowed = bRecur ? "-" : "1";
+							var oInteraction = GetInteraction(argobj.pid);
+							if(oInteraction!=null) {
+								var sIntLatency = GetInteractionParam(argobj.pid, "latency");
+								var sIntTimestamp = GetInteractionParam(argobj.pid, "timestamp");
+								var sResult = GetInteractionParam(argobj.pid, "result");
+								var sVisited = GetInteractionParam(argobj.pid, "learner_response");
+								if(sIntTimestamp!=null && sIntLatency==null) sMode = "continue";
+								if(sIntTimestamp!=null && sIntLatency!=null) sMode = "browse";
+							}
+							if(sMode=="continue") {
+								alert(oParams.selectSingleNode("t_continue_alert").text);
+								var iNextQID = 0;
+								var sNextQID = "";
+								if(sVisited!=null) {
+									var aVisited = sVisited.split("[,]");
+									if(aVisited.length!=0) {
+										sNextQID = aVisited[aVisited.length-1];
+										sNextQID = sNextQID.substr(argobj.pid.length+1);
+										iNextQID = parseInt(sNextQID,10);
+										if(isNaN(iNextQID)) iNextQID = 0;
+										iNextQID++;
+									}
+								}
+								if(bCurTestTimer) {
+									oArgs.restore = true;
+									oArgs.start = true;
+									CallMethod("q_099_test", "InitTestTimer", oArgs);
+								}
+								oCurObj.setAttribute("mode", "normal");
+								oCurObj.setAttribute("t_scored", bCredit ? "1" : "0");
+								oCurObj.setAttribute("t_state", "na");
+								oCurObj.setAttribute("t_mode", sMode);
+								oCurObj.setAttribute("t_start", sDate);
+								oCurObj.setAttribute("running", "1");
+								oArgs.qid = iNextQID;
+								AddEvtHandler("EVENT_DRAG_END", "q_099_test", argobj.pid);
+								CallMethod("q_099_test", "DisplayQuestion", oArgs);
+								return true;
+							}
+							if(sMode=="browse") {
+								if(bRecur) {
+									if(confirm(oParams.selectSingleNode("t_secondrun_confirm").text)) {
+										sMode = "init";
+										var sStorage = GetInteractionParam(argobj.pid, "description");
+										var aParts = sStorage.split("[,]");
+										var aAtts = aParts[0].split("/");
+										sTestAtt = parseInt(aAtts[0],10) + 1;
+										if(sVisited!=null) {
+											var aVisited = sVisited.split("[,]");
+											var oObjective;
+											var sObjID;
+											var aSources;
+											for(var i=0;i<aVisited.length;i++) {
+												RemoveInteractionNode(aVisited[i]);
+												aSources = g_oSCO.selectNodes("objectives/o/s[@id='"+aVisited[i]+"']");
+												for(var j=0;j<aSources.length;j++) {
+													oObjective = aSources[j].parentNode;
+													sObjID = oObjective.getAttribute("id");
+													SetObjectiveScore(sObjID, aVisited[i], "replace", "0");
+												}
+											}
+										}
+									} else {
+										// enter browse mode
+				//						alert(oParams.selectSingleNode("t_browse_alert").text);
+										oCurObj.setAttribute("mode", "review");
+										if(bCurTestTimer) {
+											oArgs.restore = true;
+											oArgs.start = false;
+											CallMethod("q_099_test", "InitTestTimer", oArgs);
+										}
+										oArgs.qid = 0;
+										CallMethod("q_099_test", "DisplayQuestion", oArgs);
+										return true;
+									}
+								} else {
+									alert(oParams.selectSingleNode("t_browse_alert").text);
+									oCurObj.setAttribute("mode", "review");
+									if(bCurTestTimer) {
+										oArgs.restore = true;
+										oArgs.start = false;
+										CallMethod("q_099_test", "InitTestTimer", oArgs);
+									}
+									oArgs.qid = 0;
+									CallMethod("q_099_test", "DisplayQuestion", oArgs);
+									return true;
+								}
+							}
+							if(sMode=="init") {
+								oInteraction = ReturnInteraction(argobj.pid,true);
+								SetInteractionParam(argobj.pid, "type", "sequencing");
+								var aSequence = new Array();
+								for(var i=0;i<aQuestions.length;i++) aSequence.push(i.toString());
+								SetInteractionArrayItem(argobj.pid, "correct_response", aSequence.join("[,]"));
+								var aOrder = new Array();
+								for(var i=0;i<aQuestions.length;i++) aOrder.push(i.toString());
+								if(bCurTestTimer) {
+									oArgs.restore = false;
+									oArgs.start = true;
+									CallMethod("q_099_test", "InitTestTimer", oArgs);
+									var sTimer = oCurObj.getAttribute("ttimer");
+									SetInteractionParam(argobj.pid, "description", sTestAtt+"/"+sTestAllowed+"[,]"+aOrder.join("~")+"[,]"+sTimer+"/"+sTimer);
+								} else {
+									SetInteractionParam(argobj.pid, "description", sTestAtt+"/"+sTestAllowed+"[,]"+aOrder.join("~"));
+								}
+								oCurObj.setAttribute("mode", "normal");
+								oCurObj.setAttribute("t_scored", bCredit ? "1" : "0");
+								oCurObj.setAttribute("t_state", "na");
+								oCurObj.setAttribute("t_mode", sMode);
+								oCurObj.setAttribute("t_start", sDate);
+								oCurObj.setAttribute("running", "1");
+								oArgs.qid = 0;
+								oCurObj.running = "1";
+								AddEvtHandler("EVENT_DRAG_END", "q_099_test", argobj.pid);
+								CallMethod("q_099_test", "DisplayQuestion", oArgs);
+								return true;
+							}
+							break;
+						case "stop":
+							oCurObj.setAttribute("testtimerstop","1");
+							oArgs.btn = "next";
+							CallMethod("q_099_test", "HideButton", oArgs);
+							oArgs.btn = "check";
+							CallMethod("q_099_test", "HideButton", oArgs);
+							oArgs.btn = "skip";
+							CallMethod("q_099_test", "HideButton", oArgs);
+							var sBegin = GetInteractionParam(argobj.pid, "timestamp");
+							var iBegin = ConvertDateFromISO8601(sBegin);
+							var iLatency = iDate - iBegin;
+							var sLatency = ConvertPeriodToISO8601(iLatency);
+							SetInteractionParam(argobj.pid, "latency", sLatency);
+							document.getElementById(argobj.pid+"_q_teststopped").style.display = g_isMSIE ? "inline" : "block";
+							FireEvent(argobj.pid,"onTestEnd");
+							return true;
+						case "next":
+							oCurObj.setAttribute("running", "0");
+							if(oCurObj.getAttribute("testtimeout")=="1") {
+								oCurObj.setAttribute("testtimerstop","1");
+								var sBegin = GetInteractionParam(argobj.pid, "timestamp");
+								var iBegin = ConvertDateFromISO8601(sBegin);
+								var iLatency = iDate - iBegin;
+								var sLatency = ConvertPeriodToISO8601(iLatency);
+								SetInteractionParam(argobj.pid, "latency", sLatency);
+								document.getElementById(argobj.pid+"_q_teststopped").style.display = g_isMSIE ? "inline" : "block";
+								FireEvent(argobj.pid,"onTestEnd");
+								return false;
+							}
+							if(oCurObj.getAttribute("secondtrip")!="1") {
+								if(oCurObj.getAttribute("teststop")!="1") {
+									var iIdx = parseInt(argobj.qid,10);
+									iIdx++;
+									var oQuestion = aQuestions[iIdx];
+									if(oQuestion==null) {
+										var aSkipped = new Array();
+										var sID;
+										for(var i=0;i<aQuestions.length;i++) {
+											sID = argobj.pid + "_" + i.toString();
+											var oInteraction = GetInteraction(sID);
+											if(oInteraction!=null) {
+												var sIntLatency = GetInteractionParam(sID, "latency");
+												var sIntTimestamp = GetInteractionParam(sID, "timestamp");
+												if(sIntTimestamp!=null && sIntLatency==null) aSkipped.push(i);
+											}
+										}
+										if(aSkipped.length==0) {
+											oCurObj.setAttribute("testtimerstop","1");
+											oCurObj.setAttribute("teststop", "1");
+											var sBegin = GetInteractionParam(argobj.pid, "timestamp");
+											var iBegin = ConvertDateFromISO8601(sBegin);
+											var iLatency = iDate - iBegin;
+											var sLatency = ConvertPeriodToISO8601(iLatency);
+											SetInteractionParam(argobj.pid, "latency", sLatency);
+											document.getElementById(argobj.pid+"_q_testend").style.display = g_isMSIE ? "inline" : "block";
+											FireEvent(argobj.pid,"onTestEnd");
+											return false;
+										}
+										oCurObj.setAttribute("qid", aSkipped[0].toString());
+										oCurObj.running = "0";
+										oArgs.btn = "next";
+										if(aSkipped.length==1) {
+											oCurObj.setAttribute("teststop", "1");
+											CallMethod("q_099_test", "DisplayButton", oArgs);
+											return false;
+										}
+										oCurObj.setAttribute("secondtrip", "1");
+										CallMethod("q_099_test", "DisplayButton", oArgs);
+										return false;
+									} else {
+										oCurObj.setAttribute("qid",iIdx.toString());
+										oCurObj.running = "0";
+										oArgs.btn = "next";
+										CallMethod("q_099_test", "DisplayButton", oArgs);
+										return true;
+									}
+								} else {
+									oCurObj.setAttribute("testtimerstop","1");
+									oCurObj.setAttribute("teststop", "1");
+									var sBegin = GetInteractionParam(argobj.pid, "timestamp");
+									var iBegin = ConvertDateFromISO8601(sBegin);
+									var iLatency = iDate - iBegin;
+									var sLatency = ConvertPeriodToISO8601(iLatency);
+									SetInteractionParam(argobj.pid, "latency", sLatency);
+									document.getElementById(argobj.pid+"_q_testend").style.display = g_isMSIE ? "inline" : "block";
+									FireEvent(argobj.pid,"onTestEnd");
+									return false;
+								}
+							} else {
+								var aSkipped = new Array();
+								var sID;
+								for(var i=0;i<aQuestions.length;i++) {
+									sID = argobj.pid + "_" + i.toString();
+									var oInteraction = GetInteraction(sID);
+									if(oInteraction!=null) {
+										var sIntLatency = GetInteractionParam(sID, "latency");
+										var sIntTimestamp = GetInteractionParam(sID, "timestamp");
+										if(sIntTimestamp!=null && sIntLatency==null) aSkipped.push(i);
+									}
+								}
+								if(aSkipped.length==0) {
+									oCurObj.setAttribute("testtimerstop","1");
+									oCurObj.setAttribute("teststop", "1");
+									var sBegin = GetInteractionParam(argobj.pid, "timestamp");
+									var iBegin = ConvertDateFromISO8601(sBegin);
+									var iLatency = iDate - iBegin;
+									var sLatency = ConvertPeriodToISO8601(iLatency);
+									SetInteractionParam(argobj.pid, "latency", sLatency);
+									document.getElementById(argobj.pid+"_q_testend").style.display = g_isMSIE ? "inline" : "block";
+									FireEvent(argobj.pid,"onTestEnd");
+									return false;
+								}
+								oCurObj.setAttribute("qid", aSkipped[0].toString());
+								oCurObj.running = "0";
+								oArgs.btn = "next";
+								if(aSkipped.length==1) {
+									oCurObj.setAttribute("teststop", "1");
+									CallMethod("q_099_test", "DisplayButton", oArgs);
+									return false;
+								}
+								oCurObj.setAttribute("secondtrip", "1");
+								CallMethod("q_099_test", "DisplayButton", oArgs);
+								return false;
+							}
+							return true;
+						case "clicknext":
+							oCurObj.running = "1";
+							CallMethod("q_099_test", "HideFeedback", oArgs);
+							oArgs.btn = "next";
+							CallMethod("q_099_test", "HideButton", oArgs);
+							oArgs.qid = oCurObj.getAttribute("qid");
+							CallMethod("q_099_test", "DisplayQuestion", oArgs);
+							return true;
+						default: return false;
+					}
+					return true;
+				}
+                ]]>
+            </body>
+        </method>
+		<method name="GetProperty" label="GetProperty" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function GetProperty(argobj)
+				{
+					if(argobj.pid==null || argobj.property==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					switch(argobj.property.toLowerCase()) {
+						case "totalquestionquantity":	g_vPropertyValue = oCurObj.getAttribute("qtotal"); 	break;
+						case "testmode":				g_vPropertyValue = oCurObj.getAttribute("mode")=="review" ? "review" : "normal";			break;
+						case "testduration":			g_vPropertyValue = oCurObj.getAttribute("ttimer")!=null ? oCurObj.getAttribute("ttimer") : ""; 	break;
+						case "testtimer":				g_vPropertyValue = oCurObj.getAttribute("ttimervalue")!=null ? oCurObj.getAttribute("ttimervalue") : ""; 	break;
+						case "questionnumber":			g_vPropertyValue = oCurObj.getAttribute("qid"); break;
+						case "questiontype":
+							var sType = oCurObj.getAttribute("qtype");
+							g_vPropertyValue = sType;
+							break;
+						case "questionduration":		g_vPropertyValue = oCurObj.getAttribute("q_timer_total")!=null ? oCurObj.getAttribute("q_timer_total") : ""; 	break;
+						case "questiontimer":			g_vPropertyValue = oCurObj.getAttribute("q_timer")!=null ? oCurObj.getAttribute("q_timer") : ""; 	break;
+						case "itemquantity":			g_vPropertyValue = oCurObj.getAttribute("qitems")!=null ? oCurObj.getAttribute("qitems") : ""; 	break;
+						case "questionvalue":
+							var sType = oCurObj.getAttribute("qtype");
+							var iQty = parseInt(oCurObj.getAttribute("qitems"),10);
+							var aResult = new Array();
+							var oSpot;
+							switch(sType) {
+								case "choice":
+								case "select":
+									for(var i=0;i<iQty;i++) {
+										oSpot = document.getElementById(argobj.pid+"_spot_"+i.toString());
+										aResult.push(oSpot.getAttribute("state"));
+									}
+									g_vPropertyValue = aResult.join("~");
+									break;
+								case "order":
+									g_vPropertyValue = oCurObj.getAttribute("order");
+									break;
+								case "numeric":
+								case "text":
+									for(var i=0;i<iQty;i++) {
+										oSpot = document.getElementById(argobj.pid+"_input_"+i.toString());
+										aResult.push(oSpot.value);
+									}
+									g_vPropertyValue = aResult.join("~");
+									break;
+								case "oto":
+									for(var i=0;i<iQty;i++) {
+										oSpot = document.getElementById(argobj.pid + "_vtarget_" + i.toString());
+										aResult.push(i.toString()+"="+oSpot.getAttribute("connected"));
+									}
+									g_vPropertyValue = aResult.join("~");
+									break;
+							}
+							break;
+						case "attemptslast":			g_vPropertyValue = oCurObj.getAttribute("q_attemptslast")!=null ? oCurObj.getAttribute("q_attemptslast") : ""; 	break;
+						case "attemptstotal":			g_vPropertyValue = oCurObj.getAttribute("q_maxattempts")!=null ? oCurObj.getAttribute("q_maxattempts") : ""; 	break;
+						default: return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="InitTestTimer" label="InitTestTimer" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function InitTestTimer(argobj)
+                {
+					if(argobj.pid==null || argobj.start==null || argobj.restore==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+
+					var bSecondRun = oParams.selectSingleNode("repeat_test").text=="yes" ? true : false;
+					var bCurTestTimer = oParams.selectSingleNode("test_timer_switch").text=="yes" ? true : false;
+					if(oParams.selectSingleNode("test_timer").firstChild==null && oParams.selectSingleNode("test_timer_s").firstChild==null) bCurTestTimer = false;
+
+					if(bCurTestTimer) {
+						var oTestTimerDiv = document.getElementById(argobj.pid+"_test_timer_area");
+						if(oTestTimerDiv==null) return false;
+						if(!argobj.restore) {
+							var iMin = 0;
+							var iSec = 0;
+							var iTick = 0;
+							if(oParams.selectSingleNode("test_timer").firstChild != null) {
+								iMin= parseInt(oParams.selectSingleNode("test_timer").text,10);
+								if(isNaN(iMin)) iMin = 0;
+							}
+							iTick = iMin*60;
+							if(oParams.selectSingleNode("test_timer_s").firstChild != null) {
+								var iSec = parseInt(oParams.selectSingleNode("test_timer_s").text,10);
+								if(isNaN(iSec)) iSec = 0;
+								iTick += iSec;
+							}
+						} else {
+							var sStorage = GetInteractionParam(argobj.pid, "description");
+							var aParts = sStorage.split("[,]");
+							var aTimer = aParts[2].split("/");
+							var iTick = parseInt(aTimer[0],10);
+							if(iTick>=60) {
+								var iMin = Math.floor(iTick/60);
+								var iSec = iTick - iMin*60;
+							}
+							var sTotal = aTimer[1];
+						}
+						//oCurObj.setAttribute("testtimerstop", argobj.start ? "0" : "1");
+						oTestTimerDiv.style.display = g_isMSIE ? "inline" : "table";
+						var oTestTimerValue = document.getElementById(argobj.pid+"_test_timer_value");
+						if(iTick<60) {
+							oTestTimerValue.innerHTML = iTick.toString()+" sec";
+						} else {
+							oTestTimerValue.innerHTML = iMin.toString()+" min "+iSec.toString()+" sec";
+						}
+						var sTick = iTick.toString();
+						oCurObj.setAttribute("ttimervalue", sTick);
+						oCurObj.setAttribute("ttimer", argobj.restore ? sTotal : sTick);
+						oArgs.restore = argobj.restore;
+						oArgs.start = argobj.start;
+						CreateTimeActionMethod("q_099_test", "TickTestTimer", null, argobj.restore ? 50 : 1000, oArgs);
+					}
+					return true;
+				}
+                ]]>
+            </body>
+        </method>
+		<method name="RecordCorrectAnswers" label="RecordCorrectAnswers" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function RecordCorrectAnswers(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var aQuestions = oParams.selectNodes("q_questions/item");
+					var oQuestion = aQuestions[argobj.qid];
+					var sType = oQuestion.selectSingleNode("q_type").text;
+					var aoVars = oQuestion.selectNodes("q_"+sType+"_variants/item");
+
+					var aCond;
+					var sOp;
+					var rValue;
+					var sValue;
+					var sPattern;
+					var sPattern2;
+					var bGFlag = false;
+					var bLFlag = false;
+					var bMulti = aoVars.length>1 ? true : false;
+					var bCase = false;
+
+					if(sType=="numeric") {
+						for(var i=0;i<aoVars.length;i++) {
+							aCond = aoVars[i].selectNodes("q_conditions/item");
+							bLFlag = false;
+							bGFlag = false;
+							for(var j=0;j<aCond.length;j++) {
+								sOp = aCond[j].selectSingleNode("q_condition").text;
+								rValue = parseFloat(aCond[j].selectSingleNode("q_variant").text);
+								if(isNaN(rValue)) continue;
+								sValue = FormatReal_10_7(rValue);
+								if(sOp=="eq") {
+									sPattern = sValue+"[:]"+sValue;
+									if(bMulti) {
+										SetInteractionArrayItem(argobj.pid+"_"+argobj.qid+"_"+i.toString(), "correct_responses", sPattern);
+									} else {
+										SetInteractionArrayItem(argobj.pid+"_"+argobj.qid, "correct_responses", sPattern);
+									}
+									continue;
+								}
+								if(sOp=="lt" || sOp=="lte") {
+									if(sOp=="lt") sValue = FormatReal_10_7(parseFloat(sValue)-0.0000001);
+									if(bGFlag) {
+										sPattern2 = sValue + sPattern2;
+									} else {
+										if(bLFlag) continue;
+										sPattern2 = sValue+"[:]";
+										bLFlag = true;
+										continue;
+									}
+									if(bMulti) {
+										SetInteractionArrayItem(argobj.pid+"_"+argobj.qid+"_"+i.toString(), "correct_responses", sPattern);
+									} else {
+										SetInteractionArrayItem(argobj.pid+"_"+argobj.qid, "correct_responses", sPattern);
+									}
+									continue;
+								}
+								if(sOp=="gt" || sOp=="gte") {
+									if(sOp=="gt") sValue = FormatReal_10_7(parseFloat(sValue)+0.0000001);
+									if(bLFlag) {
+										sPattern2 += sValue;
+									} else {
+										if(bGFlag) continue;
+										sPattern2 = "[:]"+sValue;
+										bGFlag = true;
+										continue;
+									}
+									if(bMulti) {
+										SetInteractionArrayItem(argobj.pid+"_"+argobj.qid+"_"+i.toString(), "correct_responses", sPattern);
+									} else {
+										SetInteractionArrayItem(argobj.pid+"_"+argobj.qid, "correct_responses", sPattern);
+									}
+									continue;
+								}
+							}
+						}
+					} else {
+						for(var i=0;i<aoVars.length;i++) {
+							var aCorrects = new Array();
+							aCond = aoVars[i].selectNodes("q_conditions/item");
+							for(var j=0;j<aCond.length;j++) {
+								sOp = aCond[j].selectSingleNode("q_condition").text;
+								sValue = aCond[j].selectSingleNode("q_variant").text;
+								bCase = aCond[j].selectSingleNode("q_case").text=="yes" ? true : false;
+								sPattern = bCase ? "{case_matters=true}" : "{case_matters=false}";
+								if(sOp=="eq") {
+									aCorrects.push(sPattern + sValue);
+									continue;
+								}
+								if(sOp=="bw") {
+									aCorrects.push(sPattern + "*" + sValue);
+									continue;
+								}
+								if(sOp=="ew") {
+									aCorrects.push(sPattern + sValue + "*");
+									continue;
+								}
+								if(sOp=="cn") {
+									aCorrects.push(sPattern + "*" + sValue + "*");
+									continue;
+								}
+							}
+							if(bMulti) {
+								SetInteractionArrayItem(argobj.pid+"_"+argobj.qid+"_"+i.toString(), "correct_responses", aCorrects.join("[,]"));
+							} else {
+								SetInteractionArrayItem(argobj.pid+"_"+argobj.qid, "correct_responses", aCorrects.join("[,]"));
+							}
+						}
+					}
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="HandleEvt" label="HandleEvt" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HandleEvt(oEvtHandler)
+				{
+					switch (oEvtHandler.sEvt) {
+						case "EVENT_DRAG_END":
+							var argobj = new Object;
+							argobj.pid = oEvtHandler.sTargetId;
+							var oCurObj = document.getElementById(argobj.pid);
+							if(oCurObj==null) return false;
+							if(document.getElementById(argobj.pid+"_q_b_skip_container").style.display!="none") {
+								var oArgs = new Object;
+								oArgs.pid = argobj.pid;
+								oArgs.btn = "skip";
+								CallMethod("q_099_test", "HideButton", oArgs);
+							}
+							if(g_oDragObject==null) return false;
+							if(document.getElementById(argobj.pid+"_q_b_skip_container")!=null) document.getElementById(argobj.pid+"_q_b_skip_container").style.display = "none";
+							var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+							var iBulletW = parseInt(oParams.selectSingleNode("q_bulletwidth").text,10);
+							var iTargetW = parseInt(oParams.selectSingleNode("q_targetwidth").text,10);
+							var aQuestions = oParams.selectNodes("q_questions/item");
+							argobj.qid = oCurObj.getAttribute("qid");
+							var oQuestion = aQuestions[argobj.qid];
+							var aoVars = oQuestion.selectNodes("q_oto_variants/item");
+							var iCurX = g_oDragObject.offsetLeft;
+							var iCurY = g_oDragObject.offsetTop;
+							var iCurW = g_oDragObject.offsetWidth;
+							var iCurH = g_oDragObject.offsetHeight;
+							var iMarginX = document.getElementById(argobj.pid+"_q_otoworkarea").offsetLeft;
+							var iMarginY = document.getElementById(argobj.pid+"_q_otoworkarea").offsetTop;
+							var iAreaW = document.getElementById(argobj.pid+"_q_otoworkarea").offsetWidth;
+							var iAreaH = document.getElementById(argobj.pid+"_q_otoworkarea").offsetHeight;
+							if(iCurX <= 0) g_oDragObject.style.left = "5px";
+							if(iCurY <= 0) g_oDragObject.style.top = "5px";
+							if(iCurX >= (iAreaW - iCurW)) g_oDragObject.style.left = iAreaW - iCurW - 5 + "px";
+							if(iCurY >= (iAreaH - iCurH)) g_oDragObject.style.top = iAreaH - iCurH - 5 + "px";
+							iCurX = g_oDragObject.offsetLeft;
+							iCurY = g_oDragObject.offsetTop;
+							var oTarget;
+							if(iCurX < (iTargetW+10) && iCurX > 10) {
+								var iTargetNum = Math.floor((iCurY+iCurH/2)/45);
+								var oCurTarget = document.getElementById(argobj.pid+"_vtarget_"+iTargetNum.toString());
+								if(oCurTarget!=null) {
+									if(oCurTarget.getAttribute("connected")=="none" || (oCurTarget.getAttribute("connected")==g_oDragObject.getAttribute("target"))) {
+										g_oDragObject.style.top = oCurTarget.offsetTop + "px";
+										g_oDragObject.style.left = 8 + iTargetW + "px";
+										g_oDragObject.style.borderLeftColor = "#E0E0E0";
+										oCurTarget.style.borderRightStyle = "none";
+										oCurTarget.setAttribute("connected", g_oDragObject.getAttribute("target"));
+										g_oDragObject.setAttribute("connected", iTargetNum.toString());
+										for(var i=0;i<aoVars.length;i++) {
+											if(i==iTargetNum) continue;
+											oTarget = document.getElementById(argobj.pid+"_vtarget_"+i.toString());
+											if(oTarget.getAttribute("connected") == g_oDragObject.getAttribute("target")) {
+												oTarget.style.borderRightStyle = "dotted";
+												oTarget.setAttribute("connected", "none");
+											}
+										}
+									} else {
+										for(var i=0;i<aoVars.length;i++) {
+											oTarget = document.getElementById(argobj.pid+"_vtarget_"+i.toString());
+											if(oTarget.getAttribute("connected") == g_oDragObject.getAttribute("target")) {
+												oTarget.style.borderRightStyle = "dotted";
+												g_oDragObject.style.borderLeftColor = g_oDragObject.style.borderRightColor;
+												oTarget.setAttribute("connected", "none");
+												g_oDragObject.setAttribute("connected", "none");
+											}
+										}
+									}
+								}
+							} else {
+								for(var i=0;i<aoVars.length;i++) {
+									oTarget = document.getElementById(argobj.pid+"_vtarget_"+i.toString());
+									if(oTarget.getAttribute("connected") == g_oDragObject.getAttribute("target")) {
+										oTarget.style.borderRightStyle = "dotted";
+										g_oDragObject.style.borderLeftColor = g_oDragObject.style.borderRightColor;
+										oTarget.setAttribute("connected", "none");
+										g_oDragObject.setAttribute("connected", "none");
+									}
+								}
+							}
+							var bAllConnected = true;
+							for(var i=0;i<aoVars.length;i++) {
+								if(document.getElementById(argobj.pid+"_vtarget_"+i.toString()).getAttribute("connected") == "none") {
+									bAllConnected = false;
+									break;
+								}
+							}
+							var oArgs = new Object;
+							oArgs.pid = argobj.pid;
+							oArgs.btn = "check";
+							CallMethod("q_099_test", bAllConnected ? "DisplayButton" : "HideButton", oArgs);
+							FireEvent(argobj.pid,"onChangeMatch");
+							break;
+					}
+				}
+				]]>
+			</body>
+		</method>
+		<method name="DisplayButton" label="DisplayButton" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisplayButton(argobj)
+				{
+					if(argobj.pid==null || argobj.btn==null) return false;
+					var oButton = document.getElementById(argobj.pid+"_q_b_"+argobj.btn+"_container");
+					if(oButton==null) return false;
+					oButton.style.display = g_isMSIE ? "inline" : "block";
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="HideButton" label="HideButton" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HideButton(argobj)
+				{
+					if(argobj.pid==null || argobj.btn==null) return false;
+					var oButton = document.getElementById(argobj.pid+"_q_b_"+argobj.btn+"_container");
+					if(oButton==null) return false;
+					oButton.style.display = "none";
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="DisplayMessage" label="DisplayMessage" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisplayMessage(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var oMsgElem = document.getElementById(argobj.pid+"_q_objective");
+					if(oMsgElem==null) return false;
+					var sPath = argobj.msg==null ? "" : argobj.msg;
+					var oNode = oParams.selectSingleNode("q_goal_"+sPath);
+					if(oNode==null) return false;
+					var sMsg = oNode.text;
+					oMsgElem.innerHTML = sMsg;
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="AppendItem" label="AppendItem" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function AppendItem(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oMain = document.getElementById(argobj.pid+"_q_workarea");
+					var oMainOTO = document.getElementById(argobj.pid+"_q_otoworkarea");
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var aQuestions = oParams.selectNodes("q_questions/item");
+					var oQuestion = aQuestions[argobj.qid];
+					var sType = oQuestion.selectSingleNode("q_type").text;
+					var aoVars = oQuestion.selectNodes("q_"+sType+"_variants/item");
+
+					switch(sType) {
+						case "oto":
+							// argobj.targetid, argobj.matchid, argobj.state, argobj.enabled
+							var oTargetTmpl = document.getElementById(argobj.pid+"_q_targetitem");
+							var oBulletTmpl = document.getElementById(argobj.pid+"_q_bulletitem");
+							var iLeft = oMainOTO.offsetWidth - parseInt(oParams.selectSingleNode("q_bulletwidth").text,10) - 6;
+
+							var oClone = oTargetTmpl.cloneNode(true);
+								oClone.style.display = g_isMSIE ? "inline" : "block";
+							var aTags = oClone.getElementsByTagName("td");
+								aTags[0].innerHTML = aoVars[argobj.targetid].selectSingleNode("q_target").text;
+							var oTarget = oMainOTO.appendChild(oClone);
+								oTarget.style.left = "10px";
+								oTarget.style.top = 10 + 45 * argobj.targetid+"px";
+								oTarget.setAttribute("bullet", argobj.targetid);
+								oTarget.setAttribute("id", argobj.pid + "_vtarget_" + argobj.targetid);
+								oTarget.setAttribute("connected", argobj.state=="connected" ? argobj.matchid : "none");
+								if(argobj.enabled) {
+									oTarget.setAttribute("enabled", "1");
+								} else {
+									oTarget.setAttribute("enabled", "0");
+									oTarget.style.cursor = "default";
+									if(argobj.state=="connected") oTarget.style.borderRightStyle = "none";
+								}
+
+							oClone = oBulletTmpl.cloneNode(true);
+								oClone.style.display = g_isMSIE ? "inline" : "block";
+							aTags = oClone.getElementsByTagName("td");
+								aTags[0].innerHTML = aoVars[argobj.matchid].selectSingleNode("q_bullet").text;
+							oMatch = oMainOTO.appendChild(oClone);
+								oMatch.style.top = 10 + 45 * argobj.targetid + "px";
+								oMatch.setAttribute("target", argobj.matchid);
+								oMatch.setAttribute("id", argobj.pid + "_vbullet_" + argobj.matchid);
+								if(argobj.state=="connected") {
+									iTW = oTarget.offsetWidth;
+									oMatch.style.left = 8+iTW+"px";
+									oMatch.style.borderLeftColor = "#E0E0E0";
+								} else {
+									oMatch.style.left = iLeft + "px";
+									oMatch.setAttribute("connected", "none");
+								}
+								if(argobj.enabled) {
+									oMatch.setAttribute("enabled", "1");
+								} else {
+									oMatch.setAttribute("enabled", "0");
+									oMatch.style.cursor = "default";
+									oMatch.onmousedown = null;
+									oMatch.onmousemove = null;
+									oMatch.onmouseup = null;
+								}
+							break;
+						case "numeric":
+						case "text":
+							var oMatrix = document.getElementById(argobj.pid+"_q_"+sType+"item");
+							var oClone = oMatrix.cloneNode(true);
+							oClone.style.display = g_isMSIE ? "inline" : "block";
+							var aTags = oClone.getElementsByTagName("td");
+							aTags[0].setAttribute("id",argobj.pid+"_vtext_"+argobj.inum.toString());
+							aTags[0].innerHTML = aoVars[argobj.inum].selectSingleNode("q_explanation").text;
+							aTags = oClone.getElementsByTagName("input");
+							var oSpot = aTags[0];
+							oSpot.setAttribute("id",argobj.pid+"_input_"+argobj.inum);
+							if(argobj.value!=null) oSpot.value = argobj.value;
+							var oCols = aoVars[argobj.inum].selectSingleNode("q_width");
+							var oInputFontSize = oParams.selectSingleNode("input_font_size");
+							if(oCols!=null && oInputFontSize!=null)
+							{
+								var iCols = parseInt(oCols.text,10);
+								var iSize = parseInt(oInputFontSize.text,10);
+								if(!isNaN(iCols) && !isNaN(iSize))
+								{
+									iCols = iCols*iSize;
+									oSpot.style.width = iCols.toString() + "px";
+									iSize = Math.round(iSize*1.8);
+									oSpot.style.height = iSize.toString() + "px";
+								}
+							}
+							if(argobj.enabled) {
+								oSpot.setAttribute("enabled", "1");
+								oSpot.disabled = false;
+							} else {
+								oSpot.setAttribute("enabled", "0");
+								oSpot.disabled = false;
+							}
+							oMain.appendChild(oClone);
+							break;
+						case "range":
+							var oMatrix = document.getElementById(argobj.pid+"_q_"+sType+"item");
+							var oClone = oMatrix.cloneNode(true);
+							oClone.style.display = g_isMSIE ? "inline" : "block";
+							if(sType=="range" && argobj.vnum==null) return false;
+							var aTags = oClone.getElementsByTagName("td");
+							aTags[3].innerHTML = aoVars[argobj.inum].selectSingleNode("q_variant").text;
+							aTags[3].setAttribute("id", argobj.pid+"_var_"+argobj.vnum);
+							aTags = oClone.getElementsByTagName("img");
+							var oSpot = aTags[0];
+							oSpot.setAttribute("id",argobj.pid+"_spot_up_"+argobj.vnum);
+							if(argobj.hide=="u") {
+								var oDisabled = document.getElementById(argobj.pid+"_q_rangespot_up_1");
+								if(oDisabled!=null) oSpot.src = oDisabled.src;
+								oSpot.onclick = null;
+								oSpot.setAttribute("enabled","0");
+							} else {
+								oSpot.setAttribute("direct","up");
+								oSpot.setAttribute("enabled","1");
+								oSpot.style.cursor = g_isMSIE ? "hand" : "pointer";
+							}
+							oSpot = aTags[1];
+							oSpot.setAttribute("id",argobj.pid+"_spot_down_"+argobj.vnum);
+							if(argobj.hide=="d") {
+								var oDisabled = document.getElementById(argobj.pid+"_q_rangespot_down_1");
+								if(oDisabled!=null) oSpot.src = oDisabled.src;
+								oSpot.onclick = null;
+								oSpot.setAttribute("enabled","0");
+							} else {
+								oSpot.setAttribute("direct","down");
+								oSpot.setAttribute("enabled","1");
+								oSpot.style.cursor = g_isMSIE ? "hand" : "pointer";
+							}
+							oMain.appendChild(oClone);
+							break;
+						case "choice":
+						case "select":
+							var oTmpl = document.getElementById(argobj.pid+"_q_"+sType+"item");
+							var oClone = oTmpl.cloneNode(true);
+								oClone.style.display = g_isMSIE ? "inline" : "block";
+							var aTags = oClone.getElementsByTagName("td");
+								aTags[1].innerHTML = aoVars[argobj.inum].selectSingleNode("q_variant").text;
+							aTags = oClone.getElementsByTagName("img");
+							var oSpot = aTags[0];
+								if(argobj.checked) {
+									oSpot.setAttribute("state", "1");
+									oSpot.style.display = "none";
+								} else {
+									oSpot.style.display = g_isMSIE ? "inline" : "block";
+									oSpot.style.cursor = g_isMSIE ? "hand" : "pointer";
+									oSpot.setAttribute("state", argobj.checked ? "1" : "0");
+								}
+								oSpot.setAttribute("enabled", argobj.enabled ? "1" : "0");
+								oSpot.setAttribute("idle", argobj.pid+"_q_"+sType+"spot_0");
+								oSpot.setAttribute("alter", argobj.pid+"_q_"+sType+"spot_2");
+								oSpot.setAttribute("id", argobj.pid+"_spot_"+argobj.inum.toString());
+								oSpot.setAttribute("spotid", argobj.inum.toString());
+							oSpot = aTags[1];
+								oSpot.setAttribute("id", argobj.pid+"_check_"+argobj.inum.toString());
+								oSpot.setAttribute("spotid", argobj.inum.toString());
+								if(argobj.checked) 	{
+									oSpot.style.display = g_isMSIE ? "inline" : "block";
+								} else {
+									oSpot.style.display = "none";
+								}
+							oMain.appendChild(oClone);
+							break;
+						default: break;
+					}
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="HandleClick" label="HandleClick" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HandleClick(argobj)
+				{
+					if(argobj.pid==null || argobj.oid==null || argobj.qtype==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var sType = argobj.qtype;
+					var oSpot = (sType=="choice" || sType=="select") ? document.getElementById(argobj.pid+"_spot_"+argobj.oid) : document.getElementById(argobj.oid);
+					if(oSpot.getAttribute("enabled")=="0") return false;
+					var iVars = parseInt(oCurObj.getAttribute("q_varlength"));
+					if(document.getElementById(argobj.pid+"_q_b_skip_container")!=null) document.getElementById(argobj.pid+"_q_b_skip_container").style.display = "none";
+					var oVar;
+					var sState = "";
+					var bChecked = false;
+					var oArgs = new Object;
+						oArgs.pid = argobj.pid;
+						oArgs.btn = "skip";
+					CallMethod("q_099_test", "HideButton", oArgs);
+						oArgs.btn = "check";
+					switch(sType) {
+						case "range":
+							if(oSpot.getAttribute("direct")==null) return false;
+							var sDirect = oSpot.getAttribute("direct");
+							bChecked = true;
+							var sOrder = oCurObj.getAttribute("order");
+							var aOrder = sOrder.split("~");
+							var iItem;
+							var sTmp = argobj.pid+"_spot_"+sDirect+"_";
+							for(var i=0;i<iVars;i++) {
+								if(argobj.oid == sTmp+i.toString()) {
+									iItem = i;
+									break;
+								}
+							}
+							var iTmp;
+							var sTmp;
+							var iBuffer;
+							if(sDirect=="up") {
+								iTmp = iItem - 1;
+							} else {
+								iTmp = iItem + 1;
+							}
+							sTmp = document.getElementById(argobj.pid+"_var_"+iTmp.toString()).innerHTML;
+							document.getElementById(argobj.pid+"_var_"+iTmp.toString()).innerHTML = document.getElementById(argobj.pid+"_var_"+iItem.toString()).innerHTML;
+							iBuffer = aOrder[iTmp];
+							aOrder[iTmp] = aOrder[iItem];
+							document.getElementById(argobj.pid+"_var_"+iItem.toString()).innerHTML = sTmp;
+							aOrder[iItem] = iBuffer;
+							oCurObj.setAttribute("order", aOrder.join("~"));
+							FireEvent(argobj.pid,"onChangeOrder");
+							break;
+						case "choice":
+							if(oSpot.getAttribute("state")=="1") return false;
+							var oCheck;
+							for(var i=0;i<iVars;i++) {
+								oVar = document.getElementById(argobj.pid+"_spot_"+i.toString());
+								oCheck = document.getElementById(argobj.pid+"_check_"+i.toString());
+								if(oVar!=oSpot) {
+									oVar.style.display = g_isMSIE ? "inline" : "block";
+									oCheck.style.display = "none";
+									//oVar.src = document.getElementById(oVar.getAttribute("idle")).src;
+									oVar.setAttribute("state","0");
+								} else {
+									//oVar.src = document.getElementById(oVar.getAttribute("alter")).src;
+									oCheck.style.display = g_isMSIE ? "inline" : "block";
+									oVar.style.display = "none";
+									oVar.setAttribute("state","1");
+									oCurObj.setAttribute("q_varselected", i.toString());
+								}
+							}
+							bChecked = true;
+							FireEvent(argobj.pid,"onChangeChoice");
+							break;
+						case "select":
+							var oCheck;
+							for(var i=0;i<iVars;i++) {
+								oVar = document.getElementById(argobj.pid+"_spot_"+i.toString());
+								oCheck = document.getElementById(argobj.pid+"_check_"+i.toString());
+								sState = oVar.getAttribute("state");
+								if(oVar==oSpot) {
+									if(sState=="1") {
+										oVar.style.display = g_isMSIE ? "inline" : "block";
+										oCheck.style.display = "none";
+										// oVar.src = document.getElementById(oVar.getAttribute("idle")).src;
+										oVar.setAttribute("state","0");
+									} else {
+										oCheck.style.display = g_isMSIE ? "inline" : "block";
+										oVar.style.display = "none";
+										//oVar.src = document.getElementById(oVar.getAttribute("alter")).src;
+										oVar.setAttribute("state","1");
+										bChecked = true;
+									}
+								}
+							}
+							if(!bChecked) {
+								for(var i=0;i<iVars;i++) {
+									oVar = document.getElementById(argobj.pid+"_spot_"+i.toString());
+									sState = oVar.getAttribute("state");
+									if(sState=="1") {
+										bChecked = true;
+										break;
+									}
+								}
+							}
+							FireEvent(argobj.pid,"onChangeSelect");
+							break;
+					}
+
+					if(argobj.nobtn!="1" && bChecked) {
+						CallMethod("q_099_test", "DisplayButton", oArgs);
+					} else {
+						CallMethod("q_099_test", "HideButton", oArgs);
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="EnableItems" label="EnableItems" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function EnableItems(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var aQuestions = oParams.selectNodes("q_questions/item");
+					var oQuestion = aQuestions[argobj.qid];
+					var sType = oQuestion.selectSingleNode("q_type").text;
+					var aoVars = oQuestion.selectNodes("q_"+sType+"_variants/item");
+					var iVarLength = aoVars.length;
+					var oSpot;
+
+					switch(sType) {
+						case "choice":
+						case "select":
+							for(var i=0;i<iVarLength;i++) {
+								oSpot = document.getElementById(argobj.pid+"_spot_"+i.toString());
+								oSpot.style.cursor = g_isMSIE ? "hand" : "pointer";
+								oSpot.setAttribute("enabled","1");
+							}
+							break;
+						case "range":
+							var oDisU = document.getElementById(argobj.pid+"_q_rangespot_up_0");
+							var oDisD = document.getElementById(argobj.pid+"_q_rangespot_down_0");
+							for(var i=0;i<iVarLength;i++) {
+								if(i!=0) {
+									oSpot = document.getElementById(argobj.pid+"_spot_up_"+i.toString());
+									oSpot.src = oDisU.src;
+									oSpot.style.cursor = g_isMSIE ? "hand" : "pointer";
+									oSpot.setAttribute("enabled","1");
+								}
+								if(i!=iVarLength-1) {
+									oSpot = document.getElementById(argobj.pid+"_spot_down_"+i.toString());
+									oSpot.src = oDisD.src;
+									oSpot.style.cursor = g_isMSIE ? "hand" : "pointer";
+									oSpot.setAttribute("enabled","1");
+								}
+							}
+							break;
+						case "numeric":
+						case "text":
+							var aInputs = oCurObj.getElementsByTagName("input");
+							for(var i=0;i<aInputs.length;i++) {
+								aInputs[i].disabled = false;
+								aInputs[i].setAttribute("enabled","1");
+							}
+							break;
+					}
+
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="DisableItems" label="DisableItems" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisableItems(argobj)
+				{
+					if(argobj.pid==null || argobj.qid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var aQuestions = oParams.selectNodes("q_questions/item");
+					var oQuestion = aQuestions[argobj.qid];
+					var sType = oQuestion.selectSingleNode("q_type").text;
+					var aoVars = oQuestion.selectNodes("q_"+sType+"_variants/item");
+					var iVarLength = aoVars.length;
+					var oSpot;
+
+					switch(sType) {
+						case "choice":
+						case "select":
+							for(var i=0;i<iVarLength;i++) {
+								oSpot = document.getElementById(argobj.pid+"_spot_"+i.toString());
+								oSpot.style.cursor = "default";
+								oSpot.setAttribute("enabled","0");
+							}
+							break;
+						case "range":
+							var oDisU = document.getElementById(argobj.pid+"_q_rangespot_up_1");
+							var oDisD = document.getElementById(argobj.pid+"_q_rangespot_down_1");
+							for(var i=0;i<iVarLength;i++) {
+								oSpot = document.getElementById(argobj.pid+"_spot_up_"+i.toString());
+								oSpot.src = oDisU.src;
+								oSpot.style.cursor = "default";
+								oSpot.setAttribute("enabled","0");
+								oSpot = document.getElementById(argobj.pid+"_spot_down_"+i.toString());
+								oSpot.src = oDisD.src;
+								oSpot.style.cursor = "default";
+								oSpot.setAttribute("enabled","0");
+							}
+							break;
+						case "numeric":
+						case "text":
+							var aInputs = oCurObj.getElementsByTagName("input");
+							for(var i=0;i<aInputs.length;i++) {
+								aInputs[i].disabled = true;
+								aInputs[i].setAttribute("enabled","0");
+							}
+							break;
+						case "oto":
+							for(var i=0;i<iVarLength;i++) {
+
+								oSpot = document.getElementById(argobj.pid+"_vtarget_"+i.toString());
+								oSpot.setAttribute("enabled","0");
+								oSpot.style.cursor = "default";
+								oSpot.style.borderRightStyle = "none";
+
+								oSpot = document.getElementById(argobj.pid+"_vbullet_"+i.toString());
+								oSpot.setAttribute("enabled","0");
+								oSpot.style.cursor = "default";
+								oSpot.onmousedown = null;
+								oSpot.onmousemove = null;
+								oSpot.onmouseup = null;
+							}
+							break;
+						default: return false;
+					}
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="CountAttempts" label="CountAttempts" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function CountAttempts(argobj)
+				{
+                    if(argobj.pid==null) return false;
+					if(document.getElementById(argobj.pid+"_q_attempts_count")==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var sAtt = oCurObj.getAttribute("q_attemptslast");
+					var iAtt = parseInt(sAtt,10);
+					if(iAtt>0) {
+						iAtt--;
+						sAtt = iAtt.toString();
+						document.getElementById(argobj.pid+"_q_attempts_count").innerHTML = sAtt;
+						oCurObj.setAttribute("q_attemptslast", sAtt);
+					} else {
+						document.getElementById(argobj.pid+"_q_attempts_count").innerHTML = "0";
+						oCurObj.setAttribute("q_attemptslast", "0");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="EvalAnswer" label="EvalAnswer" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function EvalAnswer(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var sQID = oCurObj.getAttribute("qid");
+					var sIntID = argobj.pid + "_" + sQID;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var aQuestions = oParams.selectNodes("q_questions/item");
+					var oQuestion = aQuestions[sQID];
+					var sType = oQuestion.selectSingleNode("q_type").text;
+					var aoVars = oQuestion.selectNodes("q_"+sType+"_variants/item");
+					var iVarLength = aoVars.length;
+					var sReason = argobj.reason;
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+					oArgs.qid = sQID;
+					var bEval = true;
+					var bCorrect = false;
+
+					if(oCurObj.getAttribute("running")=="0") {
+						if(oCurObj.getAttribute("testtimeout")=="1") {
+							oArgs.action = "stop";
+							CallMethod("q_099_test", "Dispatcher", oArgs);
+							return true;
+						}
+					}
+
+					if(sReason=="skip") {
+						CallMethod("q_099_test", "DisableItems", oArgs);
+						oCurObj.setAttribute("q_timer_active", "0");
+						CallMethod("q_099_test", "TickTimer", oArgs);
+						document.getElementById(argobj.pid+"_q_workarea").style.visibility = "hidden";
+						document.getElementById(argobj.pid+"_q_otoworkarea").style.visibility = "hidden";
+						oArgs.msg = "skip";
+						CallMethod("q_099_test", "DisplayMessage", oArgs);
+						FireEvent(argobj.pid,"onSkipQuestion");
+						if(document.getElementById(argobj.pid)==null) return false;
+						oArgs.action = "next";
+						CallMethod("q_099_test", "Dispatcher", oArgs);
+						return true;
+					}
+					if(sReason=="fail") {
+						CallMethod("q_099_test", "DisableItems", oArgs);
+						oArgs.msg = "failed";
+						CallMethod("q_099_test", "DisplayMessage", oArgs);
+						bCorrect = false;
+						bEval = false;
+					}
+
+					oArgs.btn = "check";
+					CallMethod("q_099_test", "HideButton", oArgs);
+					oArgs.btn = "skip";
+					CallMethod("q_099_test", "HideButton", oArgs);
+
+					var bMulti = (iVarLength>1 && (sType=="numeric" || sType=="text"));
+
+					var oSpot;
+					if(bEval) {
+						switch(sType) {
+							case "text":
+								var bResponse = true;
+								var aResponses = new Array();
+								for(var i=0;i<iVarLength;i++) {
+									oSpot = document.getElementById(argobj.pid+"_input_"+i.toString());
+									aResponses[i] = oSpot.value;
+									if(aResponses[i]=="")	bResponse = false;
+								}
+
+								bCorrect = true;
+								var bICorrect = true;
+								var sCValue;
+								var sUValue;
+								var bCase = false;
+								for(var i=0;i<iVarLength;i++) {
+									bICorrect = true;
+									aCond = aoVars[i].selectNodes("q_conditions/item");
+									for(var j=0;j<aCond.length;j++) {
+										sUValue = aResponses[i];
+										sOp = aCond[j].selectSingleNode("q_condition").text;
+										sCValue = aCond[j].selectSingleNode("q_variant").text;
+										bCase = aCond[j].selectSingleNode("q_case").text=="yes" ? true : false;
+										if(!bCase) {
+											sCValue = sCValue.toLowerCase();
+											sUValue = sUValue.toLowerCase();
+										}
+										switch(sOp) {
+											case "eq":
+												if(sUValue!=sCValue) bICorrect = false;
+												break;
+											case "bw":
+												for(var k=0;k<sCValue.length;k++) {
+													if(sUValue.charAt(k)!=sCValue.charAt(k)) {
+														bICorrect = false;
+														break;
+													}
+												}
+												break;
+											case "ew":
+												var iTmp = sUValue.length;
+												for(var k=sCValue.length-1;k>=0;k--) {
+													iTmp--;
+													if(sUValue.charAt(iTmp)!=sCValue.charAt(k)) {
+														bICorrect = false;
+														break;
+													}
+												}
+												break;
+											case "cn":
+												if(sUValue.indexOf(sCValue)==-1) bICorrect = false;
+												break;
+											default:
+												bICorrect = false;
+												break;
+										}
+									}
+									if(bCorrect) {
+										if(!bICorrect) bCorrect = false;
+									}
+									SetInteractionParam(bMulti ? sIntID+"_"+i.toString() : sIntID, "learner_response", aResponses[i]);
+								}
+								break;
+							case "numeric":
+								var bResponse = true;
+								var aResponses = new Array();
+								for(var i=0;i<iVarLength;i++) {
+									oSpot = document.getElementById(argobj.pid+"_input_"+i.toString());
+									aResponses[i] = oSpot.value;
+									if(aResponses[i]=="")	bResponse = false;
+								}
+
+								bCorrect = true;
+								var bICorrect = true;
+								var rCValue;
+								var rUValue;
+								for(var i=0;i<iVarLength;i++) {
+									bICorrect = true;
+									rUValue = parseFloat(aResponses[i]);
+									if(isNaN(rUValue)) {
+										bICorrect = false;
+									} else {
+										aCond = aoVars[i].selectNodes("q_conditions/item");
+										for(var j=0;j<aCond.length;j++) {
+											sOp = aCond[j].selectSingleNode("q_condition").text;
+											rCValue = parseFloat(aCond[j].selectSingleNode("q_variant").text);
+											if(isNaN(rCValue)) continue;
+											switch(sOp) {
+												case "eq":
+													if(rUValue!=rCValue) bICorrect = false;
+													break;
+												case "ne":
+													if(rUValue==rCValue) bICorrect = false;
+													break;
+												case "lt":
+													if(rUValue>=rCValue) bICorrect = false;
+													break;
+												case "lte":
+													if(rUValue>rCValue) bICorrect = false;
+													break;
+												case "gt":
+													if(rUValue<=rCValue) bICorrect = false;
+													break;
+												case "gte":
+													if(rUValue<rCValue) bICorrect = false;
+													break;
+												default:
+													bICorrect = false;
+													break;
+											}
+										}
+									}
+									if(bCorrect) {
+										if(!bICorrect) bCorrect = false;
+									}
+									SetInteractionParam(bMulti ? sIntID+"_"+i.toString() : sIntID, "learner_response", aResponses[i]=="" ? "" : FormatReal_10_7(rUValue));
+								}
+								break;
+							case "range":
+								bCorrect = true;
+								var sOrder = oCurObj.getAttribute("order");
+								var aResponses = sOrder.split("~");
+								for(var i=0;i<iVarLength;i++) {
+									if(aResponses[i]!=i.toString()) {
+										bCorrect = false;
+										break;
+									}
+								}
+								SetInteractionParam(sIntID, "learner_response", aResponses.join("[,]"));
+								break;
+							case "choice":
+							case "select":
+								var bResponse = false;
+								var aResponses = new Array();
+								for(var i=0;i<iVarLength;i++) {
+									oSpot = document.getElementById(argobj.pid+"_spot_"+i.toString());
+									if(oSpot.getAttribute("state")=="1") {
+										bResponse = true;
+										aResponses.push(i.toString());
+									}
+								}
+								var aCorrects = GetInteractionArray(argobj.pid+"_"+sQID, "correct_responses");
+								if(aCorrects==null) return false;
+								if(aCorrects.length==0) return false;
+								bCorrect = false;
+								if(bResponse) {
+									var sResponse = aResponses.join("[,]");
+									for(var i=0;i<aCorrects.length;i++) {
+										if(aCorrects[i]==sResponse) {
+											bCorrect = true;
+											break;
+										}
+									}
+								}
+								SetInteractionParam(sIntID, "learner_response", sResponse);
+								break;
+							case "oto":
+								var aResponses = new Array();
+								bCorrect = true;
+								var bConn = true;
+								for(var i=0;i<iVarLength;i++) {
+									oSpot = document.getElementById(argobj.pid+"_vtarget_"+i.toString());
+									sConn = oSpot.getAttribute("connected");
+									if(sConn=="none") {
+										bCorrect = false;
+										bConn = false;
+										break;
+									}
+									aResponses.push(i.toString()+"[.]"+sConn);
+									if(sConn==i.toString()) continue;
+									bCorrect = false;
+								}
+								if(bConn) {
+									var sResponse = aResponses.join("[,]");
+									SetInteractionParam(sIntID, "learner_response", sResponse);
+								}
+								break;
+							default: return false;
+						}
+
+						CallMethod("q_099_test", "CountAttempts", argobj);
+						FireEvent(argobj.pid,"onAttempt");
+						if(document.getElementById(argobj.pid)==null) return false;
+					}
+
+					var bCredit = oParams.selectSingleNode("test_scored").text=="no" ? false : true;
+					var bShowRight = oParams.selectSingleNode("test_showright").text=="no" ? false : true;
+					var bTestFB = oParams.selectSingleNode("test_fb_switch").text=="no" ? false : true;
+					var bDefaultFB = oQuestion.selectSingleNode("q_fb_switch").text=="no" ? false : true;
+					var sAttMax = oCurObj.getAttribute("q_maxattempts");
+					var sAtt = oCurObj.getAttribute("q_attemptslast");
+					var sDesc = GetInteractionParam(sIntID, "description");
+					var aDesc = sDesc.split("[,]");
+					var aTmp = aDesc[0].split("/");
+					aTmp[0] = sAtt;
+					aDesc[0] = aTmp.join("/");
+					SetInteractionParam(sIntID, "description", aDesc.join("[,]"));
+					var iAtt = parseInt(sAtt,10);
+					var aObjectives = oQuestion.selectNodes("q_scoreboards/item/q_board");
+
+					var dDate = new Date();
+					var iDate = dDate.valueOf();
+					var sBegin = oCurObj.getAttribute("q_start");
+					var iBegin = parseInt(sBegin,10);
+
+					oArgs.qid = sQID;
+
+					if(bCorrect) {
+						if(sReason=="timeout") FireEvent(argobj.pid,"onTimeout");
+						if(document.getElementById(argobj.pid)==null) return false;
+						FireEvent(argobj.pid,"onSuccess");
+						if(document.getElementById(argobj.pid)==null) return false;
+
+						if(sReason!="timeout") {
+							oCurObj.setAttribute("q_timer_active", "0");
+							CallMethod("q_099_test", "TickTimer", oArgs);
+						}
+
+						CallMethod("q_099_test", "DisableItems", oArgs);
+						if(bTestFB) {
+							oArgs.fbtype = "right";
+							CallMethod("q_099_test", "DisplayFeedback", oArgs);
+						}
+						var iLatency = iDate - iBegin;
+						var sLatency = ConvertPeriodToISO8601(iLatency);
+						SetInteractionParam(sIntID, "latency", sLatency);
+						SetInteractionParam(sIntID, "result", "correct");
+						if(bCredit) {
+							var sWeight = oQuestion.selectSingleNode("q_weight").text;
+							var bRegress = oQuestion.selectSingleNode("q_pointset_auto").text=="yes" ? true : false;
+							var iScore = 0;
+							var sScore = "";
+							var iWeight = parseFloat(sWeight);
+							if(bRegress) iWeight = iWeight*(iAtt+1);
+							if(bMulti) {
+								iWeight = iWeight/aoVars.length;
+								sScore = FormatReal_10_7(iWeight);
+								var sTmpID;
+								for(var i=0;i<aoVars.length;i++) {
+									sTmpID = sIntID + "_" + i.toString();
+									for(var j=0;j<aObjectives.length;j++) SetObjectiveScore(aObjectives[j].text, sTmpID, "replace", sScore);
+									SetInteractionParam(sTmpID, "weighting", sScore);
+									SetInteractionParam(sTmpID, "result", "correct");
+									SetInteractionParam(sTmpID, "latency", sLatency);
+								}
+							} else {
+								sScore = FormatReal_10_7(iWeight);
+								for(var i=0;i<aObjectives.length;i++) SetObjectiveScore(aObjectives[i].text, sIntID, "replace", sScore);
+								SetInteractionParam(sIntID, "weighting", sScore);
+							}
+						}
+
+						var sUserSequence = GetInteractionParam(argobj.pid, "learner_response");
+						if(sUserSequence==null) {
+							var aUserSequence = new Array();
+						} else {
+							var aUserSequence = sUserSequence.split("[,]");
+						}
+						aUserSequence.push(sIntID);
+						if(bMulti) {
+							for(var i=0;i<aoVars.length;i++) aUserSequence.push(sIntID+"_"+i.toString());
+						}
+						SetInteractionParam(argobj.pid, "learner_response", aUserSequence.join("[,]"));
+
+						FireEvent(argobj.pid,"onQuestionEnd");
+						if(document.getElementById(argobj.pid)==null) return false;
+						oArgs.action = "next";
+						CallMethod("q_099_test", "Dispatcher", oArgs);
+
+					} else {
+						if(iAtt>0 && sReason!="timeout" && bEval) {
+
+							FireEvent(argobj.pid,"onFailure");
+							if(document.getElementById(argobj.pid)==null) return false;
+							if(bTestFB) {
+								oArgs.fbtype = "wrong";
+								CallMethod("q_099_test", "DisplayFeedback", oArgs);
+							}
+
+						} else {
+
+							FireEvent(argobj.pid, sReason=="timeout" ? "onTimeout" : "onAttemptsLimit");
+							if(document.getElementById(argobj.pid)==null) return false;
+							FireEvent(argobj.pid,"onFailure");
+							if(document.getElementById(argobj.pid)==null) return false;
+
+							if(sReason!="timeout") {
+								oCurObj.setAttribute("q_timer_active", "0");
+								CallMethod("q_099_test", "TickTimer", oArgs);
+							}
+
+							if(bShowRight && sReason!="fail" && sReason!="skip") {
+								switch(sType) {
+									case "choice":
+									case "select":
+										aChecks = aCorrects[0].split("[,]");
+										aChecks.sort(NumericCompare);
+										var bSet = false;
+										for(var i=0;i<iVarLength;i++) {
+											oArgs.inum = i;
+											bSet = false;
+											for(var j=0;j<aChecks.length;j++) {
+												if(aChecks[j]==i.toString()) bSet = true;
+											}
+											CallMethod("q_099_test", bSet ? "CheckItem" : "UncheckItem", oArgs);
+										}
+										break;
+									case "range":
+										for(var i=0;i<iVarLength;i++) {
+											document.getElementById(argobj.pid+"_var_"+i.toString()).innerHTML = aoVars[i].selectSingleNode("q_variant").text;
+										}
+										break;
+									case "numeric":
+										var sString = "";
+										var sValue = "";
+										for(var i=0;i<iVarLength;i++) {
+											aCond = aoVars[i].selectNodes("q_conditions/item");
+											sValue = "";
+											sString = "";
+											for(var j=0;j<aCond.length;j++) {
+												sOp = aCond[j].selectSingleNode("q_condition").text;
+												sValue = aCond[j].selectSingleNode("q_variant").text;
+												switch(sOp) {
+													case "eq":
+														sString += "==" + sValue + " ";
+														break;
+													case "ne":
+														sString += "!=" + sValue + " ";
+														break;
+													case "lt":
+														sString += "<" + sValue + " ";
+														break;
+													case "lte":
+														sString += "<=" + sValue + " ";
+														break;
+													case "gt":
+														sString += ">" + sValue + " ";
+														break;
+													case "gte":
+														sString += ">=" + sValue + " ";
+														break;
+													default:
+														bICorrect = false;
+														break;
+												}
+											}
+											document.getElementById(argobj.pid+"_input_"+i.toString()).value = sString;
+										}
+										break;
+									case "text":
+										var sString = "";
+										var sValue = "";
+										for(var i=0;i<iVarLength;i++) {
+											aCond = aoVars[i].selectNodes("q_conditions/item");
+											sValue = "";
+											sString = "";
+											for(var j=0;j<aCond.length;j++) {
+												sOp = aCond[j].selectSingleNode("q_condition").text;
+												sValue = aCond[j].selectSingleNode("q_variant").text;
+												switch(sOp) {
+													case "eq":
+														sString += sValue + " ";
+														break;
+													case "bw":
+														sString += sValue + "* ";
+														break;
+													case "ew":
+														sString += "*" + sValue + " ";
+														break;
+													case "cn":
+														sString += "*" + sValue + "* ";
+														break;
+													default:
+														break;
+												}
+											}
+											document.getElementById(argobj.pid+"_input_"+i.toString()).value = sString;
+										}
+										break;
+									case "oto":
+										var oObj;
+										var iTW = 0;
+										var iTT = 0;
+										var aTags;
+										for(var i=0;i<iVarLength;i++) {
+											oObj = document.getElementById(argobj.pid+"_vtarget_"+i.toString());
+											iTW = oObj.offsetWidth;
+											iTT = oObj.offsetTop;
+											oObj = document.getElementById(argobj.pid+"_vbullet_"+i.toString());
+											aTags = oObj.getElementsByTagName("td");
+											aTags[0].innerHTML = aoVars[i].selectSingleNode("q_bullet").text;
+											oObj.style.top = iTT + "px";
+											oObj.style.left = 8+iTW+"px";
+										}
+										break;
+									default: return false;
+								}
+								oArgs.msg = "right";
+								CallMethod("q_099_test", "DisplayMessage", oArgs);
+							}
+
+							CallMethod("q_099_test", "DisableItems", oArgs);
+							if(bTestFB && sReason!="fail") {
+								oArgs.fbtype = sReason=="timeout" ? "timeout" : "exhausted";
+								CallMethod("q_099_test", "DisplayFeedback", oArgs);
+							}
+
+							var iLatency = iDate - iBegin;
+							var sLatency = ConvertPeriodToISO8601(iLatency);
+							SetInteractionParam(sIntID, "latency", sLatency);
+							SetInteractionParam(sIntID, "result", "incorrect");
+
+							if(bCredit) {
+								sScore = "0";
+								if(bMulti) {
+									var sTmpID = "";
+									for(var i=0;i<aoVars.length;i++) {
+										sTmpID = sIntID+"_"+i.toString();
+										for(var j=0;j<aObjectives.length;j++) SetObjectiveScore(aObjectives[j].text, sTmpID, "replace", sScore);
+										SetInteractionParam(sTmpID, "weighting", sScore);
+										SetInteractionParam(sTmpID, "result", "incorrect");
+										SetInteractionParam(sTmpID, "latency", sLatency);
+									}
+								} else {
+									for(var i=0;i<aObjectives.length;i++) SetObjectiveScore(aObjectives[i].text, sIntID, "replace", sScore);
+									SetInteractionParam(sIntID, "weighting", sScore);
+								}
+							}
+							var sUserSequence = GetInteractionParam(argobj.pid, "learner_response");
+							if(sUserSequence==null) {
+								var aUserSequence = new Array();
+							} else {
+								var aUserSequence = sUserSequence.split("[,]");
+							}
+							aUserSequence.push(sIntID);
+							if(bMulti) {
+								for(var i=0;i<aoVars.length;i++) aUserSequence.push(sIntID+"_"+i.toString());
+							}
+							SetInteractionParam(argobj.pid, "learner_response", aUserSequence.join("[,]"));
+							FireEvent(argobj.pid,"onQuestionEnd");
+							if(document.getElementById(argobj.pid)==null) return false;
+							oArgs.action = "next";
+							CallMethod("q_099_test", "Dispatcher", oArgs);
+						}
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="CheckItem" label="CheckItem" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function CheckItem(argobj)
+				{
+					if(argobj.pid==null || argobj.inum==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oSpot = document.getElementById(argobj.pid+"_spot_"+argobj.inum);
+					var oCheck = document.getElementById(argobj.pid+"_check_"+argobj.inum);
+					if(oSpot.getAttribute("state")=="1") return false;
+					oSpot.style.display = "none";
+					oSpot.setAttribute("state","1");
+					oSpot.setAttribute("q_varselected", argobj.inum);
+					oCheck.style.display = g_isMSIE ? "inline" : "block";
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="UncheckItem" label="UncheckItem" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function UncheckItem(argobj)
+				{
+					if(argobj.pid==null || argobj.inum==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oSpot = document.getElementById(argobj.pid+"_spot_"+argobj.inum);
+					var oCheck = document.getElementById(argobj.pid+"_check_"+argobj.inum);
+					if(oSpot.getAttribute("state")!="1") return false;
+					oCheck.style.display = "none";
+					oSpot.style.display = g_isMSIE ? "inline" : "block";
+					oSpot.setAttribute("state","0");
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="DisplayFeedback" label="DisplayFeedback" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisplayFeedback(argobj)
+				{
+                    if(argobj.pid==null || argobj.qid==null || argobj.fbtype==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(document.getElementById(argobj.pid+"_q_fb_template")==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var bTestFB = oParams.selectSingleNode("test_fb_switch").text=="no" ? false : true;
+					if(!bTestFB) return false;
+					var aQuestions = oParams.selectNodes("q_questions/item");
+					var oQuestion = aQuestions[argobj.qid];
+					var bDefaultFB = oQuestion.selectSingleNode("q_fb_switch").text=="no" ? false : true;
+					var sText = bDefaultFB ? oParams.selectSingleNode("test_feedback"+argobj.fbtype).text : oQuestion.selectSingleNode("q_feedback"+argobj.fbtype).text;
+
+					document.getElementById(argobj.pid+"_q_fb_text").innerHTML = sText;
+					document.getElementById(argobj.pid+"_q_fb_template").style.backgroundColor = argobj.fbtype=="right" ? "#E0FFE0" : "#FFE0E0";
+					document.getElementById(argobj.pid+"_q_fb_template").style.borderColor = argobj.fbtype=="right" ? "#339933" : "#FF6666";
+					document.getElementById(argobj.pid+"_q_fb_closebutton").style.backgroundColor = argobj.fbtype=="right" ? "#339933" : "#FF6666";
+					document.getElementById(argobj.pid+"_q_fb_template").style.display = g_isMSIE ? "inline" : "block";
+					if(oParams.selectSingleNode("test_fb_timerswitch").text=="yes") {
+						var sFBTimer = oParams.selectSingleNode("test_fb_timer").text;
+						var iFBTimer = parseFloat(sFBTimer);
+						if(isNaN(iFBTimer)) return true;
+						if(iFBTimer<1) iFBTimer = 1;
+						iFBTimer = Math.floor(iFBTimer * 1000);
+						var oArgs = new Object;
+						oArgs.pid = argobj.pid;
+						oArgs.delay = "1";
+						oCurObj.setAttribute("fbkilled","no");
+						CreateTimeActionMethod("q_099_test", "HideFeedback", null, iFBTimer, oArgs);
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="HideFeedback" label="HideFeedback" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HideFeedback(argobj)
+				{
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(argobj.delay==null) {
+						if(document.getElementById(argobj.pid+"_q_fb_template")==null) return false;
+						document.getElementById(argobj.pid+"_q_fb_template").style.display = "none";
+					} else {
+						if(argobj.delay=="1") {
+							var sKill = oCurObj.getAttribute("fbkilled");
+							if(sKill!=null && sKill=="yes") return false;
+							if(document.getElementById(argobj.pid+"_q_fb_template")==null) return false;
+							document.getElementById(argobj.pid+"_q_fb_template").style.display = "none";
+							oCurObj.setAttribute("fbkilled","yes");
+							return false;
+						}
+						if(document.getElementById(argobj.pid+"_q_fb_template")==null) return false;
+						document.getElementById(argobj.pid+"_q_fb_template").style.display = "none";
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="TickTimer" label="TickTimer" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function TickTimer(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					if(document.getElementById(argobj.pid+"_q_timer_progress")==null || document.getElementById(argobj.pid+"_q_timer_value")==null || document.getElementById(argobj.pid+"_q_timer_bg")==null) return false;
+					var sActive = oCurObj.getAttribute("q_timer_active");
+					if(sActive=="0") return false;
+					var bMulti = oCurObj.getAttribute("multi")=="1" ? true : false;
+					var sID = argobj.pid + "_" + oCurObj.getAttribute("qid");
+
+					var sTick = oCurObj.getAttribute("q_timer");
+					if(sTick==null) return false;
+					var iTick = parseInt(sTick,10);
+					if(isNaN(iTick)) return false;
+					var sTotal = oCurObj.getAttribute("q_timer_total");
+					if(sTotal==null) return false;
+					var iTotal = parseInt(sTotal,10);
+					if(isNaN(iTotal)) return false;
+					if(iTick>iTotal) return false;
+					if(argobj.restore==null) iTick--;
+					sTick = iTick.toString();
+					document.getElementById(argobj.pid+"_q_timer_value").innerHTML = sTick+" sec";
+					oCurObj.setAttribute("q_timer",sTick);
+					var iCurT = Math.round(iTick/iTotal*100);
+					var sColor = "#00CC66";
+					if(iCurT<30) {
+						if(iCurT<15) {
+							sColor = "#FF0000";
+						} else {
+							sColor = "#FFCC66";
+						}
+					}
+					var iW = Math.round((100-iCurT)*2);
+					if(iW<=0) iW = 1;
+					if(iW>0) {
+						document.getElementById(argobj.pid+"_q_timer_progress").style.width = iW.toString()+"px";
+						document.getElementById(argobj.pid+"_q_timer_bg").style.backgroundColor = sColor;
+					}
+					if(argobj.restore!=null) return true;
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+
+					var sStorage = GetInteractionParam(sID, "description");
+					var aParts = sStorage.split("[,]");
+					var aTimer = aParts[2].split("/");
+					aTimer[0] = sTick;
+					aParts[2] = aTimer.join("/");
+					SetInteractionParam(sID, "description", aParts.join("[,]"));
+					if(bMulti) for(var i=0;i<aoVars.length;i++) SetInteractionParam(sID+"_"+i.toString(), "description", aParts.join("[,]"));
+
+					if(iTick>0) {
+						CreateTimeActionMethod("q_099_test", "TickTimer", null, 1000, oArgs);
+					} else {
+						oArgs.reason = "timeout";
+						oCurObj.setAttribute("q_timer_active","0");
+						CallMethod("q_099_test","EvalAnswer",oArgs);
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="SkipQuestion" label="SkipQuestion" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function SkipQuestion(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var sQID = oCurObj.getAttribute("qid");
+					var aQuestions = oParams.selectNodes("q_questions/item");
+					var oQuestion = aQuestions[sQID];
+					var bSkip = oQuestion.selectSingleNode("q_skip").text=="yes" ? true : false;
+					var bSkipFail = oQuestion.selectSingleNode("q_skipper2").text=="yes" ? true : false;
+					var sType = oQuestion.selectSingleNode("q_type").text;
+					var sTestMode = oCurObj.getAttribute("mode");
+					var sID = argobj.pid + "_" + sQID;
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+					oArgs.qid = sQID;
+					oArgs.btn = "skip";
+					CallMethod("q_099_test", "HideButton", oArgs);
+					if(bSkipFail) {
+						if(confirm(oParams.selectSingleNode("q_skip_confirm").text)) {
+							oCurObj.setAttribute("q_reason","failed");
+							oCurObj.setAttribute("q_state","failed");
+							oCurObj.setAttribute("q_result","failure");
+							oArgs.reason = "fail";
+							CallMethod("q_099_test","EvalAnswer",oArgs);
+						} else {
+							return false;
+						}
+					} else {
+						oCurObj.setAttribute("q_reason","skipped");
+						oCurObj.setAttribute("q_result","na");
+						oCurObj.setAttribute("q_state","na");
+						if(oCurObj.getAttribute("qskipped")==null) {
+							oCurObj.setAttribute("qskipped",sQID);
+						} else {
+							var sTmp = oCurObj.getAttribute("qskipped").toString();
+							var aSkipped = sTmp.split("~");
+							aSkipped.push(sQID);
+							oCurObj.setAttribute("qskipped",aSkipped.join("~"));
+						}
+						oArgs.reason = "skip";
+						CallMethod("q_099_test","EvalAnswer",oArgs);
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="TickTestTimer" label="TickTestTimer" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function TickTestTimer(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					if(oParams.selectSingleNode("test_timer_switch").text == "no") return false;
+					if(oCurObj.getAttribute("testtimerstop")=="1") return true;
+					if(document.getElementById(argobj.pid+"_test_timer_progress")==null || document.getElementById(argobj.pid+"_test_timer_value")==null || document.getElementById(argobj.pid+"_test_timer_bg")==null) return false;
+					var iTick = parseInt(oCurObj.getAttribute("ttimervalue"),10);
+					var iTotal = parseInt(oCurObj.getAttribute("ttimer"),10);
+					if(isNaN(iTick) || isNaN(iTotal)) return false;
+					if(argobj.restore!=true || argobj.start==true) iTick--;
+					var sTick = iTick.toString();
+					oCurObj.setAttribute("ttimervalue", sTick);
+
+					var sStorage = GetInteractionParam(argobj.pid, "description");
+					var aParts = sStorage.split("[,]");
+					var aTimer = aParts[2].split("/");
+					aTimer[0] = sTick;
+					aParts[2] = aTimer.join("/");
+					SetInteractionParam(argobj.pid, "description", aParts.join("[,]"));
+
+					var oTestTimerValue = document.getElementById(argobj.pid+"_test_timer_value");
+					if(iTick<60) {
+						oTestTimerValue.innerHTML = sTick+" sec";
+					} else {
+						var iMin = Math.floor(iTick/60);
+						var iSec = iTick - iMin*60;
+						var sSec = iSec<10 ? "0"+iSec.toString() : iSec.toString();
+						oTestTimerValue.innerHTML = iMin==0 ? sSec + " sec" : iMin.toString()+" min "+sSec+" sec";
+					}
+					var iCurT = Math.round(iTick/iTotal*100);
+					var sCurColor = "#00CC66";
+					if(iCurT<30) {
+						if(iCurT<15) {
+							sCurColor = "#FF0000";
+						} else {
+							sCurColor = "#FFCC66";
+						}
+					}
+					var iWT = Math.round((iTotal-iTick)/iTotal*200);
+					if(iWT>0) {
+						document.getElementById(argobj.pid+"_test_timer_progress").style.width = iWT.toString()+"px";
+						document.getElementById(argobj.pid+"_test_timer_bg").style.backgroundColor = sCurColor;
+					}
+					if(argobj.restore==true && argobj.start!=true) {
+						oCurObj.setAttribute("testtimerstop","1");
+						return true;
+					}
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+					if(iTick>0) {
+						CreateTimeActionMethod("q_099_test", "TickTestTimer", null, 1000, oArgs);
+						FireEvent(argobj.pid,"onTickTestTimer");
+					} else {
+						FireEvent(argobj.pid,"onTestTimeout");
+						if(oCurObj==null) return false;
+						oCurObj.setAttribute("testtimeout", "1");
+						oCurObj.setAttribute("q_timer_active", "0");
+						oArgs.reason = "timeout";
+						oArgs.testtimeout = "timeout";
+						CallMethod("q_099_test","EvalAnswer",oArgs);
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="HandleKeyPressed" label="HandleKeyPressed" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HandleKeyPressed(argobj)
+				{
+					if(argobj.pid==null) return false;
+                    if(!g_isMSIE) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					argobj.returnvalue = false;
+					if(argobj.iid==null) return false;
+					var oObj = document.getElementById(argobj.iid);
+					if(oObj.getAttribute("enabled")=="0") return false;
+					var key = "";
+					if(window.event) {
+						key = window.event.keyCode;
+					} else {
+						if(e) {
+							key = e.which;
+						}
+					}
+					if(key=="" || key==0 || key==8 || key==9 || key==13 || key==27) return false;
+					var keychar = String.fromCharCode(key);
+					if(keychar=="-" && oObj.value.indexOf("-")!=-1) return false;
+					goods = "-0123456789.,";
+					if(goods.indexOf(keychar)!=-1) {
+						argobj.returnvalue = true;
+						return true;
+					} else {
+						alert(oParams.selectSingleNode("q_input_alert").text);
+					}
+					return false;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="CheckValue" label="CheckValue" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function CheckValue(argobj)
+				{
+					if(argobj.pid==null || argobj.iid==null) return false;
+					if(document.getElementById(argobj.pid+"_q_b_skip_container").style.display!="none") {
+						var oArgs = new Object;
+						oArgs.pid = argobj.pid;
+						oArgs.btn = "skip";
+						CallMethod("q_099_test", "HideButton", oArgs);
+					}
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var oObj = document.getElementById(argobj.iid);
+					if(oObj.getAttribute("enabled")=="0") return false;
+					var sValue = oObj.value;
+					if(sValue.indexOf(",")!=-1) {
+						sValue = replaceStr(sValue,",",".");
+						oObj.value = sValue;
+					}
+					if(sValue.indexOf("-")!=-1) {
+						if(sValue.charAt(0)!="-") {
+							sValue = replaceStr(sValue,"-","");
+							oObj.value = sValue;
+						}
+					}
+					if(sValue.indexOf(".")!=-1) {
+						var aTmp = sValue.split(".");
+						if(aTmp.length>2) {
+							sValue = aTmp[0]+".";
+							for(var i=1;i<aTmp.length;i++) {
+								sValue += aTmp[i];
+							}
+							oObj.value = sValue
+						}
+					}
+					if(sValue.length>1) {
+						var sTmp = sValue.charAt(sValue.length-1);
+						var sInb = "-0123456789.";
+						if(sInb.indexOf(sTmp)==-1) {
+							sValue = sValue.substr(0,sValue.length-1);
+							oObj.value = sValue;
+							alert(oParams.selectSingleNode("q_input_alert").text);
+						}
+					}
+					if(sValue.length>0) {
+						document.getElementById(argobj.pid+"_q_b_check_container").style.display = g_isMSIE ? "inline" : "block";
+						if(document.getElementById(argobj.pid+"_q_b_skip_container")!=null) document.getElementById(argobj.pid+"_q_b_skip_container").style.display = "none";
+						FireEvent(argobj.pid,"onChangeNumericValue");
+					}
+					return false;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="IfValue" label="IfValue" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function IfValue(argobj)
+				{
+					if(argobj.pid==null || argobj.iid==null) return false;
+					var oObj = document.getElementById(argobj.iid);
+					if(oObj.getAttribute("enabled")=="0") return false;
+					var sValue = oObj.value;
+					if(sValue.length>0) {
+						var oArgs = new Object;
+						oArgs.pid = argobj.pid;
+						if(document.getElementById(argobj.pid+"_q_b_skip_container").style.display!="none") {
+							oArgs.btn = "skip";
+							CallMethod("q_099_test", "HideButton", oArgs);
+						}
+						oArgs.btn = "check";
+						CallMethod("q_099_test", "DisplayButton", oArgs);
+						oArgs.btn = "skip";
+						CallMethod("q_099_test", "HideButton", oArgs);
+						FireEvent(argobj.pid,"onChangeTextValue");
+					}
+				}
+				]]>
+			</body>
+		</method>
+	</methods>
+</params>

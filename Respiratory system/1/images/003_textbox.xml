@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+'*	003_textbox.xml
+'*	Copyright (c) Websoft, 2007.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>Simple Text Box</label>
+		<width>350</width>
+		<height>250</height>
+		<description>Simple Text Box</description>
+	</object>
+	<page name=" Parameters " w="210" h="140">
+		<param type="label" text="Text:" x="10" y="10" w="60" h="13"/>
+		<param type="textedit" id="textbox_text" text="" def="Box text goes here" x="70" y="9" w="100" h="13" />
+		<param type="label" text="Background color:" x="10" y="26" w="60" h="13"/>
+		<param type="color" id="bgcolor" text="" def="#FFFFFF" x="70" y="25" w="40" h="13" />
+		<param type="label" text="Border color:" x="10" y="42" w="60" h="13"/>
+		<param type="color" id="bordercolor" text="" def="#999999" x="70" y="41" w="40" h="13" />
+		<param type="label" text="Border width:" x="10" y="58" w="60" h="13"/>
+		<param type="edit" id="borderwidth" text="" def="2" x="70" y="57" w="18" h="13" />
+		<param type="label" text="pixels" x="90" y="58" w="60" h="13"/>
+		<param type="label" text="Border style:" x="10" y="74" w="60" h="13"/>
+		<param type="select" id="borderstyle" text="" def="none" x="70" y="73" w="90" h="13">
+			<items>
+				<item id="none" label="No border"/>
+				<item id="solid" label="Solid"/>
+				<item id="double" label="Double"/>
+				<item id="inset" label="Inset"/>
+				<item id="outset" label="Outset"/>
+				<item id="ridge" label="Ridge"/>
+				<item id="groove" label="Groove"/>
+				<item id="dashed" label="Dashed"/>
+				<item id="dotted" label="Dotted"/>
+			</items>
+		</param>
+		<param type="label" text="Inner margin:" x="10" y="90" w="60" h="13"/>
+		<param type="edit" id="margin" text="5" def="5" x="70" y="89" w="18" h="13" />
+		<param type="label" text="pixels" x="90" y="90" w="60" h="13"/>
+		<param type="label" text="Overflow style:" x="10" y="106" w="60" h="13"/>
+		<param type="select" id="overflow" text="" def="auto" x="70" y="105" w="90" h="13">
+			<items>
+				<item id="hidden" label="Hidden"/>
+				<item id="auto" label="Auto scroll"/>
+				<item id="scroll-y" label="Vertical scroll"/>
+				<item id="scroll-x" label="Horizontal scroll"/>
+				<item id="scroll" label="Full scroll"/>
+				<item id="fit" label="Fit to width"/>
+			</items>
+		</param>
+		<param type="check" id="onclick_hide" text=" Close box on mouse click" def="no" x="10" y="122" w="130" h="13"/>
+	</page>
+	<page name=" Effects " w="210" h="140">
+		<param type="check" id="typewriter" text="Typewriter effect" def="no" x="10" y="10" w="80" h="13">
+			<events>
+				<event name="check" target="typewriter_speed" action="enable" />
+				<event name="check" target="box_sh_label1" action="enable" />
+				<event name="check" target="box_sh_label2" action="enable" />
+				<event name="uncheck" target="typewriter_speed" action="disable" />
+				<event name="uncheck" target="box_sh_label1" action="disable" />
+				<event name="uncheck" target="box_sh_label2" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="box_sh_label1" text="Typewriter speed:" x="10" y="27" w="90" h="13"/>
+		<param type="edit" id="typewriter_speed" text="8" def="8" x="74" y="26" w="18" h="13"/>
+		<param type="label" id="box_sh_label2" text="chars/sec" x="95" y="27" w="70" h="13"/>
+    </page>
+	<methods>
+		<method name="Constructor" label="Constructor" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function Constructor(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var oObj = GetObjectById(argobj.pid);
+					if(oObj==null) return null;
+					var sScroll = oParams.selectSingleNode("overflow").text;
+					var sW = oObj.getAttribute("w");
+					var sH = oObj.getAttribute("h");
+					var sPadding = oParams.selectSingleNode("margin").text;
+					var sBorder = oParams.selectSingleNode("borderwidth").text;
+					var iHeight = parseInt(sH,10) - parseInt(sPadding,10)*2 - parseInt(sBorder,10)*2;
+					var iWidth = parseInt(sW,10) - parseInt(sPadding,10)*2 - parseInt(sBorder,10)*2;
+					oCurObj.style.width = sW + "px";
+					oCurObj.style.width = sH + "px";
+					oCurObj.setAttribute("w",sW);
+					oCurObj.setAttribute("h",sH);
+
+					var oDiv = document.getElementById(argobj.pid+"_div");
+					oDiv.style.height = iHeight.toString()+"px";
+					oDiv.style.width = iWidth.toString()+"px";
+					if(sScroll=="scroll-y" || sScroll=="scroll-x") {
+						if(g_isMSIE) {
+							oDiv.style.overflow = "";
+							oDiv.style.overflowX = sScroll=="scroll-y" ? "hidden" : "scroll";
+							oDiv.style.overflowY = sScroll=="scroll-y" ? "scroll" : "hidden";
+						} else {
+							if(g_isOpera) oDiv.style.overflow = "auto";
+						}
+					}
+					var sStr = oDiv.innerHTML;
+					var sRes = ReplaceMacrosInStr(sStr);
+					if(sRes!=sStr)	oDiv.innerHTML = sRes;
+
+					var bTW = oParams.selectSingleNode("typewriter").text=="yes" ? true : false;
+					oCurObj.setAttribute("ready", bTW ? "0" : "1");
+					if(!bTW) return true;
+					CallMethod("003_textbox", "StartTypeWriter", argobj);
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="StartTypeWriter" label="StartTypeWriter" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function StartTypeWriter(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oDiv = document.getElementById(argobj.pid+"_div");
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					oCurObj.setAttribute("ready","0");
+					var sSpeed = oParams.selectSingleNode("typewriter_speed").text;
+					var iSpeed = parseInt(sSpeed,10);
+					if(isNaN(iSpeed)) iSpeed = 8;
+					iSpeed = Math.round(1000/iSpeed);
+					oCurObj.setAttribute("speed", iSpeed.toString());
+					var sTxt = oDiv.innerHTML;
+					var sNTxt = "";
+					var bTagFlag = false;
+					var bEntityFlag = false;
+					var iCnt = 0;
+					for(var i=0;i<sTxt.length;i++) {
+						if(bTagFlag && sTxt.charAt(i)!=">") {
+							sNTxt += sTxt.charAt(i);
+							continue;
+						}
+						if(bEntityFlag && sTxt.charAt(i)!=";") {
+							sNTxt += sTxt.charAt(i);
+							continue;
+						}
+						switch(sTxt.charAt(i)) {
+							case "<":
+								sNTxt += "<";
+								bTagFlag = true;
+								break;
+							case ">":
+								sNTxt += ">";
+								bTagFlag = false;
+								break;
+							case "&":
+								sNTxt += "<span id='"+argobj.pid+"_i"+iCnt.toString()+"' style='visibility:hidden'>&";
+								iCnt++;
+								bEntityFlag = true;
+								break;
+							case ";":
+								if(bEntityFlag) {
+									bEntityFlag = false;
+									sNTxt += ";</span>";
+									break;
+								}
+							default:
+								sNTxt += "<span id='"+argobj.pid+"_i"+iCnt.toString()+"' style='visibility:hidden'>"+sTxt.charAt(i)+"</span>";
+								iCnt++;
+						}
+					}
+					oDiv.innerHTML = sNTxt;
+					oCurObj.setAttribute("cid","0");
+					oCurObj.setAttribute("lid",iCnt.toString());
+					CallMethod("003_textbox", "TypeChar", argobj);
+
+ 					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="ResizeObject" label="RESIZE OBJECT" access="public">
+            <params>
+				<param name="neww" label="New width"/>
+				<param name="newh" label="New height"/>
+				<param name="how" label="Resize type" default="instant">
+					<items>
+						<item id="instant" label="Instant"/>
+						<item id="step" label="Steps"/>
+					</items>
+				</param>
+				<param name="num" label="Number of steps" default="10"/>
+				<param name="delay" label="Delay on step (millisec)" default="50"/>
+			</params>
+            <body>
+                <![CDATA[
+                function ResizeObject(argobj)
+                {
+                    if(argobj.pid==null || argobj.newh==null || argobj.neww==null) return false;
+					if(argobj.newh=="" || argobj.neww=="") return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var sW = oCurObj.getAttribute("w");
+					var sH = oCurObj.getAttribute("h");
+					var sPadding = oParams.selectSingleNode("margin").text;
+					var sBorder = oParams.selectSingleNode("borderwidth").text;
+
+					var sNewW = argobj.neww;
+					sNewW = ReplacePropertiesInStr(sNewW);
+					sNewW = ReplaceVariablesInStr(sNewW);
+					sNewW = eval(sNewW);
+					var sNewH = argobj.newh;
+					sNewH = ReplacePropertiesInStr(sNewH);
+					sNewH = ReplaceVariablesInStr(sNewH);
+					sNewH = eval(sNewH);
+					var iNewH = parseInt(sNewH,10);
+					var iNewW = parseInt(sNewW,10);
+					if(isNaN(iNewH) || isNaN(iNewW)) return false;
+					if(iNewW<=0 || iNewH<=0) return false;
+					if(argobj.how=="instant") {
+						var iHeight = parseInt(sNewH,10) - parseInt(sPadding,10)*2 - parseInt(sBorder,10)*2;
+						var iWidth = parseInt(sNewW,10) - parseInt(sPadding,10)*2 - parseInt(sBorder,10)*2;
+						oCurObj.style.width = sNewW + "px";
+						oCurObj.style.width = sNewH + "px";
+						oCurObj.setAttribute("w",sNewW);
+						oCurObj.setAttribute("h",sNewH);
+						var oTable = document.getElementById(argobj.pid+"_tbl");
+						oTable.style.width = sNewW + "px";
+						oTable.style.width = sNewH + "px";
+						var oDiv = document.getElementById(argobj.pid+"_div");
+						oDiv.style.height = iHeight.toString()+"px";
+						oDiv.style.width = iWidth.toString()+"px";
+						FireEvent(argobj.pid,"onResizeObject");
+						return true;
+					} else {
+						var sNum = argobj.num;
+						sNum = ReplacePropertiesInStr(sNum);
+						sNum = ReplaceVariablesInStr(sNum);
+						sNum = eval(sNum);
+						var iNum = parseInt(sNum,10);
+						if(isNaN(iNum)) iNum = 10;
+						var sDelay = argobj.delay;
+						sDelay = ReplacePropertiesInStr(sDelay);
+						sDelay = ReplaceVariablesInStr(sDelay);
+						sDelay = eval(sDelay);
+						var iDelay = parseInt(sDelay,10);
+						if(isNaN(iDelay)) iDelay = 50;
+						var iDifX = iNewW - parseInt(sW,10);
+						var iDifY = iNewH - parseInt(sH,10);
+						var iStepX = Math.round(iDifX/iNum);
+						var iStepY = Math.round(iDifY/iNum);
+						oCurObj.setAttribute("nw",iNewW.toString());
+						oCurObj.setAttribute("nh",iNewH.toString());
+						oCurObj.setAttribute("stepx",iStepX.toString());
+						oCurObj.setAttribute("stepy",iStepY.toString());
+						oCurObj.setAttribute("delay",iDelay.toString());
+						oCurObj.setAttribute("stepnum",iNum.toString());
+						oCurObj.setAttribute("curstep","1");
+						oCurObj.setAttribute("pad",sPadding);
+						oCurObj.setAttribute("brd",sBorder);
+						CreateTimeActionMethod("003_textbox", "NewSize", null, iDelay, argobj);
+					}
+ 					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="NewSize" label="NewSize" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function NewSize(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var iNW = parseInt(oCurObj.getAttribute("nw"),10);
+					var iNH = parseInt(oCurObj.getAttribute("nh"),10);
+					var iStepX = parseInt(oCurObj.getAttribute("stepx"),10);
+					var iStepY = parseInt(oCurObj.getAttribute("stepy"),10);
+					var iNum = parseInt(oCurObj.getAttribute("stepnum"),10);
+					var iCurStep = parseInt(oCurObj.getAttribute("curstep"),10);
+					var iDelay = parseInt(oCurObj.getAttribute("delay"),10);
+					var iBorder = parseInt(oCurObj.getAttribute("brd"),10);
+					var iPadding = parseInt(oCurObj.getAttribute("pad"),10);
+					var iCW = parseInt(oCurObj.getAttribute("w"),10);
+					var iCH = parseInt(oCurObj.getAttribute("h"),10);
+					iCurStep++;
+					var iNewW = iCW + iStepX;
+					var iNewH = iCH + iStepY;
+					if((iNewH>iNH && iStepY>0) || (iNewH<iNH && iStepY<0) || iCurStep==iNum) iNewH = iNH;
+					if((iNewW>iNW && iStepX>0) || (iNewW<iNW && iStepX<0) || iCurStep==iNum) iNewW = iNW;
+					var sNewW = iNewW.toString();
+					var sNewH = iNewH.toString();
+					var iHeight = iNewH - iPadding*2 - iBorder*2;
+					var iWidth = iNewW - iPadding*2 - iBorder*2;
+					oCurObj.style.width = sNewW + "px";
+					oCurObj.style.width = sNewH + "px";
+					oCurObj.setAttribute("w",sNewW);
+					oCurObj.setAttribute("h",sNewH);
+					var oTable = document.getElementById(argobj.pid+"_tbl");
+					oTable.style.width = sNewW + "px";
+					oTable.style.width = sNewH + "px";
+					var oDiv = document.getElementById(argobj.pid+"_div");
+					oDiv.style.height = iHeight.toString()+"px";
+					oDiv.style.width = iWidth.toString()+"px";
+					if(iCurStep>=iNum) {
+						FireEvent(argobj.pid,"onResizeObject");
+						return true;
+					} else {
+						oCurObj.setAttribute("curstep", iCurStep.toString());
+						CreateTimeActionMethod("003_textbox", "NewSize", null, iDelay, argobj);
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="CloseObject" label="CLOSE OBJECT" access="public">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function CloseObject(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					CloseObject(argobj.pid);
+					FireEvent(argobj.pid,"onCloseObject");
+ 					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="RefreshText" label="REFRESH TEXT" access="public">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function RefreshText(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					if(oCurObj.getAttribute("ready")=="0") return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var oDiv = document.getElementById(argobj.pid+"_div");
+					if(oDiv==null) return false;
+					var sStr = oParams.selectSingleNode("textbox_text").text;
+					var sRes = ReplaceMacrosInStr(sStr);
+					if(sRes!=sStr)	oDiv.innerHTML = sRes;
+					var bTW = oParams.selectSingleNode("typewriter").text=="yes" ? true : false;
+					FireEvent(argobj.pid,"onRefresh");
+					if(oCurObj==null) return false;
+					oCurObj.setAttribute("ready", bTW ? "0" : "1");
+					if(!bTW) return true;
+					CallMethod("003_textbox", "StartTypeWriter", argobj);
+ 					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="TypeChar" label="TypeChar" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function TypeChar(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null || oCurObj.style.display=="none") return false;
+					var sCnt = oCurObj.getAttribute("cid");
+					if(document.getElementById(argobj.pid+"_i"+sCnt)!=null) document.getElementById(argobj.pid+"_i"+sCnt).style.visibility = "visible";
+					var iCnt = parseInt(sCnt,10);
+					iCnt++;
+					sCnt = iCnt.toString();
+					if(oCurObj.getAttribute("lid")!=sCnt) {
+						var iDelay = parseInt(oCurObj.getAttribute("speed"),10);
+						oCurObj.setAttribute("cid",sCnt);
+						CreateTimeActionMethod("003_textbox", "TypeChar", null, iDelay, argobj);
+					} else {
+						oCurObj.setAttribute("ready","1");
+						FireEvent(argobj.pid,"onTypeWriterEnd");
+					}
+ 					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="AddText" label="ADD TEXT" access="public">
+            <params>
+				<param name="where" label="Where to add" default="end">
+					<items>
+						<item id="end" label="At the end"/>
+						<item id="start" label="At the start"/>
+					</items>
+				</param>
+				<param name="how" label="Adding style" default="space">
+					<items>
+						<item id="break" label="One line break"/>
+						<item id="space" label="One space"/>
+						<item id="p" label="One paragraph"/>
+					</items>
+				</param>
+ 				<param name="value" label="Text to add"/>
+			</params>
+            <body>
+                <![CDATA[
+                function AddText(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					if(oCurObj.getAttribute("ready")=="0") return false;
+					var oDiv = document.getElementById(argobj.pid+"_div");
+					if(oDiv==null) return false;
+					var iLeft = 0;
+					var iRight = 0;
+					var sValue = argobj.value;
+					sValue = ReplaceMacrosInStr(sValue);
+					sValue = ReplacePropertiesInStr(sValue);
+					sValue = ReplaceVariablesInStr(sValue);
+
+					if(argobj.how=="p") {
+						var aP = oCurObj.getElementsByTagName("p");
+						if(aP.length==0) argobj.how = "break";
+					}
+
+					switch(argobj.how) {
+						case "break":
+						case "space":
+							var sText = oDiv.innerHTML;
+							var sDivider = argobj.how=="space" ? " " : "<br/>";
+							var sBuffer = sText;
+							iRight = sBuffer.length;
+							if(argobj.where=="start") {
+								while(sBuffer.charAt(0)=="<") {
+									iLeft += sBuffer.indexOf(">")+1;
+									sBuffer = sBuffer.substr(iLeft);
+									if(sBuffer.length==0) return false;
+								}
+								var sLeft = sText.substring(0,iLeft);
+								var sRight = sText.substr(iLeft);
+								oDiv.innerHTML = sLeft + sValue + sDivider + sRight;
+							} else {
+								while(sBuffer.charAt(sBuffer.length-1)==">") {
+									iRight = sBuffer.lastIndexOf("<");
+									sBuffer = sBuffer.substring(0,iRight);
+									if(sBuffer.length==0) return false;
+								}
+								var sLeft = sText.substring(0,iRight);
+								var sRight = sText.substr(iRight);
+								oDiv.innerHTML = sLeft + sDivider + sValue + sRight;
+							}
+							break;
+						case "p":
+							var oP = argobj.where=="end" ? aP[aP.length-1] : aP[0];
+							var oClone = oP.cloneNode(true);
+							var sText = oClone.innerHTML;
+							var sBuffer = sText;
+							while(sBuffer.charAt(0)=="<") {
+								iLeft += sBuffer.indexOf(">")+1;
+								sBuffer = sBuffer.substr(iLeft);
+								if(sBuffer.length==0) return false;
+							}
+							iRight = sBuffer.length;
+							while(sBuffer.charAt(sBuffer.length-1)==">") {
+								iRight = sBuffer.lastIndexOf("<");
+								sBuffer = sBuffer.substring(0,iRight);
+								if(sBuffer.length==0) return false;
+							}
+							var sLeft = sText.substring(0,iLeft);
+							var sRight = sText.substr(iLeft+sBuffer.length);
+							oClone.innerHTML = sLeft + sValue + sRight;
+							if(argobj.where=="end") {
+								oDiv.appendChild(oClone);
+							} else {
+								oDiv.insertBefore(oClone, oP);
+							}
+							break;
+						default: break;
+					}
+					FireEvent(argobj.pid,"onAddText");
+ 					return true;
+				}
+				]]>
+			</body>
+		</method>
+	</methods>
+</params>

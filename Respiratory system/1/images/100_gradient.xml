@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+'*	100_gradient.xml
+'*	Copyright (c) Websoft, 2007.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>Gradient Area</label>
+		<width>200</width>
+		<height>100</height>
+		<description>Rectangular area with color gradient fill</description>
+	</object>
+	<page name=" Parameters " w="160" h="60">
+		<param type="label" text="Color 1:" x="10" y="10" w="60" h="13"/>
+		<param type="color" id="start_color" text="#0a6cce" def="#0a6cce" x="70" y="9" w="45" h="13"/>
+		<param type="label" text="Color 2:" x="10" y="26" w="60" h="13"/>
+		<param type="color" id="end_color" text="#ffffff" def="#ffffff" x="70" y="25" w="45" h="13"/>
+		<param type="label" text="Direction:" x="10" y="42" w="60" h="13"/>
+		<param type="radio" id="grad_type_h" text="horizontal" def="yes" x="70" y="40" w="70" h="13"/>
+		<param type="radio" id="grad_type_v" text="vertical" def="no" x="70" y="52" w="70" h="13"/>
+    </page>
+	<methods>
+		<method name="Constructor" label="Constructor" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function Constructor(argobj)
+                {
+					if(g_isMSIE) return true;
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var bVertical = oParams.selectSingleNode("grad_type_v").text=="yes";
+					var oObj = GetObjectById(argobj.pid);
+					if(oObj==null) return null;
+					var sColor1 = oParams.selectSingleNode("start_color").text;
+					var aColors1 = new Array();
+					for(var i=0;i<3;i++) aColors1.push(sColor1.substr(i*2+1,2));
+					var sColor2 = oParams.selectSingleNode("end_color").text;
+					var aColors2 = new Array();
+					for(var i=0;i<3;i++) aColors2.push(sColor2.substr(i*2+1,2));
+					var iRedStart = parseInt(aColors1[0],16);
+					var iGreenStart = parseInt(aColors1[1],16);
+					var iBlueStart = parseInt(aColors1[2],16);
+					var iRed = parseInt(aColors2[0],16) - iRedStart;
+					var iGreen = parseInt(aColors2[1],16) - iGreenStart;
+					var iBlue = parseInt(aColors2[2],16) - iBlueStart;
+					var aAbs = new Array();
+					aAbs.push(Math.abs(iRed));
+					aAbs.push(Math.abs(iGreen));
+					aAbs.push(Math.abs(iBlue));
+					aAbs.sort(function(a,b) {return b-a});
+					var iGrades = aAbs[0];
+					var iCell = 1;
+					var rCell;
+					if(bVertical) {
+						var sH = oObj.getAttribute("h");
+						var iH = parseInt(sH,10);
+						if(iH<=iGrades) {
+							iGrades = iH;
+						} else {
+							rCell = iH/iGrades;
+							var iFloorCell = Math.floor(rCell);
+							if((rCell-iFloorCell)<0.5) {
+								iCell = iFloorCell;
+							} else {
+								iCell = Math.ceil(rCell);
+								iGrades = Math.round(iH/iCell);
+							}
+						}
+					} else {
+						var sW = oObj.getAttribute("w");
+						var iW = parseInt(sW,10);
+						if(iW<=iGrades) {
+							iGrades = iW;
+						} else {
+							rCell = iW/iGrades;
+							var iFloorCell = Math.floor(rCell);
+							if((rCell-iFloorCell)<0.5) {
+								iCell = iFloorCell;
+							} else {
+								iCell = Math.ceil(rCell);
+								iGrades = Math.round(iW/iCell);
+							}
+						}
+					}
+					var rRedStep = iRed/iGrades;
+					var rGreenStep = iGreen/iGrades;
+					var rBlueStep = iBlue/iGrades;
+					var iR, iG, iB;
+					var sCell = iCell.toString()+"px";
+					var oTD = document.getElementById(argobj.pid+"_td");;
+					var oTR = document.getElementById(argobj.pid+"_tr");
+					var oTable = oTR.parentNode;
+					if(bVertical) {
+						oTable.removeChild(oTR);
+						oTR = null;
+					} else {
+						oTR.removeChild(oTD);
+						oTD = null;
+					}
+					for(var i=0;i<iGrades;i++) {
+						iR = Math.round(iRedStart + rRedStep*i);
+						iG = Math.round(iGreenStart + rGreenStep*i);
+						iB = Math.round(iBlueStart + rBlueStep*i);
+						oTD = document.createElement("td");
+						oTD.style.backgroundColor = "RGB("+iR.toString()+","+iG.toString()+","+iB.toString()+")";
+						if(bVertical) {
+							oTR = document.createElement("tr");
+							oTD.style.height = sCell;
+							oTR.appendChild(oTD);
+							oTable.appendChild(oTR);
+						} else {
+							oTD.style.width = sCell;
+							oTR.appendChild(oTD);
+						}
+					}
+                }
+                ]]>
+            </body>
+        </method>
+	</methods>
+</params>

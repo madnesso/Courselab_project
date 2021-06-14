@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+'*	nav_003_contents.xml
+'*	Copyright (c) Websoft, 2007.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>Contents Tab</label>
+		<width>25</width>
+		<height>460</height>
+		<description>Contents Tab</description>
+	</object>
+    <page name=" Display " w="260" h="200">
+		<param type="line" x="8" y="12" w="244" h="110"/>
+		<param type="label" text=" " x="11" y="6" w="6" h="13"/>
+		<param type="check" id="standard" text="Use default tab set" def="yes" x="15" y="6" w="80" h="13">
+			<events>
+				<event name="check" target="lab_n1_img" action="disable" />
+				<event name="check" target="lab_n2_img" action="disable" />
+				<event name="check" target="lab_n3_img" action="disable" />
+				<event name="check" target="lab_n4_img" action="disable" />
+				<event name="check" target="n1_img" action="disable" />
+				<event name="check" target="n2_img" action="disable" />
+				<event name="check" target="n3_img" action="disable" />
+				<event name="check" target="n4_img" action="disable" />
+				<event name="check" target="lab_tabcolor_user" action="disable" />
+				<event name="check" target="tabcolor_user" action="disable" />
+				<event name="check" target="lab_tabwidth" action="disable" />
+				<event name="check" target="tab_width" action="disable" />
+				<event name="check" target="lab_tabwidth2" action="disable" />
+				<event name="check" target="tab_height" action="disable" />
+				<event name="check" target="lab_tabwidth3" action="disable" />
+				<event name="check" target="lab_tabcolor" action="enable" />
+				<event name="check" target="tabcolor" action="enable" />
+				<event name="uncheck" target="lab_n1_img" action="enable" />
+				<event name="uncheck" target="lab_n2_img" action="enable" />
+				<event name="uncheck" target="lab_n3_img" action="enable" />
+				<event name="uncheck" target="lab_n4_img" action="enable" />
+				<event name="uncheck" target="n1_img" action="enable" />
+				<event name="uncheck" target="n2_img" action="enable" />
+				<event name="uncheck" target="n3_img" action="enable" />
+				<event name="uncheck" target="n4_img" action="enable" />
+				<event name="uncheck" target="lab_tabcolor_user" action="enable" />
+				<event name="uncheck" target="tabcolor_user" action="enable" />
+				<event name="uncheck" target="lab_tabwidth" action="enable" />
+				<event name="uncheck" target="tab_width" action="enable" />
+				<event name="uncheck" target="lab_tabwidth2" action="enable" />
+				<event name="uncheck" target="tab_height" action="enable" />
+				<event name="uncheck" target="lab_tabwidth3" action="enable" />
+				<event name="uncheck" target="lab_tabcolor" action="disable" />
+				<event name="uncheck" target="tabcolor" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_n1_img" text="Enabled tab:" x="15" y="25" w="130" h="13"/>
+		<param type="file" id="n1_img" text="" def="" x="125" y="24" w="100" h="13"/>
+		<param type="label" id="lab_n2_img" text="OnMouseOver tab:" x="15" y="41" w="110" h="13"/>
+		<param type="file" id="n2_img" text="" def="" x="125" y="40" w="100" h="13"/>
+		<param type="label" id="lab_n3_img" text="Disabled Tab:" x="15" y="56" w="110" h="13"/>
+		<param type="file" id="n3_img" text="" def="" x="125" y="55" w="100" h="13"/>
+		<param type="label" id="lab_n4_img" text="OnClick Tab:" x="15" y="72" w="110" h="13"/>
+		<param type="file" id="n4_img" text="" def="" x="125" y="71" w="100" h="13"/>
+		<param type="label" id="lab_tabcolor_user" text="Border color:" x="15" y="88" w="110" h="13"/>
+		<param type="color" id="tabcolor_user" text="" def="#000000" x="125" y="87" w="64" h="13"/>
+		<param type="label" id="lab_tabwidth" text="Area size                     hor.:" x="15" y="104" w="110" h="13"/>
+		<param type="edit" id="tab_width" text="" def="500" x="125" y="103" w="24" h="13"/>
+		<param type="label" id="lab_tabwidth2" text="px      vert.:" x="152" y="104" w="50" h="13"/>
+		<param type="edit" id="tab_height" text="" def="460" x="200" y="103" w="24" h="13"/>
+		<param type="label" id="lab_tabwidth3" text="px" x="227" y="104" w="20" h="13"/>
+
+		<param type="label" id="lab_tabcolor" text="Default tab color:" x="10" y="128" w="110" h="13"/>
+		<param type="select" id="tabcolor" text="orange" def="orange" x="125" y="126" w="125" h="13">
+			<items>
+				<item id="orange" label="Orange"/>
+				<item id="lightblue" label="Lightblue"/>
+				<item id="turquoise" label="Turquoise"/>
+				<item id="olive" label="Olive"/>
+			</items>
+		</param>
+		<param type="label" id="lab_taboffset" text="Tab vertical offset:" x="10" y="144" w="110" h="13"/>
+		<param type="edit" id="tab_offset" text="0" def="0" x="125" y="143" w="24" h="13"/>
+		<param type="label" id="lab_taboffset2" text="px" x="152" y="144" w="50" h="13"/>
+		<param type="label" text="Enabled tab tooltip:" x="10" y="160" w="110" h="13"/>
+		<param type="edit" id="alt_enabled" text="no" def="Contents" x="125" y="159" w="125" h="13"/>
+		<param type="label" text="Disabled tab tooltip:" x="10" y="176" w="110" h="13"/>
+		<param type="edit" id="alt_disabled" text="no" def="Access disabled" x="125" y="175" w="125" h="13"/>
+    </page>
+    <page name=" Parameters " w="260" h="200">
+		<param type="label" text="Header text:" x="10" y="10" w="90" h="13"/>
+		<param type="textedit" id="tabheader" text="no" def="Contents" x="125" y="9" w="108" h="13"/>
+		<param type="line" x="8" y="28" w="244" h="62"/>
+		<param type="label" text=" " x="11" y="22" w="6" h="13"/>
+		<param type="check" id="icon_default" text="Use default slide icon set" def="yes" x="15" y="22" w="98" h="13">
+			<events>
+				<event name="check" target="lab_i1_img" action="disable" />
+				<event name="check" target="lab_i2_img" action="disable" />
+				<event name="check" target="lab_i3_img" action="disable" />
+				<event name="check" target="i1_img" action="disable" />
+				<event name="check" target="i2_img" action="disable" />
+				<event name="check" target="i3_img" action="disable" />
+				<event name="uncheck" target="lab_i1_img" action="enable" />
+				<event name="uncheck" target="lab_i2_img" action="enable" />
+				<event name="uncheck" target="lab_i3_img" action="enable" />
+				<event name="uncheck" target="i1_img" action="enable" />
+				<event name="uncheck" target="i2_img" action="enable" />
+				<event name="uncheck" target="i3_img" action="enable" />
+			</events>
+		</param>
+		<param type="label" id="lab_i1_img" text="Unvisited slide icon:" x="15" y="42" w="110" h="13"/>
+		<param type="file" id="i1_img" text="" def="" x="125" y="39" w="100" h="13"/>
+		<param type="label" id="lab_i2_img" text="Current slide icon:" x="15" y="58" w="110" h="13"/>
+		<param type="file" id="i2_img" text="" def="" x="125" y="57" w="100" h="13"/>
+		<param type="label" id="lab_i3_img" text="Visited slide icon:" x="15" y="74" w="110" h="13"/>
+		<param type="file" id="i3_img" text="" def="" x="125" y="73" w="100" h="13"/>
+
+		<param type="line" x="8" y="96" w="244" h="66"/>
+		<param type="label" text=" " x="11" y="90" w="6" h="13"/>
+		<param type="check" id="hierarchy" text="Show slide hierarchy" def="yes" x="15" y="90" w="80" h="13">
+			<events>
+				<event name="check" target="hier_default" action="enable" />
+				<event name="check" target="lab_h1_img" action="enable" />
+				<event name="check" target="lab_h2_img" action="enable" />
+				<event name="check" target="h1_img" action="enable" />
+				<event name="check" target="h2_img" action="enable" />
+				<event name="uncheck" target="hier_default" action="disable" />
+				<event name="uncheck" target="lab_h1_img" action="disable" />
+				<event name="uncheck" target="lab_h2_img" action="disable" />
+				<event name="uncheck" target="h1_img" action="disable" />
+				<event name="uncheck" target="h2_img" action="disable" />
+			</events>
+		</param>
+		<param type="line" x="12" y="112" w="236" h="46"/>
+		<param type="label" text=" " x="14" y="106" w="6" h="13"/>
+		<param type="check" id="hier_default" text="Use default node icon set" def="yes" x="20" y="106" w="100" h="13">
+			<events>
+				<event name="check" target="lab_h1_img" action="disable" />
+				<event name="check" target="lab_h2_img" action="disable" />
+				<event name="check" target="h1_img" action="disable" />
+				<event name="check" target="h2_img" action="disable" />
+				<event name="uncheck" target="lab_h1_img" action="enable" />
+				<event name="uncheck" target="lab_h2_img" action="enable" />
+				<event name="uncheck" target="h1_img" action="enable" />
+				<event name="uncheck" target="h2_img" action="enable" />
+			</events>
+		</param>
+		<param type="label" id="lab_h1_img" text="Closed node icon:" x="20" y="122" w="130" h="13"/>
+		<param type="file" id="h1_img" text="" def="" x="125" y="121" w="100" h="13"/>
+		<param type="label" id="lab_h2_img" text="Open node icon:" x="20" y="138" w="110" h="13"/>
+		<param type="file" id="h2_img" text="" def="" x="125" y="137" w="100" h="13"/>
+		<param type="check" id="nav_lock" text="Strict Navigation mode" def="yes" x="10" y="164" w="184" h="13"/>
+		<param type="label" text="Strict slide order message:" x="10" y="182" w="110" h="13"/>
+		<param type="edit" id="msg" text="" def="You cannot jump to this slide until you visit previous slides" x="125" y="180" w="125" h="13"/>
+	</page>
+	<methods>
+		<method name="Constructor" label="Constructor" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function Constructor(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var oCurContents = document.getElementById(argobj.pid+"_contents");
+					if(oCurContents==null) return false;
+					var oHeader = document.getElementById(argobj.pid+"_header");
+					if(oHeader==null) return false;
+
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var bHierarchy = oParams.selectSingleNode("hierarchy").text=="yes" ? true : false;
+					var bNavLock = oParams.selectSingleNode("nav_lock").text=="yes" ? true : false;
+					if(oHeader.getElementsByTagName("p").length!=0) {
+						//fixing Gecko-specific p rendering
+						var aTmp = document.getElementById(argobj.pid+"_header").getElementsByTagName("p");
+						for(var i=0;i<aTmp.length;i++) {
+							aTmp[i].style.padding = "0px";
+							aTmp[i].style.margin = "0px";
+						}
+					}
+					oCurObj.style.left = bStandard ? "-475px" : "-"+oParams.selectSingleNode("tab_width").text+"px";
+					oCurObj.style.zIndex = 990;
+					oCurObj.setAttribute("closed","1");
+					oCurObj.setAttribute("navlock", bNavLock ? "1" : "0");
+					var	aSlides = g_oSlides.selectNodes("slide");
+					var oSlide, sName, sId, sIndent, oTmpl, oClone, aTags, oTmp;
+					oCurContents.innerHTML = "";
+					if(!bHierarchy) {
+						oTmpl = document.getElementById(argobj.pid+"_template_simple");
+						if(oTmpl==null) return false;
+						for(var i=0; i<aSlides.length;i++) {
+							oSlide = aSlides[i];
+							sName = oSlide.getAttribute("name");
+							sId = oSlide.getAttribute("id");
+							oClone = oTmpl.cloneNode(true);
+							aTags = oClone.getElementsByTagName("img");
+							aTags[0].setAttribute("id",argobj.pid+"_icon_"+sId);
+							aTags = oClone.getElementsByTagName("td");
+							aTags[1].setAttribute("id", argobj.pid+"_td_"+sId);
+							aTags[1].innerHTML = sName;
+							if(i==aSlides.length-1) {
+								oClone.style.borderBottom = oClone.style.borderTop;
+								oClone.style.paddingBottom = "1px";
+							}
+							oCurContents.appendChild(oClone);
+							oClone.style.display = g_isMSIE ? "inline" : "block";
+						}
+					} else {
+						oTmpl = document.getElementById(argobj.pid+"_template_hier");
+						if(oTmpl==null) return false;
+						var nIndent = 0;	var nNextIndent = 0;	var nPrevIndent = 0;
+						var oSlide = null;	var oNextSlide = null;	var oPrevSlide = null;
+						var oCurDiv = oCurContents;
+						var aDivs = new Array();
+						pushArray(aDivs,oCurDiv);
+						for(var i=0; i<aSlides.length;i++) {
+							oSlide = aSlides[i];
+							sName = oSlide.getAttribute("name");
+							sId = oSlide.getAttribute("id");
+							nIndent = oSlide.getAttribute("indent");
+							if(nIndent!=0 && i==0) nIndent = 0;
+							if(nIndent>nPrevIndent) {
+								oCurDiv = document.createElement("div");
+								oCurDiv.setAttribute("id", argobj.pid+"_div_"+oPrevSlide.getAttribute("id"));
+								pushArray(aDivs,oCurDiv);
+							} else {
+								while(nIndent<nPrevIndent) {
+									oTmp = popArray(aDivs);
+									oCurDiv = popArray(aDivs);
+									oCurDiv.appendChild(oTmp);
+									pushArray(aDivs,oCurDiv);
+									nPrevIndent--;
+								}
+							}
+							oNextSlide = (i==aSlides.length-1) ? null : aSlides[i+1];
+							nNextIndent = (oNextSlide==null) ? 0 : oNextSlide.getAttribute("indent");
+							oClone = oTmpl.cloneNode(true);
+							oClone.setAttribute("id", argobj.pid+"_item_"+sId)
+							aTags = oClone.getElementsByTagName("img");
+							if(nNextIndent>nIndent) {
+								aTags[0].style.cursor = g_isMSIE ? "hand" : "pointer";
+								aTags[0].setAttribute("childdiv", argobj.pid+"_div_"+sId);
+								aTags[0].setAttribute("iconopen", document.getElementById(argobj.pid+"_icon_open").src);
+								aTags[0].setAttribute("iconclosed", document.getElementById(argobj.pid+"_icon_closed").src);
+							} else {
+								aTags[0].style.visibility = "hidden";
+							}
+							aTags[1].setAttribute("id",argobj.pid+"_icon_"+sId);
+							aTags = oClone.getElementsByTagName("td");
+							aTags[2].setAttribute("id", argobj.pid+"_td_"+sId);
+							aTags[2].innerHTML = sName;
+							if(nIndent!=0) {
+								var oZ = aTags[0].parentNode;
+								var oX = aTags[1];
+								var oY = aTags[0].cloneNode(true);
+								for(var j=0;j<nIndent;j++) {
+									oY = aTags[0].cloneNode(true);
+									oX = oZ.insertBefore(oY,oX);
+								}
+							}
+							oClone.style.display = g_isMSIE ? "inline" : "block";
+							if(i==aSlides.length-1) {
+								oClone.style.borderBottom = oClone.style.borderTop;
+								oClone.style.paddingBottom = "1px";
+							}
+							oCurDiv.appendChild(oClone);
+							oPrevSlide = oSlide;
+							nPrevIndent = nIndent;
+						}
+						if(aDivs.length>0) {
+							nIndent = 0;
+							while(nIndent<nPrevIndent) {
+								oTmp = popArray(aDivs);
+								oCurDiv = popArray(aDivs);
+								oCurDiv.appendChild(oTmp);
+								pushArray(aDivs,oCurDiv);
+								nPrevIndent--;
+							}
+						}
+					}
+					oCurObj.setAttribute("state","enabled");
+					AddEvtHandler("EVENT_SLIDE_OPENED", "nav_003_contents", argobj.pid);
+					AddEvtHandler("EVENT_SLIDE_COMPLETE", "nav_003_contents", argobj.pid);
+					AddEvtHandler("EVENT_NAVIGATION", "nav_003_contents", argobj.pid);
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="HandleEvt" label="HandleEvt" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HandleEvt(oEvtHandler, oArg)
+				{
+					var argobj = new Object;
+					argobj.pid = oEvtHandler.sTargetId;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sCurrentSlideId = g_oSlide.getAttribute("id");
+					var sSavedSlideId = oCurObj.getAttribute("sid");
+					if(sSavedSlideId==null) sSavedSlideId = "";
+					switch (oEvtHandler.sEvt) {
+						case "EVENT_SLIDE_OPENED":
+							if(sSavedSlideId!=sCurrentSlideId) oCurObj.setAttribute("sid","");
+							if(oCurObj.getAttribute("closed")=="0") CallMethod("nav_003_contents","MoveTab",argobj);
+							if(oCurObj.getAttribute("navlock")=="1") CallMethod("nav_003_contents","DisableAccess",argobj);
+							break;
+						case "EVENT_SLIDE_COMPLETE":
+							if(oCurObj.getAttribute("state")=="disabled" && sSavedSlideId=="") {
+								oCurObj.setAttribute("sid","");
+								CallMethod("nav_003_contents","EnableAccess",argobj);
+							}
+							break;
+						case "EVENT_NAVIGATION":
+							if(oArg==null) return false;
+							if(oArg.sTargets=="contents" || oArg.sTargets=="all") {
+								if(oArg.sAction=="on" && oCurObj.getAttribute("state")=="disabled") {
+									oCurObj.setAttribute("sid","");
+									CallMethod("nav_003_contents","EnableAccess",argobj);
+								}
+								if(oArg.sAction=="off" && oCurObj.getAttribute("state")=="enabled") {
+									oCurObj.setAttribute("sid",sCurrentSlideId);
+									CallMethod("nav_003_contents","DisableAccess",argobj);
+								}
+							}
+						default:
+							break;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="UpdateContents" label="UpdateContents" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function UpdateContents(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var sMsg = oParams.selectSingleNode("msg").text;
+					if(sMsg==null) sMsg = "You cannot jump to this slide until you visit previous slides";
+					var	aSlides = g_oSlides.selectNodes("slide");
+					var oSlide, sName, sId, sIndent;
+					var bPrevVisited = true;
+					var sCurrentSlideId = g_oSlide.getAttribute("id");
+					var oIcon, oTD;
+					for(var i=0; i<aSlides.length;i++) {
+						oSlide = aSlides[i];
+						sName = oSlide.getAttribute("name");
+						sId = oSlide.getAttribute("id");
+						oIcon = document.getElementById(argobj.pid+"_icon_"+sId);
+						oTD = document.getElementById(argobj.pid+"_td_"+sId);
+						if(sId!=sCurrentSlideId) {
+							if(oIcon.src==document.getElementById(argobj.pid+"_icon_visited").src) continue;
+							if(!g_bStrictOrder || (g_bStrictOrder && bPrevVisited)) {
+								oTD.innerHTML = '<a href="#" onclick="var oArgs=new Object; oArgs.pid=\''+argobj.pid+'\'; oArgs.sid=\''+sId+'\'; CallMethod(\'nav_003_contents\',\'JumpToSlide\',oArgs); return false;">'+sName+'</a>';
+							} else {
+								oTD.innerHTML = sName;
+								oTD.title = sMsg;
+							}
+							if(SCOIsSlideVisited(oSlide)) {
+								bPrevVisited = true;
+								oIcon.src = document.getElementById(argobj.pid+"_icon_visited").src;
+							} else {
+								bPrevVisited = false;
+								oIcon.src = document.getElementById(argobj.pid+"_icon_unvisited").src;
+							}
+						} else {
+							bPrevVisited = true;
+							document.getElementById(argobj.pid+"_icon_"+sCurrentSlideId).src = document.getElementById(argobj.pid+"_icon_current").src;
+							document.getElementById(argobj.pid+"_td_"+sCurrentSlideId).innerHTML = "<b>"+sName+"</b>";
+						}
+					}
+					if(oParams.selectSingleNode("hierarchy").text=="yes") {
+						var oCurDiv = document.getElementById(argobj.pid+"_item_"+sCurrentSlideId);
+						var oCurContents = document.getElementById(argobj.pid+"_contents");
+						var iCnt = 0;
+						while(oCurDiv!=oCurContents && iCnt<100) {
+							oCurDiv = oCurDiv.parentNode;
+							if(oCurDiv.nodeName.toLowerCase()=="div") {
+								if(oCurDiv.style.display == "none") oCurDiv.style.display = g_isMSIE ? "inline" : "block";
+							}
+							iCnt++;
+						}
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="JumpToSlide" label="JumpToSlide" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function JumpToSlide(argobj)
+				{
+					if(argobj.pid==null || argobj.sid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					oCurObj.setAttribute("closed","1");
+					CallMethod("nav_003_contents","MoveTab",argobj);
+					OpenSlideById(argobj.sid);
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="OpenTab" label="OPEN TAB" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function OpenTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sCurrentSlideId = g_oSlide.getAttribute("id");
+					var sSavedSlideId = oCurObj.getAttribute("sid");
+					if(sCurrentSlideId==sSavedSlideId) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var iDockX = bStandard ? -475 : -parseInt(oParams.selectSingleNode("tab_width").text);
+					var iY = oCurObj.offsetTop;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					var dtBegin = new Date();
+					if(bOpenTab) {
+						CreateTimeActionMove(argobj.pid, 0, 300, iDockX, iY, 0, iY);
+						CallMethod("nav_003_contents","UpdateContents",argobj);
+						oCurObj.style.zIndex = 991;
+						oCurObj.setAttribute("closed","0");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="CloseTab" label="CLOSE TAB" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function CloseTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sCurrentSlideId = g_oSlide.getAttribute("id");
+					var sSavedSlideId = oCurObj.getAttribute("sid");
+					if(sCurrentSlideId==sSavedSlideId) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var iDockX = bStandard ? -475 : -parseInt(oParams.selectSingleNode("tab_width").text);
+					var iY = oCurObj.offsetTop;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					var dtBegin = new Date();
+					if(!bOpenTab) {
+						CreateTimeActionMove(argobj.pid, 0, 300, 0, iY, iDockX, iY);
+						CreateTimeActionMethod("nav_003_contents", "sinkTab", null, 300, argobj);
+						oCurObj.setAttribute("closed","1");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="MoveTab" label="MoveTab" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function MoveTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var iDockX = bStandard ? -475 : -parseInt(oParams.selectSingleNode("tab_width").text);
+					var iY = oCurObj.offsetTop;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					var dtBegin = new Date();
+					if(bOpenTab) {
+						CreateTimeActionMove(argobj.pid, 0, 300, iDockX, iY, 0, iY);
+						CallMethod("nav_003_contents","UpdateContents",argobj);
+						oCurObj.style.zIndex = 991;
+						oCurObj.setAttribute("closed","0");
+					} else {
+						CreateTimeActionMove(argobj.pid, 0, 300, 0, iY, iDockX, iY);
+						CreateTimeActionMethod("nav_003_contents", "sinkTab", null, 300, argobj);
+						oCurObj.setAttribute("closed","1");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="sinkTab" label="sinkTab" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function sinkTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					oCurObj.style.zIndex=990;
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="DisableAccess" label="DISABLE ACCESS" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisableAccess(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					if(!bOpenTab) CallMethod("nav_003_contents","MoveTab",argobj);
+					document.getElementById(argobj.pid+"_tabimg").style.display = "none";
+					document.getElementById(argobj.pid+"_tabimg_disabled").style.display = g_isMSIE ? "inline" : "block";
+					oCurObj.setAttribute("state","disabled");
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="EnableAccess" label="ENABLE ACCESS" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function EnableAccess(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					document.getElementById(argobj.pid+"_tabimg_disabled").style.display = "none";
+					document.getElementById(argobj.pid+"_tabimg").style.display = g_isMSIE ? "inline" : "block";
+					oCurObj.setAttribute("state","enabled");
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="GetProperty" label="GetProperty" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function GetProperty(argobj)
+				{
+					if(argobj.pid==null || argobj.property==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					switch(argobj.property.toLowerCase()) {
+						case "disabled":	g_vPropertyValue = oCurObj.getAttribute("state")=="disabled" ? "1" : "0";	break;
+						case "open":		g_vPropertyValue = oCurObj.getAttribute("closed")=="1" ? "0" : "1";	break;
+						default: return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+	</methods>
+</params>

@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+'*	nav_005_calc.xml
+'*	Copyright (c) Websoft, 2007.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>Calculator Tab</label>
+		<width>25</width>
+		<height>460</height>
+		<description>Calculator Tab</description>
+	</object>
+    <page name=" Display " w="260" h="200">
+		<param type="line" x="8" y="12" w="244" h="110"/>
+		<param type="label" text=" " x="11" y="6" w="6" h="13"/>
+		<param type="check" id="standard" text="Use default tab set" def="yes" x="15" y="6" w="80" h="13">
+			<events>
+				<event name="check" target="lab_n1_img" action="disable" />
+				<event name="check" target="lab_n2_img" action="disable" />
+				<event name="check" target="lab_n3_img" action="disable" />
+				<event name="check" target="lab_n4_img" action="disable" />
+				<event name="check" target="n1_img" action="disable" />
+				<event name="check" target="n2_img" action="disable" />
+				<event name="check" target="n3_img" action="disable" />
+				<event name="check" target="n4_img" action="disable" />
+				<event name="check" target="lab_tabcolor_user" action="disable" />
+				<event name="check" target="tabcolor_user" action="disable" />
+				<event name="check" target="lab_tabwidth" action="disable" />
+				<event name="check" target="tab_width" action="disable" />
+				<event name="check" target="lab_tabwidth2" action="disable" />
+				<event name="check" target="tab_height" action="disable" />
+				<event name="check" target="lab_tabwidth3" action="disable" />
+				<event name="check" target="lab_tabcolor" action="enable" />
+				<event name="check" target="tabcolor" action="enable" />
+				<event name="uncheck" target="lab_n1_img" action="enable" />
+				<event name="uncheck" target="lab_n2_img" action="enable" />
+				<event name="uncheck" target="lab_n3_img" action="enable" />
+				<event name="uncheck" target="lab_n4_img" action="enable" />
+				<event name="uncheck" target="n1_img" action="enable" />
+				<event name="uncheck" target="n2_img" action="enable" />
+				<event name="uncheck" target="n3_img" action="enable" />
+				<event name="uncheck" target="n4_img" action="enable" />
+				<event name="uncheck" target="lab_tabcolor_user" action="enable" />
+				<event name="uncheck" target="tabcolor_user" action="enable" />
+				<event name="uncheck" target="lab_tabwidth" action="enable" />
+				<event name="uncheck" target="tab_width" action="enable" />
+				<event name="uncheck" target="lab_tabwidth2" action="enable" />
+				<event name="uncheck" target="tab_height" action="enable" />
+				<event name="uncheck" target="lab_tabwidth3" action="enable" />
+				<event name="uncheck" target="lab_tabcolor" action="disable" />
+				<event name="uncheck" target="tabcolor" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_n1_img" text="Enabled tab:" x="15" y="25" w="130" h="13"/>
+		<param type="file" id="n1_img" text="" def="" x="125" y="24" w="100" h="13"/>
+		<param type="label" id="lab_n2_img" text="OnMouseOver tab:" x="15" y="41" w="110" h="13"/>
+		<param type="file" id="n2_img" text="" def="" x="125" y="40" w="100" h="13"/>
+		<param type="label" id="lab_n3_img" text="Disabled Tab:" x="15" y="56" w="110" h="13"/>
+		<param type="file" id="n3_img" text="" def="" x="125" y="55" w="100" h="13"/>
+		<param type="label" id="lab_n4_img" text="OnClick Tab:" x="15" y="72" w="110" h="13"/>
+		<param type="file" id="n4_img" text="" def="" x="125" y="71" w="100" h="13"/>
+		<param type="label" id="lab_tabcolor_user" text="Border color:" x="15" y="88" w="110" h="13"/>
+		<param type="color" id="tabcolor_user" text="" def="#000000" x="125" y="87" w="64" h="13"/>
+		<param type="label" id="lab_tabwidth" text="Area size                     hor.:" x="15" y="104" w="110" h="13"/>
+		<param type="edit" id="tab_width" text="" def="500" x="125" y="103" w="24" h="13"/>
+		<param type="label" id="lab_tabwidth2" text="px      vert.:" x="152" y="104" w="50" h="13"/>
+		<param type="edit" id="tab_height" text="" def="460" x="200" y="103" w="24" h="13"/>
+		<param type="label" id="lab_tabwidth3" text="px" x="227" y="104" w="20" h="13"/>
+		<param type="label" id="lab_tabcolor" text="Default tab color:" x="10" y="128" w="110" h="13"/>
+		<param type="select" id="tabcolor" text="orange" def="orange" x="125" y="126" w="125" h="13">
+			<items>
+				<item id="orange" label="Orange"/>
+				<item id="lightblue" label="Lightblue"/>
+				<item id="turquoise" label="Turquoise"/>
+				<item id="olive" label="Olive"/>
+			</items>
+		</param>
+		<param type="label" id="lab_taboffset" text="Tab vertical offset:" x="10" y="144" w="110" h="13"/>
+		<param type="edit" id="tab_offset" text="184" def="184" x="125" y="143" w="24" h="13"/>
+		<param type="label" id="lab_taboffset2" text="px" x="152" y="144" w="50" h="13"/>
+		<param type="label" text="Enabled tab tooltip:" x="10" y="160" w="110" h="13"/>
+		<param type="edit" id="alt_enabled" text="no" def="Calculator" x="125" y="159" w="125" h="13"/>
+		<param type="label" text="Disabled tab tooltip:" x="10" y="176" w="110" h="13"/>
+		<param type="edit" id="alt_disabled" text="no" def="Access disabled" x="125" y="175" w="125" h="13"/>
+	</page>
+    <page name=" Parameters " w="260" h="200">
+		<param type="label" text="Header text:" x="10" y="10" w="90" h="13"/>
+		<param type="textedit" id="tabheader" text="Calculator" def="Calculator" x="100" y="9" w="128" h="13"/>
+		<param type="label" text="Description:" x="10" y="26" w="90" h="13"/>
+		<param type="textedit" id="tabtext" text="" def="" x="100" y="25" w="128" h="13"/>
+		<param type="check" id="nav_lock" text="Strict Navigation mode" def="no" x="10" y="42" w="184" h="13"/>
+    </page>
+	<methods>
+		<method name="Constructor" label="Constructor" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function Constructor(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var bNavLock = oParams.selectSingleNode("nav_lock").text=="yes" ? true : false;
+					var oHeader = document.getElementById(argobj.pid+"_header");
+					if(oHeader==null) return false;
+					var aTmp = oHeader.getElementsByTagName("p");
+					if(aTmp.length!=0) {
+						//fixing Gecko-specific p rendering
+						for(var i=0;i<aTmp.length;i++) {
+							aTmp[i].style.padding = "0px";
+							aTmp[i].style.margin = "0px";
+						}
+					}
+					oCurObj.style.left = bStandard ? "-475px" : "-"+oParams.selectSingleNode("tab_width").text+"px";
+					oCurObj.style.zIndex = 990;
+					oCurObj.setAttribute("closed","1");
+					oCurObj.setAttribute("navlock", bNavLock ? "1" : "0");
+					var oCurDisplay = document.getElementById(argobj.pid+"_display");
+					if(oCurDisplay==null) return false;
+					oCurDisplay.innerHTML = "0";
+					var oCurMemInd = document.getElementById(argobj.pid+"_mem_ind");
+					if(oCurMemInd==null) return false;
+					oCurMemInd.innerHTML = "";
+					oCurObj.setAttribute("operanda","na");
+					oCurObj.setAttribute("operatora","na");
+					oCurObj.setAttribute("operandb","na");
+					oCurObj.setAttribute("lastbutton","na");
+					oCurObj.setAttribute("clean","0");
+					oCurObj.setAttribute("memory","na");
+					oCurObj.setAttribute("state","enabled");
+					AddEvtHandler("EVENT_SLIDE_OPENED", "nav_005_calc", argobj.pid);
+					AddEvtHandler("EVENT_SLIDE_COMPLETE", "nav_005_calc", argobj.pid);
+					AddEvtHandler("EVENT_NAVIGATION", "nav_005_calc", argobj.pid);
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="HandleEvt" label="HandleEvt" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HandleEvt(oEvtHandler, oArg)
+				{
+					var argobj = new Object;
+					argobj.pid = oEvtHandler.sTargetId;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sCurrentSlideId = g_oSlide.getAttribute("id");
+					var sSavedSlideId = oCurObj.getAttribute("sid");
+					if(sSavedSlideId==null) sSavedSlideId = "";
+					switch (oEvtHandler.sEvt) {
+						case "EVENT_SLIDE_OPENED":
+							if(sSavedSlideId!=sCurrentSlideId) oCurObj.setAttribute("sid","");
+							if(oCurObj.getAttribute("closed")=="0") CallMethod("nav_005_calc","MoveTab",argobj);
+							if(oCurObj.getAttribute("navlock")=="1") CallMethod("nav_005_calc","DisableAccess",argobj);
+							break;
+						case "EVENT_SLIDE_COMPLETE":
+							if(oCurObj.getAttribute("state")=="disabled" && sSavedSlideId=="") {
+								oCurObj.setAttribute("sid","");
+								CallMethod("nav_005_calc","EnableAccess",argobj);
+							}
+							break;
+						case "EVENT_NAVIGATION":
+							if(oArg==null) return false;
+							if(oArg.sTargets=="calc" || oArg.sTargets=="all") {
+								if(oArg.sAction=="on" && oCurObj.getAttribute("state")=="disabled") {
+									oCurObj.setAttribute("sid","");
+									CallMethod("nav_005_calc","EnableAccess",argobj);
+								}
+								if(oArg.sAction=="off" && oCurObj.getAttribute("state")=="enabled") {
+									oCurObj.setAttribute("sid",sCurrentSlideId);
+									CallMethod("nav_005_calc","DisableAccess",argobj);
+								}
+							}
+						default:
+							break;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="OpenTab" label="OPEN TAB" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function OpenTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sCurrentSlideId = g_oSlide.getAttribute("id");
+					var sSavedSlideId = oCurObj.getAttribute("sid");
+					if(sCurrentSlideId==sSavedSlideId) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var iDockX = bStandard ? -475 : -parseInt(oParams.selectSingleNode("tab_width").text);
+					var iY = oCurObj.offsetTop;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					var dtBegin = new Date();
+					if(bOpenTab) {
+						CreateTimeActionMove(argobj.pid, 0, 300, iDockX, iY, 0, iY);
+						oCurObj.style.zIndex = 991;
+						oCurObj.setAttribute("closed","0");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="CloseTab" label="CLOSE TAB" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function CloseTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sCurrentSlideId = g_oSlide.getAttribute("id");
+					var sSavedSlideId = oCurObj.getAttribute("sid");
+					if(sCurrentSlideId==sSavedSlideId) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var iDockX = bStandard ? -475 : -parseInt(oParams.selectSingleNode("tab_width").text);
+					var iY = oCurObj.offsetTop;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					var dtBegin = new Date();
+					if(!bOpenTab) {
+						CreateTimeActionMove(argobj.pid, 0, 300, 0, iY, iDockX, iY);
+						CreateTimeActionMethod("nav_005_calc", "sinkTab", null, 300, argobj);
+						oCurObj.setAttribute("closed","1");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="MoveTab" label="MoveTab" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function MoveTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var iDockX = bStandard ? -475 : -parseInt(oParams.selectSingleNode("tab_width").text);
+					var iY = oCurObj.offsetTop;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					var dtBegin = new Date();
+					if(bOpenTab) {
+						CreateTimeActionMove(argobj.pid, 0, 300, iDockX, iY, 0, iY);
+						oCurObj.style.zIndex = 991;
+						oCurObj.setAttribute("closed","0");
+					} else {
+						CreateTimeActionMove(argobj.pid, 0, 300, 0, iY, iDockX, iY);
+						CreateTimeActionMethod("nav_005_calc", "sinkTab", null, 300, argobj);
+						oCurObj.setAttribute("closed","1");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="sinkTab" label="sinkTab" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function sinkTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					oCurObj.style.zIndex=990;
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="DisableAccess" label="DISABLE ACCESS" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisableAccess(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					if(!bOpenTab) CallMethod("nav_005_calc","MoveTab",argobj);
+					document.getElementById(argobj.pid+"_tabimg").style.display = "none";
+					document.getElementById(argobj.pid+"_tabimg_disabled").style.display = g_isMSIE ? "inline" : "block";
+					oCurObj.setAttribute("state","disabled");
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="EnableAccess" label="ENABLE ACCESS" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function EnableAccess(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					document.getElementById(argobj.pid+"_tabimg_disabled").style.display = "none";
+					document.getElementById(argobj.pid+"_tabimg").style.display = g_isMSIE ? "inline" : "block";
+					oCurObj.setAttribute("state","enabled");
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="GetProperty" label="GetProperty" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function GetProperty(argobj)
+				{
+					if(argobj.pid==null || argobj.property==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					switch(argobj.property.toLowerCase()) {
+						case "disabled":	g_vPropertyValue = oCurObj.getAttribute("state")=="disabled" ? "1" : "0";	break;
+						case "open":		g_vPropertyValue = oCurObj.getAttribute("closed")=="1" ? "1" : "0";	break;
+						case "value":
+							var oCurDisplay = document.getElementById(argobj.pid+"_display");
+							g_vPropertyValue = oCurDisplay.innerHTML;
+							break;
+						default: return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="calcInput" label="calcInput" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function calcInput(argobj)
+				{
+					if(argobj.pid==null || argobj.btn==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oCurDisplay = document.getElementById(argobj.pid+"_display");
+					var oCurMemInd = document.getElementById(argobj.pid+"_mem_ind");
+					if(oCurObj.getAttribute("equal")!=null) {
+						if(oCurObj.getAttribute("equal")=="1") {
+							oCurObj.setAttribute("equal","0");
+							oCurObj.setAttribute("operanda","na");
+							oCurObj.setAttribute("operandb","na");
+							oCurObj.setAttribute("operatora","na");
+						}
+					}
+					if(oCurObj.getAttribute("clean")=="1") {
+						oCurDisplay.innerHTML = "0";
+						oCurObj.setAttribute("clean","0");
+						oCurObj.setAttribute("operandb","na");
+					}
+					var sCurString = oCurDisplay.innerHTML;
+					if(sCurString=="0" && argobj.btn=="0") return false;
+					if(argobj.btn=="." && sCurString.indexOf(".")!=-1) return false;
+					if(sCurString.length>=17) {
+						if(sCurString.indexOf("!")==-1) oCurDisplay.innerHTML = "!"+sCurString;
+						return false;
+					}
+					if(sCurString.length==1 && sCurString=="0" && argobj.btn!=".") {
+						oCurDisplay.innerHTML = argobj.btn;
+						return true;
+					}
+					oCurDisplay.innerHTML += argobj.btn;
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="actionKey" label="actionKey" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function actionKey(argobj)
+				{
+					if(argobj.pid==null || argobj.btn==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oCurDisplay = document.getElementById(argobj.pid+"_display");
+					var oCurMemInd = document.getElementById(argobj.pid+"_mem_ind");
+					var sCurString = oCurDisplay.innerHTML;
+					if(sCurString.indexOf("ERROR")!=-1 && argobj.btn!="C") {
+						return false;
+					}
+					switch(argobj.btn) {
+						case "M+":
+							if(sCurString.indexOf("!")!=-1) sCurString = sCurString.substr(1);
+							oCurMemInd.innerHTML = "M";
+							if(oCurObj.getAttribute("memory")=="na") {
+								oCurObj.setAttribute("memory",sCurString);
+							} else {
+								var nM1 = parseFloat(oCurObj.getAttribute("memory"));
+								var nM2 = parseFloat(sCurString);
+								nM1 = nM1 + nM2;
+								oCurObj.setAttribute("memory", nM1.toString());
+							}
+							return true;
+						case "MS":
+							if(sCurString.indexOf("!")!=-1) sCurString = sCurString.substr(1);
+							oCurMemInd.innerHTML = "M";
+							if(oCurObj.getAttribute("memory")=="na") {
+								oCurObj.setAttribute("memory","-"+sCurString);
+							} else {
+								var nM1 = parseFloat(oCurObj.getAttribute("memory"));
+								var nM2 = parseFloat(sCurString);
+								nM1 = nM1 - nM2;
+								oCurObj.setAttribute("memory", nM1.toString());
+							}
+							return true;
+						case "MR":
+							if(oCurObj.getAttribute("memory")!="na") {
+								sCurString = oCurObj.getAttribute("memory");
+								oCurDisplay.innerHTML = sCurString;
+							}
+							return true;
+						case "MC":
+							oCurObj.setAttribute("memory","na");
+							oCurMemInd.innerHTML = "";
+							return true;
+						case "C":
+							oCurObj.setAttribute("operanda","na");
+							oCurObj.setAttribute("operatora","na");
+							oCurObj.setAttribute("operandb","na");
+							oCurObj.setAttribute("lastbutton","na");
+							oCurObj.setAttribute("clean","0");
+							oCurDisplay.innerHTML = "0";
+							return true;
+						case "CE":
+							oCurObj.setAttribute("operandb","na");
+							oCurObj.setAttribute("lastbutton","na");
+							oCurObj.setAttribute("clean","0");
+							oCurDisplay.innerHTML = "0";
+							return true;
+						case "Backspace":
+							if(sCurString.length>1) sCurString = sCurString.substr(0,sCurString.length-1);
+							oCurDisplay.innerHTML = sCurString;
+							return true;
+						case "equal":
+							if(oCurObj.getAttribute("percent")!=null) {
+								if(oCurObj.getAttribute("percent")=="1") {
+									return false;
+								}
+							}
+							oCurObj.setAttribute("equal","1");
+							if(oCurObj.getAttribute("operanda")!="na") {
+								CallMethod("nav_005_calc","calculate",argobj);
+								return true;
+							}
+						case "power":
+						case "plus":
+						case "minus":
+						case "mult":
+						case "divide":
+							if(oCurObj.getAttribute("equal")!=null) {
+								if(oCurObj.getAttribute("equal")=="1") {
+									oCurObj.setAttribute("equal","0");
+								}
+							}
+							if(oCurObj.getAttribute("percent")!=null) {
+								if(oCurObj.getAttribute("percent")=="1") {
+									oCurObj.setAttribute("percent","0");
+								}
+							}
+							if(sCurString.indexOf("!")!=-1) {
+								sCurString = sCurString.substr(1);
+								oCurDisplay.innerHTML = sCurString;
+							}
+							if(oCurObj.getAttribute("operanda")=="na" || oCurObj.getAttribute("clean")=="1") {
+								oCurObj.setAttribute("operanda",sCurString);
+								oCurObj.setAttribute("operatora",argobj.btn);
+								oCurObj.setAttribute("clean","1");
+							} else {
+								CallMethod("nav_005_calc","calculate",argobj);
+							}
+							break;
+						case "negate":
+							if(sCurString=="0") return false;
+							if(oCurObj.getAttribute("equal")!=null) {
+								if(oCurObj.getAttribute("equal")=="1") {
+									oCurObj.setAttribute("equal","0");
+								}
+							}
+							if(oCurObj.getAttribute("percent")!=null) {
+								if(oCurObj.getAttribute("percent")=="1") {
+									oCurObj.setAttribute("percent","0");
+								}
+							}
+							if(sCurString.indexOf("-")!=-1) {
+								sCurString = sCurString.substr(1);
+							} else {
+								sCurString = "-"+sCurString;
+							}
+							oCurDisplay.innerHTML = sCurString;
+							return true;
+						case "recip":
+							if(sCurString=="0") {
+								oCurDisplay.innerHTML = "ERROR: DIV 0";
+								oCurObj.setAttribute("operanda","na");
+								oCurObj.setAttribute("operatora","na");
+								oCurObj.setAttribute("operandb","na");
+								oCurObj.setAttribute("lastbutton","na");
+								oCurObj.setAttribute("clean","1");
+								return false;
+							}
+							if(oCurObj.getAttribute("equal")!=null) {
+								if(oCurObj.getAttribute("equal")=="1") {
+									oCurObj.setAttribute("equal","0");
+								}
+							}
+							if(oCurObj.getAttribute("percent")!=null) {
+								if(oCurObj.getAttribute("percent")=="1") {
+									oCurObj.setAttribute("percent","0");
+								}
+							}
+							if(sCurString.indexOf("!")!=-1) sCurString = sCurString.substr(1);
+							var nValue = 1/parseFloat(sCurString);
+							var sValue = nValue.toString();
+							if(sValue.length>=20) {
+								sValue = sValue.substring(0,19);
+							}
+							oCurDisplay.innerHTML = sValue;
+							return true;
+						case "percent":
+							if(oCurObj.getAttribute("operanda")=="na") return false;
+							if(oCurObj.getAttribute("percent")=="1") return false;
+							oCurObj.setAttribute("percent","1");
+							if(oCurObj.getAttribute("equal")!=null) {
+								if(oCurObj.getAttribute("equal")=="1") {
+									oCurObj.setAttribute("equal","0");
+								}
+							}
+							CallMethod("nav_005_calc","calculate",argobj);
+							oCurObj.setAttribute("operandb","na");
+							return true;
+						default:
+							break;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="calculate" label="calculate" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function calculate(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oCurDisplay = document.getElementById(argobj.pid+"_display");
+					var oCurMemInd = document.getElementById(argobj.pid+"_mem_ind");
+					var nValue1 = parseFloat(oCurObj.getAttribute("operanda"));
+					var sCurString = oCurDisplay.innerHTML;
+					if(sCurString.indexOf("!")!=-1) sCurString = sCurString.substr(1);
+					if(oCurObj.getAttribute("operandb")=="na") {
+						oCurObj.setAttribute("operandb",sCurString);
+						var nValue2 = parseFloat(sCurString);
+					} else {
+						var nValue2 = parseFloat(oCurObj.getAttribute("operandb"));
+					}
+					var vResult = 0;
+					switch(oCurObj.getAttribute("operatora")) {
+						case "plus":
+							vResult = (nValue1*1000 + nValue2*1000)/1000;
+							break;
+						case "minus":
+							vResult = (nValue1*1000 - nValue2*1000)/1000;
+							break;
+						case "mult":
+							vResult = nValue1 * nValue2;
+							if(argobj.btn == "percent") vResult = vResult/100;
+							break;
+						case "divide":
+							if(nValue2==0) {
+								oCurDisplay.innerHTML = "ERROR: DIV 0";
+								oCurObj.setAttribute("operanda","na");
+								oCurObj.setAttribute("operatora","na");
+								oCurObj.setAttribute("operandb","na");
+								oCurObj.setAttribute("lastbutton","na");
+								oCurObj.setAttribute("clean","1");
+								return false;
+							}
+							vResult = nValue1 / nValue2;
+							break;
+						case "power":
+							vResult = Math.pow(nValue1,nValue2);
+							break;
+					}
+					if(vResult>-1 && vResult<1) {
+						vResult = vResult.toString();
+						if(vResult.length>=20) {
+							if(vResult.indexOf("e")!=-1) {
+								var aParts = vResult.split("e");
+								if(parseInt(aParts[1])<-20) {
+									vResult = "0";
+								} else {
+									if(aParts[0].length>14) {
+										aParts[0] = aParts[0].substr(0,13);
+										if(parseFloat(aParts[0])==0) {
+											vResult = "0";
+										} else {
+											vResult = aParts.join("e");
+										}
+									} else {
+										vResult = aParts.join("e");
+									}
+								}
+							} else {
+								vResult = vResult.substr(0,19);
+							}
+						}
+					} else {
+						vResult = vResult.toString();
+						if(vResult.length>=18) {
+							if(vResult.indexOf(".")==-1) {
+								oCurDisplay.innerHTML = "ERROR: OVERFLOW";
+								oCurObj.setAttribute("operanda","na");
+								oCurObj.setAttribute("operatora","na");
+								oCurObj.setAttribute("operandb","na");
+								oCurObj.setAttribute("lastbutton","na");
+								oCurObj.setAttribute("clean","1");
+								return false;
+							} else {
+								if(vResult.indexOf("e")!=-1) {
+									var aParts = vResult.split("e");
+									if(aParts[0].length>14) {
+										aParts[0] = aParts[0].substr(0,13);
+										vResult = aParts.join("e")
+									}
+								} else {
+									vResult = vResult.substr(0,17);
+								}
+							}
+						}
+					}
+					oCurDisplay.innerHTML = vResult;
+					oCurObj.setAttribute("operanda",vResult);
+					if(argobj.btn!="equal" && argobj.btn!="percent") {
+						oCurObj.setAttribute("operatora",argobj.btn);
+						oCurObj.setAttribute("lastoperator",argobj.btn);
+					}
+					oCurObj.setAttribute("clean","1");
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+	</methods>
+</params>

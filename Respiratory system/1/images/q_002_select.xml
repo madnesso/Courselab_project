@@ -1,0 +1,1207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+'*	q_002_select.xml // v.2.3 20070620
+'*	Copyright (c) Websoft, 2007.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>Multiple Select Question</label>
+		<width>400</width>
+		<height>400</height>
+		<description>Multiple Select Question</description>
+	</object>
+    <page name=" Question " w="240" h="260">
+		<param type="label" text="Question text:" x="10" y="9" w="50" h="13"/>
+		<param type="textedit" id="q_question" text="Question text goes here" def="Question text goes here" x="60" y="9" w="153" h="13"/>
+		<param type="label" text="Variants:" x="10" y="26" w="70" h="13"/>
+		<param type="list" id="q_variants" text="yes" def="yes" x="10" y="26" w="220" h="98">
+			<params w="240" h="70">
+				<param type="label" text="Variant" x="10" y="10" w="70" h="13"/>
+				<param type="textedit" id="q_variant" text="Variant text goes here" def="Variant text goes here" x="80" y="9" w="133" h="13"/>
+				<param type="check" id="q_right" text="Correct answer" def="no" x="80" y="25" w="110" h="13"/>
+				<param type="line" x="10" y="44" w="220" h="2"/>
+				<param type="button" id="OK" text="OK" x="125" y="50" w="50" h="14"/>
+				<param type="button" id="CANCEL" text="Cancel" x="180" y="50" w="50" h="14"/>
+			</params>
+		</param>
+		<param type="check" id="q_shuffle" text="Shuffle variants on display" def="no" x="10" y="126" w="180" h="13"/>
+    </page>
+	<page name=" Limitations " w="240" h="260">
+		<param type="line" x="8" y="12" w="224" h="28"/>
+		<param type="label" text=" " x="11" y="6" w="6" h="13"/>
+		<param type="check" id="q_att_auto" text="Calculate number of attempts automatically" def="no" x="15" y="6" w="152" h="13">
+			<events>
+				<event name="check" target="lab_q_attempts" action="disable" />
+				<event name="check" target="q_attempts" action="disable" />
+				<event name="uncheck" target="lab_q_attempts" action="enable" />
+				<event name="uncheck" target="q_attempts" action="enable" />
+			</events>
+		</param>
+		<param type="label" id="lab_q_attempts" text="Number of attempts:" x="15" y="23" w="95" h="13"/>
+		<param type="edit" id="q_attempts" text="1" def="1" x="110" y="21" w="45" h="13"/>
+		<param type="line" x="8" y="47" w="224" h="28"/>
+		<param type="label" text=" " x="11" y="41" w="6" h="13"/>
+		<param type="check" id="q_timer_switch" text="Time limit for the answer" def="no" x="15" y="41" w="90" h="13">
+			<events>
+				<event name="check" target="lab_q_timer" action="enable" />
+				<event name="check" target="q_timer" action="enable" />
+				<event name="uncheck" target="lab_q_timer" action="disable" />
+				<event name="uncheck" target="q_timer" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_q_timer" text="Time limit (sec):" x="15" y="58" w="95" h="13"/>
+		<param type="edit" id="q_timer" text="1" def="10" x="110" y="56" w="45" h="13"/>
+		<param type="line" x="8" y="82" w="224" h="38"/>
+		<param type="label" text=" " x="11" y="76" w="6" h="13"/>
+		<param type="check" id="q_skip" text="Allow skip question" def="no" x="15" y="76" w="75" h="13">
+			<events>
+				<event name="check" target="lab_q_skipper" action="enable" />
+				<event name="check" target="q_skipper1" action="enable" />
+				<event name="check" target="q_skipper2" action="enable" />
+				<event name="uncheck" target="lab_q_skiper" action="disable" />
+				<event name="uncheck" target="q_skipper1" action="disable" />
+				<event name="uncheck" target="q_skipper2" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_q_skipper" text="Skipped question is:" x="15" y="93" w="95" h="13"/>
+		<param type="radio" id="q_skipper1" text="just skipped" def="no" x="110" y="91" w="80" h="13"/>
+		<param type="radio" id="q_skipper2" text="failed" def="yes" x="110" y="102" w="90" h="13"/>
+		<param type="check" id="q_secondrun" text="Allow recurring approaches" def="no" x="15" y="124" w="185" h="13"/>
+	</page>
+	<page name= " Scoring " w="240" h="260">
+		<param type="line" x="8" y="12" w="224" h="120"/>
+		<param type="label" text=" " x="11" y="6" w="6" h="13"/>
+		<param type="check" id="q_scored" text="Credit question" def="yes" x="15" y="6" w="65" h="13">
+			<events>
+				<event name="check" target="lab_q_weight" action="enable" />
+				<event name="check" target="q_weight" action="enable" />
+				<event name="check" target="lab_q_pointset" action="enable" />
+				<event name="check" target="q_pointset_fixed" action="enable" />
+				<event name="check" target="q_pointset_auto" action="enable" />
+				<event name="check" target="lab_q_scoreboards" action="enable" />
+				<event name="check" target="q_scoreboards" action="enable" />
+				<event name="uncheck" target="lab_q_weight" action="disable" />
+				<event name="uncheck" target="q_weight" action="disable" />
+				<event name="uncheck" target="lab_q_pointset" action="disable" />
+				<event name="uncheck" target="q_pointset_fixed" action="disable" />
+				<event name="uncheck" target="q_pointset_auto" action="disable" />
+				<event name="uncheck" target="lab_q_scoreboards" action="disable" />
+				<event name="uncheck" target="q_scoreboards" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_q_weight" text="Weight of a question/attempt:" x="15" y="25" w="110" h="13"/>
+		<param type="edit" id="q_weight" text="1" def="1" x="120" y="24" w="45" h="13"/>
+		<param type="label" id="lab_q_pointset" text="Crediting method:" x="15" y="41" w="110" h="13"/>
+		<param type="radio" id="q_pointset_fixed" text="fixed score" def="yes" x="120" y="40" w="80" h="13"/>
+		<param type="radio" id="q_pointset_auto" text="regressive" def="no" x="120" y="50" w="90" h="13"/>
+		<param type="label" id="lab_q_scoreboards" text="Objectives:" x="15" y="68" w="70" h="13"/>
+		<param type="list" id="q_scoreboards" text="yes" def="yes" x="15" y="66" w="210" h="60">
+			<params w="180" h="50">
+				<param type="label" text="Objective:" x="10" y="10" w="70" h="13"/>
+				<param type="objectiveid" id="q_board" text="Objective" def="total" x="80" y="9" w="73" h="13"/>
+				<param type="line" x="10" y="30" w="160" h="2"/>
+				<param type="button" id="OK" text="OK" x="75" y="36" w="50" h="14"/>
+				<param type="button" id="CANCEL" text="Cancel" x="120" y="36" w="50" h="14"/>
+			</params>
+		</param>
+	</page>
+	<page name=" Feedback " w="240" h="260">
+		<param type="check" id="q_showright" text="Display right answer" def="no" x="15" y="9" w="136" h="13"/>
+		<param type="line" x="8" y="28" w="224" h="140"/>
+		<param type="label" text=" " x="11" y="22" w="6" h="13"/>
+		<param type="check" id="q_fb_switch" text="Display feedback messages" def="no" x="15" y="22" w="105" h="13">
+			<events>
+				<event name="check" target="lab_q_feedbackright" action="enable" />
+				<event name="check" target="q_feedbackright" action="enable" />
+				<event name="check" target="lab_q_feedbackwrong" action="enable" />
+				<event name="check" target="q_feedbackwrong" action="enable" />
+				<event name="check" target="lab_q_feedbackexhausted" action="enable" />
+				<event name="check" target="q_feedbackexhausted" action="enable" />
+				<event name="check" target="lab_q_feedbacktimeout" action="enable" />
+				<event name="check" target="q_feedbacktimeout" action="enable" />
+				<event name="check" target="lab_q_feedbackleft" action="enable" />
+				<event name="check" target="q_feedbackleft" action="enable" />
+				<event name="check" target="lab_q_feedbackleft2" action="enable" />
+				<event name="check" target="lab_q_feedbacktop" action="enable" />
+				<event name="check" target="q_feedbacktop" action="enable" />
+				<event name="check" target="lab_q_feedbacktop2" action="enable" />
+				<event name="check" target="q_feedbackright_preview" action="enable" />
+				<event name="check" target="q_feedbackwrong_preview" action="enable" />
+				<event name="check" target="q_feedbackexhausted_preview" action="enable" />
+				<event name="check" target="q_feedbacktimeout_preview" action="enable" />
+				<event name="uncheck" target="lab_q_feedbackright" action="disable" />
+				<event name="uncheck" target="q_feedbackright" action="disable" />
+				<event name="uncheck" target="lab_q_feedbackwrong" action="disable" />
+				<event name="uncheck" target="q_feedbackwrong" action="disable" />
+				<event name="uncheck" target="lab_q_feedbackexhausted" action="disable" />
+				<event name="uncheck" target="q_feedbackexhausted" action="disable" />
+				<event name="uncheck" target="lab_q_feedbacktimeout" action="disable" />
+				<event name="uncheck" target="q_feedbacktimeout" action="disable" />
+				<event name="uncheck" target="lab_q_feedbackleft" action="disable" />
+				<event name="uncheck" target="q_feedbackleft" action="disable" />
+				<event name="uncheck" target="lab_q_feedbackleft2" action="disable" />
+				<event name="uncheck" target="lab_q_feedbacktop" action="disable" />
+				<event name="uncheck" target="q_feedbacktop" action="disable" />
+				<event name="uncheck" target="lab_q_feedbacktop2" action="disable" />
+				<event name="uncheck" target="q_feedbackright_preview" action="disable" />
+				<event name="uncheck" target="q_feedbackwrong_preview" action="disable" />
+				<event name="uncheck" target="q_feedbackexhausted_preview" action="disable" />
+				<event name="uncheck" target="q_feedbacktimeout_preview" action="disable" />
+				<event name="check" target="q_fb_timerswitch" action="enable" />
+				<event name="check" target="lab_q_fbtimer" action="enable" />
+				<event name="check" target="q_fb_timer" action="enable" />
+				<event name="check" target="lab_q_fbtimer2" action="enable" />
+				<event name="uncheck" target="q_fb_timerswitch" action="disable" />
+				<event name="uncheck" target="lab_q_fbtimer" action="disable" />
+				<event name="uncheck" target="q_fb_timer" action="disable" />
+				<event name="uncheck" target="lab_q_fbtimer2" action="disable" />
+			</events>
+		</param>
+		<param type="label" text=" View" x="208" y="24" w="20" h="13"/>
+		<param type="label" id="lab_q_feedbackright" text="Correct answer:" x="15" y="38" w="90" h="13"/>
+		<param type="textedit" id="q_feedbackright" text="Correct" def="Correct" x="105" y="37" w="86" h="13"/>
+		<param type="check" id="q_feedbackright_preview" text="" def="no" x="213" y="37" w="16" h="13"/>
+		<param type="label" id="lab_q_feedbackwrong" text="Incorrect answer:" x="15" y="54" w="90" h="13"/>
+		<param type="textedit" id="q_feedbackwrong" text="Incorrect" def="Incorrect" x="105" y="53" w="86" h="13"/>
+		<param type="check" id="q_feedbackwrong_preview" text="" def="no" x="213" y="53" w="16" h="13"/>
+		<param type="label" id="lab_q_feedbackexhausted" text="No more attempts:" x="15" y="70" w="90" h="13"/>
+		<param type="textedit" id="q_feedbackexhausted" text="No more attempts left" def="No more attempts left" x="105" y="69" w="86" h="13"/>
+		<param type="check" id="q_feedbackexhausted_preview" text="" def="no" x="213" y="69" w="16" h="13"/>
+		<param type="label" id="lab_q_feedbacktimeout" text="Timeout:" x="15" y="86" w="90" h="13"/>
+		<param type="textedit" id="q_feedbacktimeout" text="Time is out" def="Time is out" x="105" y="85" w="86" h="13"/>
+		<param type="check" id="q_feedbacktimeout_preview" text="" def="no" x="213" y="85" w="16" h="13"/>
+		<param type="label" id="lab_q_feedbackleft" text="Offset horizontal:" x="15" y="102" w="90" h="13"/>
+		<param type="edit" id="q_feedbackleft" text="100" def="100" x="105" y="101" w="25" h="13"/>
+		<param type="label" id="lab_q_feedbackleft2" text="pixels" x="135" y="102" w="50" h="13"/>
+		<param type="label" id="lab_q_feedbacktop" text="Offset vertical:" x="15" y="118" w="90" h="13"/>
+		<param type="edit" id="q_feedbacktop" text="50" def="50" x="105" y="117" w="25" h="13"/>
+		<param type="label" id="lab_q_feedbacktop2" text="pixels" x="135" y="118" w="50" h="13"/>
+		<param type="line" x="12" y="140" w="216" h="24"/>
+		<param type="label" text=" " x="14" y="134" w="6" h="13"/>
+		<param type="check" id="q_fb_timerswitch" text="Hide messages automatically" def="no" x="15" y="134" w="105" h="13">
+			<events>
+				<event name="check" target="lab_q_fbtimer" action="enable" />
+				<event name="check" target="q_fb_timer" action="enable" />
+				<event name="check" target="lab_q_fbtimer2" action="enable" />
+				<event name="uncheck" target="lab_q_fbtimer" action="disable" />
+				<event name="uncheck" target="q_fb_timer" action="disable" />
+				<event name="uncheck" target="lab_q_fbtimer2" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_q_fbtimer" text="after" x="75" y="148" w="90" h="13"/>
+		<param type="edit" id="q_fb_timer" text="" def="3" x="105" y="147" w="25" h="13"/>
+		<param type="label" id="lab_q_fbtimer2" text="sec" x="138" y="148" w="50" h="13"/>
+	</page>
+	<page name=" Display " w="240" h="260">
+		<param type="label" text="Skin:" x="10" y="10" w="90" h="13"/>
+		<param type="select" id="q_realskin" text="" def="basic" x="100" y="9" w="130" h="13">
+			<items>
+				<item id="basic" label="Basic">
+					<events>
+						<event name="selendok" target="lab_q_button" action="disable"/>
+						<event name="selend" target="lab_q_button" action="enable"/>
+						<event name="selendok" target="q_button" action="disable"/>
+						<event name="selend" target="q_button" action="enable"/>
+					</events>
+				</item>
+				<item id="curve" label="Rounded">
+					<events>
+						<event name="selendok" target="lab_q_button" action="disable"/>
+						<event name="selend" target="lab_q_button" action="enable"/>
+						<event name="selendok" target="q_button" action="disable"/>
+						<event name="selend" target="q_button" action="enable"/>
+					</events>
+				</item>
+				<item id="blank" label="No borders">
+					<events>
+						<event name="selendok" target="lab_q_skin" action="disable"/>
+						<event name="selend" target="lab_q_skin" action="enable"/>
+						<event name="selendok" target="q_skin" action="disable"/>
+						<event name="selend" target="q_skin" action="enable"/>
+					</events>
+				</item>
+			</items>
+		</param>
+		<param type="label" id="lab_q_skin" text="Basic color:" x="10" y="26" w="90" h="13"/>
+		<param type="select" id="q_skin" text="lightblue" def="lightblue" x="100" y="25" w="130" h="13">
+			<items>
+				<item id="lightblue" label="Lightblue"/>
+				<item id="blue" label="Blue"/>
+				<item id="red" label="Red"/>
+				<item id="deeppink" label="Crimson"/>
+				<item id="pink" label="Pink"/>
+				<item id="brown" label="Brown"/>
+				<item id="green" label="Green"/>
+				<item id="olive" label="Olive"/>
+				<item id="turq" label="Turquoise"/>
+				<item id="blue_green" label="Teal"/>
+				<item id="steel_blue" label="Steel Blue"/>
+				<item id="violet" label="Violet"/>
+				<item id="yellow" label="Yellow"/>
+				<item id="orange" label="Orange"/>
+				<item id="grey" label="Grey"/>
+			</items>
+		</param>
+		<param type="label" id="lab_q_button" text="Button skin:" x="10" y="42" w="90" h="13"/>
+		<param type="select" id="q_button" text="" def="var1" x="100" y="41" w="130" h="13">
+			<items>
+				<item id="var1" label="Variant 1"/>
+				<item id="var2" label="Variant 2"/>
+				<item id="var3" label="Variant 3"/>
+				<item id="var4" label="Variant 4"/>
+				<item id="var5" label="Variant 5"/>
+			</items>
+		</param>
+		<param type="line" x="8" y="62" w="224" h="80"/>
+		<param type="label" text=" " x="11" y="56" w="6" h="13"/>
+		<param type="check" id="q_custombutton" text="Use custom buttons" def="no" x="15" y="55" w="84" h="13">
+			<events>
+				<event name="check" target="q_abtn_0_lbl" action="enable" />
+				<event name="check" target="q_abtn_0" action="enable" />
+				<event name="check" target="q_abtn_1_lbl" action="enable" />
+				<event name="check" target="q_abtn_1" action="enable" />
+				<event name="check" target="q_sbtn_0_lbl" action="enable" />
+				<event name="check" target="q_sbtn_0" action="enable" />
+				<event name="check" target="q_sbtn_1_lbl" action="enable" />
+				<event name="check" target="q_sbtn_1" action="enable" />
+				<event name="uncheck" target="q_abtn_0_lbl" action="disable" />
+				<event name="uncheck" target="q_abtn_0" action="disable" />
+				<event name="uncheck" target="q_abtn_1_lbl" action="disable" />
+				<event name="uncheck" target="q_abtn_1" action="disable" />
+				<event name="uncheck" target="q_sbtn_0_lbl" action="disable" />
+				<event name="uncheck" target="q_sbtn_0" action="disable" />
+				<event name="uncheck" target="q_sbtn_1_lbl" action="disable" />
+				<event name="uncheck" target="q_sbtn_1" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="q_abtn_0_lbl" text="Submit bytton (idle):" x="15" y="73" w="80" h="13"/>
+		<param type="file" id="q_abtn_0" text="" def="" x="100" y="72" w="110" h="13"/>
+		<param type="label" id="q_abtn_1_lbl" text="Submit button (over):" x="15" y="89" w="80" h="13"/>
+		<param type="file" id="q_abtn_1" text="" def="" x="100" y="88" w="110" h="13"/>
+		<param type="label" id="q_sbtn_0_lbl" text="Skip button (idle):" x="15" y="105" w="80" h="13"/>
+		<param type="file" id="q_sbtn_0" text="" def="" x="100" y="104" w="110" h="13"/>
+		<param type="label" id="q_sbtn_1_lbl" text="Skip button (over):" x="15" y="121" w="80" h="13"/>
+		<param type="file" id="q_sbtn_1" text="" def="" x="100" y="120" w="110" h="13"/>
+		<param type="line" x="8" y="156" w="224" h="46"/>
+		<param type="label" text=" " x="11" y="150" w="6" h="13"/>
+		<param type="check" id="q_customspot" text="Use custom spots" def="no" x="15" y="149" w="74" h="13">
+			<events>
+				<event name="check" target="q_spot_0_lbl" action="enable" />
+				<event name="check" target="q_spot_0" action="enable" />
+				<event name="check" target="q_spot_1_lbl" action="enable" />
+				<event name="check" target="q_spot_1" action="enable" />
+				<event name="uncheck" target="q_spot_0_lbl" action="disable" />
+				<event name="uncheck" target="q_spot_0" action="disable" />
+				<event name="uncheck" target="q_spot_1_lbl" action="disable" />
+				<event name="uncheck" target="q_spot_1" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="q_spot_0_lbl" text="Empty spot:" x="15" y="167" w="80" h="13"/>
+		<param type="file" id="q_spot_0" text="" def="" x="100" y="166" w="110" h="13"/>
+		<param type="label" id="q_spot_1_lbl" text="Checked spot:" x="15" y="183" w="80" h="13"/>
+		<param type="file" id="q_spot_1" text="" def="" x="100" y="182" w="110" h="13"/>
+		<param type="label" text="Submit button tooltip:" x="10" y="199" w="90" h="13"/>
+		<param type="edit" id="q_a_tooltip" text="" def="Submit answer" x="100" y="198" w="130" h="13"/>
+		<param type="label" text="Skip button tooltip:" x="10" y="215" w="90" h="13"/>
+		<param type="edit" id="q_s_tooltip" text="" def="Skip question" x="100" y="214" w="130" h="13"/>
+	</page>
+	<page name=" Messages " w="240" h="260">
+		<param type="line" x="8" y="61" w="224" h="1"/>
+		<param type="label" text="  Information messages" x="70" y="57" w="90" h="13"/>
+		<param type="label" text="Credited:" x="10" y="23" w="90" h="13"/>
+		<param type="edit" id="q_credit_msg" text="" def="Credited question" x="100" y="22" w="130" h="13"/>
+		<param type="label" text="Not credited:" x="10" y="39" w="90" h="13"/>
+		<param type="edit" id="q_nocredit_msg" text="" def="Not credited question" x="100" y="38" w="130" h="13"/>
+		<param type="label" text="Attempts:" x="10" y="55" w="90" h="13"/>
+		<param type="edit" id="q_attempts_msg" text="" def="Attempts:" x="100" y="54" w="130" h="13"/>
+		<param type="label" text="Time limit:" x="10" y="71" w="90" h="13"/>
+		<param type="edit" id="q_timer_msg" text="" def="Time limit:" x="100" y="70" w="130" h="13"/>
+
+		<param type="label" text="Question instruction:" x="10" y="87" w="90" h="13"/>
+		<param type="edit" id="q_goal" text="" def="Select all correct variants" x="100" y="86" w="130" h="13"/>
+		<param type="label" text="Correct answer:" x="10" y="103" w="90" h="13"/>
+		<param type="edit" id="q_goal_right" text="" def="CORRECT ANSWER" x="100" y="102" w="130" h="13"/>
+		<param type="label" text="Last question state:" x="10" y="119" w="90" h="13"/>
+		<param type="edit" id="q_goal_last" text="" def="LAST QUESTION STATE" x="100" y="118" w="130" h="13"/>
+		<param type="label" text="Skipped:" x="10" y="135" w="90" h="13"/>
+		<param type="edit" id="q_goal_skip" text="" def="QUESTION IS SKIPPED" x="100" y="134" w="130" h="13"/>
+		<param type="label" text="Skipped and failed:" x="10" y="151" w="90" h="13"/>
+		<param type="edit" id="q_goal_failed" text="" def="QUESTION IS SKIPPED AND FAILED" x="100" y="150" w="130" h="13"/>
+		<param type="line" x="8" y="170" w="224" h="1"/>
+		<param type="label" text="   Warning messages" x="70" y="166" w="70" h="13"/>
+		<param type="label" text="Continued:" x="10" y="180" w="90" h="13"/>
+		<param type="edit" id="q_continue_alert" text="" def="Continued approach. Number of attempts may be decreased." x="100" y="179" w="130" h="13"/>
+		<param type="label" text="Already answered:" x="10" y="196" w="90" h="13"/>
+		<param type="edit" id="q_browse_alert" text="" def="This question is already answered. Recurring approach is not allowed." x="100" y="195" w="130" h="13"/>
+		<param type="label" text="Recurring approach:" x="10" y="212" w="90" h="13"/>
+		<param type="edit" id="q_secondrun_confirm" text="" def="This question is already answered. Press OK to clear stored results and start new approach. Press Cancel otherwise. " x="100" y="211" w="130" h="13"/>
+		<param type="label" text="Skip and fail confirmation:" x="10" y="228" w="90" h="13"/>
+		<param type="edit" id="q_skip_confirm" text="" def="Skipped question will be evaluated as failed. Are you sure?" x="100" y="227" w="130" h="13"/>
+	</page>
+	<methods>
+		<method name="Constructor" label="Constructor" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function Constructor(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					if(document.getElementById(argobj.pid+"_q_workarea")==null || document.getElementById(argobj.pid+"_q_selectitem")==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var aoVars = oParams.selectNodes("q_variants/item");
+					var bRecur = oParams.selectSingleNode("q_secondrun").text=="yes" ? true : false;
+					var bCredit = oParams.selectSingleNode("q_scored").text=="yes" ? true : false;
+					var bTimer = oParams.selectSingleNode("q_timer_switch").text=="yes" ? true : false;
+					var bShuffle = oParams.selectSingleNode("q_shuffle").text=="yes" ? true : false;
+					var bAutoAttempts = oParams.selectSingleNode("q_att_auto").text=="yes" ? true : false;
+					var sAttempts = oParams.selectSingleNode("q_attempts").text;
+					var iAttempts = parseInt(sAttempts,10);
+					if(bAutoAttempts) {
+						if(aoVars.length>1) {
+							iAttempts = aoVars.length - 1;
+						} else {
+							iAttempts = 1;
+						}
+						sAttempts = iAttempts.toString();
+					}
+					var sAttLeft = sAttempts;
+					var sMode = "init";
+					var oArgs = new Object;	oArgs.pid = argobj.pid;
+					var sTmp = "";
+					var sOrder = "";
+
+					// Detecting current question mode from interaction
+					var oInteraction = GetInteraction(argobj.pid);
+					var dDate = new Date();
+					var iDate = dDate.valueOf();
+					var sDate = iDate.toString();
+					if(oInteraction!=null) {
+						var sIntLatency = GetInteractionParam(argobj.pid, "latency");
+						var sIntTimestamp = GetInteractionParam(argobj.pid, "timestamp");
+						if(sIntTimestamp!=null && sIntLatency==null) sMode = "continue";
+						if(sIntTimestamp!=null && sIntLatency!=null) sMode = "browse";
+						if(sMode=="browse" && bRecur) {
+							if(confirm(oParams.selectSingleNode("q_secondrun_confirm").text)) {
+								sMode = "init";
+								var aObjectives = oParams.selectNodes("q_scoreboards/item/qboard");
+								for(var i=0;i<aObjectives.length;i++) SetObjectiveScore(aObjectives[i].text, argobj.pid, "replace", "0");
+							}
+						} else {
+							if(sMode=="browse") alert(oParams.selectSingleNode("q_browse_alert").text);
+							if(sMode=="continue") alert(oParams.selectSingleNode("q_continue_alert").text);
+						}
+					}
+
+					// Obtaining parameters
+					if(sMode!="init") {
+						var sDate = ConvertDateFromISO8601(sIntTimestamp);
+						var sDesc = GetInteractionParam(argobj.pid, "description");
+						var aDesc = sDesc.split("[,]");
+						var aAtt = aDesc[0].split("/");
+						sAttLeft = aAtt[0];
+						sOrder = aDesc[1];
+					}
+
+					// Set basic params
+					if(sMode=="init") {
+						oInteraction = ReturnInteraction(argobj.pid,true);
+						oCurObj.setAttribute("begin", sDate);
+						SetInteractionParam(argobj.pid, "type", "multiple_choice");
+					}
+
+					// Set runtime params
+					oCurObj.setAttribute("q_scored", bCredit ? "1" : "0");
+					oCurObj.setAttribute("q_begin", sDate);
+					oCurObj.setAttribute("q_state", "na");
+					oCurObj.setAttribute("q_reason","na");
+					oCurObj.setAttribute("q_result","na");
+					oCurObj.setAttribute("q_maxattempts", sAttempts);
+					oCurObj.setAttribute("q_attemptslast", sAttLeft);
+					oCurObj.setAttribute("q_varlength", aoVars.length);
+					oCurObj.setAttribute("q_varselected", "");
+					oCurObj.setAttribute("mode", sMode=="browse" ? "review" : "normal");
+
+					// View
+					if(oParams.selectSingleNode("q_credit_msg")!=null) {
+						// Compatibility check for previous versions parameters
+						var sCreditMsg = bCredit ? oParams.selectSingleNode("q_credit_msg").text : oParams.selectSingleNode("q_nocredit_msg").text
+						document.getElementById(argobj.pid+"_q_creditcontainer").innerHTML = sCreditMsg;
+					}
+					document.getElementById(argobj.pid+"_q_text").innerHTML = oParams.selectSingleNode("q_question").text;
+					document.getElementById(argobj.pid+"_q_attempts_count").innerHTML = sAttLeft;
+					if(bShuffle) {
+						if(sMode=="init") {
+							var aShuffled = new Array();
+							for(var i=0;i<aoVars.length;i++) aShuffled[i] = ThrowDice(aoVars.length, false, aShuffled, 100);
+						} else {
+							var aShuffled = sOrder.split("~");
+						}
+					}
+					var oNode;
+					var aCorrects = new Array();
+					var bResponse = false;
+					if(sMode!="init") {
+						var sResponse = GetInteractionParam(argobj.pid, "learner_response");
+						if(sResponse!=null) {
+							bResponse = true;
+							var aResponses = sResponse.split("[,]");
+						}
+					}
+					var aOrder = new Array();
+					oArgs.enabled = true;
+					oArgs.checked = false;
+					oArgs.qtype = "select";
+					for(var i=0;i<aoVars.length;i++) {
+						oArgs.inum = bShuffle ? aShuffled[i] : i;
+						aOrder.push(oArgs.inum);
+						oNode = aoVars[oArgs.inum].selectSingleNode("q_right");
+						if(oNode.text=="yes") aCorrects.push(oArgs.inum);
+						CallMethod("q_002_select", "AppendItem", oArgs);
+					}
+					sOrder = aOrder.join("~");
+					if(sMode!="init") {
+						oArgs.btn = "skip";
+						CallMethod("q_002_select", "HideButton", oArgs);
+						if(bResponse) {
+							for(var i=0;i<aResponses.length;i++) {
+								oArgs.inum = aResponses[i];
+								CallMethod("q_002_select", "CheckItem", oArgs);
+							}
+						}
+						if(sMode=="browse") {
+							CallMethod("q_002_select", "DisableItems", oArgs);
+							oArgs.msg = "_last";
+							CallMethod("q_002_select", "DisplayMessage", oArgs);
+						}
+					} else {
+						if(aCorrects.length>0) SetInteractionArrayItem(argobj.pid, "correct_responses", aCorrects.join("[,]"));
+					}
+
+					// Set timer
+					if(bTimer) {
+						var sTimerValue = oParams.selectSingleNode("q_timer").text;
+						if(sTimerValue==null || isNaN(parseInt(sTimerValue,10))) {
+							bTimer = false;
+						} else {
+							if(sMode=="init") {
+								SetInteractionParam(argobj.pid, "description", sAttLeft+"/"+sAttempts+"[,]"+sOrder+"[,]"+sTimerValue+"/"+sTimerValue);
+								oCurObj.setAttribute("q_timer", sTimerValue);
+								oCurObj.setAttribute("q_timer_total", sTimerValue);
+								oCurObj.setAttribute("q_timer_active", "1");
+								CreateTimeActionMethod("q_002_select", "TickTimer", null, 1000, oArgs);
+							} else {
+								var aTimer = aDesc[2].split("/");
+								var sTimerRestore = aTimer[0];
+								if(sTimerRestore==null) sTimerRestore = sTimerValue;
+								oCurObj.setAttribute("q_timer_active", "1");
+								oCurObj.setAttribute("q_timer", sTimerRestore);
+								oCurObj.setAttribute("q_timer_total", sTimerValue);
+
+								oArgs.restore = "1";
+								CallMethod("q_002_select", "TickTimer", oArgs);
+								oArgs.restore = null;
+								if(sMode!="browse") {
+									if(sTimerRestore!="0")	CreateTimeActionMethod("q_002_select", "TickTimer", null, 1000, oArgs);
+								}
+							}
+						}
+					} else {
+						SetInteractionParam(argobj.pid, "description", sAttLeft+"/"+sAttempts+"[,]"+sOrder);
+					}
+
+					FireEvent(argobj.pid,"onQuestionDisplay");
+					if(document.getElementById(argobj.pid)==null) return false;
+
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="DisplayMessage" label="DisplayMessage" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisplayMessage(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var oMsgElem = document.getElementById(argobj.pid+"_q_objective");
+					if(oMsgElem==null) return false;
+					var sPath = argobj.msg==null ? "" : argobj.msg;
+					var oNode = oParams.selectSingleNode("q_goal"+sPath);
+					if(oNode==null) return false;
+					var sMsg = oNode.text;
+					oMsgElem.innerHTML = sMsg;
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+
+		<method name="DisplayButton" label="DisplayButton" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisplayButton(argobj)
+				{
+					if(argobj.pid==null || argobj.btn==null) return false;
+					var oButton = document.getElementById(argobj.pid+"_q_b_"+argobj.btn+"_container");
+					if(oButton==null) return false;
+					oButton.style.display = g_isMSIE ? "inline" : "block";
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+		<method name="HideButton" label="HideButton" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HideButton(argobj)
+				{
+					if(argobj.pid==null || argobj.btn==null) return false;
+					var oButton = document.getElementById(argobj.pid+"_q_b_"+argobj.btn+"_container");
+					if(oButton==null) return false;
+					oButton.style.display = "none";
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+
+		<method name="CheckItem" label="CheckItem" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function CheckItem(argobj)
+				{
+					if(argobj.pid==null || argobj.inum==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oSpot = document.getElementById(argobj.pid+"_spot_"+argobj.inum);
+					var oCheck = document.getElementById(argobj.pid+"_check_"+argobj.inum);
+					if(oSpot.getAttribute("state")=="1") return false;
+					oSpot.style.display = "none";
+					oSpot.setAttribute("state","1");
+					oSpot.setAttribute("q_varselected", argobj.inum);
+					oCheck.style.display = g_isMSIE ? "inline" : "block";
+					return true;
+				}
+                ]]>
+            </body>
+        </method>
+		<method name="UncheckItem" label="UncheckItem" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function UncheckItem(argobj)
+				{
+					if(argobj.pid==null || argobj.inum==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oSpot = document.getElementById(argobj.pid+"_spot_"+argobj.inum);
+					var oCheck = document.getElementById(argobj.pid+"_check_"+argobj.inum);
+					if(oSpot.getAttribute("state")!="1") return false;
+					oCheck.style.display = "none";
+					oSpot.style.display = g_isMSIE ? "inline" : "block";
+					oSpot.setAttribute("state","0");
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+
+
+		<method name="AppendItem" label="AppendItem" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function AppendItem(argobj)
+				{
+					if(argobj.pid==null || argobj.inum==null) return false;
+					var oMain = document.getElementById(argobj.pid+"_q_workarea");
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var aoVars = oParams.selectNodes("q_variants/item");
+					var sType = "select";
+					var oTmpl = document.getElementById(argobj.pid+"_q_"+sType+"item");
+					var oClone = oTmpl.cloneNode(true);
+						oClone.style.display = g_isMSIE ? "inline" : "block";
+					var aTags = oClone.getElementsByTagName("td");
+						aTags[1].innerHTML = aoVars[argobj.inum].selectSingleNode("q_variant").text;
+					aTags = oClone.getElementsByTagName("img");
+					var oSpot = aTags[0];
+						if(argobj.checked) {
+							oSpot.setAttribute("state", "1");
+							oSpot.style.display = "none";
+						} else {
+							oSpot.style.display = g_isMSIE ? "inline" : "block";
+							oSpot.style.cursor = g_isMSIE ? "hand" : "pointer";
+							oSpot.setAttribute("state", argobj.checked ? "1" : "0");
+						}
+						oSpot.setAttribute("enabled", argobj.enabled ? "1" : "0");
+						oSpot.setAttribute("idle", argobj.pid+"_q_"+sType+"spot_0");
+						oSpot.setAttribute("alter", argobj.pid+"_q_"+sType+"spot_2");
+						oSpot.setAttribute("id", argobj.pid+"_spot_"+argobj.inum.toString());
+						oSpot.setAttribute("spotid", argobj.inum.toString());
+					oSpot = aTags[1];
+						oSpot.setAttribute("id", argobj.pid+"_check_"+argobj.inum.toString());
+						oSpot.setAttribute("spotid", argobj.inum.toString());
+						if(argobj.checked) 	{
+							oSpot.style.display = g_isMSIE ? "inline" : "block";
+						} else {
+							oSpot.style.display = "none";
+						}
+					oMain.appendChild(oClone);
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+
+		<method name="DisableItems" label="DisableItems" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisableItems(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var sVarLength = oCurObj.getAttribute("q_varlength");
+					var iVarLength = parseInt(sVarLength,10);
+					var oSpot;
+					for(var i=0;i<iVarLength;i++) {
+						oSpot = document.getElementById(argobj.pid+"_spot_"+i.toString());
+						oSpot.style.cursor = "default";
+						oSpot.setAttribute("enabled","0");
+					}
+					return true;
+	            }
+                ]]>
+            </body>
+        </method>
+		<method name="EnableItems" label="EnableItems" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function EnableItems(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var sVarLength = oCurObj.getAttribute("q_varlength");
+					var iVarLength = parseInt(sVarLength,10);
+					var oSpot;
+					for(var i=0;i<iVarLength;i++) {
+						oSpot = document.getElementById(argobj.pid+"_spot_"+i.toString());
+						oSpot.style.cursor = g_isMSIE ? "hand" : "pointer";
+						oSpot.setAttribute("enabled","1");
+					}
+					return true;
+                }
+                ]]>
+            </body>
+        </method>
+
+		<method name="HandleClick" label="HandleClick" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HandleClick(argobj)
+				{
+                    if(argobj.pid==null || argobj.oid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oSpot = document.getElementById(argobj.pid+"_spot_"+argobj.oid);
+					if(oSpot.getAttribute("enabled")=="0") return false;
+					if(oSpot.getAttribute("state")==null || oSpot.getAttribute("alter")==null || oSpot.getAttribute("idle")==null) return false;
+					var iVars = parseInt(oCurObj.getAttribute("q_varlength"));
+					if(document.getElementById(argobj.pid+"_q_b_skip_container")!=null) document.getElementById(argobj.pid+"_q_b_skip_container").style.display = "none";
+					var oVar;
+					var sState = "";
+					var bChecked = false;
+
+					var oCheck;
+					for(var i=0;i<iVars;i++) {
+						oVar = document.getElementById(argobj.pid+"_spot_"+i.toString());
+						oCheck = document.getElementById(argobj.pid+"_check_"+i.toString());
+						sState = oVar.getAttribute("state");
+						if(oVar==oSpot) {
+							if(sState=="1") {
+								oVar.style.display = g_isMSIE ? "inline" : "block";
+								oCheck.style.display = "none";
+								oVar.setAttribute("state","0");
+							} else {
+								oCheck.style.display = g_isMSIE ? "inline" : "block";
+								oVar.style.display = "none";
+								oVar.setAttribute("state","1");
+								bChecked = true;
+							}
+						}
+					}
+					if(!bChecked) {
+						for(var i=0;i<iVars;i++) {
+							oVar = document.getElementById(argobj.pid+"_spot_"+i.toString());
+							sState = oVar.getAttribute("state");
+							if(sState=="1") {
+								bChecked = true;
+								break;
+							}
+						}
+					}
+					if(argobj.nobtn!="1") {
+						var oArgs = new Object;
+						oArgs.pid = argobj.pid;
+						oArgs.btn = "check";
+						CallMethod("q_002_select", bChecked ? "DisplayButton" : "HideButton", oArgs);
+					}
+					FireEvent(argobj.pid,"onChangeChoice");
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+
+
+		<method name="CountAttempts" label="CountAttempts" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function CountAttempts(argobj)
+				{
+                    if(argobj.pid==null) return false;
+					if(document.getElementById(argobj.pid+"_q_attempts_count")==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var sAtt = oCurObj.getAttribute("q_attemptslast");
+					var iAtt = parseInt(sAtt,10);
+					if(iAtt>0) {
+						iAtt--;
+						sAtt = iAtt.toString();
+						document.getElementById(argobj.pid+"_q_attempts_count").innerHTML = sAtt;
+						oCurObj.setAttribute("q_attemptslast", sAtt);
+					} else {
+						document.getElementById(argobj.pid+"_q_attempts_count").innerHTML = "0";
+						oCurObj.setAttribute("q_attemptslast", "0");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+
+
+
+		<method name="EvalAnswer" label="EvalAnswer" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function EvalAnswer(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var sReason = argobj.reason;
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+					var bEval = true;
+					var bCorrect = false;
+
+					if(sReason=="skip") {
+						CallMethod("q_002_select", "DisableItems", oArgs);
+						oCurObj.setAttribute("q_timer_active", "0");
+						CallMethod("q_002_select", "TickTimer", oArgs);
+						document.getElementById(argobj.pid+"_q_workarea").style.visibility = "hidden";
+						oArgs.msg = "_skip";
+						CallMethod("q_002_select", "DisplayMessage", oArgs);
+						FireEvent(argobj.pid,"onSkipQuestion");
+						if(document.getElementById(argobj.pid)==null) return false;
+						return true;
+					}
+					if(sReason=="fail") {
+						CallMethod("q_002_select", "DisableItems", oArgs);
+						oArgs.msg = "_failed";
+						CallMethod("q_002_select", "DisplayMessage", oArgs);
+						bCorrect = false;
+						bEval = false;
+					}
+					if(bEval) {
+						var oNode = oParams.selectSingleNode("q_fb_switch");
+						var bFB = oNode.text=="yes" ? true : false;
+						oNode = oParams.selectSingleNode("q_showright");
+						var bShowRight = oNode.text=="yes" ? true : false;
+						var sVarLength = oCurObj.getAttribute("q_varlength");
+						var iVarLength = parseInt(sVarLength,10);
+						var oSpot;
+						var bResponse = false;
+						var aResponses = new Array();
+						oArgs.btn = "check";
+						CallMethod("q_002_select", "HideButton", oArgs);
+
+						for(var i=0;i<iVarLength;i++) {
+							oSpot = document.getElementById(argobj.pid+"_spot_"+i.toString());
+							if(oSpot.getAttribute("state")=="1") {
+								bResponse = true;
+								aResponses.push(i.toString());
+							}
+						}
+
+						if(sReason!="timeout" && !bResponse) return false;
+						var aCorrects = GetInteractionArray(argobj.pid, "correct_responses");
+						if(aCorrects==null) return false;
+						if(aCorrects.length==0) return false;
+						bCorrect = false;
+						var aChecks = new Array();
+						var sChecks = "";
+						if(bResponse) {
+							var sResponse = aResponses.join("[,]");
+							SetInteractionParam(argobj.pid, "learner_response", sResponse);
+							for(var i=0;i<aCorrects.length;i++) {
+								aChecks = aCorrects[i].split("[,]");
+								aChecks.sort(NumericCompare);
+								sChecks = aChecks.join("[,]");
+								if(sChecks==sResponse) {
+									bCorrect = true;
+									break;
+								}
+							}
+						}
+
+						CallMethod("q_002_select", "CountAttempts", argobj);
+
+						FireEvent(argobj.pid,"onAttempt");
+						if(document.getElementById(argobj.pid)==null) return false;
+					}
+					var bCredit = oCurObj.getAttribute("q_scored")=="0" ? false : true;
+					var sAttMax = oCurObj.getAttribute("q_maxattempts");
+					var sAtt = oCurObj.getAttribute("q_attemptslast");
+					var iAtt = parseInt(sAtt,10);
+					var aObjectives = oParams.selectNodes("q_scoreboards/item/q_board");
+
+					var dDate = new Date();
+					var iDate = dDate.valueOf();
+					var sBegin = oCurObj.getAttribute("q_begin");
+					var iBegin = parseInt(sBegin,10);
+
+					if(bCorrect) {
+
+						if(sReason=="timeout") FireEvent(argobj.pid,"onTimeout");
+						if(document.getElementById(argobj.pid)==null) return false;
+						FireEvent(argobj.pid,"onSuccess");
+						if(document.getElementById(argobj.pid)==null) return false;
+
+						if(sReason!="timeout") {
+							oCurObj.setAttribute("q_timer_active", "0");
+							CallMethod("q_002_select", "TickTimer", oArgs);
+						}
+
+						CallMethod("q_002_select", "DisableItems", oArgs);
+						if(bFB) {
+							oArgs.fbtype = "right";
+							CallMethod("q_002_select", "DisplayFeedback", oArgs);
+						}
+						if(bCredit) {
+							var sWeight = oParams.selectSingleNode("q_weight").text;
+							var bRegress = oParams.selectSingleNode("q_pointset_auto").text=="yes" ? true : false;
+							var iScore = 0;
+							var sScore = "";
+							if(bRegress) {
+								var iWeight = parseFloat(sWeight);
+								iWeight = iWeight*(iAtt+1);
+								sScore = FormatReal_10_7(iWeight);
+							} else {
+								sScore = FormatReal_10_7(sWeight);
+							}
+							for(var i=0;i<aObjectives.length;i++) SetObjectiveScore(aObjectives[i].text, argobj.pid, "replace", sScore);
+							SetInteractionParam(argobj.pid, "weighting", sScore);
+						}
+						SetInteractionParam(argobj.pid, "result", "correct");
+						var iLatency = iDate - iBegin;
+						var sLatency = ConvertPeriodToISO8601(iLatency);
+						SetInteractionParam(argobj.pid, "latency", sLatency);
+						var sTmp = GetInteractionParam(argobj.pid, "description");
+						var aDesc = sTmp.split("[,]");
+						var aAtt = aDesc[0].split("/");
+						aAtt[0] = sAtt;
+						aDesc[0] = aAtt.join("/");
+						SetInteractionParam(argobj.pid, "description", aDesc.join("[,]"));
+
+						FireEvent(argobj.pid,"onQuestionEnd");
+						if(document.getElementById(argobj.pid)==null) return false;
+
+					} else {
+						var sTmp = GetInteractionParam(argobj.pid, "description");
+						var aDesc = sTmp.split("[,]");
+						var aAtt = aDesc[0].split("/");
+						aAtt[0] = sAtt;
+						aDesc[0] = aAtt.join("/");
+						SetInteractionParam(argobj.pid, "description", aDesc.join("[,]"));
+						if(iAtt>0 && sReason!="timeout" && bEval) {
+
+							FireEvent(argobj.pid,"onFailure");
+							if(document.getElementById(argobj.pid)==null) return false;
+							if(bFB) {
+								oArgs.fbtype = "wrong";
+								CallMethod("q_002_select", "DisplayFeedback", oArgs);
+							}
+
+						} else {
+
+							FireEvent(argobj.pid, sReason=="timeout" ? "onTimeout" : "onAttemptsLimit");
+							if(document.getElementById(argobj.pid)==null) return false;
+							FireEvent(argobj.pid,"onFailure");
+							if(document.getElementById(argobj.pid)==null) return false;
+
+							if(sReason!="timeout") {
+								oCurObj.setAttribute("q_timer_active", "0");
+								CallMethod("q_002_select", "TickTimer", oArgs);
+							}
+
+							if(bShowRight) {
+								aChecks = aCorrects[0].split("[,]");
+								aChecks.sort(NumericCompare);
+								var bSet = false;
+								for(var i=0;i<iVarLength;i++) {
+									oArgs.inum = i;
+									bSet = false;
+									for(var j=0;j<aChecks.length;j++) {
+										if(aChecks[j]==i.toString()) bSet = true;
+									}
+									CallMethod("q_002_select", bSet ? "CheckItem" : "UncheckItem", oArgs);
+								}
+								oArgs.msg = "_right";
+								CallMethod("q_002_select", "DisplayMessage", oArgs);
+							}
+
+							CallMethod("q_002_select", "DisableItems", oArgs);
+							if(bFB && sReason!="fail") {
+								oArgs.fbtype = sReason=="timeout" ? "timeout" : "exhausted";
+								CallMethod("q_002_select", "DisplayFeedback", oArgs);
+							}
+
+							if(bCredit) {
+								for(var i=0;i<aObjectives.length;i++) SetObjectiveScore(aObjectives[i].text, argobj.pid, "replace", "0");
+								SetInteractionParam(argobj.pid, "weighting", "0");
+							}
+							SetInteractionParam(argobj.pid, "result", "incorrect");
+
+							var iLatency = iDate - iBegin;
+							var sLatency = ConvertPeriodToISO8601(iLatency);
+							SetInteractionParam(argobj.pid, "latency", sLatency);
+							FireEvent(argobj.pid,"onQuestionEnd");
+							if(document.getElementById(argobj.pid)==null) return false;
+
+						}
+					}
+
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+
+		<method name="DisplayFeedback" label="DisplayFeedback" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisplayFeedback(argobj)
+				{
+                    if(argobj.pid==null || argobj.fbtype==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(document.getElementById(argobj.pid+"_q_fb_template")==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var oNode = oParams.selectSingleNode("q_fb_switch");
+					if(oNode.text!="yes") return false;
+					oNode = oParams.selectSingleNode("q_feedback"+argobj.fbtype);
+					if(oNode==null) return false;
+					var sText = oNode.text;
+					document.getElementById(argobj.pid+"_q_fb_text").innerHTML = sText;
+					document.getElementById(argobj.pid+"_q_fb_template").style.backgroundColor = argobj.fbtype=="right" ? "#E0FFE0" : "#FFE0E0";
+					document.getElementById(argobj.pid+"_q_fb_template").style.borderColor = argobj.fbtype=="right" ? "#339933" : "#FF6666";
+					document.getElementById(argobj.pid+"_q_fb_closebutton").style.backgroundColor = argobj.fbtype=="right" ? "#339933" : "#FF6666";
+					document.getElementById(argobj.pid+"_q_fb_template").style.display = g_isMSIE ? "inline" : "block";
+					if(oParams.selectSingleNode("q_fb_timerswitch").text=="yes") {
+						var sFBTimer = oParams.selectSingleNode("q_fb_timer").text;
+						var iFBTimer = parseFloat(sFBTimer);
+						if(isNaN(iFBTimer)) return true;
+						if(iFBTimer<1) iFBTimer = 1;
+						iFBTimer = Math.floor(iFBTimer * 1000);
+						var oArgs = new Object;
+						oArgs.pid = argobj.pid;
+						CreateTimeActionMethod("q_002_select", "HideFeedback", null, iFBTimer, oArgs);
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="HideFeedback" label="HideFeedback" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HideFeedback(argobj)
+				{
+                    if(argobj.pid==null) return false;
+					if(document.getElementById(argobj.pid+"_q_fb_template")==null) return false;
+					document.getElementById(argobj.pid+"_q_fb_template").style.display = "none";
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="SkipQuestion" label="SkipQuestion" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function SkipQuestion(argobj)
+				{
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+					if(document.getElementById(argobj.pid+"_q_b_skip_container")!=null) document.getElementById(argobj.pid+"_q_b_skip_container").style.display = "none";
+					var oNode = oParams.selectSingleNode("q_skip");
+					if(oNode==null) return false;
+					if(oNode.text!="yes") return false;
+					var bFail = false;
+					oNode = oParams.selectSingleNode("q_skipper2");
+					if(oNode!=null) bFail = oNode.text=="yes" ? true : false;
+					if(bFail) {
+						oNode = oParams.selectSingleNode("q_skip_confirm");
+						if(confirm(oNode.text)) {
+							oArgs.btn = "skip";
+							CallMethod("q_002_select", "HideButton", oArgs);
+							oArgs.reason = "fail";
+							CallMethod("q_002_select","EvalAnswer",oArgs);
+						} else return false;
+					} else {
+						oArgs.btn = "skip";
+						CallMethod("q_002_select", "HideButton", oArgs);
+						oArgs.reason = "skip";
+						CallMethod("q_002_select","EvalAnswer",oArgs);
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="TickTimer" label="TickTimer" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function TickTimer(argobj)
+				{
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					if(document.getElementById(argobj.pid+"_q_timer_progress")==null || document.getElementById(argobj.pid+"_q_timer_value")==null || document.getElementById(argobj.pid+"_q_timer_bg")==null) return false;
+					var sActive = oCurObj.getAttribute("q_timer_active");
+					if(sActive=="0") return false;
+
+					var sTick = oCurObj.getAttribute("q_timer");
+					if(sTick==null) return false;
+					var iTick = parseInt(sTick,10);
+					if(isNaN(iTick)) return false;
+					var sTotal = oCurObj.getAttribute("q_timer_total");
+					if(sTotal==null) return false;
+					var iTotal = parseInt(sTotal,10);
+					if(isNaN(iTotal)) return false;
+					if(iTick>iTotal) return false;
+					if(argobj.restore==null) iTick--;
+					sTick = iTick.toString();
+					document.getElementById(argobj.pid+"_q_timer_value").innerHTML = sTick+" sec";
+					oCurObj.setAttribute("q_timer",sTick);
+					var iCurT = Math.round(iTick/iTotal*100);
+					var sColor = "#00CC66";
+					if(iCurT<30) {
+						if(iCurT<15) {
+							sColor = "#FF0000";
+						} else {
+							sColor = "#FFCC66";
+						}
+					}
+					var iW = Math.round((100-iCurT)*2);
+					if(iW<=0) iW = 1;
+					if(iW>0) {
+						document.getElementById(argobj.pid+"_q_timer_progress").style.width = iW.toString()+"px";
+						document.getElementById(argobj.pid+"_q_timer_bg").style.backgroundColor = sColor;
+					}
+					if(argobj.restore!=null) return true;
+					var oArgs = new Object;
+					oArgs.pid = argobj.pid;
+
+					var sTmp = GetInteractionParam(argobj.pid, "description");
+					var aDesc = sTmp.split("[,]");
+					var aTimer = aDesc[2].split("/");
+					aTimer[0] = sTick;
+					aDesc[2] = aTimer.join("/");
+					SetInteractionParam(argobj.pid, "description", aDesc.join("[,]"));
+
+					if(iTick>0) {
+						CreateTimeActionMethod("q_002_select", "TickTimer", null, 1000, oArgs);
+					} else {
+						oArgs.reason = "timeout";
+						oCurObj.setAttribute("q_timer_active","0");
+						CallMethod("q_002_select","EvalAnswer",oArgs);
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="GetProperty" label="GetProperty" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function GetProperty(argobj)
+				{
+					if(argobj.pid==null || argobj.property==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					switch(argobj.property.toLowerCase()) {
+						case "questionmode":			g_vPropertyValue = oCurObj.getAttribute("mode")=="review" ? "review" : "normal";			break;
+						case "questiontype":			g_vPropertyValue = "select"; 	break;
+						case "questionduration":		g_vPropertyValue = oCurObj.getAttribute("q_timer_total")!=null ? oCurObj.getAttribute("q_timer_total") : ""; 	break;
+						case "questiontimer":			g_vPropertyValue = oCurObj.getAttribute("q_timer")!=null ? oCurObj.getAttribute("q_timer") : ""; 	break;
+						case "itemquantity":			g_vPropertyValue = oCurObj.getAttribute("q_varlength")!=null ? oCurObj.getAttribute("q_varlength") : ""; 	break;
+						case "questionvalue":
+							var iQty = parseInt(oCurObj.getAttribute("q_varlength"),10);
+							var aResult = new Array();
+							var oSpot;
+							for(var i=0;i<iQty;i++) {
+								oSpot = document.getElementById(argobj.pid+"_spot_"+i.toString());
+								aResult.push(oSpot.getAttribute("state"));
+							}
+							g_vPropertyValue = aResult.join("~");
+							break;
+						case "attemptslast":			g_vPropertyValue = oCurObj.getAttribute("q_attemptslast")!=null ? oCurObj.getAttribute("q_attemptslast") : ""; 	break;
+						case "attemptstotal":			g_vPropertyValue = oCurObj.getAttribute("q_maxattempts")!=null ? oCurObj.getAttribute("q_maxattempts") : ""; 	break;
+						default: return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+	</methods>
+</params>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+'*	nav_002_position.xml
+'*	Copyright (c) Websoft, 2007.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>Current position</label>
+		<width>200</width>
+		<height>20</height>
+		<description>Current position</description>
+	</object>
+	<page name=" Parameters " w="220" h="134">
+		<param type="label" text="Text:" x="10" y="10" w="90" h="13"/>
+		<param type="edit" id="position_text" text="POSITION:" def="POSITION:" x="100" y="9" w="110" h="13"/>
+		<param type="label" text="Divider:" x="10" y="26" w="90" h="13"/>
+		<param type="edit" id="position_divider" text="/" def="/" x="100" y="25" w="110" h="13"/>
+		<param type="label" text="Font:" x="10" y="42" w="90" h="13"/>
+		<param type="select" id="position_font" text="Tahoma" def="Tahoma" x="100" y="41" w="110" h="13">
+        <items>
+          <item id="Arial" label="Arial"/>
+          <item id="Courier" label="Courier"/>
+          <item id="Tahoma" label="Tahoma"/>
+          <item id="Times" label="Times"/>
+          <item id="Verdana" label="Verdana"/>
+          <item id="Courier" label="Courier"/>
+        </items>
+		</param>
+		<param type="label" text="Font size:" x="10" y="58" w="90" h="13"/>
+		<param type="edit" id="position_font_size" text="11" def="11" x="100" y="57" w="20" h="13"/>
+		<param type="label" text="pixels" x="125" y="58" w="50" h="13"/>
+		<param type="label" text="Font weight:" x="10" y="74" w="90" h="13"/>
+		<param type="select" id="position_font_weight" text="bold" def="bold" x="100" y="73" w="110" h="13">
+        <items>
+          <item id="normal" label="Normal"/>
+          <item id="bold" label="Bold"/>
+        </items>
+		</param>
+		<param type="label" text="Font style:" x="10" y="90" w="90" h="13"/>
+		<param type="select" id="position_font_style" text="normal" def="normal" x="100" y="89" w="110" h="13">
+        <items>
+          <item id="normal" label="Normal"/>
+          <item id="italic" label="Italic"/>
+        </items>
+		</param>
+		<param type="label" text="Font color:" x="10" y="106" w="90" h="13"/>
+		<param type="color" id="position_font_color" text="#FEFFFF" def="#FEFFFF" x="100" y="105" w="45" h="13"/>
+    </page>
+	<methods>
+		<method name="Constructor" label="Constructor" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function Constructor(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					oCurObj.setAttribute("num","");
+					AddEvtHandler("EVENT_SLIDE_OPENED", "nav_002_position", argobj.pid);
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="HandleEvt" label="HandleEvt" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HandleEvt(oEvtHandler)
+				{
+					if(oEvtHandler.sTargetId==null) return false;
+					var oCurObj = document.getElementById(oEvtHandler.sTargetId);
+					if(oCurObj==null) return false;
+					switch (oEvtHandler.sEvt) {
+						case "EVENT_SLIDE_OPENED":
+							var oSlides = g_oSlides.selectNodes("slide");
+							var sTotal = oSlides.length.toString();
+							document.getElementById(oEvtHandler.sTargetId + "_position_total").innerHTML = sTotal;
+							var sCurrentSlideId = g_oSlide.getAttribute("id");
+							var iCurrent = 0;
+							for(var i=0; i<oSlides.length; i++)	{
+								iCurrent++;
+								var oSlide = oSlides[i];
+								if(oSlide.getAttribute("id")==sCurrentSlideId) break;
+							}
+							sCurrent = iCurrent.toString();
+							oCurObj.setAttribute("num",sCurrent);
+							document.getElementById(oEvtHandler.sTargetId + "_position_current").innerHTML = sCurrent;
+							break;
+						default:
+							break;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="GetProperty" label="GetProperty" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function GetProperty(argobj)
+				{
+					if(argobj.pid==null || argobj.property==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					switch(argobj.property.toLowerCase()) {
+						case "currentposition":		g_vPropertyValue = oCurObj.getAttribute("num");		break;
+						default: return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+	</methods>
+</params>

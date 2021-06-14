@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+'*	media_003_video.xml
+'*	Copyright (c) Websoft, 2006.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>Video</label>
+		<width>320</width>
+		<height>240</height>
+		<description>Video. Any format supported by Windows Media Player, QuickTime Player or Real Player</description>
+	</object>
+    <page name=" Parameters " w="240" h="160">
+		<param type="line" x="8" y="12" w="224" h="44"/>
+
+		<param type="label" text="  Video source " x="20" y="8" w="50" h="13"/>
+		<param type="radio" id="vfile" text="File:" def="yes" x="20" y="20" w="30" h="13">
+			<events>
+				<event name="check" target="video_uri" action="enable" />
+				<event name="uncheck" target="video_uri" action="disable" />
+			</events>
+		</param>
+		<param type="radio" id="vURL" text="URL:" def="no" x="20" y="36" w="30" h="13">
+			<events>
+				<event name="check" target="video_url" action="enable" />
+				<event name="uncheck" target="video_url" action="disable" />
+			</events>
+		</param>
+		<param type="file" id="video_uri" text="" def="" x="50" y="20" w="140" h="13"/>
+		<param type="edit" id="video_url" text="" def="" x="50" y="36" w="140" h="13"/>
+		<param type="label" text="Player selection:" x="10" y="64" w="100" h="13"/>
+		<param type="select" id="player" text="" def="" x="110" y="63" w="120" h="13">
+			<items>
+				<item id="auto" label="Automatic"/>
+				<item id="wmp" label="Windows Media Player"/>
+				<item id="qtp" label="Apple QuickTime Player"/>
+				<item id="rp" label="RealPlayer"/>
+			</items>
+		</param>
+		<param type="label" text="Player controls:" x="10" y="80" w="100" h="13"/>
+		<param type="select" id="video_controls" text="no" def="no" x="110" y="79" w="120" h="13">
+			<items>
+				<item id="no" label="Hide"/>
+				<item id="mini" label="Minimal"/>
+				<item id="full" label="Full"/>
+			</items>
+		</param>
+		<param type="check" id="video_autostart" text="Movie autostart" def="yes" x="10" y="96" w="136" h="13"/>
+		<param type="check" id="video_windowless" text="Windowless mode (WMP IE, FF, NS7)" def="no" x="10" y="112" w="136" h="13"/>
+		<param type="check" id="video_invisible" text="Invisible mode" def="no" x="10" y="128" w="136" h="13"/>
+	</page>
+	<methods>
+		<method name="Constructor" label="Constructor" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function Constructor(argobj)
+                {
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					oCurObj.setAttribute("destructor","Destructor");
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var bAutoStart = oParams.selectSingleNode("video_autostart").text=="yes" ? true : false;
+					var bURL = oParams.selectSingleNode("vURL").text=="yes" ? true : false;
+					var sPlayer = oParams.selectSingleNode("player").text;
+					var sPath = bURL ? oParams.selectSingleNode("video_url").text : oParams.selectSingleNode("video_uri").text;
+					if(sPlayer=="auto") {
+						if(sPath.indexOf(".mov")!=-1 || sPath.indexOf(".3gp")!=-1) {
+							sPlayer = "qtp";
+						} else {
+							if(sPath.indexOf(".rm")!=-1 || sPath.indexOf(".ram")!=-1 || sPath.indexOf(".rpm")!=-1) {
+								sPlayer = "rp";
+							} else {
+								sPlayer = "wmp";
+							}
+						}
+					}
+					var sUIMode = oParams.selectSingleNode("video_controls").text;
+					if(sUIMode=="no") sUIMode = "none";
+					var sURL = document.location.href;
+					var iPtr = sURL.indexOf("?");
+					if(iPtr!=-1) sURL = sURL.substr(0,iPtr);
+					iPtr = sURL.lastIndexOf("/");
+					sURL = sURL.substr(0,iPtr+1);
+					var bEmbed = false;
+					var bFF = false;
+					var oPlayer;
+					switch(sPlayer) {
+						case "rp":
+							var sPlayerID = g_isMSIE ? argobj.pid + "_rp" : argobj.pid + "_rpembed";
+							oCurObj.setAttribute("control", g_isMSIE ? "rp" : "rpembed");
+							oCurObj.setAttribute("pid", sPlayerID);
+							oCurObj.setAttribute("plr", "rp");
+							oCurObj.setAttribute("url", sURL+sPath);
+							oCurObj.setAttribute("state", "playing");
+							break;
+						case "qtp":
+							oPlayer = g_isMSIE ? document.getElementById(argobj.pid+"_qtp") : document.getElementById(argobj.pid+"_qtpembed");
+							oPlayer.width = oCurObj.clientWidth;
+							oPlayer.height = oCurObj.clientHeight;
+							if(g_isMSIE) oPlayer.SetControllerVisible(sUIMode=="none" ? false : true);
+							oCurObj.setAttribute("control", g_isMSIE ? "qtp" : "qtpembed");
+							var sPlayerID = g_isMSIE ? argobj.pid + "_qtp" : argobj.pid + "_qtpembed";
+							oCurObj.setAttribute("pid", sPlayerID);
+							oCurObj.setAttribute("plr", "qt");
+							oCurObj.setAttribute("url", sURL+sPath);
+							oCurObj.setAttribute("state", bAutoStart ? "playing" : "stopped");
+							if(bAutoStart) {
+								FireEvent(argobj.pid,"onPlayStart");
+								if(oCurObj==null) return false;
+								FireEvent(argobj.pid,"onPlayBegin");
+								if(oCurObj==null) return false;
+							}
+							oCurObj.setAttribute("pos", "0");
+							var oArgs = new Object;
+							oArgs.pid = argobj.pid;
+							CreateTimeActionMethod("media_003_video", "TickTimer", null, 100, oArgs);
+							break;
+						case "wmp":
+							if(navigator.userAgent.toLowerCase().indexOf("firefox")!=-1) {
+								document.getElementById(argobj.pid+"_ffactivex").style.display = "block";
+								oCurObj.setAttribute("control","wmpff");
+								bFF = true;
+							} else {
+								document.getElementById(argobj.pid+"_activex").style.display = "block";
+								if(!g_isMSIE && navigator.userAgent.toLowerCase().indexOf("netscape/7")==-1) {
+									bEmbed = true;
+									oCurObj.setAttribute("control","wmpembed");
+								} else {
+									oCurObj.setAttribute("control","wmpie");
+								}
+							}
+							var sPlayerID = bFF ? argobj.pid+"_wmpff" : argobj.pid+"_wmpie";
+							oCurObj.setAttribute("pid", sPlayerID);
+							oCurObj.setAttribute("plr", "wm");
+							if(!bEmbed) {
+								var sText = "<script language='JavaScript' for='"+sPlayerID+"' event='playStateChange(sState)'>";
+								sText += "var oArgs = new Object; oArgs.pid='"+argobj.pid+"'; oArgs.etype='PlayStateChange'; oArgs.eid=sState; CallMethod('media_003_video','EventDispatcher', oArgs);";
+								sText += "</script>";
+								oCurObj.innerHTML += sText;
+								sText = "<script language='JavaScript' for='"+sPlayerID+"' event='mediaError(pMediaObject)'>";
+								sText += "var oArgs = new Object; oArgs.pid='"+argobj.pid+"'; oArgs.etype='MediaError'; CallMethod('media_003_video','EventDispatcher', oArgs);";
+								sText += "</script>";
+								oCurObj.innerHTML += sText;
+								sText = "<script language='JavaScript' for='"+sPlayerID+"' event='mediaChange(sItem)'>";
+								sText += "var oArgs = new Object; oArgs.pid='"+argobj.pid+"'; oArgs.etype='MediaChange'; CallMethod('media_003_video','EventDispatcher', oArgs);";
+								sText += "</script>";
+								oCurObj.innerHTML += sText;
+								sText = "<script language='JavaScript' for='"+sPlayerID+"' event='positionChange(sOldPos,sNewPos)'>";
+								sText += "var oArgs = new Object; oArgs.pid='"+argobj.pid+"'; oArgs.etype='PositionChange'; CallMethod('media_003_video','EventDispatcher', oArgs);";
+								sText += "</script>";
+								oCurObj.innerHTML += sText;
+							}
+							var oArgs = new Object;
+							oArgs.pid = argobj.pid;
+							CreateTimeActionMethod("media_003_video", "TickTimer", null, 100, oArgs);
+							return true;
+						case "rp":
+						default: return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="ReplaceMedia" label="REPLACE MEDIA" access="public">
+            <params>
+				<param name="URL" label="New media URL"/>
+            </params>
+            <body>
+                <![CDATA[
+                function ReplaceMedia(argobj)
+                {
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sPlayerID = oCurObj.getAttribute("pid");
+					if(sPlayerID==null) return false;
+					var oPlayer = document.getElementById(sPlayerID);
+					if(oPlayer==null) return false;
+					oPlayer.URL = argobj.URL;
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="TickTimer" label="TickTimer" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function TickTimer(argobj)
+                {
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sPlayerID = oCurObj.getAttribute("pid");
+					if(sPlayerID==null) return false;
+					var oPlayer = document.getElementById(sPlayerID);
+					if(oPlayer==null) return false;
+					var sType = oCurObj.getAttribute("plr");
+					if(sType==null) return false;
+					switch(sType) {
+						case "qt":
+							var sStatus = oPlayer.GetPluginStatus();
+							if(sStatus.toLowerCase()!="complete") {
+								CreateTimeActionMethod("media_003_video", "TickTimer", null, 100, argobj);
+								return true;
+							}
+							var iDuration = oPlayer.GetDuration();
+							var sPos = oCurObj.getAttribute("pos");
+							var sState = oCurObj.getAttribute("state");
+							if(sState=="playing") 	FireEvent(argobj.pid,"onTickTimer");
+							if(oCurObj==null) return false;
+							var iTime = oPlayer.GetTime();
+							var sTime = iTime.toString();
+							oCurObj.setAttribute("pos", sTime);
+							if(iTime==iDuration && sState!="stopped") {
+								oCurObj.setAttribute("state","stopped");
+								FireEvent(argobj.pid,"onChangePlayState");
+								if(oCurObj==null) return false;
+								FireEvent(argobj.pid,"onMediaEnded");
+								if(oCurObj==null) return false;
+								FireEvent(argobj.pid,"onPlayStop");
+								return true;
+							}
+							if(sState=="playing") CreateTimeActionMethod("media_003_video", "TickTimer", null, 999, argobj);
+							break;
+						case "wm":
+							var sState = oPlayer.playState;
+							if(sState.toString()=="3") {
+								CreateTimeActionMethod("media_003_video", "TickTimer", null, 999, argobj);
+								FireEvent(argobj.pid,"onTickTimer");
+							}
+							break;
+						default: break;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+ 		<method name="SetProperty" label="SET PROPERTY" access="public">
+            <params>
+				<param name="property" label="Property name" default="mute">
+					<items>
+						<item id="currentposition" label="Current position"/>
+						<item id="mute" label="Mute"/>
+						<item id="volume" label="Volume"/>
+					</items>
+				</param>
+ 				<param name="value" label="Value to set"/>
+           </params>
+            <body>
+                <![CDATA[
+                function SetProperty(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					if(argobj.property==null || argobj.value==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sPlayerID = oCurObj.getAttribute("pid");
+					if(sPlayerID==null) return false;
+					var oPlayer = document.getElementById(sPlayerID);
+					if(oPlayer==null) return false;
+					var sType = oCurObj.getAttribute("plr");
+					if(sType==null) return false;
+					switch(sType) {
+						case "qt":
+							switch(argobj.property) {
+								case "mute": 	oPlayer.SetMute(!argobj.value=="false" ? true : false); 	break;
+								case "volume":
+									var iVolume = parseInt(argobj.value,10);
+									if(isNaN(iVolume)) return false;
+									iVolume = Math.round(iVolume*2.55);
+									if(iVolume<=0) iVolume = 0;
+									if(iVolume>255) iVolume = 255;
+									oPlayer.SetVolume(iVolume);
+									break;
+								case "currentposition":
+									var iPos = parseFloat(argobj.value);
+									if(isNaN(iPos)) return false;
+									var iDuration = oPlayer.GetDuration();
+									var iScale = oPlayer.GetTimeScale();
+									iPos = Math.floor(iPos*iScale);
+									if(iPos>=iDuration) iPos = iDuration;
+									if(iPos<=0) iPos = 0;
+									oPlayer.SetTime(iPos);
+									FireEvent(argobj.pid,"onPositionChange");
+									break;
+								default: break;
+							}
+							break;
+						case "wm":
+							var oControls = oPlayer.controls;
+							var oMedia = oPlayer.currentMedia;
+							var oSettings = oPlayer.settings;
+							switch(argobj.property) {
+								case "mute":	oControls.mute = !argobj.value=="false";	break;
+								case "volume":
+									var iVolume = parseInt(argobj.value,10);
+									if(isNaN(iVolume)) return false;
+									if(iVolume<0) iVolume = 0;
+									if(iVolume>100) iVolume = 100;
+									oControls.volume = iVolume;
+									break;
+								case "currentposition":
+									var iCurPos = parseFloat(argobj.value);
+									if(isNaN(iCurPos)) return false;
+									oControls.currentPosition = iCurPos;
+									break;
+								default: break;
+							}
+							break;
+						default: break;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="GetProperty" label="GetProperty" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function GetProperty(argobj)
+                {
+					if(argobj.pid==null || argobj.property==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sPlayerID = oCurObj.getAttribute("pid");
+					if(sPlayerID==null) return false;
+					var oPlayer = document.getElementById(sPlayerID);
+					if(oPlayer==null) return false;
+					var sType = oCurObj.getAttribute("plr");
+					if(sType==null) return false;
+					switch(sType) {
+						case "qt":
+							try {
+								switch(argobj.property.toLowerCase()) {
+									case "autostart":
+										var bAS = oPlayer.GetAutoPlay();
+										g_vPropertyValue = bAS ? "1" : "0";
+										break;
+									case "mute":
+										var bMute = oPlayer.GetMute();
+										g_vPropertyValue = bMute ? "1" : "0";
+										break;
+									case "volume":
+										var iVolume = oPlayer.GetVolume();
+										iVolume = Math.round(iVolume/255);
+										g_vPropertyValue = iVolume;
+										break;
+									case "currentmedia":	g_vPropertyValue = oPlayer.GetMovieName(); 				break;
+									case "duration":
+										var iDuration = oPlayer.GetDuration();
+										var iScale = oPlayer.GetTimeScale();
+										g_vPropertyValue = Math.round(iDuration/iScale*10)/10;
+										break;
+									case "currentposition":
+										var iTime = oPlayer.GetTime();
+										var iScale = oPlayer.GetTimeScale();
+										g_vPropertyValue = Math.round(iTime/iScale*10)/10;
+										break;
+									case "currentstate":
+										var sState = oCurObj.getAttribute("state");
+										if(sState!=null) {
+											g_vPropertyValue = sState;
+											return true;
+										}
+										g_vPropertyValue = oPlayer.GetPluginStatus();
+										break;
+									case "url":
+										var sURL = oPlayer.GetURL();
+										var reSlash = new RegExp(/\//g);
+										sURL = sURL.replace(reSlash,"\\/");
+										g_vPropertyValue = sURL;
+										break;
+									default: return true;
+								}
+							} catch(e) {}
+							break;
+						case "wm":
+							var oControls = oPlayer.controls;
+							var oMedia = oPlayer.currentMedia;
+							var oSettings = oPlayer.settings;
+							g_vPropertyValue = null;
+							try {
+								switch(argobj.property.toLowerCase()) {
+									case "autostart":
+										var bAS = oSettings.autoStart;
+										g_vPropertyValue = bAS ? "1" : "0";
+										break;
+									case "mute":
+										var bMute = oSettings.mute;
+										g_vPropertyValue = bMute ? "1" : "0";
+										break;
+									case "volume": 			g_vPropertyValue = oSettings.volume; 					break;
+									case "currentmedia": 	g_vPropertyValue = oMedia.name; 						break;
+									case "duration":		g_vPropertyValue = oMedia.duration;						break;
+									case "currentposition":
+										var sPos = oControls.currentPosition;
+										var iPos = parseFloat(sPos);
+										var iPos = Math.round(iPos);
+										g_vPropertyValue = iPos.toString();
+										break;
+									case "currentstate":
+										var aPlayStates = new Array("undefined","stopped","paused","playing","forward","backward","buffering","waiting","ended","preparing","ready","reconnect");
+										var sState = oPlayer.playState;
+										if(sState==null) return false;
+										var iState = parseInt(sState, 10);
+										if(isNaN(iState)) return false;
+										g_vPropertyValue = aPlayStates[iState];
+										break;
+									case "isonline":
+										var bOnline = oPlayer.isOnline;
+										g_vPropertyValue = bOnline ? "1" : "0";
+										break;
+									case "url":
+										var sURL = oPlayer.URL;
+										var reSlash = new RegExp(/\//g);
+										sURL = sURL.replace(reSlash,"\\/");
+										g_vPropertyValue = sURL;
+										break;
+									default: return true;
+								}
+							} catch(e) {}
+							break;
+						default: break;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="EventDispatcher" label="EventDispatcher" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function EventDispatcher(argobj)
+                {
+					if(argobj.pid==null || argobj.etype==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					switch(argobj.etype) {
+						case "MediaChange":		FireEvent(argobj.pid,"onMediaChange"); return true;
+						case "MediaError":		FireEvent(argobj.pid,"onMediaError"); return true;
+						case "PositionChange":	FireEvent(argobj.pid,"onPositionChange"); return true;
+						case "PlayStateChange":
+							if(argobj.eid==null) return false;
+							var sPrevState = oCurObj.getAttribute("playstate");
+							oCurObj.setAttribute("playstate", argobj.eid.toString());
+							FireEvent(argobj.pid,"onChangePlayState");
+							switch(argobj.eid.toString()) {
+								case "1":	FireEvent(argobj.pid,"onPlayStop");			break;
+								case "2":	FireEvent(argobj.pid,"onPlayPause");		break;
+								case "3":	FireEvent(argobj.pid,"onPlayStart");
+											var oArgs = new Object;
+											oArgs.pid = argobj.pid;
+											CreateTimeActionMethod("media_003_video", "TickTimer", null, 999, oArgs);
+											if(sPrevState=="2") {
+												FireEvent(argobj.pid,"onPlayResume");	break;
+											} else {
+												FireEvent(argobj.pid,"onPlayBegin");	break;
+											}
+								case "4":	FireEvent(argobj.pid,"onScanForward");		break;
+								case "5":	FireEvent(argobj.pid,"onScanBackward");		break;
+								case "6":	FireEvent(argobj.pid,"onStartBuffering");	break;
+								case "7":	FireEvent(argobj.pid,"onWaitServer");		break;
+								case "8":	FireEvent(argobj.pid,"onMediaEnded");		break;
+								case "9":	FireEvent(argobj.pid,"onStartPreparing");	break;
+								case "10":	FireEvent(argobj.pid,"onReadyToStart");		break;
+								case "11":	FireEvent(argobj.pid,"onStartReconnect");	break;
+								default: return true;
+							}
+							return true;
+						default:	return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+ 		<method name="PLAY" label="PLAY" access="public">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function Play(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sControl = oCurObj.getAttribute("control");
+					if(sControl.indexOf("embed")!=-1) return false;
+					var oPlayer = document.getElementById(argobj.pid+"_"+sControl);
+					if(oPlayer==null) return false;
+					var sType = oCurObj.getAttribute("plr");
+					if(sType==null) return false;
+					switch(sType) {
+						case "rp":
+							if(oPlayer.CanPlay()) oPlayer.DoPlay();
+							return true;
+						case "qt":
+							oPlayer.play();
+							var sState = oCurObj.getAttribute("state");
+							FireEvent(argobj.pid,"onChangePlayState");
+							if(oCurObj==null) return false;
+							CreateTimeActionMethod("media_003_video", "TickTimer", null, 999, argobj);
+							oCurObj.setAttribute("state","playing");
+							FireEvent(argobj.pid,"onPlayStart");
+							if(oCurObj==null) return false;
+							FireEvent(argobj.pid, sState=="paused" ? "onPlayResume" : "onPlayBegin");
+							return true;
+						case "wm": 	oPlayer.controls.play(); 	return true;
+						default: 	return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="STOP" label="STOP" access="public">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function Stop(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sControl = oCurObj.getAttribute("control");
+					if(sControl.indexOf("embed")!=-1) return false;
+					var oPlayer = document.getElementById(argobj.pid+"_"+sControl);
+					if(oPlayer==null) return false;
+					var sType = oCurObj.getAttribute("plr");
+					if(sType==null) return false;
+					switch(sType) {
+						case "rp":
+							if(oPlayer.CanStop()) oPlayer.DoStop();
+							return true;
+						case "qt":
+							oPlayer.stop();
+							oPlayer.SetTime(0);
+							oCurObj.setAttribute("state","stopped");
+							FireEvent(argobj.pid,"onChangePlayState");
+							if(oCurObj==null) return false;
+							CreateTimeActionMethod("media_003_video", "TickTimer", null, 999, argobj);
+							FireEvent(argobj.pid,"onPlayStop");
+							return true;
+						case "wm": 	oPlayer.controls.stop(); 	return true;
+						default: 	return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="PAUSE" label="PAUSE" access="public">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function Pause(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sControl = oCurObj.getAttribute("control");
+					if(sControl.indexOf("embed")!=-1) return false;
+					var oPlayer = document.getElementById(argobj.pid+"_"+sControl);
+					if(oPlayer==null) return false;
+					var sType = oCurObj.getAttribute("plr");
+					if(sType==null) return false;
+					switch(sType) {
+						case "rp":
+							if(oPlayer.CanPause()) oPlayer.DoPause();
+							return true;
+						case "qt":
+							oPlayer.stop();
+							oCurObj.setAttribute("state","paused");
+							FireEvent(argobj.pid,"onChangePlayState");
+							if(oCurObj==null) return false;
+							CreateTimeActionMethod("media_003_video", "TickTimer", null, 999, argobj);
+							FireEvent(argobj.pid,"onPlayPause");
+							return true;
+						case "wm": 	oPlayer.controls.pause(); 		return true;
+						default: 	return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="Destructor" label="DESTRUCTOR" access="private">
+            <params>
+            </params>
+            <body>
+                <![CDATA[
+                function Destructor(argobj)
+                {
+                    if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sControl = oCurObj.getAttribute("control");
+					//if(sControl.indexOf("embed")!=-1) return false;
+					var oPlayer = document.getElementById(argobj.pid+"_"+sControl);
+					if(oPlayer==null) return false;
+					var sType = oCurObj.getAttribute("plr");
+					if(sType==null) return false;
+					switch(sType) {
+						case "rp":
+							if(oPlayer.CanStop()) oPlayer.DoStop();
+							return true;
+						case "qt":
+							oPlayer.stop();
+							oPlayer.SetTime(0);
+							oCurObj.setAttribute("state","stopped");
+							FireEvent(argobj.pid,"onChangePlayState");
+							if(oCurObj==null) return false;
+							CreateTimeActionMethod("media_003_video", "TickTimer", null, 999, argobj);
+							FireEvent(argobj.pid,"onPlayStop");
+							return true;
+						case "wm": 	oPlayer.controls.stop(); 	return true;
+						default: 	return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+	</methods>
+</params>

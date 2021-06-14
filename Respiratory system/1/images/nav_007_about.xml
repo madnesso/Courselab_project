@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+'*	nav_007_about.xml
+'*	Copyright (c) Websoft, 2007.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>About tab</label>
+		<width>25</width>
+		<height>460</height>
+		<description>About tab</description>
+	</object>
+    <page name=" Display " w="260" h="200">
+		<param type="line" x="8" y="12" w="244" h="110"/>
+		<param type="label" text=" " x="11" y="6" w="6" h="13"/>
+		<param type="check" id="standard" text="Use default tab set" def="yes" x="15" y="6" w="80" h="13">
+			<events>
+				<event name="check" target="lab_n1_img" action="disable" />
+				<event name="check" target="lab_n2_img" action="disable" />
+				<event name="check" target="lab_n3_img" action="disable" />
+				<event name="check" target="lab_n4_img" action="disable" />
+				<event name="check" target="n1_img" action="disable" />
+				<event name="check" target="n2_img" action="disable" />
+				<event name="check" target="n3_img" action="disable" />
+				<event name="check" target="n4_img" action="disable" />
+				<event name="check" target="lab_tabcolor_user" action="disable" />
+				<event name="check" target="tabcolor_user" action="disable" />
+				<event name="check" target="lab_tabwidth" action="disable" />
+				<event name="check" target="tab_width" action="disable" />
+				<event name="check" target="lab_tabwidth2" action="disable" />
+				<event name="check" target="tab_height" action="disable" />
+				<event name="check" target="lab_tabwidth3" action="disable" />
+				<event name="check" target="lab_tabcolor" action="enable" />
+				<event name="check" target="tabcolor" action="enable" />
+				<event name="uncheck" target="lab_n1_img" action="enable" />
+				<event name="uncheck" target="lab_n2_img" action="enable" />
+				<event name="uncheck" target="lab_n3_img" action="enable" />
+				<event name="uncheck" target="lab_n4_img" action="enable" />
+				<event name="uncheck" target="n1_img" action="enable" />
+				<event name="uncheck" target="n2_img" action="enable" />
+				<event name="uncheck" target="n3_img" action="enable" />
+				<event name="uncheck" target="n4_img" action="enable" />
+				<event name="uncheck" target="lab_tabcolor_user" action="enable" />
+				<event name="uncheck" target="tabcolor_user" action="enable" />
+				<event name="uncheck" target="lab_tabwidth" action="enable" />
+				<event name="uncheck" target="tab_width" action="enable" />
+				<event name="uncheck" target="lab_tabwidth2" action="enable" />
+				<event name="uncheck" target="tab_height" action="enable" />
+				<event name="uncheck" target="lab_tabwidth3" action="enable" />
+				<event name="uncheck" target="lab_tabcolor" action="disable" />
+				<event name="uncheck" target="tabcolor" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_n1_img" text="Enabled tab:" x="15" y="25" w="130" h="13"/>
+		<param type="file" id="n1_img" text="" def="" x="125" y="24" w="100" h="13"/>
+		<param type="label" id="lab_n2_img" text="OnMouseOver tab:" x="15" y="41" w="110" h="13"/>
+		<param type="file" id="n2_img" text="" def="" x="125" y="40" w="100" h="13"/>
+		<param type="label" id="lab_n3_img" text="Disabled Tab:" x="15" y="56" w="110" h="13"/>
+		<param type="file" id="n3_img" text="" def="" x="125" y="55" w="100" h="13"/>
+		<param type="label" id="lab_n4_img" text="OnClick Tab:" x="15" y="72" w="110" h="13"/>
+		<param type="file" id="n4_img" text="" def="" x="125" y="71" w="100" h="13"/>
+		<param type="label" id="lab_tabcolor_user" text="Border color:" x="15" y="88" w="110" h="13"/>
+		<param type="color" id="tabcolor_user" text="" def="#000000" x="125" y="87" w="64" h="13"/>
+		<param type="label" id="lab_tabwidth" text="Area size                     hor.:" x="15" y="104" w="110" h="13"/>
+		<param type="edit" id="tab_width" text="" def="500" x="125" y="103" w="24" h="13"/>
+		<param type="label" id="lab_tabwidth2" text="px      vert.:" x="152" y="104" w="50" h="13"/>
+		<param type="edit" id="tab_height" text="" def="460" x="200" y="103" w="24" h="13"/>
+		<param type="label" id="lab_tabwidth3" text="px" x="227" y="104" w="20" h="13"/>
+		<param type="label" id="lab_tabcolor" text="Default tab color:" x="10" y="128" w="110" h="13"/>
+		<param type="select" id="tabcolor" text="orange" def="orange" x="125" y="126" w="125" h="13">
+			<items>
+				<item id="orange" label="Orange"/>
+				<item id="lightblue" label="Lightblue"/>
+				<item id="turquoise" label="Turquoise"/>
+				<item id="olive" label="Olive"/>
+			</items>
+		</param>
+		<param type="label" id="lab_taboffset" text="Tab vertical offset:" x="10" y="144" w="110" h="13"/>
+		<param type="edit" id="tab_offset" text="368" def="368" x="125" y="143" w="24" h="13"/>
+		<param type="label" id="lab_taboffset2" text="px" x="152" y="144" w="50" h="13"/>
+		<param type="label" text="Enabled tab tooltip:" x="10" y="160" w="110" h="13"/>
+		<param type="edit" id="alt_enabled" text="no" def="About" x="125" y="159" w="125" h="13"/>
+		<param type="label" text="Disabled tab tooltip:" x="10" y="176" w="110" h="13"/>
+		<param type="edit" id="alt_disabled" text="no" def="Access disabled" x="125" y="175" w="125" h="13"/>
+    </page>
+    <page name=" Parameters " w="260" h="164">
+		<param type="label" text="Header text:" x="10" y="10" w="90" h="13"/>
+		<param type="textedit" id="tabheader" text="About" def="About" x="100" y="9" w="128" h="13"/>
+		<param type="label" text="Area text:" x="10" y="26" w="90" h="13"/>
+		<param type="textedit" id="tabtext" text="" def="" x="100" y="25" w="128" h="13"/>
+		<param type="check" id="nav_lock" text="Strict Navigation mode" def="no" x="10" y="42" w="184" h="13"/>
+    </page>
+	<methods>
+		<method name="Constructor" label="Constructor" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function Constructor(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					if(oParams==null) return false;
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var bNavLock = oParams.selectSingleNode("nav_lock").text=="yes" ? true : false;
+					var oHeader = document.getElementById(argobj.pid+"_header");
+					if(oHeader==null) return false;
+					var aTmp = oHeader.getElementsByTagName("p");
+					if(aTmp.length!=0) {
+						//fixing Gecko-specific p rendering
+						for(var i=0;i<aTmp.length;i++) {
+							aTmp[i].style.padding = "0px";
+							aTmp[i].style.margin = "0px";
+						}
+					}
+					oCurObj.style.left = bStandard ? "-475px" : "-"+oParams.selectSingleNode("tab_width").text+"px";
+					oCurObj.style.zIndex = 990;
+					oCurObj.setAttribute("closed","1");
+					oCurObj.setAttribute("state","enabled");
+					oCurObj.setAttribute("navlock", bNavLock ? "1" : "0");
+					oCurObj.setAttribute("state","enabled");
+					AddEvtHandler("EVENT_SLIDE_OPENED", "nav_007_about", argobj.pid);
+					AddEvtHandler("EVENT_SLIDE_COMPLETE", "nav_007_about", argobj.pid);
+					AddEvtHandler("EVENT_NAVIGATION", "nav_007_about", argobj.pid);
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="HandleEvt" label="HandleEvt" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function HandleEvt(oEvtHandler, oArg)
+				{
+					var argobj = new Object;
+					argobj.pid = oEvtHandler.sTargetId;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sCurrentSlideId = g_oSlide.getAttribute("id");
+					var sSavedSlideId = oCurObj.getAttribute("sid");
+					if(sSavedSlideId==null) sSavedSlideId = "";
+					switch (oEvtHandler.sEvt) {
+						case "EVENT_SLIDE_OPENED":
+							if(sSavedSlideId!=sCurrentSlideId) oCurObj.setAttribute("sid","");
+							if(oCurObj.getAttribute("closed")=="0") CallMethod("nav_007_about","MoveTab",argobj);
+							if(oCurObj.getAttribute("navlock")=="1") CallMethod("nav_007_about","DisableAccess",argobj);
+							break;
+						case "EVENT_SLIDE_COMPLETE":
+							if(oCurObj.getAttribute("state")=="disabled" && sSavedSlideId=="") {
+								oCurObj.setAttribute("sid","");
+								CallMethod("nav_007_about","EnableAccess",argobj);
+							}
+							break;
+						case "EVENT_NAVIGATION":
+							if(oArg==null) return false;
+							if(oArg.sTargets=="help" || oArg.sTargets=="all") {
+								if(oArg.sAction=="on" && oCurObj.getAttribute("state")=="disabled") {
+									oCurObj.setAttribute("sid","");
+									CallMethod("nav_007_about","EnableAccess",argobj);
+								}
+								if(oArg.sAction=="off" && oCurObj.getAttribute("state")=="enabled") {
+									oCurObj.setAttribute("sid",sCurrentSlideId);
+									CallMethod("nav_007_about","DisableAccess",argobj);
+								}
+							}
+						default:
+							break;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="OpenTab" label="OPEN TAB" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function OpenTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sCurrentSlideId = g_oSlide.getAttribute("id");
+					var sSavedSlideId = oCurObj.getAttribute("sid");
+					if(sCurrentSlideId==sSavedSlideId) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var iDockX = bStandard ? -475 : -parseInt(oParams.selectSingleNode("tab_width").text);
+					var iY = oCurObj.offsetTop;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					var dtBegin = new Date();
+					if(bOpenTab) {
+						CreateTimeActionMove(argobj.pid, 0, 300, iDockX, iY, 0, iY);
+						oCurObj.style.zIndex = 991;
+						oCurObj.setAttribute("closed","0");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="CloseTab" label="CLOSE TAB" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function CloseTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var sCurrentSlideId = g_oSlide.getAttribute("id");
+					var sSavedSlideId = oCurObj.getAttribute("sid");
+					if(sCurrentSlideId==sSavedSlideId) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var iDockX = bStandard ? -475 : -parseInt(oParams.selectSingleNode("tab_width").text);
+					var iY = oCurObj.offsetTop;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					var dtBegin = new Date();
+					if(!bOpenTab) {
+						CreateTimeActionMove(argobj.pid, 0, 300, 0, iY, iDockX, iY);
+						CreateTimeActionMethod("nav_007_about", "sinkTab", null, 300, argobj);
+						oCurObj.setAttribute("closed","1");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="MoveTab" label="MoveTab" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function MoveTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oParams = g_oParams.selectSingleNode("./param[@objectid='"+argobj.pid+"']");
+					var bStandard = oParams.selectSingleNode("standard").text=="yes" ? true : false;
+					var iDockX = bStandard ? -475 : -parseInt(oParams.selectSingleNode("tab_width").text);
+					var iY = oCurObj.offsetTop;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					var dtBegin = new Date();
+					if(bOpenTab) {
+						CreateTimeActionMove(argobj.pid, 0, 300, iDockX, iY, 0, iY);
+						oCurObj.style.zIndex = 991;
+						oCurObj.setAttribute("closed","0");
+					} else {
+						CreateTimeActionMove(argobj.pid, 0, 300, 0, iY, iDockX, iY);
+						CreateTimeActionMethod("nav_007_about", "sinkTab", null, 300, argobj);
+						oCurObj.setAttribute("closed","1");
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="sinkTab" label="sinkTab" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function sinkTab(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					oCurObj.style.zIndex=990;
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="DisableAccess" label="DISABLE ACCESS" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function DisableAccess(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var bOpenTab = oCurObj.getAttribute("closed")=="1" ? true : false;
+					if(!bOpenTab) CallMethod("nav_007_about","MoveTab",argobj);
+					document.getElementById(argobj.pid+"_tabimg").style.display = "none";
+					document.getElementById(argobj.pid+"_tabimg_disabled").style.display = g_isMSIE ? "inline" : "block";
+					oCurObj.setAttribute("state","disabled");
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="EnableAccess" label="ENABLE ACCESS" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function EnableAccess(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					document.getElementById(argobj.pid+"_tabimg_disabled").style.display = "none";
+					document.getElementById(argobj.pid+"_tabimg").style.display = g_isMSIE ? "inline" : "block";
+					oCurObj.setAttribute("state","enabled");
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="GetProperty" label="GetProperty" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function GetProperty(argobj)
+				{
+					if(argobj.pid==null || argobj.property==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					switch(argobj.property.toLowerCase()) {
+						case "disabled":	g_vPropertyValue = oCurObj.getAttribute("state")=="disabled" ? "1" : "0";	break;
+						case "open":		g_vPropertyValue = oCurObj.getAttribute("closed")=="1" ? "1" : "0";	break;
+						default: return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+	</methods>
+</params>

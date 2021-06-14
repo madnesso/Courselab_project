@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+'*	nav_011_sound.xml
+'*	Copyright (c) Websoft, 2007.  All rights reserved.
+-->
+<params>
+	<object>
+		<label>Sound Button</label>
+		<width>27</width>
+		<height>24</height>
+		<description>Sound Button</description>
+	</object>
+	<page name=" Parameters " w="240" h="145">
+		<param type="line" x="8" y="12" w="224" h="80"/>
+		<param type="label" text=" " x="11" y="6" w="6" h="13"/>
+		<param type="check" id="standard" text="Use default button set" def="yes" x="15" y="6" w="85" h="13">
+			<events>
+				<event name="check" target="lab_n1_img" action="disable" />
+				<event name="check" target="lab_n2_img" action="disable" />
+				<event name="check" target="lab_n3_img" action="disable" />
+				<event name="check" target="lab_n4_img" action="disable" />
+				<event name="check" target="n1_img" action="disable" />
+				<event name="check" target="n2_img" action="disable" />
+				<event name="check" target="n3_img" action="disable" />
+				<event name="check" target="n4_img" action="disable" />
+				<event name="check" target="lab_tabcolor" action="enable" />
+				<event name="check" target="tabcolor" action="enable" />
+				<event name="uncheck" target="lab_n1_img" action="enable" />
+				<event name="uncheck" target="lab_n2_img" action="enable" />
+				<event name="uncheck" target="lab_n3_img" action="enable" />
+				<event name="uncheck" target="lab_n4_img" action="enable" />
+				<event name="uncheck" target="n1_img" action="enable" />
+				<event name="uncheck" target="n2_img" action="enable" />
+				<event name="uncheck" target="n3_img" action="enable" />
+				<event name="uncheck" target="n4_img" action="enable" />
+				<event name="uncheck" target="lab_tabcolor" action="disable" />
+				<event name="uncheck" target="tabcolor" action="disable" />
+			</events>
+		</param>
+		<param type="label" id="lab_n1_img" text="Enabled Off button:" x="15" y="25" w="110" h="13"/>
+		<param type="file" id="n1_img" text="" def="" x="115" y="24" w="90" h="13"/>
+		<param type="label" id="lab_n2_img" text="OnMouseOver Off button:" x="15" y="41" w="110" h="13"/>
+		<param type="file" id="n2_img" text="" def="" x="115" y="40" w="90" h="13"/>
+		<param type="label" id="lab_n3_img" text="Enabled On button:" x="15" y="57" w="110" h="13"/>
+		<param type="file" id="n3_img" text="" def="" x="115" y="56" w="90" h="13"/>
+		<param type="label" id="lab_n4_img" text="OnMouseOver On button:" x="15" y="73" w="110" h="13"/>
+		<param type="file" id="n4_img" text="" def="" x="115" y="72" w="90" h="13"/>
+		<param type="label" id="lab_tabcolor" text="Default button color:" x="10" y="95" w="110" h="13"/>
+		<param type="select" id="tabcolor" text="orange" def="orange" x="115" y="94" w="110" h="13">
+			<items>
+				<item id="orange" label="Orange"/>
+				<item id="lightblue" label="Lightblue"/>
+				<item id="turquoise" label="Turquoise"/>
+				<item id="olive" label="Olive"/>
+			</items>
+		</param>
+		<param type="label" text="On button tooltip:" x="10" y="111" w="105" h="13"/>
+		<param type="edit" id="alt_on" text="no" def="Sound off. Enable sound" x="115" y="110" w="110" h="13"/>
+		<param type="label" text="Off button tooltip:" x="10" y="127" w="105" h="13"/>
+		<param type="edit" id="alt_off" text="no" def="Sound on. Disable sound" x="115" y="126" w="110" h="13"/>
+    </page>
+	<methods>
+		<method name="Constructor" label="Constructor" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function Constructor(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oCurOn = document.getElementById(argobj.pid+"_sound_on");
+					var oCurOff = document.getElementById(argobj.pid+"_sound_off");
+					if(!g_bSoundEnabled) {
+						oCurOn.style.display = "none";
+						oCurOff.style.display = g_isMSIE ? "inline" : "block";
+						EnableSound(false);
+					} else {
+						oCurOff.style.display = "none";
+						oCurOn.style.display = g_isMSIE ? "inline" : "block";
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="toggleSound" label="TOGGLE SOUND" access="public">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function toggleSound(argobj)
+				{
+					if(argobj.pid==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oCurOn = document.getElementById(argobj.pid+"_sound_on");
+					var oCurOff = document.getElementById(argobj.pid+"_sound_off");
+					if(oCurOff.style.display=="none") {
+						oCurOn.style.display = "none";
+						oCurOff.style.display = g_isMSIE ? "inline" : "block";
+						EnableSound(false);
+					} else {
+						oCurOff.style.display = "none";
+						oCurOn.style.display = g_isMSIE ? "inline" : "block";
+						EnableSound(true);
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+		<method name="GetProperty" label="GetProperty" access="private">
+			<params>
+			</params>
+			<body>
+				<![CDATA[
+				function GetProperty(argobj)
+				{
+					if(argobj.pid==null || argobj.property==null) return false;
+					var oCurObj = document.getElementById(argobj.pid);
+					if(oCurObj==null) return false;
+					var oCurOff = document.getElementById(argobj.pid+"_sound_off");
+					switch(argobj.property.toLowerCase()) {
+						case "soundon":	g_vPropertyValue = oCurOff.style.display=="none" ? "1" : "0";	break;
+						default: return true;
+					}
+					return true;
+				}
+				]]>
+			</body>
+		</method>
+	</methods>
+</params>
