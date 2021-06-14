@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+	<event>
+		<name>onDisplayQuestion</name>
+		<label>On Display Question</label>
+	</event>
+
+	<event>
+		<name>onChangeChoice</name>
+		<label>On Choice Change</label>
+	</event>
+	<event>
+		<name>onChangeSelect</name>
+		<label>On Select Change</label>
+	</event>
+	<event>
+		<name>onChangeOrder</name>
+		<label>On Item Order Change</label>
+	</event>
+	<event>
+		<name>onChangeNumericValue</name>
+		<label>On Numeric Value Change</label>
+	</event>
+	<event>
+		<name>onChangeTextValue</name>
+		<label>On Text Value Change</label>
+	</event>
+	<event>
+		<name>onChangeMatch</name>
+		<label>On Matching Change</label>
+	</event>
+
+	<event>
+		<name>onAttempt</name>
+		<label>On Attempt</label>
+	</event>
+	<event>
+		<name>onSuccess</name>
+		<label>On Success</label>
+	</event>
+	<event>
+		<name>onFailure</name>
+		<label>On Failure</label>
+	</event>
+	<event>
+		<name>onAttemptsLimit</name>
+		<label>On Attempts Limit</label>
+	</event>
+	<event>
+		<name>onTimeout</name>
+		<label>On Question Time Out</label>
+	</event>
+	<event>
+		<name>onSkipQuestion</name>
+		<label>On Skip Question</label>
+	</event>
+	<event>
+		<name>onQuestionEnd</name>
+		<label>On Question End</label>
+	</event>
+	<event>
+		<name>onTickTestTimer</name>
+		<label>On Test Timer Tick</label>
+	</event>
+	<event>
+		<name>onTestTimeout</name>
+		<label>On Test Timeout</label>
+	</event>
+	<event>
+		<name>onTestEnd</name>
+		<label>On Test End</label>
+	</event>
+</events>
